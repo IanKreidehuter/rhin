@@ -14,11 +14,30 @@ const lineHtml = v => (Array.isArray(v) ? v : [v]).map(val).filter(Boolean).map(
 const typeLabel = t => val(t).replace('/', ' / ');
 
 let KOTOBA = [], KANJI = [], GRAMMAR = [], loadError = false;
-const kState = { q: '', bab: '', type: '' }, jState = { q: '' };
+const kState = { q: '', bab: '', type: '' }, jState = { q: '', lesson: '' };
+let LESSONS = [];
+// "住所（じゅうしょ）= alamat" -> word / reading / meaning
+const parseEx = e => {
+  const j = val(e.japanese), m = val(e.meaning);
+  const r = j.match(/^(.*?)[（(](.*?)[）)]\s*=\s*(.*)$/);
+  if (r) return { w: r[1].trim(), r: r[2].trim(), m: r[3].trim() };
+  const q = j.split('=');
+  if (q.length > 1) return { w: q[0].trim(), r: '', m: q.slice(1).join('=').trim() };
+  return { w: j, r: '', m };
+};
+// Flatten kanji_lessonfileN4.json (lessons -> kanji), keeping lesson + category on each kanji
+function buildKanji(d) {
+  LESSONS = d.lessons || [];
+  return LESSONS.flatMap(l => (l.kanji || []).map(k => ({
+    kanji: val(k.kanji), on: (k.onyomi || []).map(val).filter(Boolean), kun: (k.kunyomi || []).map(val).filter(Boolean),
+    arti: val(k.meaning), lesson: l.lesson, cat: val(l.category), ex: (k.examples || []).map(parseEx)
+  })));
+}
+const kanjiMatch = (k, q) => [k.kanji, k.arti, k.cat, 'lesson ' + k.lesson, ...k.on, ...k.kun, ...k.ex.flatMap(e => [e.w, e.r, e.m])].join(' ').toLowerCase().includes(q);
 
 const POSTERS = {
   kotoba:  { t: 'Kotoba',  jp: 'ことば', d: 'Japanese Vocabulary', go: '#/kotoba/list', n: () => `${KOTOBA.length} words | N4` },
-  kanji:   { t: 'Kanji',   jp: '漢字',   d: 'Readings and example words', go: '#/kanji/list', n: () => `${KANJI.length} kanji | N4` },
+  kanji:   { t: 'Kanji',   jp: '漢字',   d: 'Readings and example words', go: '#/kanji/list', n: () => `${KANJI.length} kanji | ${LESSONS.length} lessons` },
   cards:   { t: 'Kanji Cards', jp: '漢字カード', d: 'Swipe through every Kanji', go: '#/cards/play', n: () => `${KANJI.length} cards | Swipe` },
   grammar: { t: 'Grammar', jp: '文法',   d: 'Grammar Lessons', go: '#/grammar/list', n: () => `${GRAMMAR.length} lessons | N4` },
   quiz:    { t: 'Quiz',    jp: 'クイズ', d: 'Test your Japanese', soon: 1, n: () => 'N4' }
@@ -26,15 +45,15 @@ const POSTERS = {
 
 async function load() {
   try {
-    const [a, b] = await Promise.all(['./ALL_KOSAKATA_N4_FORMS.json', './ALL_KANJI_N4.json'].map(async u => {
+    const [a, b] = await Promise.all(['./ALL_KOSAKATA_N4_FORMS.json', './kanji_lessonfileN4.json'].map(async u => {
       const r = await fetch(u);
       if (!r.ok) throw new Error(u);
       return r.json();
     }));
     // Files wrap their arrays in an object; accept bare arrays too
     KOTOBA = Array.isArray(a) ? a : a.kosakata;
-    KANJI = Array.isArray(b) ? b : b.kanji;
-    if (!Array.isArray(KOTOBA) || !Array.isArray(KANJI)) throw new Error('format');
+    KANJI = buildKanji(b);
+    if (!Array.isArray(KOTOBA) || !KANJI.length) throw new Error('format');
   } catch (e) { loadError = true; }
   try { const g = await (await fetch('./ALL_GRAMMAR_N4.json')).json(); GRAMMAR = g.pelajaran || []; } catch (e) { GRAMMAR = []; }
   route();
@@ -62,7 +81,11 @@ function homeView() {
       <div class="pic">${esc(first ? [...val(first.kanji)][0] : '言')}</div><strong>${esc(b)}</strong>
       <div class="meta"><span>${words.length} words</span><span class="play-s">▶</span></div></a>`;
   }).join('');
-  const kcs = KANJI.slice(0, 30).map((k, i) => `<a class="kc" href="#/kanji/item/${i}"><b>${esc(val(k.kanji))}</b><span>${dash(k.arti)}</span></a>`).join('');
+  const kcs = LESSONS.map((l, i) => {
+    const g = GRADS[(i + 1) % GRADS.length], f = (l.kanji || [])[0];
+    return `<a class="thumb" href="#/kanji/list/${esc(l.lesson)}" style="--c1:${g[0]};--c2:${g[1]}"><div class="pic">${esc(f ? val(f.kanji) : '字')}</div>
+      <strong>Lesson ${esc(l.lesson)} · ${esc(val(l.category))}</strong><div class="meta"><span>${(l.kanji || []).length} kanji</span><span class="play-s">▶</span></div></a>`;
+  }).join('');
   view.innerHTML = `<section class="page">
     <header class="top"><a class="av" href="#/home" aria-label="Home">言</a><span class="logo">Japanese N4</span><a class="rnd" href="#/cards" aria-label="Kanji cards">札</a></header>
     <a class="banner" href="#/kotoba"><div><small>言葉と漢字を学ぼう</small><h1>Japanese N4</h1><p>${KOTOBA.length} kotoba · ${KANJI.length} kanji</p></div><span class="mini">▶</span></a>
@@ -71,10 +94,10 @@ function homeView() {
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
       <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
     <div class="row"><h3>Kotoba by bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
-    <div class="row"><h3>Kanji</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
+    <div class="row"><h3>Kanji by lesson</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
 }
 
-const errorView = () => view.innerHTML = `<section class="page"><div class="msg"><h2>Learning data could not be loaded.</h2><p style="margin-top:8px">Make sure ALL_KOSAKATA_N4_FORMS.json and ALL_KANJI_N4.json sit next to index.html, and open the site over http(s), for example GitHub Pages.</p></div></section>`;
+const errorView = () => view.innerHTML = `<section class="page"><div class="msg"><h2>Learning data could not be loaded.</h2><p style="margin-top:8px">Make sure ALL_KOSAKATA_N4_FORMS.json and kanji_lessonfileN4.json sit next to index.html, and open the site over http(s), for example GitHub Pages.</p></div></section>`;
 
 const wordMatch = (w, q) => [w.hiragana, w.kanji, w.arti, w.bab, w.type, w.dictionary_form, w.masu_form, w.masu_form_hiragana].some(x => val(x).toLowerCase().includes(q));
 const wordRow = ([w, i]) => `<a class="item" href="#/kotoba/word/${i}"><div class="t">
@@ -130,36 +153,45 @@ function kotobaDetail(i) {
     <article class="detail">${wordCard(w)}<span class="lbl">BAB</span><div class="rv">${dash(w.bab)}</div></article></section>`;
 }
 
-function kanjiList() {
+function kanjiList(lp) {
+  if (lp !== undefined) jState.lesson = lp;
   view.innerHTML = `<section class="page">
-    <div class="head"><a class="circ" href="#/kanji" aria-label="Back">←</a><h2>Kanji</h2><a class="circ" href="#/cards/play" aria-label="Swipe cards">札</a></div>
+    <div class="head"><a class="circ" href="#/kanji" aria-label="Back">←</a><h2>Kanji</h2><a class="circ" id="cl" href="#/cards/play" aria-label="Swipe cards">札</a></div>
     <input class="search" id="q" type="search" placeholder="Search kanji, reading, meaning, example" aria-label="Search kanji" value="${esc(jState.q)}">
-    <p class="count" id="n"></p><div class="kgrid" id="list"></div></section>`;
-  const hay = k => [k.kanji, k.onyomi, val(k.kunyomi), k.arti, ...(k.kotoba || []).flatMap(o => [o.kata, o.bacaan, o.arti])].map(val).join(' ').toLowerCase();
+    <div class="chips" id="les"></div><p class="count" id="n"></p><div id="list"></div></section>`;
+  const chips = () => {
+    const el = document.getElementById('les');
+    el.innerHTML = `<button class="chip ${jState.lesson === '' ? 'on' : ''}" data-v="">All lessons</button>` + LESSONS.map(l =>
+      `<button class="chip ${jState.lesson === String(l.lesson) ? 'on' : ''}" data-v="${esc(l.lesson)}">L${esc(l.lesson)} ${esc(val(l.category))}</button>`).join('');
+    el.onclick = e => { const b = e.target.closest('button'); if (!b) return; jState.lesson = b.dataset.v; chips(); draw(); };
+  };
   const draw = () => {
     const q = jState.q.trim().toLowerCase();
-    const out = KANJI.map((k, i) => [k, i]).filter(([k]) => !q || hay(k).includes(q));
+    const out = KANJI.map((k, i) => [k, i]).filter(([k]) => (!jState.lesson || String(k.lesson) === jState.lesson) && (!q || kanjiMatch(k, q)));
     document.getElementById('n').textContent = `${out.length} of ${KANJI.length} kanji`;
-    document.getElementById('list').innerHTML = out.map(([k, i]) => `<a class="kitem" href="#/kanji/item/${i}">
-      <div class="big">${esc(val(k.kanji))}</div><div class="m">${dash(k.arti)}</div>
-      <div class="rd"><b>ON</b> ${dash(k.onyomi)}<br><b>KUN</b> ${lineHtml(k.kunyomi)}</div></a>`).join('')
-      || '<div class="msg" style="grid-column:1/-1">No kanji match your search.</div>';
+    document.getElementById('cl').href = '#/cards/play' + (jState.lesson ? '/' + jState.lesson : '');
+    // Group by lesson, showing the lesson number and its category
+    document.getElementById('list').innerHTML = LESSONS.map(l => {
+      const g = out.filter(([k]) => k.lesson === l.lesson);
+      return g.length ? `<h3 class="grp">Lesson ${esc(l.lesson)} · ${esc(val(l.category))}<span>${g.length}</span></h3><div class="kgrid">${g.map(([k, i]) => `<a class="kitem" href="#/kanji/item/${i}">
+        <div class="big">${esc(k.kanji)}</div><div class="m">${dash(k.arti)}</div>
+        <div class="rd"><b>ON</b> ${dash(k.on)}<br><b>KUN</b> ${lineHtml(k.kun)}</div></a>`).join('')}</div>` : '';
+    }).join('') || '<div class="msg">No kanji match your search.</div>';
   };
   document.getElementById('q').oninput = e => { jState.q = e.target.value; draw(); };
-  draw();
+  chips(); draw();
 }
 
-const kanjiCard = k => `<div class="k">${esc(val(k.kanji))}</div><div class="m">${dash(k.arti)}</div>
-  <span class="lbl">ONYOMI</span><div class="rv">${dash(k.onyomi)}</div>
-  <span class="lbl">KUNYOMI</span><div class="rv">${lineHtml(k.kunyomi)}</div>`;
+const kanjiCard = k => `<span class="badge">Lesson ${esc(k.lesson)} · ${esc(k.cat)}</span><div class="k">${esc(k.kanji)}</div><div class="m">${dash(k.arti)}</div>
+  <span class="lbl">ONYOMI</span><div class="rv">${dash(k.on)}</div>
+  <span class="lbl">KUNYOMI</span><div class="rv">${lineHtml(k.kun)}</div>`;
 
 function kanjiDetail(i) {
   const k = KANJI[i];
   if (!k) return location.hash = '#/kanji/list';
-  const ex = (k.kotoba || []).map(o => `<div class="ex"><b>${dash(o.kata)}</b><span>${dash(o.bacaan)}</span><span>${dash(o.arti)}</span></div>`).join('');
+  const ex = k.ex.map(o => `<div class="ex"><b>${dash(o.w)}</b>${o.r ? `<span>${esc(o.r)}</span>` : ''}<span>${dash(o.m)}</span></div>`).join('');
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/kanji/list" aria-label="Back">←</a><h2>Kanji</h2></div>
-    <article class="detail">${kanjiCard(k)}<span class="lbl">EXAMPLE KOTOBA</span>${ex || '<div class="rv">—</div>'}
-    ${val(k.halaman) ? `<span class="badge" style="margin-top:14px">Source page: ${esc(val(k.halaman))}</span>` : ''}</article></section>`;
+    <article class="detail">${kanjiCard(k)}<span class="lbl">EXAMPLES</span>${ex || '<div class="rv">—</div>'}</article></section>`;
 }
 
 // Search tab: one box for kotoba and kanji
@@ -170,10 +202,9 @@ function searchView() {
   q$.oninput = () => {
     const q = q$.value.trim().toLowerCase();
     if (!q) return res.innerHTML = '';
-    const w = KOTOBA.map((x, i) => [x, i]).filter(([x]) => wordMatch(x, q)), k = KANJI.map((x, i) => [x, i]).filter(([x]) =>
-      [x.kanji, x.onyomi, val(x.kunyomi), x.arti, ...(x.kotoba || []).flatMap(o => [o.kata, o.bacaan, o.arti])].map(val).join(' ').toLowerCase().includes(q));
+    const w = KOTOBA.map((x, i) => [x, i]).filter(([x]) => wordMatch(x, q)), k = KANJI.map((x, i) => [x, i]).filter(([x]) => kanjiMatch(x, q));
     res.innerHTML = `<h3 class="sub">Kotoba (${w.length})</h3><div class="list">${w.slice(0, 30).map(wordRow).join('') || '<div class="msg">No kotoba found.</div>'}</div>
-      <h3 class="sub">Kanji (${k.length})</h3><div class="kgrid">${k.slice(0, 30).map(([x, i]) => `<a class="kitem" href="#/kanji/item/${i}"><div class="big">${esc(val(x.kanji))}</div><div class="m">${dash(x.arti)}</div></a>`).join('') || '<div class="msg" style="grid-column:1/-1">No kanji found.</div>'}</div>`;
+      <h3 class="sub">Kanji (${k.length})</h3><div class="kgrid">${k.slice(0, 30).map(([x, i]) => `<a class="kitem" href="#/kanji/item/${i}"><div class="big">${esc(x.kanji)}</div><div class="m">${dash(x.arti)}</div></a>`).join('') || '<div class="msg" style="grid-column:1/-1">No kanji found.</div>'}</div>`;
   };
 }
 
@@ -254,8 +285,8 @@ function route() {
     if (a === 'list') kotobaList(b);
     else if (a === 'word') kotobaDetail(+b);
     else deckView(KOTOBA, wordCard, '#/kotoba/list', 'Kotoba cards');
-  } else if (sec === 'kanji') a === 'list' ? kanjiList() : kanjiDetail(+b);
-  else if (sec === 'cards') deckView(KANJI, kanjiCard, '#/cards', 'Kanji cards');
+  } else if (sec === 'kanji') a === 'list' ? kanjiList(b) : kanjiDetail(+b);
+  else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
   else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
   else if (sec === 'search') searchView();
   else homeView();
