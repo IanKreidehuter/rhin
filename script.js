@@ -13,14 +13,14 @@ const dash = v => esc(val(v) || '—');
 const lineHtml = v => (Array.isArray(v) ? v : [v]).map(val).filter(Boolean).map(esc).join('<br>') || '—';
 const typeLabel = t => val(t).replace('/', ' / ');
 
-let KOTOBA = [], KANJI = [], loadError = false;
+let KOTOBA = [], KANJI = [], GRAMMAR = [], loadError = false;
 const kState = { q: '', bab: '', type: '' }, jState = { q: '' };
 
 const POSTERS = {
   kotoba:  { t: 'Kotoba',  jp: 'ことば', d: 'Japanese Vocabulary', go: '#/kotoba/list', n: () => `${KOTOBA.length} words | N4` },
   kanji:   { t: 'Kanji',   jp: '漢字',   d: 'Readings and example words', go: '#/kanji/list', n: () => `${KANJI.length} kanji | N4` },
   cards:   { t: 'Kanji Cards', jp: '漢字カード', d: 'Swipe through every Kanji', go: '#/cards/play', n: () => `${KANJI.length} cards | Swipe` },
-  grammar: { t: 'Grammar', jp: '文法',   d: 'Grammar Lessons', soon: 1, n: () => 'N4' },
+  grammar: { t: 'Grammar', jp: '文法',   d: 'Grammar Lessons', go: '#/grammar/list', n: () => `${GRAMMAR.length} lessons | N4` },
   quiz:    { t: 'Quiz',    jp: 'クイズ', d: 'Test your Japanese', soon: 1, n: () => 'N4' }
 };
 
@@ -36,6 +36,7 @@ async function load() {
     KANJI = Array.isArray(b) ? b : b.kanji;
     if (!Array.isArray(KOTOBA) || !Array.isArray(KANJI)) throw new Error('format');
   } catch (e) { loadError = true; }
+  try { const g = await (await fetch('./ALL_GRAMMAR_N4.json')).json(); GRAMMAR = g.pelajaran || []; } catch (e) { GRAMMAR = []; }
   route();
 }
 
@@ -68,7 +69,7 @@ function homeView() {
     <div class="row"><h3>Lessons</h3><a href="#/kotoba/list">See all</a></div>
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
-      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan off" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
+      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
     <div class="row"><h3>Kotoba by bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
     <div class="row"><h3>Kanji</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
 }
@@ -176,6 +177,25 @@ function searchView() {
   };
 }
 
+
+/* Grammar: each pelajaran in ALL_GRAMMAR_N4.json is one category */
+function grammarList() {
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/grammar" aria-label="Back">←</a><h2>Grammar</h2></div>
+    <p class="count">${GRAMMAR.length} lessons</p><div class="list">${GRAMMAR.map((l, i) => `<a class="item" href="#/grammar/lesson/${i}"><div class="t">
+    <div class="h">Pelajaran ${esc(val(l.nomor))}</div><div class="k" style="font-size:1.15rem">${esc(val(l.judul))}</div>
+    <div class="m">${(l.poin || []).length} pola tata bahasa</div></div><span class="play-s">▶</span></a>`).join('') || '<div class="msg">Grammar data could not be loaded.</div>'}</div></section>`;
+}
+function grammarLesson(i) {
+  const l = GRAMMAR[i];
+  if (!l) return location.hash = '#/grammar/list';
+  const ex = c => `<div class="gx"><b>${esc(val(c.no))}</b><div><div class="gj">${esc(val(c.jp))}</div><div class="gi">${esc(val(c.id))}</div></div></div>`;
+  const part = p => `<article class="detail gp"><h3>${esc(val(p.judul))}</h3>
+    ${(p.pola || []).map(x => `<div class="pola">${esc(x)}</div>`).join('')}${(p.catatan || []).map(x => `<p>${esc(x)}</p>`).join('')}
+    ${(p.bagian || []).map(b => `${val(b.judul) ? `<h4>${esc(b.judul)}</h4>` : ''}${val(b.keterangan) ? `<p>${esc(b.keterangan)}</p>` : ''}${(b.contoh || []).map(ex).join('')}`).join('')}</article>`;
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/grammar/list" aria-label="Back">←</a><h2>Pelajaran ${esc(val(l.nomor))}</h2></div>
+    <p class="count">${esc(val(l.judul))}</p>${(l.poin || []).map(part).join('')}</section>`;
+}
+
 /* Flashcard deck: touch swipe, buttons, arrow keys, shuffle, reset */
 function deckView(items, cardFn, backHref, title) {
   let order = items.map((_, i) => i), pos = 0, busy = false;
@@ -236,6 +256,7 @@ function route() {
     else deckView(KOTOBA, wordCard, '#/kotoba/list', 'Kotoba cards');
   } else if (sec === 'kanji') a === 'list' ? kanjiList() : kanjiDetail(+b);
   else if (sec === 'cards') deckView(KANJI, kanjiCard, '#/cards', 'Kanji cards');
+  else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
   else if (sec === 'search') searchView();
   else homeView();
   scrollTo(0, 0);
