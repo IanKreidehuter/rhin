@@ -78,7 +78,7 @@ const errorView = () => view.innerHTML = `<section class="page"><div class="msg"
 const wordMatch = (w, q) => [w.hiragana, w.kanji, w.arti, w.bab, w.type, w.dictionary_form, w.masu_form, w.masu_form_hiragana].some(x => val(x).toLowerCase().includes(q));
 const wordRow = ([w, i]) => `<a class="item" href="#/kotoba/word/${i}"><div class="t">
   <div class="h">${esc(val(w.hiragana))}</div>${val(w.kanji) ? `<div class="k">${esc(val(w.kanji))}</div>` : ''}
-  <div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}</div><span class="play-s">▶</span></a>`;
+  <div class="m">${dash(w.arti)}</div>${val(w.dictionary_form) ? `<div class="df">Dictionary form: <b>${esc(val(w.dictionary_form))}</b></div>` : ''}${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}</div><span class="play-s">▶</span></a>`;
 
 // Kotoba list: search + bab chips + type chips (all built from the JSON)
 function kotobaList(babParam) {
@@ -89,7 +89,7 @@ function kotobaList(babParam) {
     <div class="head"><a class="circ" href="#/kotoba" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a></div>
     <input class="search" id="q" type="search" placeholder="Search hiragana, kanji, meaning, bab" aria-label="Search vocabulary" value="${esc(kState.q)}">
     <div class="chips" id="babs"></div><div class="chips" id="types"></div>
-    <p class="count" id="n"></p><div class="list" id="list"></div></section>`;
+    <p class="count" id="n"></p><div id="list"></div></section>`;
   const chips = (id, all, items, key) => {
     const el = document.getElementById(id);
     el.innerHTML = [''].concat(items).map(v => `<button class="chip ${kState[key] === v ? 'on' : ''}" data-v="${esc(v)}">${esc(v ? (key === 'type' ? typeLabel(v) : v) : all)}</button>`).join('');
@@ -99,7 +99,11 @@ function kotobaList(babParam) {
     const q = kState.q.trim().toLowerCase();
     const out = KOTOBA.map((w, i) => [w, i]).filter(([w]) => (!kState.bab || val(w.bab) === kState.bab) && (!kState.type || val(w.type) === kState.type) && (!q || wordMatch(w, q)));
     document.getElementById('n').textContent = `${out.length} of ${KOTOBA.length} words`;
-    document.getElementById('list').innerHTML = out.map(wordRow).join('') || '<div class="msg">No words match your search.</div>';
+    // Group the results by lesson (bab), keeping the JSON order
+    document.getElementById('list').innerHTML = babs.map(b => {
+      const g = out.filter(([w]) => val(w.bab) === b);
+      return g.length ? `<h3 class="grp">${esc(b)}<span>${g.length}</span></h3><div class="list">${g.map(wordRow).join('')}</div>` : '';
+    }).join('') || '<div class="msg">No words match your search.</div>';
   };
   chips('babs', 'All bab', babs, 'bab'); chips('types', 'All types', types, 'type');
   document.getElementById('q').oninput = e => { kState.q = e.target.value; draw(); };
@@ -114,7 +118,7 @@ const wordCard = w => `<div class="h">${esc(val(w.hiragana))}</div>
 function formsHtml(w) {
   const shown = [val(w.kanji), val(w.hiragana)];
   const cells = [['DICTIONARY FORM', w.dictionary_form], ['MASU FORM', w.masu_form], ['MASU (KANA)', w.masu_form_hiragana], ['SOURCE FORM', w.source_form]]
-    .filter(([l, v]) => val(v) && (l.startsWith('MASU') || !shown.includes(val(v))));
+    .filter(([l, v]) => val(v) && (l !== 'SOURCE FORM' || !shown.includes(val(v))));
   return cells.length ? `<div class="forms">${cells.map(([l, v]) => `<div><span class="lbl" style="margin:0">${l}</span><div class="rv">${esc(val(v))}</div></div>`).join('')}</div>` : '';
 }
 
