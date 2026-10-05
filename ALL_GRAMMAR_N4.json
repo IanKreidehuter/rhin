@@ -20,25 +20,41 @@
               "judul": "1) ～んですか",
               "keterangan": "(1) Ketika pembicara memastikan atau meminta keterangan tentang hal yang dilihat atau didengar.",
               "contoh": [
-                { "no": "①", "jp": "（ぬれた傘を持っている人を見て）雨が降っているんですか。", "id": "(Ketika melihat orang yang membawa payung yang basah) Apakah turun hujan?" }
+                {
+                  "no": "①",
+                  "jp": "（ぬれた傘を持っている人を見て）雨が降っているんですか。",
+                  "id": "(Ketika melihat orang yang membawa payung yang basah) Apakah turun hujan?"
+                }
               ]
             },
             {
               "keterangan": "(2) Ketika meminta keterangan lebih lanjut tentang hal yang dilihat atau didengar oleh lawan bicara.",
               "contoh": [
-                { "no": "②", "jp": "おもしろいデザインの靴ですね。どこで買ったんですか。", "id": "Sepatu yang desainnya lucu, ya. Beli di mana?" }
+                {
+                  "no": "②",
+                  "jp": "おもしろいデザインの靴ですね。どこで買ったんですか。",
+                  "id": "Sepatu yang desainnya lucu, ya. Beli di mana?"
+                }
               ]
             },
             {
               "keterangan": "(3) Ketika meminta keterangan alasan tentang hal yang dilihat atau didengar oleh lawan bicara.",
               "contoh": [
-                { "no": "③", "jp": "どうして遅れたんですか。", "id": "Kenapa terlambat?" }
+                {
+                  "no": "③",
+                  "jp": "どうして遅れたんですか。",
+                  "id": "Kenapa terlambat?"
+                }
               ]
             },
             {
               "keterangan": "(4) Ketika meminta keterangan tentang keadaan.",
               "contoh": [
-                { "no": "④", "jp": "どうしたんですか。", "id": "Kenapa?" }
+                {
+                  "no": "④",
+                  "jp": "どうしたんですか。",
+                  "id": "Kenapa?"
+                }
               ]
             },
             {
@@ -48,36 +64,66 @@
               "judul": "2) ～んです",
               "keterangan": "(1) Ketika menjelaskan alasan sebagai jawaban dari kalimat pada ～んですか (3) atau (4) dari 1) di atas.",
               "contoh": [
-                { "no": "⑤", "jp": "どうして遅れたんですか。\n……バスが来なかったんです。", "id": "Kenapa terlambat?\n…… Karena bus tidak datang." },
-                { "no": "⑥", "jp": "どうしたんですか。\n……ちょっと気分が悪いんです。", "id": "Kenapa?\n…… Saya sedikit tidak enak badan." }
+                {
+                  "no": "⑤",
+                  "jp": "どうして遅れたんですか。\n……バスが来なかったんです。",
+                  "id": "Kenapa terlambat?\n…… Karena bus tidak datang."
+                },
+                {
+                  "no": "⑥",
+                  "jp": "どうしたんですか。\n……ちょっと気分が悪いんです。",
+                  "id": "Kenapa?\n…… Saya sedikit tidak enak badan."
+                }
               ]
             },
             {
               "keterangan": "(2) Ketika menambahkan alasan pada hal yang telah dijelaskan oleh pembicara sendiri.",
               "contoh": [
-                { "no": "⑦", "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。", "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke." }
+                {
+                  "no": "⑦",
+                  "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。",
+                  "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke."
+                }
               ]
             },
             {
               "keterangan": "[Perhatian] Jika tidak menjelaskan alasan, melainkan kenyataan, ～んです tidak dipakai.",
               "contoh": [
-                { "no": "×", "jp": "わたしはマイク・ミラーなんです。", "id": "(Salah)" }
+                {
+                  "no": "×",
+                  "jp": "わたしはマイク・ミラーなんです。",
+                  "id": "(Salah)"
+                }
               ]
             },
             {
               "judul": "3) ～んですが、～",
               "keterangan": "～んですが berfungsi untuk memulai suatu cerita. Di belakangnya disusul ekspresi permohonan, ajakan, atau permohonan izin. が ini dipakai sebagai prakata yang ringan (Lihat Pel.14). Seperti ⑩, isi yang disusul di belakang ～んですが memang telah nyata, adakalanya kalimat lanjutannya dihilangkan.",
               "contoh": [
-                { "no": "⑧", "jp": "頭が痛いんですが、帰ってもいいですか。", "id": "Sakit kepala, boleh pulang?" },
-                { "no": "⑨", "jp": "来週友達とスキーに行くんですが、ミラーさんもいっしょに行きませんか。", "id": "Minggu depan, saya pergi bermain ski dengan teman, bagaimana kalau sdr. Miller juga pergi sama-sama?" },
-                { "no": "⑩", "jp": "お湯が出ないんですが……。", "id": "Air panas tidak keluar..." }
+                {
+                  "no": "⑧",
+                  "jp": "頭が痛いんですが、帰ってもいいですか。",
+                  "id": "Sakit kepala, boleh pulang?"
+                },
+                {
+                  "no": "⑨",
+                  "jp": "来週友達とスキーに行くんですが、ミラーさんもいっしょに行きませんか。",
+                  "id": "Minggu depan, saya pergi bermain ski dengan teman, bagaimana kalau sdr. Miller juga pergi sama-sama?"
+                },
+                {
+                  "no": "⑩",
+                  "jp": "お湯が出ないんですが……。",
+                  "id": "Air panas tidak keluar..."
+                }
               ]
             }
           ]
         },
         {
           "judul": "～ていただけませんか",
-          "pola": ["Kata Kerja Bentuk て + いただけませんか"],
+          "pola": [
+            "Kata Kerja Bentuk て + いただけませんか"
+          ],
           "catatan": [
             "Artinya: Dapatkah Anda ～ untuk saya?",
             "Ungkapan ini adalah ungkapan yang lebih sopan daripada ～てください."
@@ -85,14 +131,20 @@
           "bagian": [
             {
               "contoh": [
-                { "no": "⑪", "jp": "いい先生を紹介していただけませんか。", "id": "Bisakah perkenalkan saya guru yang baik?" }
+                {
+                  "no": "⑪",
+                  "jp": "いい先生を紹介していただけませんか。",
+                  "id": "Bisakah perkenalkan saya guru yang baik?"
+                }
               ]
             }
           ]
         },
         {
           "judul": "～たらいいですか",
-          "pola": ["Kata Tanya + Kata Kerja Bentuk た + らいいですか"],
+          "pola": [
+            "Kata Tanya + Kata Kerja Bentuk た + らいいですか"
+          ],
           "catatan": [
             "Artinya: Sebaiknya saya...? / Bagaimana cara...?",
             "Ini adalah ungkapan untuk meminta masukan atau petunjuk.",
@@ -101,8 +153,16 @@
           "bagian": [
             {
               "contoh": [
-                { "no": "⑫", "jp": "どこでカメラを買ったらいいですか。\n……ABCストアが安いですよ。", "id": "Sebaiknya saya membeli kamera di mana?\n…… ABC store yang murah." },
-                { "no": "⑬", "jp": "国会議事堂を見学したいんですが、どうしたらいいですか。\n……直接行ったらいいですよ。", "id": "Saya ingin mengunjungi Gedung Parlemen Nasional, bagaimana caranya?\n…… Langsung pergi saja." }
+                {
+                  "no": "⑫",
+                  "jp": "どこでカメラを買ったらいいですか。\n……ABCストアが安いですよ。",
+                  "id": "Sebaiknya saya membeli kamera di mana?\n…… ABC store yang murah."
+                },
+                {
+                  "no": "⑬",
+                  "jp": "国会議事堂を見学したいんですが、どうしたらいいですか。\n……直接行ったらいいですよ。",
+                  "id": "Saya ingin mengunjungi Gedung Parlemen Nasional, bagaimana caranya?\n…… Langsung pergi saja."
+                }
               ]
             }
           ]
@@ -118,7 +178,372 @@
           "bagian": [
             {
               "contoh": [
-                { "no": "⑭", "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。", "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke." }
+                {
+                  "no": "⑭",
+                  "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。",
+                  "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 27,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja Potensial",
+          "pola": [
+            "Kelompok I: かきます → かけます → かける / かいます → かえます → かえる",
+            "Kelompok II: たべます → たべられます → たべられる",
+            "Kelompok III: きます → こられます → こられる / します → できます → できる"
+          ],
+          "catatan": [
+            "Sebagai cara menyatakan kebisaan, pada Pelajaran 18 di tingkat dasar I, telah dipelajari Kata Benda/Kata Kerja Bentuk Kamus + ことができます. Di sini Anda akan mempelajari cara lain untuk menyatakan Kata Kerja Potensial.",
+            "Tabel: Bentuk Sopan → Bentuk Biasa (Lihat Buku Induk Pel.27 Latihan A1).",
+            "Kata Kerja Potensial dikonjugasi sebagai Kata Kerja Kelompok II. Contoh: かえます　かえる　かえ(ない)　かえて",
+            "Dengan catatan bahwa わかります sudah bermakna kebisaan maka tidak menjadi dalam bentuk わかれます."
+          ]
+        },
+        {
+          "judul": "Kalimat yang digunakan Kata Kerja Potensial",
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Kata Kerja Potensial tidak menyatakan gerakan, melainkan keadaan. Objek dari Kata Kerja Transitif dinyatakan dengan を, sedangkan pada prinsipnya objek dari Kata Kerja Potensial dinyatakan dengan が.",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "わたしは日本語を話します。",
+                  "id": "Saya berbahasa Jepang."
+                },
+                {
+                  "no": "②",
+                  "jp": "わたしは日本語が話せます。",
+                  "id": "Saya bisa berbahasa Jepang."
+                }
+              ]
+            },
+            {
+              "keterangan": "Tidak berubah kecuali Kata Bantu が.",
+              "contoh": [
+                {
+                  "no": "③",
+                  "jp": "一人で病院へ行けますか。",
+                  "id": "Bisa pergi ke rumah sakit sendiri?"
+                },
+                {
+                  "no": "④",
+                  "jp": "田中さんに会えませんでした。",
+                  "id": "Tidak bisa bertemu dengan sdr. Tanaka."
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Dalam Kata Kerja Potensial, terdapat cara penggunaan untuk menyatakan kemampuan dari pelaku ⑤, dan menyatakan kemungkinan untuk melakukan suatu perbuatan dalam kondisi tertentu ⑥.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "ミラーさんは漢字が読めます。",
+                  "id": "Sdr. Miller bisa membaca huruf Kanji."
+                },
+                {
+                  "no": "⑥",
+                  "jp": "この銀行でドルが換えられます。",
+                  "id": "Di bank ini dolar dapat ditukar."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "見えます dan 聞こえます",
+          "catatan": [
+            "みえます, きこえます dengan tidak sengaja menyatakan suatu objek yang dapat ditangkap di dalam wawasan secara alami, atau bunyi yang tercapai di telinga secara alami. Objek tersebut dinyatakan dengan が. みえます, きこえます tidak dapat dipakai untuk hal yang diperhatikan secara sengaja, dan untuk itu dipakai Kata Kerja Potensional."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "新幹線から富士山が見えます。",
+                  "id": "Dari Shinkansen terlihat Gunung Fuji."
+                },
+                {
+                  "no": "⑧",
+                  "jp": "ラジオの音が聞こえます。",
+                  "id": "Terdengar suara radio."
+                },
+                {
+                  "no": "⑨",
+                  "jp": "新宿で今黒沢の映画が見られます。",
+                  "id": "Di Shinjuku sekarang kita bisa menonton film karya sutradara Kurosawa."
+                },
+                {
+                  "no": "⑩",
+                  "jp": "電話で天気予報が聞けます。",
+                  "id": "Melalui telepon dapat mendengar prakiraan cuaca."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "できます",
+          "catatan": [
+            "できます yang dipelajari di sini bermakna \"menimbulkan\", \"rampung\", \"selesai\", \"dibuat\", dan lain-lain."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑪",
+                  "jp": "駅の前に大きいスーパーができました。",
+                  "id": "Di depan stasiun, telah dibangun pasar swalayan besar."
+                },
+                {
+                  "no": "⑫",
+                  "jp": "時計の修理はいつできますか。",
+                  "id": "Kapan perbaikan jam akan selesai?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "しか",
+          "catatan": [
+            "しか dibubuhkan pada Kata Benda atau Kata Keterangan Bilangan, dan selalu digunakan dengan menyertakan kata bentuk negatif. Mengangkat kata yang dibubuhkan しか, dan menyangkal semua kata yang lain. Jika dibubuhkan pada Kata Benda yang dibubuhkan が atau を, が atau を dihilangkan. Untuk selain Kata Bantu tersebut, langsung dibubuhkan di belakangnya. しか bernuansa tidak sempurna."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑬",
+                  "jp": "ローマ字しか書けません。",
+                  "id": "Hanya bisa menulis huruf latin saja."
+                },
+                {
+                  "no": "⑭",
+                  "jp": "ローマ字だけ書けます。",
+                  "id": "Bisa menulis huruf latin saja."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Benda は (Perbandingan)",
+          "catatan": [
+            "Selain menyatakan topik, は berfungsi untuk menyatakan perbandingan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑮",
+                  "jp": "ワインは飲みますが、ビールは飲みません。",
+                  "id": "(Saya) Minum anggur, tetapi tidak minum bir."
+                },
+                {
+                  "no": "⑯",
+                  "jp": "きのうは山が見えましたが、きょうは見えません。",
+                  "id": "Kemarin gunung terlihat, tetapi hari ini tidak terlihat."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "は yang dianggap kata yang disertai Kata Bantu",
+          "catatan": [
+            "Sebagaimana telah dijelaskan di Kolom 1 pada Tingkat Dasar I (h.160), jika は disertai Kata Benda yang dibubuhkan が atau を, maka が atau を dihilangkan, tetapi selain Kata Bantu tersebut, dibubuhkan di belakangnya."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑰",
+                  "jp": "日本では馬を見ることができません。",
+                  "id": "Di Jepang tidak bisa melihat kuda. (Pel.18)"
+                },
+                {
+                  "no": "⑱",
+                  "jp": "天気のいい日には海が見えるんです。",
+                  "id": "Pada hari yang bercuaca baik, laut terlihat."
+                },
+                {
+                  "no": "⑲",
+                  "jp": "ここからは東京スカイツリーが見えません。",
+                  "id": "Dari sini, Tokyo Sky Tree tidak terlihat."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 28,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja1（Bentuk ます）ながら Kata Kerja2",
+          "pola": [
+            "Kata Kerja1 (Bentuk ます) + ながら + Kata Kerja2"
+          ],
+          "catatan": [
+            "Pola kalimat ini menyatakan bahwa ketika pelaku yang sama melakukan aksi2 dan aksi1 secara bersamaan. Kata Kerja2 yang merupakan aksi utama.",
+            "Seperti ②, digunakan pula jika melakukan dua hal dengan terus-menerus dalam suatu jangka waktu tertentu."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "音楽を聞きながら食事します。",
+                  "id": "Makan sambil mendengar musik."
+                },
+                {
+                  "no": "②",
+                  "jp": "働きながら日本語を勉強しています。",
+                  "id": "Belajar bahasa Jepang sambil bekerja."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja Bentuk て います",
+          "pola": [
+            "Kata Kerja Bentuk て + います"
+          ],
+          "catatan": [
+            "Pola kalimat ini digunakan pula ketika menyatakan perbuatan yang berulang kali sebagai kebiasaan. Jika perbuatan tersebut dilakukan pada masa lampau sebelum titik ucapannya, bentuknya berubah menjadi Kata Kerja Bentuk て いました."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "③",
+                  "jp": "毎朝ジョギングをしています。",
+                  "id": "Setiap pagi, saya joging."
+                },
+                {
+                  "no": "④",
+                  "jp": "子どものとき、毎晩8時に寝ていました。",
+                  "id": "Ketika masih kecil, setiap malam saya tidur pukul delapan."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Bentuk Biasa し、Bentuk Biasa し、～",
+          "pola": [
+            "Bentuk Biasa + し、Bentuk Biasa + し、～"
+          ],
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Pola kalimat ini digunakan jika menjelaskan lebih dari dua hal yang mirip mengenai topik dengan setaraf. Yang dimaksud mirip di sini adalah hal yang dijelaskannya semuanya kelebihan seperti ⑤ yang dicontohkan.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "鈴木さんはピアノも弾けるし、歌も歌えるし、ダンスもできます。",
+                  "id": "Sdr. Suzuki bisa bermain piano, bisa bernyanyi, juga bisa berdansa."
+                }
+              ]
+            },
+            {
+              "keterangan": "Dengan catatan bahwa pola kalimat ini tidak hanya satu hal, melainkan mengandung satu hal lagi yang dibubuhkan mengenai perasaan si pembicara, maka sering digunakan も. Agar lebih jelas, adakalanya menggunakan それに, seperti ⑥.",
+              "contoh": [
+                {
+                  "no": "⑥",
+                  "jp": "田中さんはまじめだし、中国語も上手だし、それに経験もあります。",
+                  "id": "Sdr. Tanaka rajin, pandai bahasa Tionghoa, lagi pula berpengalaman."
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Pola kalimat ini digunakan pula untuk cara menyatakan alasan dibelakang bagian ～し、～し.",
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "ここは値段も安いし、魚も新しいし、よく食べに来ます。",
+                  "id": "Di sini harganya murah, ikan juga segar, maka sering datang untuk makan."
+                }
+              ]
+            },
+            {
+              "keterangan": "Untuk ini, jika kesimpulannya sudah jelas, adakalanya alasan saja yang dijelaskan tanpa kesimpulan.",
+              "contoh": [
+                {
+                  "no": "⑧",
+                  "jp": "どうしてこの店へ来るんですか。\n……ここは値段も安いし、魚も新しいし……。",
+                  "id": "Kenapa datang ke toko ini?\n…… Di sini harganya murah, ikan juga segar..."
+                }
+              ]
+            },
+            {
+              "keterangan": "Adakalanya し paling belakang dinyatakan dengan から untuk alasan.",
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "どうして日本のアニメが好きなんですか。\n……話もおもしろいし、音楽もすてきですから。",
+                  "id": "Kenapa suka animasi Jepang?\n…… Ceritanya menarik, dan musiknya juga bagus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "それで",
+          "catatan": [
+            "それで digunakan jika menjelaskan kesimpulan yang ditemukan oleh hal yang dijelaskan sebelumnya sebagai alasan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑩",
+                  "jp": "将来小説家になりたいです。それで今はアルバイトをしながら小説を書いています。",
+                  "id": "(Saya) Ingin menjadi pengarang novel pada masa depan. Oleh karena itu, sekarang menulis novel sambil bekerja paruh waktu."
+                },
+                {
+                  "no": "⑪",
+                  "jp": "ここはコーヒーもおいしいし、食事もできるし……。\n……それで人気があるんですね。",
+                  "id": "Di sini kopinya enak, dan juga bisa makan...\n…… Oleh karena itu, populer, ya."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～とき＋Kata Bantu",
+          "pola": [
+            "～とき + Kata Bantu"
+          ],
+          "catatan": [
+            "とき yang telah dipelajari pada Pelajaran 23 adalah Kata Benda, maka dapat menggunakannya dengan menyertai Kata Bantu di belakangnya."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑫",
+                  "jp": "勉強するときは、音楽を聞きません。",
+                  "id": "Ketika belajar tidak mendengar musik."
+                },
+                {
+                  "no": "⑬",
+                  "jp": "疲れたときや寂しいとき、よく田舎の青い空を思い出す。",
+                  "id": "Ketika lelah atau sepi, saya sering ingat langit biru kampung halaman. (Pel.31)"
+                }
               ]
             }
           ]
