@@ -1,0 +1,129 @@
+{
+  "judul": "ALL - GRAMMAR N4",
+  "catatan": "Setiap objek di 'pelajaran' adalah satu kategori (satu pelajaran). Tambah pelajaran baru dengan menyalin satu objek dan mengubah isinya.",
+  "pelajaran": [
+    {
+      "nomor": 26,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "～んです",
+          "pola": [
+            "Kata Kerja / Kata Sifat い + Bentuk Biasa + んです",
+            "Kata Sifat な / Kata Benda + ～だ→～な + んです"
+          ],
+          "catatan": [
+            "～んです dipakai dalam bahasa lisan, sedangkan dalam bahasa tertulis bentuknya menjadi ～のです."
+          ],
+          "bagian": [
+            {
+              "judul": "1) ～んですか",
+              "keterangan": "(1) Ketika pembicara memastikan atau meminta keterangan tentang hal yang dilihat atau didengar.",
+              "contoh": [
+                { "no": "①", "jp": "（ぬれた傘を持っている人を見て）雨が降っているんですか。", "id": "(Ketika melihat orang yang membawa payung yang basah) Apakah turun hujan?" }
+              ]
+            },
+            {
+              "keterangan": "(2) Ketika meminta keterangan lebih lanjut tentang hal yang dilihat atau didengar oleh lawan bicara.",
+              "contoh": [
+                { "no": "②", "jp": "おもしろいデザインの靴ですね。どこで買ったんですか。", "id": "Sepatu yang desainnya lucu, ya. Beli di mana?" }
+              ]
+            },
+            {
+              "keterangan": "(3) Ketika meminta keterangan alasan tentang hal yang dilihat atau didengar oleh lawan bicara.",
+              "contoh": [
+                { "no": "③", "jp": "どうして遅れたんですか。", "id": "Kenapa terlambat?" }
+              ]
+            },
+            {
+              "keterangan": "(4) Ketika meminta keterangan tentang keadaan.",
+              "contoh": [
+                { "no": "④", "jp": "どうしたんですか。", "id": "Kenapa?" }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Jika memakai ～んですか pada bagian yang seharusnya tidak perlu, akan memberikan perasaan yang tidak nyaman, maka perlu berhati-hati."
+            },
+            {
+              "judul": "2) ～んです",
+              "keterangan": "(1) Ketika menjelaskan alasan sebagai jawaban dari kalimat pada ～んですか (3) atau (4) dari 1) di atas.",
+              "contoh": [
+                { "no": "⑤", "jp": "どうして遅れたんですか。\n……バスが来なかったんです。", "id": "Kenapa terlambat?\n…… Karena bus tidak datang." },
+                { "no": "⑥", "jp": "どうしたんですか。\n……ちょっと気分が悪いんです。", "id": "Kenapa?\n…… Saya sedikit tidak enak badan." }
+              ]
+            },
+            {
+              "keterangan": "(2) Ketika menambahkan alasan pada hal yang telah dijelaskan oleh pembicara sendiri.",
+              "contoh": [
+                { "no": "⑦", "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。", "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke." }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Jika tidak menjelaskan alasan, melainkan kenyataan, ～んです tidak dipakai.",
+              "contoh": [
+                { "no": "×", "jp": "わたしはマイク・ミラーなんです。", "id": "(Salah)" }
+              ]
+            },
+            {
+              "judul": "3) ～んですが、～",
+              "keterangan": "～んですが berfungsi untuk memulai suatu cerita. Di belakangnya disusul ekspresi permohonan, ajakan, atau permohonan izin. が ini dipakai sebagai prakata yang ringan (Lihat Pel.14). Seperti ⑩, isi yang disusul di belakang ～んですが memang telah nyata, adakalanya kalimat lanjutannya dihilangkan.",
+              "contoh": [
+                { "no": "⑧", "jp": "頭が痛いんですが、帰ってもいいですか。", "id": "Sakit kepala, boleh pulang?" },
+                { "no": "⑨", "jp": "来週友達とスキーに行くんですが、ミラーさんもいっしょに行きませんか。", "id": "Minggu depan, saya pergi bermain ski dengan teman, bagaimana kalau sdr. Miller juga pergi sama-sama?" },
+                { "no": "⑩", "jp": "お湯が出ないんですが……。", "id": "Air panas tidak keluar..." }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～ていただけませんか",
+          "pola": ["Kata Kerja Bentuk て + いただけませんか"],
+          "catatan": [
+            "Artinya: Dapatkah Anda ～ untuk saya?",
+            "Ungkapan ini adalah ungkapan yang lebih sopan daripada ～てください."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                { "no": "⑪", "jp": "いい先生を紹介していただけませんか。", "id": "Bisakah perkenalkan saya guru yang baik?" }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～たらいいですか",
+          "pola": ["Kata Tanya + Kata Kerja Bentuk た + らいいですか"],
+          "catatan": [
+            "Artinya: Sebaiknya saya...? / Bagaimana cara...?",
+            "Ini adalah ungkapan untuk meminta masukan atau petunjuk.",
+            "Seperti jawaban untuk ⑬, dengan cara ucapan Kata Kerja Bentuk たらいいですよ, dapat memberi masukan atau tawaran kepada lawan bicara."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                { "no": "⑫", "jp": "どこでカメラを買ったらいいですか。\n……ABCストアが安いですよ。", "id": "Sebaiknya saya membeli kamera di mana?\n…… ABC store yang murah." },
+                { "no": "⑬", "jp": "国会議事堂を見学したいんですが、どうしたらいいですか。\n……直接行ったらいいですよ。", "id": "Saya ingin mengunjungi Gedung Parlemen Nasional, bagaimana caranya?\n…… Langsung pergi saja." }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Benda（objek）は 好きです／嫌いです、上手です／下手です、あります dll.",
+          "pola": [
+            "Kata Benda (objek) は + 好きです／嫌いです (suka/tidak suka), 上手です／下手です (pandai/tidak pandai), あります (ada) dll. + Kata Benda"
+          ],
+          "catatan": [
+            "Pada tingkat dasar I, telah mempelajari hal tentang objek langsung yang ditunjuk oleh を yang diangkat sebagai topik (Pel.17). Seperti ⑭, kata benda yang ditunjuk oleh が sebagai objek dari すきです dan lain-lainnya juga dapat diangkat sebagai topik."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                { "no": "⑭", "jp": "よくカラオケに行きますか。\n……いいえ、あまり行きません。カラオケは好きじゃないんです。", "id": "Sering pergi ke Karaoke?\n…… Tidak, jarang pergi. Saya tidak suka Karaoke." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
