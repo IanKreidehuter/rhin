@@ -1,0 +1,4233 @@
+{
+  "title": "Part 2 のかんじ — Kanji by Lesson",
+  "source": "Uploaded page (Part 2 のかんじ, Lessons 1–20)",
+  "language": "Japanese",
+  "meaning_language": "Indonesian",
+  "notes": [
+    "Readings are common-use readings relevant to the listed vocabulary.",
+    "Kunyomi is provided where a common native reading exists.",
+    "Examples are representative combinations/uses, not an exhaustive vocabulary list."
+  ],
+  "lessons": [
+    {
+      "lesson": 1,
+      "category": "住所",
+      "kanji": [
+        {
+          "kanji": "住",
+          "onyomi": [
+            "ジュウ"
+          ],
+          "kunyomi": [
+            "すむ",
+            "すまう"
+          ],
+          "meaning": "tinggal",
+          "examples": [
+            {
+              "japanese": "住所（じゅうしょ）= alamat",
+              "meaning": ""
+            },
+            {
+              "japanese": "住む（すむ）= tinggal",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "所",
+          "onyomi": [
+            "ショ",
+            "ソ"
+          ],
+          "kunyomi": [
+            "ところ"
+          ],
+          "meaning": "tempat",
+          "examples": [
+            {
+              "japanese": "場所（ばしょ）= tempat",
+              "meaning": ""
+            },
+            {
+              "japanese": "所（ところ）= tempat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "京",
+          "onyomi": [
+            "キョウ",
+            "ケイ"
+          ],
+          "kunyomi": [
+            "みやこ"
+          ],
+          "meaning": "ibu kota",
+          "examples": [
+            {
+              "japanese": "東京（とうきょう）= Tokyo",
+              "meaning": ""
+            },
+            {
+              "japanese": "京都（きょうと）= Kyoto",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "都",
+          "onyomi": [
+            "ト",
+            "ツ"
+          ],
+          "kunyomi": [
+            "みやこ"
+          ],
+          "meaning": "kota/metropolitan",
+          "examples": [
+            {
+              "japanese": "東京都（とうきょうと）= Tokyo Metropolis",
+              "meaning": ""
+            },
+            {
+              "japanese": "都市（とし）= kota",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "府",
+          "onyomi": [
+            "フ"
+          ],
+          "kunyomi": [],
+          "meaning": "prefektur urban/pemerintahan",
+          "examples": [
+            {
+              "japanese": "大阪府（おおさかふ）= Prefektur Osaka",
+              "meaning": ""
+            },
+            {
+              "japanese": "京都府（きょうとふ）= Prefektur Kyoto",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "県",
+          "onyomi": [
+            "ケン"
+          ],
+          "kunyomi": [],
+          "meaning": "prefektur",
+          "examples": [
+            {
+              "japanese": "県（けん）= prefektur",
+              "meaning": ""
+            },
+            {
+              "japanese": "県庁（けんちょう）= kantor pemerintahan prefektur",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "市",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "いち"
+          ],
+          "meaning": "kota/pasar",
+          "examples": [
+            {
+              "japanese": "市（し）= kota",
+              "meaning": ""
+            },
+            {
+              "japanese": "市場（いちば）= pasar",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "区",
+          "onyomi": [
+            "ク"
+          ],
+          "kunyomi": [],
+          "meaning": "distrik/ward",
+          "examples": [
+            {
+              "japanese": "区（く）= distrik",
+              "meaning": ""
+            },
+            {
+              "japanese": "区役所（くやくしょ）= kantor distrik",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "町",
+          "onyomi": [
+            "チョウ"
+          ],
+          "kunyomi": [
+            "まち"
+          ],
+          "meaning": "kota kecil/kelurahan",
+          "examples": [
+            {
+              "japanese": "町（まち）= kota/lingkungan",
+              "meaning": ""
+            },
+            {
+              "japanese": "町中（まちなか）= pusat kota",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "村",
+          "onyomi": [
+            "ソン"
+          ],
+          "kunyomi": [
+            "むら"
+          ],
+          "meaning": "desa",
+          "examples": [
+            {
+              "japanese": "村（むら）= desa",
+              "meaning": ""
+            },
+            {
+              "japanese": "村長（そんちょう）= kepala desa",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "category": "形容詞1",
+      "kanji": [
+        {
+          "kanji": "明",
+          "onyomi": [
+            "メイ",
+            "ミョウ"
+          ],
+          "kunyomi": [
+            "あかるい",
+            "あける",
+            "あく"
+          ],
+          "meaning": "terang",
+          "examples": [
+            {
+              "japanese": "明るい（あかるい）= terang",
+              "meaning": ""
+            },
+            {
+              "japanese": "説明（せつめい）= penjelasan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "暗",
+          "onyomi": [
+            "アン"
+          ],
+          "kunyomi": [
+            "くらい"
+          ],
+          "meaning": "gelap",
+          "examples": [
+            {
+              "japanese": "暗い（くらい）= gelap",
+              "meaning": ""
+            },
+            {
+              "japanese": "暗記（あんき）= hafalan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "遠",
+          "onyomi": [
+            "エン"
+          ],
+          "kunyomi": [
+            "とおい"
+          ],
+          "meaning": "jauh",
+          "examples": [
+            {
+              "japanese": "遠い（とおい）= jauh",
+              "meaning": ""
+            },
+            {
+              "japanese": "遠足（えんそく）= tamasya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "近",
+          "onyomi": [
+            "キン",
+            "コン"
+          ],
+          "kunyomi": [
+            "ちかい"
+          ],
+          "meaning": "dekat",
+          "examples": [
+            {
+              "japanese": "近い（ちかい）= dekat",
+              "meaning": ""
+            },
+            {
+              "japanese": "最近（さいきん）= akhir-akhir ini",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "強",
+          "onyomi": [
+            "キョウ",
+            "ゴウ"
+          ],
+          "kunyomi": [
+            "つよい",
+            "つよまる",
+            "つよめる"
+          ],
+          "meaning": "kuat",
+          "examples": [
+            {
+              "japanese": "強い（つよい）= kuat",
+              "meaning": ""
+            },
+            {
+              "japanese": "勉強（べんきょう）= belajar",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "弱",
+          "onyomi": [
+            "ジャク"
+          ],
+          "kunyomi": [
+            "よわい",
+            "よわる",
+            "よわめる"
+          ],
+          "meaning": "lemah",
+          "examples": [
+            {
+              "japanese": "弱い（よわい）= lemah",
+              "meaning": ""
+            },
+            {
+              "japanese": "弱点（じゃくてん）= titik lemah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "重",
+          "onyomi": [
+            "ジュウ",
+            "チョウ"
+          ],
+          "kunyomi": [
+            "おもい",
+            "かさねる",
+            "かさなる"
+          ],
+          "meaning": "berat",
+          "examples": [
+            {
+              "japanese": "重い（おもい）= berat",
+              "meaning": ""
+            },
+            {
+              "japanese": "重要（じゅうよう）= penting",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "軽",
+          "onyomi": [
+            "ケイ"
+          ],
+          "kunyomi": [
+            "かるい",
+            "かろやか"
+          ],
+          "meaning": "ringan",
+          "examples": [
+            {
+              "japanese": "軽い（かるい）= ringan",
+              "meaning": ""
+            },
+            {
+              "japanese": "軽食（けいしょく）= makanan ringan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "太",
+          "onyomi": [
+            "タイ",
+            "タ"
+          ],
+          "kunyomi": [
+            "ふとい",
+            "ふとる"
+          ],
+          "meaning": "gemuk/tebal",
+          "examples": [
+            {
+              "japanese": "太い（ふとい）= tebal",
+              "meaning": ""
+            },
+            {
+              "japanese": "太る（ふとる）= menjadi gemuk",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "細",
+          "onyomi": [
+            "サイ"
+          ],
+          "kunyomi": [
+            "ほそい",
+            "こまかい"
+          ],
+          "meaning": "tipis/rinci",
+          "examples": [
+            {
+              "japanese": "細い（ほそい）= tipis",
+              "meaning": ""
+            },
+            {
+              "japanese": "詳細（しょうさい）= detail",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "category": "形容詞2",
+      "kanji": [
+        {
+          "kanji": "特",
+          "onyomi": [
+            "トク"
+          ],
+          "kunyomi": [],
+          "meaning": "khusus",
+          "examples": [
+            {
+              "japanese": "特別（とくべつ）= khusus",
+              "meaning": ""
+            },
+            {
+              "japanese": "特に（とくに）= terutama",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "別",
+          "onyomi": [
+            "ベツ"
+          ],
+          "kunyomi": [
+            "わかれる",
+            "わける"
+          ],
+          "meaning": "berbeda/berpisah",
+          "examples": [
+            {
+              "japanese": "別の（べつの）= yang lain",
+              "meaning": ""
+            },
+            {
+              "japanese": "別れる（わかれる）= berpisah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "有",
+          "onyomi": [
+            "ユウ",
+            "ウ"
+          ],
+          "kunyomi": [
+            "ある"
+          ],
+          "meaning": "ada/memiliki",
+          "examples": [
+            {
+              "japanese": "有名（ゆうめい）= terkenal",
+              "meaning": ""
+            },
+            {
+              "japanese": "有る（ある）= ada",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "便",
+          "onyomi": [
+            "ベン",
+            "ビン"
+          ],
+          "kunyomi": [
+            "たより"
+          ],
+          "meaning": "kemudahan/surat",
+          "examples": [
+            {
+              "japanese": "便利（べんり）= praktis",
+              "meaning": ""
+            },
+            {
+              "japanese": "郵便（ゆうびん）= pos",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "利",
+          "onyomi": [
+            "リ"
+          ],
+          "kunyomi": [
+            "きく"
+          ],
+          "meaning": "manfaat/keuntungan",
+          "examples": [
+            {
+              "japanese": "便利（べんり）= praktis",
+              "meaning": ""
+            },
+            {
+              "japanese": "利用（りよう）= penggunaan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "不",
+          "onyomi": [
+            "フ",
+            "ブ"
+          ],
+          "kunyomi": [],
+          "meaning": "tidak/non-",
+          "examples": [
+            {
+              "japanese": "不便（ふべん）= tidak praktis",
+              "meaning": ""
+            },
+            {
+              "japanese": "不安（ふあん）= cemas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "切",
+          "onyomi": [
+            "セツ",
+            "サイ"
+          ],
+          "kunyomi": [
+            "きる",
+            "きれる"
+          ],
+          "meaning": "memotong/penting",
+          "examples": [
+            {
+              "japanese": "大切（たいせつ）= penting",
+              "meaning": ""
+            },
+            {
+              "japanese": "切る（きる）= memotong",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "元",
+          "onyomi": [
+            "ゲン",
+            "ガン"
+          ],
+          "kunyomi": [
+            "もと"
+          ],
+          "meaning": "asal/sehat",
+          "examples": [
+            {
+              "japanese": "元気（げんき）= sehat/bersemangat",
+              "meaning": ""
+            },
+            {
+              "japanese": "元（もと）= asal",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "好",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "すく",
+            "このむ"
+          ],
+          "meaning": "suka",
+          "examples": [
+            {
+              "japanese": "好き（すき）= suka",
+              "meaning": ""
+            },
+            {
+              "japanese": "好きな（すきな）= yang disukai",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "急",
+          "onyomi": [
+            "キュウ"
+          ],
+          "kunyomi": [
+            "いそぐ"
+          ],
+          "meaning": "tergesa/darurat",
+          "examples": [
+            {
+              "japanese": "急ぐ（いそぐ）= bergegas",
+              "meaning": ""
+            },
+            {
+              "japanese": "急行（きゅうこう）= kereta ekspres",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "category": "形容詞3",
+      "kanji": [
+        {
+          "kanji": "低",
+          "onyomi": [
+            "テイ"
+          ],
+          "kunyomi": [
+            "ひくい",
+            "ひくめる",
+            "ひくまる"
+          ],
+          "meaning": "rendah",
+          "examples": [
+            {
+              "japanese": "低い（ひくい）= rendah",
+              "meaning": ""
+            },
+            {
+              "japanese": "低下（ていか）= penurunan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "広",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "ひろい",
+            "ひろがる",
+            "ひろげる"
+          ],
+          "meaning": "luas",
+          "examples": [
+            {
+              "japanese": "広い（ひろい）= luas",
+              "meaning": ""
+            },
+            {
+              "japanese": "広場（ひろば）= alun-alun",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "短",
+          "onyomi": [
+            "タン"
+          ],
+          "kunyomi": [
+            "みじかい"
+          ],
+          "meaning": "pendek",
+          "examples": [
+            {
+              "japanese": "短い（みじかい）= pendek",
+              "meaning": ""
+            },
+            {
+              "japanese": "短時間（たんじかん）= waktu singkat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "良",
+          "onyomi": [
+            "リョウ"
+          ],
+          "kunyomi": [
+            "よい",
+            "いい"
+          ],
+          "meaning": "baik",
+          "examples": [
+            {
+              "japanese": "良い（よい）= baik",
+              "meaning": ""
+            },
+            {
+              "japanese": "良好（りょうこう）= baik",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "悪",
+          "onyomi": [
+            "アク",
+            "オ"
+          ],
+          "kunyomi": [
+            "わるい"
+          ],
+          "meaning": "buruk",
+          "examples": [
+            {
+              "japanese": "悪い（わるい）= buruk",
+              "meaning": ""
+            },
+            {
+              "japanese": "悪口（わるぐち）= perkataan buruk",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "正",
+          "onyomi": [
+            "セイ",
+            "ショウ"
+          ],
+          "kunyomi": [
+            "ただしい",
+            "ただす"
+          ],
+          "meaning": "benar",
+          "examples": [
+            {
+              "japanese": "正しい（ただしい）= benar",
+              "meaning": ""
+            },
+            {
+              "japanese": "正月（しょうがつ）= Tahun Baru",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "変",
+          "onyomi": [
+            "ヘン"
+          ],
+          "kunyomi": [
+            "かわる",
+            "かえる"
+          ],
+          "meaning": "berubah/aneh",
+          "examples": [
+            {
+              "japanese": "変（へん）= aneh",
+              "meaning": ""
+            },
+            {
+              "japanese": "変わる（かわる）= berubah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "赤",
+          "onyomi": [
+            "セキ",
+            "シャク"
+          ],
+          "kunyomi": [
+            "あか",
+            "あかい",
+            "あからむ"
+          ],
+          "meaning": "merah",
+          "examples": [
+            {
+              "japanese": "赤い（あかい）= merah",
+              "meaning": ""
+            },
+            {
+              "japanese": "赤ちゃん（あかちゃん）= bayi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "青",
+          "onyomi": [
+            "セイ",
+            "ショウ"
+          ],
+          "kunyomi": [
+            "あお",
+            "あおい"
+          ],
+          "meaning": "biru",
+          "examples": [
+            {
+              "japanese": "青い（あおい）= biru",
+              "meaning": ""
+            },
+            {
+              "japanese": "青空（あおぞら）= langit biru",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "黒",
+          "onyomi": [
+            "コク"
+          ],
+          "kunyomi": [
+            "くろ",
+            "くろい"
+          ],
+          "meaning": "hitam",
+          "examples": [
+            {
+              "japanese": "黒い（くろい）= hitam",
+              "meaning": ""
+            },
+            {
+              "japanese": "黒板（こくばん）= papan tulis",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 5,
+      "category": "趣味",
+      "kanji": [
+        {
+          "kanji": "映",
+          "onyomi": [
+            "エイ"
+          ],
+          "kunyomi": [
+            "うつる",
+            "うつす",
+            "はえる"
+          ],
+          "meaning": "memantulkan/menayangkan",
+          "examples": [
+            {
+              "japanese": "映画（えいが）= film",
+              "meaning": ""
+            },
+            {
+              "japanese": "映る（うつる）= terpantul/terlihat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "画",
+          "onyomi": [
+            "ガ",
+            "カク"
+          ],
+          "kunyomi": [],
+          "meaning": "gambar/film",
+          "examples": [
+            {
+              "japanese": "映画（えいが）= film",
+              "meaning": ""
+            },
+            {
+              "japanese": "画面（がめん）= layar",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "音",
+          "onyomi": [
+            "オン",
+            "イン"
+          ],
+          "kunyomi": [
+            "おと",
+            "ね"
+          ],
+          "meaning": "suara",
+          "examples": [
+            {
+              "japanese": "音楽（おんがく）= musik",
+              "meaning": ""
+            },
+            {
+              "japanese": "音（おと）= suara",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "楽",
+          "onyomi": [
+            "ガク",
+            "ラク"
+          ],
+          "kunyomi": [
+            "たのしい",
+            "たのしむ"
+          ],
+          "meaning": "musik/menyenangkan",
+          "examples": [
+            {
+              "japanese": "音楽（おんがく）= musik",
+              "meaning": ""
+            },
+            {
+              "japanese": "楽しい（たのしい）= menyenangkan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "歌",
+          "onyomi": [
+            "カ"
+          ],
+          "kunyomi": [
+            "うた",
+            "うたう"
+          ],
+          "meaning": "lagu/bernyanyi",
+          "examples": [
+            {
+              "japanese": "歌（うた）= lagu",
+              "meaning": ""
+            },
+            {
+              "japanese": "歌う（うたう）= bernyanyi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "写",
+          "onyomi": [
+            "シャ"
+          ],
+          "kunyomi": [
+            "うつす",
+            "うつる"
+          ],
+          "meaning": "menyalin/memotret",
+          "examples": [
+            {
+              "japanese": "写真（しゃしん）= foto",
+              "meaning": ""
+            },
+            {
+              "japanese": "写す（うつす）= menyalin",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "真",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "ま"
+          ],
+          "meaning": "benar/asli",
+          "examples": [
+            {
+              "japanese": "写真（しゃしん）= foto",
+              "meaning": ""
+            },
+            {
+              "japanese": "真ん中（まんなか）= tengah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "旅",
+          "onyomi": [
+            "リョ"
+          ],
+          "kunyomi": [
+            "たび"
+          ],
+          "meaning": "perjalanan",
+          "examples": [
+            {
+              "japanese": "旅行（りょこう）= perjalanan",
+              "meaning": ""
+            },
+            {
+              "japanese": "旅（たび）= perjalanan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "世",
+          "onyomi": [
+            "セイ",
+            "セ"
+          ],
+          "kunyomi": [
+            "よ"
+          ],
+          "meaning": "dunia/generasi",
+          "examples": [
+            {
+              "japanese": "世界（せかい）= dunia",
+              "meaning": ""
+            },
+            {
+              "japanese": "世話（せわ）= perhatian",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "界",
+          "onyomi": [
+            "カイ"
+          ],
+          "kunyomi": [],
+          "meaning": "dunia/batas",
+          "examples": [
+            {
+              "japanese": "世界（せかい）= dunia",
+              "meaning": ""
+            },
+            {
+              "japanese": "業界（ぎょうかい）= industri",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "category": "仕事",
+      "kanji": [
+        {
+          "kanji": "仕",
+          "onyomi": [
+            "シ",
+            "ジ"
+          ],
+          "kunyomi": [
+            "つかえる"
+          ],
+          "meaning": "melakukan/melayani",
+          "examples": [
+            {
+              "japanese": "仕事（しごと）= pekerjaan",
+              "meaning": ""
+            },
+            {
+              "japanese": "仕方（しかた）= cara",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "事",
+          "onyomi": [
+            "ジ",
+            "ズ"
+          ],
+          "kunyomi": [
+            "こと"
+          ],
+          "meaning": "hal/urusan",
+          "examples": [
+            {
+              "japanese": "仕事（しごと）= pekerjaan",
+              "meaning": ""
+            },
+            {
+              "japanese": "大事（だいじ）= penting",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "銀",
+          "onyomi": [
+            "ギン"
+          ],
+          "kunyomi": [
+            "しろがね"
+          ],
+          "meaning": "perak",
+          "examples": [
+            {
+              "japanese": "銀行（ぎんこう）= bank",
+              "meaning": ""
+            },
+            {
+              "japanese": "銀色（ぎんいろ）= warna perak",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "員",
+          "onyomi": [
+            "イン"
+          ],
+          "kunyomi": [],
+          "meaning": "anggota/staf",
+          "examples": [
+            {
+              "japanese": "会社員（かいしゃいん）= karyawan perusahaan",
+              "meaning": ""
+            },
+            {
+              "japanese": "店員（てんいん）= pegawai toko",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "医",
+          "onyomi": [
+            "イ"
+          ],
+          "kunyomi": [],
+          "meaning": "medis/dokter",
+          "examples": [
+            {
+              "japanese": "医者（いしゃ）= dokter",
+              "meaning": ""
+            },
+            {
+              "japanese": "医学（いがく）= ilmu kedokteran",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "者",
+          "onyomi": [
+            "シャ"
+          ],
+          "kunyomi": [
+            "もの"
+          ],
+          "meaning": "orang",
+          "examples": [
+            {
+              "japanese": "医者（いしゃ）= dokter",
+              "meaning": ""
+            },
+            {
+              "japanese": "若者（わかもの）= anak muda",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "働",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [
+            "はたらく"
+          ],
+          "meaning": "bekerja",
+          "examples": [
+            {
+              "japanese": "働く（はたらく）= bekerja",
+              "meaning": ""
+            },
+            {
+              "japanese": "労働（ろうどう）= tenaga kerja",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "屋",
+          "onyomi": [
+            "オク"
+          ],
+          "kunyomi": [
+            "や"
+          ],
+          "meaning": "toko/atap",
+          "examples": [
+            {
+              "japanese": "本屋（ほんや）= toko buku",
+              "meaning": ""
+            },
+            {
+              "japanese": "屋根（やね）= atap",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "産",
+          "onyomi": [
+            "サン"
+          ],
+          "kunyomi": [
+            "うむ",
+            "うまれる"
+          ],
+          "meaning": "produksi/melahirkan",
+          "examples": [
+            {
+              "japanese": "産業（さんぎょう）= industri",
+              "meaning": ""
+            },
+            {
+              "japanese": "生産（せいさん）= produksi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "業",
+          "onyomi": [
+            "ギョウ",
+            "ゴウ"
+          ],
+          "kunyomi": [
+            "わざ"
+          ],
+          "meaning": "pekerjaan/industri",
+          "examples": [
+            {
+              "japanese": "産業（さんぎょう）= industri",
+              "meaning": ""
+            },
+            {
+              "japanese": "授業（じゅぎょう）= pelajaran",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "category": "自然",
+      "kanji": [
+        {
+          "kanji": "林",
+          "onyomi": [
+            "リン"
+          ],
+          "kunyomi": [
+            "はやし"
+          ],
+          "meaning": "hutan kecil",
+          "examples": [
+            {
+              "japanese": "林（はやし）= hutan kecil",
+              "meaning": ""
+            },
+            {
+              "japanese": "林業（りんぎょう）= kehutanan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "森",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "もり"
+          ],
+          "meaning": "hutan",
+          "examples": [
+            {
+              "japanese": "森（もり）= hutan",
+              "meaning": ""
+            },
+            {
+              "japanese": "森林（しんりん）= hutan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "地",
+          "onyomi": [
+            "チ",
+            "ジ"
+          ],
+          "kunyomi": [],
+          "meaning": "tanah/daerah",
+          "examples": [
+            {
+              "japanese": "地図（ちず）= peta",
+              "meaning": ""
+            },
+            {
+              "japanese": "地下（ちか）= bawah tanah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "池",
+          "onyomi": [
+            "チ"
+          ],
+          "kunyomi": [
+            "いけ"
+          ],
+          "meaning": "kolam",
+          "examples": [
+            {
+              "japanese": "池（いけ）= kolam",
+              "meaning": ""
+            },
+            {
+              "japanese": "電池（でんち）= baterai",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "海",
+          "onyomi": [
+            "カイ"
+          ],
+          "kunyomi": [
+            "うみ"
+          ],
+          "meaning": "laut",
+          "examples": [
+            {
+              "japanese": "海（うみ）= laut",
+              "meaning": ""
+            },
+            {
+              "japanese": "海外（かいがい）= luar negeri",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "洋",
+          "onyomi": [
+            "ヨウ"
+          ],
+          "kunyomi": [],
+          "meaning": "samudra/barat",
+          "examples": [
+            {
+              "japanese": "洋服（ようふく）= pakaian gaya Barat",
+              "meaning": ""
+            },
+            {
+              "japanese": "太平洋（たいへいよう）= Samudra Pasifik",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "雪",
+          "onyomi": [
+            "セツ"
+          ],
+          "kunyomi": [
+            "ゆき"
+          ],
+          "meaning": "salju",
+          "examples": [
+            {
+              "japanese": "雪（ゆき）= salju",
+              "meaning": ""
+            },
+            {
+              "japanese": "大雪（おおゆき）= salju lebat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "光",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "ひかり",
+            "ひかる"
+          ],
+          "meaning": "cahaya",
+          "examples": [
+            {
+              "japanese": "光（ひかり）= cahaya",
+              "meaning": ""
+            },
+            {
+              "japanese": "光る（ひかる）= bersinar",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "台",
+          "onyomi": [
+            "ダイ",
+            "タイ"
+          ],
+          "kunyomi": [],
+          "meaning": "alas/mesin/kounter",
+          "examples": [
+            {
+              "japanese": "台風（たいふう）= topan",
+              "meaning": ""
+            },
+            {
+              "japanese": "台所（だいどころ）= dapur",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "風",
+          "onyomi": [
+            "フウ",
+            "フ"
+          ],
+          "kunyomi": [
+            "かぜ",
+            "かざ"
+          ],
+          "meaning": "angin/gaya",
+          "examples": [
+            {
+              "japanese": "風（かぜ）= angin",
+              "meaning": ""
+            },
+            {
+              "japanese": "台風（たいふう）= topan",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "category": "季節",
+      "kanji": [
+        {
+          "kanji": "季",
+          "onyomi": [
+            "キ"
+          ],
+          "kunyomi": [],
+          "meaning": "musim",
+          "examples": [
+            {
+              "japanese": "季節（きせつ）= musim",
+              "meaning": ""
+            },
+            {
+              "japanese": "季節風（きせつふう）= angin musiman",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "節",
+          "onyomi": [
+            "セツ",
+            "セチ"
+          ],
+          "kunyomi": [
+            "ふし"
+          ],
+          "meaning": "musim/bagian",
+          "examples": [
+            {
+              "japanese": "季節（きせつ）= musim",
+              "meaning": ""
+            },
+            {
+              "japanese": "節分（せつぶん）= Setsubun",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "春",
+          "onyomi": [
+            "シュン"
+          ],
+          "kunyomi": [
+            "はる"
+          ],
+          "meaning": "musim semi",
+          "examples": [
+            {
+              "japanese": "春（はる）= musim semi",
+              "meaning": ""
+            },
+            {
+              "japanese": "春休み（はるやすみ）= libur musim semi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "夏",
+          "onyomi": [
+            "カ",
+            "ガ"
+          ],
+          "kunyomi": [
+            "なつ"
+          ],
+          "meaning": "musim panas",
+          "examples": [
+            {
+              "japanese": "夏（なつ）= musim panas",
+              "meaning": ""
+            },
+            {
+              "japanese": "夏休み（なつやすみ）= libur musim panas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "秋",
+          "onyomi": [
+            "シュウ"
+          ],
+          "kunyomi": [
+            "あき"
+          ],
+          "meaning": "musim gugur",
+          "examples": [
+            {
+              "japanese": "秋（あき）= musim gugur",
+              "meaning": ""
+            },
+            {
+              "japanese": "秋分（しゅうぶん）= ekuinoks musim gugur",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "冬",
+          "onyomi": [
+            "トウ"
+          ],
+          "kunyomi": [
+            "ふゆ"
+          ],
+          "meaning": "musim dingin",
+          "examples": [
+            {
+              "japanese": "冬（ふゆ）= musim dingin",
+              "meaning": ""
+            },
+            {
+              "japanese": "冬休み（ふゆやすみ）= libur musim dingin",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "暑",
+          "onyomi": [
+            "ショ"
+          ],
+          "kunyomi": [
+            "あつい"
+          ],
+          "meaning": "panas (cuaca)",
+          "examples": [
+            {
+              "japanese": "暑い（あつい）= panas",
+              "meaning": ""
+            },
+            {
+              "japanese": "暑さ（あつさ）= panasnya cuaca",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "寒",
+          "onyomi": [
+            "カン"
+          ],
+          "kunyomi": [
+            "さむい"
+          ],
+          "meaning": "dingin",
+          "examples": [
+            {
+              "japanese": "寒い（さむい）= dingin",
+              "meaning": ""
+            },
+            {
+              "japanese": "寒さ（さむさ）= dinginnya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "暖",
+          "onyomi": [
+            "ダン",
+            "ノン"
+          ],
+          "kunyomi": [
+            "あたたかい",
+            "あたためる",
+            "あたたまる"
+          ],
+          "meaning": "hangat",
+          "examples": [
+            {
+              "japanese": "暖かい（あたたかい）= hangat",
+              "meaning": ""
+            },
+            {
+              "japanese": "暖房（だんぼう）= pemanas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "涼",
+          "onyomi": [
+            "リョウ"
+          ],
+          "kunyomi": [
+            "すずしい",
+            "すずむ"
+          ],
+          "meaning": "sejuk",
+          "examples": [
+            {
+              "japanese": "涼しい（すずしい）= sejuk",
+              "meaning": ""
+            },
+            {
+              "japanese": "涼む（すずむ）= menyejukkan diri",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "category": "体",
+      "kanji": [
+        {
+          "kanji": "体",
+          "onyomi": [
+            "タイ",
+            "テイ"
+          ],
+          "kunyomi": [
+            "からだ"
+          ],
+          "meaning": "tubuh",
+          "examples": [
+            {
+              "japanese": "体（からだ）= tubuh",
+              "meaning": ""
+            },
+            {
+              "japanese": "体育（たいいく）= olahraga",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "頭",
+          "onyomi": [
+            "トウ",
+            "ズ",
+            "ト"
+          ],
+          "kunyomi": [
+            "あたま",
+            "かしら"
+          ],
+          "meaning": "kepala",
+          "examples": [
+            {
+              "japanese": "頭（あたま）= kepala",
+              "meaning": ""
+            },
+            {
+              "japanese": "頭痛（ずつう）= sakit kepala",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "顔",
+          "onyomi": [
+            "ガン"
+          ],
+          "kunyomi": [
+            "かお"
+          ],
+          "meaning": "wajah",
+          "examples": [
+            {
+              "japanese": "顔（かお）= wajah",
+              "meaning": ""
+            },
+            {
+              "japanese": "笑顔（えがお）= wajah tersenyum",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "首",
+          "onyomi": [
+            "シュ"
+          ],
+          "kunyomi": [
+            "くび"
+          ],
+          "meaning": "leher",
+          "examples": [
+            {
+              "japanese": "首（くび）= leher",
+              "meaning": ""
+            },
+            {
+              "japanese": "首都（しゅと）= ibu kota",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "心",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "こころ"
+          ],
+          "meaning": "hati/pikiran",
+          "examples": [
+            {
+              "japanese": "心（こころ）= hati",
+              "meaning": ""
+            },
+            {
+              "japanese": "心配（しんぱい）= khawatir",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "声",
+          "onyomi": [
+            "セイ",
+            "ショウ"
+          ],
+          "kunyomi": [
+            "こえ"
+          ],
+          "meaning": "suara",
+          "examples": [
+            {
+              "japanese": "声（こえ）= suara",
+              "meaning": ""
+            },
+            {
+              "japanese": "大声（おおごえ）= suara keras",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "病",
+          "onyomi": [
+            "ビョウ",
+            "ヘイ"
+          ],
+          "kunyomi": [
+            "やむ",
+            "やまい"
+          ],
+          "meaning": "sakit/penyakit",
+          "examples": [
+            {
+              "japanese": "病気（びょうき）= sakit",
+              "meaning": ""
+            },
+            {
+              "japanese": "病院（びょういん）= rumah sakit",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "薬",
+          "onyomi": [
+            "ヤク"
+          ],
+          "kunyomi": [
+            "くすり"
+          ],
+          "meaning": "obat",
+          "examples": [
+            {
+              "japanese": "薬（くすり）= obat",
+              "meaning": ""
+            },
+            {
+              "japanese": "薬局（やっきょく）= apotek",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "科",
+          "onyomi": [
+            "カ"
+          ],
+          "kunyomi": [],
+          "meaning": "bagian/bidang",
+          "examples": [
+            {
+              "japanese": "科（か）= departemen",
+              "meaning": ""
+            },
+            {
+              "japanese": "科学（かがく）= sains",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "内",
+          "onyomi": [
+            "ナイ",
+            "ダイ"
+          ],
+          "kunyomi": [
+            "うち"
+          ],
+          "meaning": "dalam",
+          "examples": [
+            {
+              "japanese": "国内（こくない）= dalam negeri",
+              "meaning": ""
+            },
+            {
+              "japanese": "家内（かない）= istri (istilah lama/formal)",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "category": "時",
+      "kanji": [
+        {
+          "kanji": "朝",
+          "onyomi": [
+            "チョウ"
+          ],
+          "kunyomi": [
+            "あさ"
+          ],
+          "meaning": "pagi",
+          "examples": [
+            {
+              "japanese": "朝（あさ）= pagi",
+              "meaning": ""
+            },
+            {
+              "japanese": "今朝（けさ）= pagi ini",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "昼",
+          "onyomi": [
+            "チュウ"
+          ],
+          "kunyomi": [
+            "ひる"
+          ],
+          "meaning": "siang",
+          "examples": [
+            {
+              "japanese": "昼（ひる）= siang",
+              "meaning": ""
+            },
+            {
+              "japanese": "昼食（ちゅうしょく）= makan siang",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "夜",
+          "onyomi": [
+            "ヤ",
+            "ヤク"
+          ],
+          "kunyomi": [
+            "よる",
+            "よ"
+          ],
+          "meaning": "malam",
+          "examples": [
+            {
+              "japanese": "夜（よる）= malam",
+              "meaning": ""
+            },
+            {
+              "japanese": "今夜（こんや）= malam ini",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "夕",
+          "onyomi": [
+            "セキ"
+          ],
+          "kunyomi": [
+            "ゆう"
+          ],
+          "meaning": "sore",
+          "examples": [
+            {
+              "japanese": "夕方（ゆうがた）= sore",
+              "meaning": ""
+            },
+            {
+              "japanese": "夕食（ゆうしょく）= makan malam",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "方",
+          "onyomi": [
+            "ホウ"
+          ],
+          "kunyomi": [
+            "かた"
+          ],
+          "meaning": "arah/cara/orang",
+          "examples": [
+            {
+              "japanese": "方法（ほうほう）= metode",
+              "meaning": ""
+            },
+            {
+              "japanese": "夕方（ゆうがた）= sore",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "晩",
+          "onyomi": [
+            "バン"
+          ],
+          "kunyomi": [],
+          "meaning": "malam",
+          "examples": [
+            {
+              "japanese": "今晩（こんばん）= malam ini",
+              "meaning": ""
+            },
+            {
+              "japanese": "晩ご飯（ばんごはん）= makan malam",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "計",
+          "onyomi": [
+            "ケイ"
+          ],
+          "kunyomi": [
+            "はかる"
+          ],
+          "meaning": "mengukur/rencana",
+          "examples": [
+            {
+              "japanese": "時計（とけい）= jam",
+              "meaning": ""
+            },
+            {
+              "japanese": "計画（けいかく）= rencana",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "曜",
+          "onyomi": [
+            "ヨウ"
+          ],
+          "kunyomi": [],
+          "meaning": "hari dalam minggu",
+          "examples": [
+            {
+              "japanese": "曜日（ようび）= hari dalam minggu",
+              "meaning": ""
+            },
+            {
+              "japanese": "月曜日（げつようび）= Senin",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "以",
+          "onyomi": [
+            "イ"
+          ],
+          "kunyomi": [
+            "もって"
+          ],
+          "meaning": "dengan/sejak/lebih dari",
+          "examples": [
+            {
+              "japanese": "以上（いじょう）= lebih dari/sekurang-kurangnya",
+              "meaning": ""
+            },
+            {
+              "japanese": "以前（いぜん）= sebelumnya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "度",
+          "onyomi": [
+            "ド",
+            "ト",
+            "タク"
+          ],
+          "kunyomi": [
+            "たび"
+          ],
+          "meaning": "derajat/kali",
+          "examples": [
+            {
+              "japanese": "一度（いちど）= sekali",
+              "meaning": ""
+            },
+            {
+              "japanese": "温度（おんど）= suhu",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "category": "動詞1",
+      "kanji": [
+        {
+          "kanji": "止",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "とまる",
+            "とめる"
+          ],
+          "meaning": "berhenti",
+          "examples": [
+            {
+              "japanese": "止まる（とまる）= berhenti",
+              "meaning": ""
+            },
+            {
+              "japanese": "禁止（きんし）= larangan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "歩",
+          "onyomi": [
+            "ホ",
+            "ブ",
+            "フ"
+          ],
+          "kunyomi": [
+            "あるく",
+            "あゆむ"
+          ],
+          "meaning": "berjalan",
+          "examples": [
+            {
+              "japanese": "歩く（あるく）= berjalan",
+              "meaning": ""
+            },
+            {
+              "japanese": "散歩（さんぽ）= jalan-jalan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "走",
+          "onyomi": [
+            "ソウ"
+          ],
+          "kunyomi": [
+            "はしる"
+          ],
+          "meaning": "berlari",
+          "examples": [
+            {
+              "japanese": "走る（はしる）= berlari",
+              "meaning": ""
+            },
+            {
+              "japanese": "競走（きょうそう）= perlombaan lari",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "起",
+          "onyomi": [
+            "キ"
+          ],
+          "kunyomi": [
+            "おきる",
+            "おこす"
+          ],
+          "meaning": "bangun/membangunkan",
+          "examples": [
+            {
+              "japanese": "起きる（おきる）= bangun",
+              "meaning": ""
+            },
+            {
+              "japanese": "起こす（おこす）= membangunkan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "持",
+          "onyomi": [
+            "ジ"
+          ],
+          "kunyomi": [
+            "もつ"
+          ],
+          "meaning": "memegang/memiliki",
+          "examples": [
+            {
+              "japanese": "持つ（もつ）= memegang",
+              "meaning": ""
+            },
+            {
+              "japanese": "気持ち（きもち）= perasaan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "待",
+          "onyomi": [
+            "タイ"
+          ],
+          "kunyomi": [
+            "まつ"
+          ],
+          "meaning": "menunggu",
+          "examples": [
+            {
+              "japanese": "待つ（まつ）= menunggu",
+              "meaning": ""
+            },
+            {
+              "japanese": "待合室（まちあいしつ）= ruang tunggu",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "借",
+          "onyomi": [
+            "シャク"
+          ],
+          "kunyomi": [
+            "かりる"
+          ],
+          "meaning": "meminjam",
+          "examples": [
+            {
+              "japanese": "借りる（かりる）= meminjam",
+              "meaning": ""
+            },
+            {
+              "japanese": "借金（しゃっきん）= utang",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "貸",
+          "onyomi": [
+            "タイ"
+          ],
+          "kunyomi": [
+            "かす"
+          ],
+          "meaning": "meminjamkan",
+          "examples": [
+            {
+              "japanese": "貸す（かす）= meminjamkan",
+              "meaning": ""
+            },
+            {
+              "japanese": "貸し出す（かしだす）= meminjamkan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "始",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "はじまる",
+            "はじめる"
+          ],
+          "meaning": "mulai",
+          "examples": [
+            {
+              "japanese": "始まる（はじまる）= dimulai",
+              "meaning": ""
+            },
+            {
+              "japanese": "始める（はじめる）= memulai",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "終",
+          "onyomi": [
+            "シュウ"
+          ],
+          "kunyomi": [
+            "おわる",
+            "おえる"
+          ],
+          "meaning": "selesai",
+          "examples": [
+            {
+              "japanese": "終わる（おわる）= selesai",
+              "meaning": ""
+            },
+            {
+              "japanese": "終了（しゅうりょう）= penyelesaian",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "category": "家族",
+      "kanji": [
+        {
+          "kanji": "家",
+          "onyomi": [
+            "カ",
+            "ケ"
+          ],
+          "kunyomi": [
+            "いえ",
+            "うち",
+            "や"
+          ],
+          "meaning": "rumah/keluarga",
+          "examples": [
+            {
+              "japanese": "家（いえ）= rumah",
+              "meaning": ""
+            },
+            {
+              "japanese": "家族（かぞく）= keluarga",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "族",
+          "onyomi": [
+            "ゾク"
+          ],
+          "kunyomi": [],
+          "meaning": "keluarga/suku",
+          "examples": [
+            {
+              "japanese": "家族（かぞく）= keluarga",
+              "meaning": ""
+            },
+            {
+              "japanese": "水族館（すいぞくかん）= akuarium",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "私",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "わたし",
+            "わたくし"
+          ],
+          "meaning": "saya",
+          "examples": [
+            {
+              "japanese": "私（わたし）= saya",
+              "meaning": ""
+            },
+            {
+              "japanese": "私立（しりつ）= swasta",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "自",
+          "onyomi": [
+            "ジ",
+            "シ"
+          ],
+          "kunyomi": [
+            "みずから"
+          ],
+          "meaning": "diri/sendiri",
+          "examples": [
+            {
+              "japanese": "自分（じぶん）= diri sendiri",
+              "meaning": ""
+            },
+            {
+              "japanese": "自然（しぜん）= alam",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "親",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "おや",
+            "したしい"
+          ],
+          "meaning": "orang tua/akrab",
+          "examples": [
+            {
+              "japanese": "親（おや）= orang tua",
+              "meaning": ""
+            },
+            {
+              "japanese": "両親（りょうしん）= kedua orang tua",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "両",
+          "onyomi": [
+            "リョウ"
+          ],
+          "kunyomi": [],
+          "meaning": "kedua",
+          "examples": [
+            {
+              "japanese": "両親（りょうしん）= kedua orang tua",
+              "meaning": ""
+            },
+            {
+              "japanese": "両方（りょうほう）= keduanya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "兄",
+          "onyomi": [
+            "ケイ",
+            "キョウ"
+          ],
+          "kunyomi": [
+            "あに"
+          ],
+          "meaning": "kakak laki-laki",
+          "examples": [
+            {
+              "japanese": "兄（あに）= kakak laki-laki",
+              "meaning": ""
+            },
+            {
+              "japanese": "兄弟（きょうだい）= saudara",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "弟",
+          "onyomi": [
+            "テイ",
+            "ダイ",
+            "デ"
+          ],
+          "kunyomi": [
+            "おとうと"
+          ],
+          "meaning": "adik laki-laki",
+          "examples": [
+            {
+              "japanese": "弟（おとうと）= adik laki-laki",
+              "meaning": ""
+            },
+            {
+              "japanese": "兄弟（きょうだい）= saudara",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "姉",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "あね"
+          ],
+          "meaning": "kakak perempuan",
+          "examples": [
+            {
+              "japanese": "姉（あね）= kakak perempuan",
+              "meaning": ""
+            },
+            {
+              "japanese": "姉妹（しまい）= saudara perempuan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "妹",
+          "onyomi": [
+            "マイ"
+          ],
+          "kunyomi": [
+            "いもうと"
+          ],
+          "meaning": "adik perempuan",
+          "examples": [
+            {
+              "japanese": "妹（いもうと）= adik perempuan",
+              "meaning": ""
+            },
+            {
+              "japanese": "姉妹（しまい）= saudara perempuan",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "category": "生活",
+      "kanji": [
+        {
+          "kanji": "活",
+          "onyomi": [
+            "カツ"
+          ],
+          "kunyomi": [
+            "いきる",
+            "いかす"
+          ],
+          "meaning": "hidup/aktif",
+          "examples": [
+            {
+              "japanese": "生活（せいかつ）= kehidupan",
+              "meaning": ""
+            },
+            {
+              "japanese": "活動（かつどう）= aktivitas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "回",
+          "onyomi": [
+            "カイ",
+            "エ"
+          ],
+          "kunyomi": [
+            "まわる",
+            "まわす"
+          ],
+          "meaning": "putaran/berkeliling",
+          "examples": [
+            {
+              "japanese": "回る（まわる）= berputar",
+              "meaning": ""
+            },
+            {
+              "japanese": "回答（かいとう）= jawaban",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "主",
+          "onyomi": [
+            "シュ",
+            "ス"
+          ],
+          "kunyomi": [
+            "おも",
+            "ぬし"
+          ],
+          "meaning": "utama/tuan",
+          "examples": [
+            {
+              "japanese": "主人（しゅじん）= suami/tuan rumah",
+              "meaning": ""
+            },
+            {
+              "japanese": "主な（おもな）= utama",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "色",
+          "onyomi": [
+            "ショク",
+            "シキ"
+          ],
+          "kunyomi": [
+            "いろ"
+          ],
+          "meaning": "warna",
+          "examples": [
+            {
+              "japanese": "色（いろ）= warna",
+              "meaning": ""
+            },
+            {
+              "japanese": "色々（いろいろ）= berbagai macam",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "形",
+          "onyomi": [
+            "ケイ",
+            "ギョウ"
+          ],
+          "kunyomi": [
+            "かたち",
+            "かた"
+          ],
+          "meaning": "bentuk",
+          "examples": [
+            {
+              "japanese": "形（かたち）= bentuk",
+              "meaning": ""
+            },
+            {
+              "japanese": "人形（にんぎょう）= boneka",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "品",
+          "onyomi": [
+            "ヒン",
+            "ホン"
+          ],
+          "kunyomi": [
+            "しな"
+          ],
+          "meaning": "barang/kualitas",
+          "examples": [
+            {
+              "japanese": "品物（しなもの）= barang",
+              "meaning": ""
+            },
+            {
+              "japanese": "商品（しょうひん）= produk",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "民",
+          "onyomi": [
+            "ミン"
+          ],
+          "kunyomi": [
+            "たみ"
+          ],
+          "meaning": "rakyat",
+          "examples": [
+            {
+              "japanese": "国民（こくみん）= rakyat",
+              "meaning": ""
+            },
+            {
+              "japanese": "民間（みんかん）= swasta",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "服",
+          "onyomi": [
+            "フク"
+          ],
+          "kunyomi": [],
+          "meaning": "pakaian",
+          "examples": [
+            {
+              "japanese": "服（ふく）= pakaian",
+              "meaning": ""
+            },
+            {
+              "japanese": "洋服（ようふく）= pakaian gaya Barat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "犬",
+          "onyomi": [
+            "ケン"
+          ],
+          "kunyomi": [
+            "いぬ"
+          ],
+          "meaning": "anjing",
+          "examples": [
+            {
+              "japanese": "犬（いぬ）= anjing",
+              "meaning": ""
+            },
+            {
+              "japanese": "子犬（こいぬ）= anak anjing",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "同",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [
+            "おなじ"
+          ],
+          "meaning": "sama",
+          "examples": [
+            {
+              "japanese": "同じ（おなじ）= sama",
+              "meaning": ""
+            },
+            {
+              "japanese": "同時（どうじ）= bersamaan",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "category": "食べ物",
+      "kanji": [
+        {
+          "kanji": "米",
+          "onyomi": [
+            "ベイ",
+            "マイ"
+          ],
+          "kunyomi": [
+            "こめ"
+          ],
+          "meaning": "beras",
+          "examples": [
+            {
+              "japanese": "米（こめ）= beras",
+              "meaning": ""
+            },
+            {
+              "japanese": "米国（べいこく）= Amerika Serikat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "料",
+          "onyomi": [
+            "リョウ"
+          ],
+          "kunyomi": [],
+          "meaning": "bahan/biaya",
+          "examples": [
+            {
+              "japanese": "料理（りょうり）= masakan",
+              "meaning": ""
+            },
+            {
+              "japanese": "料金（りょうきん）= biaya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "理",
+          "onyomi": [
+            "リ"
+          ],
+          "kunyomi": [],
+          "meaning": "alasan/logika",
+          "examples": [
+            {
+              "japanese": "料理（りょうり）= masakan",
+              "meaning": ""
+            },
+            {
+              "japanese": "理由（りゆう）= alasan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "肉",
+          "onyomi": [
+            "ニク"
+          ],
+          "kunyomi": [],
+          "meaning": "daging",
+          "examples": [
+            {
+              "japanese": "肉（にく）= daging",
+              "meaning": ""
+            },
+            {
+              "japanese": "牛肉（ぎゅうにく）= daging sapi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "鳥",
+          "onyomi": [
+            "チョウ"
+          ],
+          "kunyomi": [
+            "とり"
+          ],
+          "meaning": "burung",
+          "examples": [
+            {
+              "japanese": "鳥（とり）= burung",
+              "meaning": ""
+            },
+            {
+              "japanese": "鶏肉（とりにく）= daging ayam",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "野",
+          "onyomi": [
+            "ヤ"
+          ],
+          "kunyomi": [
+            "の"
+          ],
+          "meaning": "lapangan/liar",
+          "examples": [
+            {
+              "japanese": "野菜（やさい）= sayuran",
+              "meaning": ""
+            },
+            {
+              "japanese": "野原（のはら）= padang",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "菜",
+          "onyomi": [
+            "サイ"
+          ],
+          "kunyomi": [
+            "な"
+          ],
+          "meaning": "sayuran",
+          "examples": [
+            {
+              "japanese": "野菜（やさい）= sayuran",
+              "meaning": ""
+            },
+            {
+              "japanese": "菜食（さいしょく）= vegetarian",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "茶",
+          "onyomi": [
+            "チャ",
+            "サ"
+          ],
+          "kunyomi": [],
+          "meaning": "teh",
+          "examples": [
+            {
+              "japanese": "お茶（おちゃ）= teh",
+              "meaning": ""
+            },
+            {
+              "japanese": "茶色（ちゃいろ）= cokelat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "飯",
+          "onyomi": [
+            "ハン"
+          ],
+          "kunyomi": [
+            "めし"
+          ],
+          "meaning": "nasi/makanan",
+          "examples": [
+            {
+              "japanese": "ご飯（ごはん）= nasi/makan",
+              "meaning": ""
+            },
+            {
+              "japanese": "朝ご飯（あさごはん）= sarapan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "味",
+          "onyomi": [
+            "ミ"
+          ],
+          "kunyomi": [
+            "あじ",
+            "あじわう"
+          ],
+          "meaning": "rasa",
+          "examples": [
+            {
+              "japanese": "味（あじ）= rasa",
+              "meaning": ""
+            },
+            {
+              "japanese": "意味（いみ）= arti",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "category": "部首",
+      "kanji": [
+        {
+          "kanji": "代",
+          "onyomi": [
+            "ダイ",
+            "タイ"
+          ],
+          "kunyomi": [
+            "かえる",
+            "かわる",
+            "よ",
+            "しろ"
+          ],
+          "meaning": "pengganti/zaman",
+          "examples": [
+            {
+              "japanese": "代わる（かわる）= menggantikan",
+              "meaning": ""
+            },
+            {
+              "japanese": "時代（じだい）= zaman",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "使",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "つかう"
+          ],
+          "meaning": "menggunakan",
+          "examples": [
+            {
+              "japanese": "使う（つかう）= menggunakan",
+              "meaning": ""
+            },
+            {
+              "japanese": "大使（たいし）= duta",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "作",
+          "onyomi": [
+            "サク",
+            "サ"
+          ],
+          "kunyomi": [
+            "つくる"
+          ],
+          "meaning": "membuat",
+          "examples": [
+            {
+              "japanese": "作る（つくる）= membuat",
+              "meaning": ""
+            },
+            {
+              "japanese": "作品（さくひん）= karya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "化",
+          "onyomi": [
+            "カ",
+            "ケ"
+          ],
+          "kunyomi": [
+            "ばける",
+            "ばかす"
+          ],
+          "meaning": "perubahan/menjadi",
+          "examples": [
+            {
+              "japanese": "文化（ぶんか）= budaya",
+              "meaning": ""
+            },
+            {
+              "japanese": "化学（かがく）= kimia",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "信",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "しんじる"
+          ],
+          "meaning": "percaya",
+          "examples": [
+            {
+              "japanese": "信じる（しんじる）= percaya",
+              "meaning": ""
+            },
+            {
+              "japanese": "信号（しんごう）= lampu/sinyal",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "進",
+          "onyomi": [
+            "シン"
+          ],
+          "kunyomi": [
+            "すすむ",
+            "すすめる"
+          ],
+          "meaning": "maju",
+          "examples": [
+            {
+              "japanese": "進む（すすむ）= maju",
+              "meaning": ""
+            },
+            {
+              "japanese": "進学（しんがく）= melanjutkan sekolah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "送",
+          "onyomi": [
+            "ソウ"
+          ],
+          "kunyomi": [
+            "おくる"
+          ],
+          "meaning": "mengirim/mengantar",
+          "examples": [
+            {
+              "japanese": "送る（おくる）= mengirim",
+              "meaning": ""
+            },
+            {
+              "japanese": "放送（ほうそう）= siaran",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "返",
+          "onyomi": [
+            "ヘン"
+          ],
+          "kunyomi": [
+            "かえす",
+            "かえる"
+          ],
+          "meaning": "mengembalikan",
+          "examples": [
+            {
+              "japanese": "返す（かえす）= mengembalikan",
+              "meaning": ""
+            },
+            {
+              "japanese": "返事（へんじ）= balasan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "洗",
+          "onyomi": [
+            "セン"
+          ],
+          "kunyomi": [
+            "あらう"
+          ],
+          "meaning": "mencuci",
+          "examples": [
+            {
+              "japanese": "洗う（あらう）= mencuci",
+              "meaning": ""
+            },
+            {
+              "japanese": "洗濯（せんたく）= mencuci pakaian",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "注",
+          "onyomi": [
+            "チュウ"
+          ],
+          "kunyomi": [
+            "そそぐ"
+          ],
+          "meaning": "menuangkan/perhatian",
+          "examples": [
+            {
+              "japanese": "注意（ちゅうい）= perhatian/hati-hati",
+              "meaning": ""
+            },
+            {
+              "japanese": "注文（ちゅうもん）= pesanan",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 16,
+      "category": "場所",
+      "kanji": [
+        {
+          "kanji": "場",
+          "onyomi": [
+            "ジョウ"
+          ],
+          "kunyomi": [
+            "ば"
+          ],
+          "meaning": "tempat",
+          "examples": [
+            {
+              "japanese": "場所（ばしょ）= tempat",
+              "meaning": ""
+            },
+            {
+              "japanese": "場所（ばしょ）= lokasi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "建",
+          "onyomi": [
+            "ケン",
+            "コン"
+          ],
+          "kunyomi": [
+            "たてる",
+            "たつ"
+          ],
+          "meaning": "membangun",
+          "examples": [
+            {
+              "japanese": "建物（たてもの）= bangunan",
+              "meaning": ""
+            },
+            {
+              "japanese": "建てる（たてる）= membangun",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "物",
+          "onyomi": [
+            "ブツ",
+            "モツ"
+          ],
+          "kunyomi": [
+            "もの"
+          ],
+          "meaning": "benda",
+          "examples": [
+            {
+              "japanese": "建物（たてもの）= bangunan",
+              "meaning": ""
+            },
+            {
+              "japanese": "食べ物（たべもの）= makanan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "院",
+          "onyomi": [
+            "イン"
+          ],
+          "kunyomi": [],
+          "meaning": "institusi",
+          "examples": [
+            {
+              "japanese": "病院（びょういん）= rumah sakit",
+              "meaning": ""
+            },
+            {
+              "japanese": "大学院（だいがくいん）= sekolah pascasarjana",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "館",
+          "onyomi": [
+            "カン"
+          ],
+          "kunyomi": [
+            "やかた"
+          ],
+          "meaning": "gedung/bangunan",
+          "examples": [
+            {
+              "japanese": "図書館（としょかん）= perpustakaan",
+              "meaning": ""
+            },
+            {
+              "japanese": "映画館（えいがかん）= bioskop",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "堂",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [],
+          "meaning": "aula",
+          "examples": [
+            {
+              "japanese": "食堂（しょくどう）= kantin",
+              "meaning": ""
+            },
+            {
+              "japanese": "講堂（こうどう）= aula",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "室",
+          "onyomi": [
+            "シツ"
+          ],
+          "kunyomi": [
+            "むろ"
+          ],
+          "meaning": "ruang",
+          "examples": [
+            {
+              "japanese": "教室（きょうしつ）= ruang kelas",
+              "meaning": ""
+            },
+            {
+              "japanese": "部屋（へや）= kamar",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "工",
+          "onyomi": [
+            "コウ",
+            "ク"
+          ],
+          "kunyomi": [],
+          "meaning": "konstruksi/kerja",
+          "examples": [
+            {
+              "japanese": "工場（こうじょう）= pabrik",
+              "meaning": ""
+            },
+            {
+              "japanese": "工事（こうじ）= pekerjaan konstruksi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "図",
+          "onyomi": [
+            "ズ",
+            "ト"
+          ],
+          "kunyomi": [
+            "はかる"
+          ],
+          "meaning": "gambar/rencana",
+          "examples": [
+            {
+              "japanese": "地図（ちず）= peta",
+              "meaning": ""
+            },
+            {
+              "japanese": "図書館（としょかん）= perpustakaan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "号",
+          "onyomi": [
+            "ゴウ"
+          ],
+          "kunyomi": [],
+          "meaning": "nomor/tanda",
+          "examples": [
+            {
+              "japanese": "番号（ばんごう）= nomor",
+              "meaning": ""
+            },
+            {
+              "japanese": "信号（しんごう）= sinyal",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 17,
+      "category": "交通",
+      "kanji": [
+        {
+          "kanji": "交",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "まじわる",
+            "まじえる",
+            "かう",
+            "かわす"
+          ],
+          "meaning": "bergaul/bersilangan",
+          "examples": [
+            {
+              "japanese": "交通（こうつう）= lalu lintas",
+              "meaning": ""
+            },
+            {
+              "japanese": "交換（こうかん）= pertukaran",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "通",
+          "onyomi": [
+            "ツウ",
+            "ツ"
+          ],
+          "kunyomi": [
+            "とおる",
+            "とおす",
+            "かよう"
+          ],
+          "meaning": "melewati/lalu lintas",
+          "examples": [
+            {
+              "japanese": "交通（こうつう）= lalu lintas",
+              "meaning": ""
+            },
+            {
+              "japanese": "通る（とおる）= melewati",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "動",
+          "onyomi": [
+            "ドウ"
+          ],
+          "kunyomi": [
+            "うごく",
+            "うごかす"
+          ],
+          "meaning": "bergerak",
+          "examples": [
+            {
+              "japanese": "動く（うごく）= bergerak",
+              "meaning": ""
+            },
+            {
+              "japanese": "運動（うんどう）= olahraga",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "乗",
+          "onyomi": [
+            "ジョウ"
+          ],
+          "kunyomi": [
+            "のる",
+            "のせる"
+          ],
+          "meaning": "naik",
+          "examples": [
+            {
+              "japanese": "乗る（のる）= naik",
+              "meaning": ""
+            },
+            {
+              "japanese": "乗車（じょうしゃ）= naik kendaraan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "降",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "おりる",
+            "おろす",
+            "ふる"
+          ],
+          "meaning": "turun",
+          "examples": [
+            {
+              "japanese": "降りる（おりる）= turun",
+              "meaning": ""
+            },
+            {
+              "japanese": "降る（ふる）= turun (hujan/salju)",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "運",
+          "onyomi": [
+            "ウン"
+          ],
+          "kunyomi": [
+            "はこぶ"
+          ],
+          "meaning": "membawa/keberuntungan",
+          "examples": [
+            {
+              "japanese": "運ぶ（はこぶ）= membawa",
+              "meaning": ""
+            },
+            {
+              "japanese": "運転（うんてん）= mengemudi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "転",
+          "onyomi": [
+            "テン"
+          ],
+          "kunyomi": [
+            "ころぶ",
+            "ころがる",
+            "ころがす"
+          ],
+          "meaning": "berputar/jatuh",
+          "examples": [
+            {
+              "japanese": "運転（うんてん）= mengemudi",
+              "meaning": ""
+            },
+            {
+              "japanese": "自転車（じてんしゃ）= sepeda",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "帰",
+          "onyomi": [
+            "キ"
+          ],
+          "kunyomi": [
+            "かえる",
+            "かえす"
+          ],
+          "meaning": "pulang",
+          "examples": [
+            {
+              "japanese": "帰る（かえる）= pulang",
+              "meaning": ""
+            },
+            {
+              "japanese": "帰国（きこく）= pulang ke negara asal",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "発",
+          "onyomi": [
+            "ハツ",
+            "ホツ"
+          ],
+          "kunyomi": [
+            "たつ",
+            "あばく"
+          ],
+          "meaning": "berangkat/muncul",
+          "examples": [
+            {
+              "japanese": "出発（しゅっぱつ）= keberangkatan",
+              "meaning": ""
+            },
+            {
+              "japanese": "発車（はっしゃ）= kendaraan berangkat",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "着",
+          "onyomi": [
+            "チャク",
+            "ジャク"
+          ],
+          "kunyomi": [
+            "きる",
+            "きせる",
+            "つく",
+            "つける"
+          ],
+          "meaning": "tiba/memakai",
+          "examples": [
+            {
+              "japanese": "着く（つく）= tiba",
+              "meaning": ""
+            },
+            {
+              "japanese": "着る（きる）= memakai",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 18,
+      "category": "学校1",
+      "kanji": [
+        {
+          "kanji": "漢",
+          "onyomi": [
+            "カン"
+          ],
+          "kunyomi": [],
+          "meaning": "Kanji/Han",
+          "examples": [
+            {
+              "japanese": "漢字（かんじ）= kanji",
+              "meaning": ""
+            },
+            {
+              "japanese": "漢語（かんご）= kata Sino-Jepang",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "字",
+          "onyomi": [
+            "ジ"
+          ],
+          "kunyomi": [
+            "あざ"
+          ],
+          "meaning": "huruf/karakter",
+          "examples": [
+            {
+              "japanese": "漢字（かんじ）= kanji",
+              "meaning": ""
+            },
+            {
+              "japanese": "文字（もじ）= karakter",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "文",
+          "onyomi": [
+            "ブン",
+            "モン"
+          ],
+          "kunyomi": [
+            "ふみ"
+          ],
+          "meaning": "kalimat/tulisan",
+          "examples": [
+            {
+              "japanese": "作文（さくぶん）= karangan",
+              "meaning": ""
+            },
+            {
+              "japanese": "文章（ぶんしょう）= teks",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "教",
+          "onyomi": [
+            "キョウ"
+          ],
+          "kunyomi": [
+            "おしえる",
+            "おそわる"
+          ],
+          "meaning": "mengajar/belajar",
+          "examples": [
+            {
+              "japanese": "教える（おしえる）= mengajar",
+              "meaning": ""
+            },
+            {
+              "japanese": "教室（きょうしつ）= ruang kelas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "勉",
+          "onyomi": [
+            "ベン"
+          ],
+          "kunyomi": [],
+          "meaning": "berusaha/tekun",
+          "examples": [
+            {
+              "japanese": "勉強（べんきょう）= belajar",
+              "meaning": ""
+            },
+            {
+              "japanese": "勉強する",
+              "meaning": "belajar"
+            }
+          ]
+        },
+        {
+          "kanji": "習",
+          "onyomi": [
+            "シュウ"
+          ],
+          "kunyomi": [
+            "ならう"
+          ],
+          "meaning": "belajar/berlatih",
+          "examples": [
+            {
+              "japanese": "習う（ならう）= belajar",
+              "meaning": ""
+            },
+            {
+              "japanese": "練習（れんしゅう）= latihan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "英",
+          "onyomi": [
+            "エイ"
+          ],
+          "kunyomi": [],
+          "meaning": "Inggris",
+          "examples": [
+            {
+              "japanese": "英語（えいご）= bahasa Inggris",
+              "meaning": ""
+            },
+            {
+              "japanese": "英国（えいこく）= Inggris",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "考",
+          "onyomi": [
+            "コウ"
+          ],
+          "kunyomi": [
+            "かんがえる"
+          ],
+          "meaning": "berpikir",
+          "examples": [
+            {
+              "japanese": "考える（かんがえる）= berpikir",
+              "meaning": ""
+            },
+            {
+              "japanese": "考え（かんがえ）= pemikiran",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "研",
+          "onyomi": [
+            "ケン"
+          ],
+          "kunyomi": [
+            "とぐ"
+          ],
+          "meaning": "meneliti/mengasah",
+          "examples": [
+            {
+              "japanese": "研究（けんきゅう）= penelitian",
+              "meaning": ""
+            },
+            {
+              "japanese": "研究室（けんきゅうしつ）= laboratorium/ruang riset",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "究",
+          "onyomi": [
+            "キュウ"
+          ],
+          "kunyomi": [
+            "きわめる"
+          ],
+          "meaning": "menyelidiki/mendalami",
+          "examples": [
+            {
+              "japanese": "研究（けんきゅう）= penelitian",
+              "meaning": ""
+            },
+            {
+              "japanese": "究極（きゅうきょく）= ekstrem/ultimate",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 19,
+      "category": "学校2",
+      "kanji": [
+        {
+          "kanji": "問",
+          "onyomi": [
+            "モン"
+          ],
+          "kunyomi": [
+            "とう",
+            "とい",
+            "とん"
+          ],
+          "meaning": "bertanya/masalah",
+          "examples": [
+            {
+              "japanese": "問題（もんだい）= masalah",
+              "meaning": ""
+            },
+            {
+              "japanese": "問う（とう）= bertanya",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "題",
+          "onyomi": [
+            "ダイ"
+          ],
+          "kunyomi": [],
+          "meaning": "topik/soal",
+          "examples": [
+            {
+              "japanese": "問題（もんだい）= masalah",
+              "meaning": ""
+            },
+            {
+              "japanese": "題名（だいめい）= judul",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "試",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "ためす",
+            "こころみる"
+          ],
+          "meaning": "mencoba/ujian",
+          "examples": [
+            {
+              "japanese": "試験（しけん）= ujian",
+              "meaning": ""
+            },
+            {
+              "japanese": "試す（ためす）= mencoba",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "験",
+          "onyomi": [
+            "ケン",
+            "ゲン"
+          ],
+          "kunyomi": [],
+          "meaning": "ujian/pengalaman",
+          "examples": [
+            {
+              "japanese": "試験（しけん）= ujian",
+              "meaning": ""
+            },
+            {
+              "japanese": "経験（けいけん）= pengalaman",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "質",
+          "onyomi": [
+            "シツ",
+            "シチ",
+            "チ"
+          ],
+          "kunyomi": [
+            "たち"
+          ],
+          "meaning": "kualitas/sifat",
+          "examples": [
+            {
+              "japanese": "質問（しつもん）= pertanyaan",
+              "meaning": ""
+            },
+            {
+              "japanese": "品質（ひんしつ）= kualitas",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "合",
+          "onyomi": [
+            "ゴウ",
+            "ガッ",
+            "カッ"
+          ],
+          "kunyomi": [
+            "あう",
+            "あわせる"
+          ],
+          "meaning": "cocok/bergabung",
+          "examples": [
+            {
+              "japanese": "合う（あう）= cocok",
+              "meaning": ""
+            },
+            {
+              "japanese": "合格（ごうかく）= lulus",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "答",
+          "onyomi": [
+            "トウ"
+          ],
+          "kunyomi": [
+            "こたえる",
+            "こたえ"
+          ],
+          "meaning": "jawaban",
+          "examples": [
+            {
+              "japanese": "答える（こたえる）= menjawab",
+              "meaning": ""
+            },
+            {
+              "japanese": "答え（こたえ）= jawaban",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "用",
+          "onyomi": [
+            "ヨウ"
+          ],
+          "kunyomi": [
+            "もちいる"
+          ],
+          "meaning": "menggunakan/kegunaan",
+          "examples": [
+            {
+              "japanese": "用事（ようじ）= urusan",
+              "meaning": ""
+            },
+            {
+              "japanese": "使用（しよう）= penggunaan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "紙",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "かみ"
+          ],
+          "meaning": "kertas",
+          "examples": [
+            {
+              "japanese": "紙（かみ）= kertas",
+              "meaning": ""
+            },
+            {
+              "japanese": "用紙（ようし）= lembar/formulir",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "意",
+          "onyomi": [
+            "イ"
+          ],
+          "kunyomi": [],
+          "meaning": "niat/makna",
+          "examples": [
+            {
+              "japanese": "意味（いみ）= arti",
+              "meaning": ""
+            },
+            {
+              "japanese": "意見（いけん）= pendapat",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 20,
+      "category": "動詞2",
+      "kanji": [
+        {
+          "kanji": "引",
+          "onyomi": [
+            "イン"
+          ],
+          "kunyomi": [
+            "ひく",
+            "ひける"
+          ],
+          "meaning": "menarik",
+          "examples": [
+            {
+              "japanese": "引く（ひく）= menarik",
+              "meaning": ""
+            },
+            {
+              "japanese": "引っ越す（ひっこす）= pindah rumah",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "開",
+          "onyomi": [
+            "カイ"
+          ],
+          "kunyomi": [
+            "あく",
+            "あける",
+            "ひらく",
+            "ひらける"
+          ],
+          "meaning": "membuka",
+          "examples": [
+            {
+              "japanese": "開く（あく）= terbuka",
+              "meaning": ""
+            },
+            {
+              "japanese": "開ける（あける）= membuka",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "閉",
+          "onyomi": [
+            "ヘイ"
+          ],
+          "kunyomi": [
+            "しまる",
+            "しめる",
+            "とじる",
+            "とざす"
+          ],
+          "meaning": "menutup",
+          "examples": [
+            {
+              "japanese": "閉まる（しまる）= tertutup",
+              "meaning": ""
+            },
+            {
+              "japanese": "閉める（しめる）= menutup",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "去",
+          "onyomi": [
+            "キョ",
+            "コ"
+          ],
+          "kunyomi": [
+            "さる"
+          ],
+          "meaning": "pergi/masa lalu",
+          "examples": [
+            {
+              "japanese": "去年（きょねん）= tahun lalu",
+              "meaning": ""
+            },
+            {
+              "japanese": "去る（さる）= pergi",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "死",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "しぬ"
+          ],
+          "meaning": "mati",
+          "examples": [
+            {
+              "japanese": "死ぬ（しぬ）= mati",
+              "meaning": ""
+            },
+            {
+              "japanese": "死亡（しぼう）= kematian",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "集",
+          "onyomi": [
+            "シュウ"
+          ],
+          "kunyomi": [
+            "あつまる",
+            "あつめる",
+            "つどう"
+          ],
+          "meaning": "berkumpul/mengumpulkan",
+          "examples": [
+            {
+              "japanese": "集まる（あつまる）= berkumpul",
+              "meaning": ""
+            },
+            {
+              "japanese": "集める（あつめる）= mengumpulkan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "知",
+          "onyomi": [
+            "チ"
+          ],
+          "kunyomi": [
+            "しる",
+            "しらせる"
+          ],
+          "meaning": "tahu",
+          "examples": [
+            {
+              "japanese": "知る（しる）= tahu",
+              "meaning": ""
+            },
+            {
+              "japanese": "知識（ちしき）= pengetahuan",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "売",
+          "onyomi": [
+            "バイ"
+          ],
+          "kunyomi": [
+            "うる",
+            "うれる"
+          ],
+          "meaning": "menjual",
+          "examples": [
+            {
+              "japanese": "売る（うる）= menjual",
+              "meaning": ""
+            },
+            {
+              "japanese": "売店（ばいてん）= kios",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "説",
+          "onyomi": [
+            "セツ",
+            "ゼイ"
+          ],
+          "kunyomi": [
+            "とく"
+          ],
+          "meaning": "menjelaskan/teori",
+          "examples": [
+            {
+              "japanese": "説明（せつめい）= penjelasan",
+              "meaning": ""
+            },
+            {
+              "japanese": "小説（しょうせつ）= novel",
+              "meaning": ""
+            }
+          ]
+        },
+        {
+          "kanji": "思",
+          "onyomi": [
+            "シ"
+          ],
+          "kunyomi": [
+            "おもう"
+          ],
+          "meaning": "berpikir/merasa",
+          "examples": [
+            {
+              "japanese": "思う（おもう）= berpikir/merasa",
+              "meaning": ""
+            },
+            {
+              "japanese": "思い出す（おもいだす）= mengingat",
+              "meaning": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
