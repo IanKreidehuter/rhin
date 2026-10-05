@@ -11,6 +11,7 @@ const val = v => {
 };
 const dash = v => esc(val(v) || '—');
 const lineHtml = v => (Array.isArray(v) ? v : [v]).map(val).filter(Boolean).map(esc).join('<br>') || '—';
+const kj = w => (val(w.kanji) && val(w.kanji) !== val(w.hiragana)) ? val(w.kanji) : '';
 const typeLabel = t => val(t).replace('/', ' / ');
 
 let KOTOBA = [], KANJI = [], GRAMMAR = [], loadError = false;
@@ -55,6 +56,12 @@ async function load() {
     KANJI = buildKanji(b);
     if (!Array.isArray(KOTOBA) || !KANJI.length) throw new Error('format');
   } catch (e) { loadError = true; }
+  if (!loadError) try {
+    const kl = await (await fetch('./kotoba_lesson_26-35.json')).json();
+    // each lesson becomes a bab named "Lesson N"; lessons come first, thematic bab after
+    const les = (kl.lessons || []).flatMap(l => (l.kotoba || []).map(w => ({ hiragana: w.hiragana, kanji: w.kanji, arti: w.arti, bab: 'Lesson ' + l.lesson })));
+    KOTOBA = les.concat(KOTOBA);
+  } catch (e) { /* lesson file optional: thematic vocabulary still works */ }
   try { const g = await (await fetch('./ALL_GRAMMAR_N4.json')).json(); GRAMMAR = g.pelajaran || []; } catch (e) { GRAMMAR = []; }
   route();
 }
@@ -75,10 +82,10 @@ const GRADS = [['#1ea7ff', '#0a3f9c'], ['#19d3c5', '#0a8fb5'], ['#f6b96b', '#e88
 function homeView() {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const thumbs = babs.map((b, i) => {
-    const words = KOTOBA.filter(w => val(w.bab) === b), first = words.find(w => val(w.kanji));
+    const words = KOTOBA.filter(w => val(w.bab) === b), glyph = (words.map(w => val(w.kanji)).join('').match(/[\u4e00-\u9fff]/) || ['言'])[0];
     const g = GRADS[i % GRADS.length];
     return `<a class="thumb" href="#/kotoba/list/${encodeURIComponent(b)}" style="--c1:${g[0]};--c2:${g[1]}">
-      <div class="pic">${esc(first ? [...val(first.kanji)][0] : '言')}</div><strong>${esc(b)}</strong>
+      <div class="pic">${esc(glyph)}</div><strong>${esc(b)}</strong>
       <div class="meta"><span>${words.length} words</span><span class="play-s">▶</span></div></a>`;
   }).join('');
   const kcs = LESSONS.map((l, i) => {
@@ -93,7 +100,7 @@ function homeView() {
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
       <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
-    <div class="row"><h3>Kotoba by bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
+    <div class="row"><h3>Kotoba by lesson / bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
     <div class="row"><h3>Kanji by lesson</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
 }
 
@@ -101,7 +108,7 @@ const errorView = () => view.innerHTML = `<section class="page"><div class="msg"
 
 const wordMatch = (w, q) => [w.hiragana, w.kanji, w.arti, w.bab, w.type, w.dictionary_form, w.masu_form, w.masu_form_hiragana].some(x => val(x).toLowerCase().includes(q));
 const wordRow = ([w, i]) => `<a class="item" href="#/kotoba/word/${i}"><div class="t">
-  <div class="h">${esc(val(w.hiragana))}</div>${val(w.kanji) ? `<div class="k">${esc(val(w.kanji))}</div>` : ''}
+  <div class="h">${esc(val(w.hiragana))}</div>${kj(w) ? `<div class="k">${esc(kj(w))}</div>` : ''}
   <div class="m">${dash(w.arti)}</div>${val(w.dictionary_form) ? `<div class="df">Dictionary form: <b>${esc(val(w.dictionary_form))}</b></div>` : ''}${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}</div><span class="play-s">▶</span></a>`;
 
 // Kotoba list: search + bab chips + type chips (all built from the JSON)
@@ -135,7 +142,7 @@ function kotobaList(babParam) {
 }
 
 const wordCard = w => `<div class="h">${esc(val(w.hiragana))}</div>
-  ${val(w.kanji) ? `<div class="k w">${esc(val(w.kanji))}</div>` : ''}<div class="m">${dash(w.arti)}</div>
+  ${kj(w) ? `<div class="k w">${esc(kj(w))}</div>` : ''}<div class="m">${dash(w.arti)}</div>
   ${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}`;
 
 // Dictionary / masu forms come straight from the JSON; masu is null for non-verbs and then hidden
