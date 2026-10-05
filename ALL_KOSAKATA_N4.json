@@ -1,0 +1,1773 @@
+{
+  "judul": "ALL - KOSAKATA N4",
+  "deskripsi": "Kosakata dari seluruh bagian/bab yang terbaca pada PDF, disusun sebagai hiragana/kana, kanji, dan arti bahasa Indonesia.",
+  "format": "hiragana/kanji/artinya",
+  "jumlah_kosakata": 294,
+  "sumber": "ALL - KOSAKATA N4.pdf",
+  "kosakata": [
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "ひく",
+      "kanji": "引く",
+      "arti": "menarik"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "おす",
+      "kanji": "押す",
+      "arti": "mendorong"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "ひく",
+      "kanji": "引く",
+      "arti": "masuk angin / menarik"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "じしょを ひく",
+      "kanji": "辞書を 引く",
+      "arti": "mencari di kamus"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "ひく",
+      "kanji": "弾く",
+      "arti": "bermain alat musik"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "ふく",
+      "kanji": "吹く",
+      "arti": "bertiup"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "ふく",
+      "kanji": "拭く",
+      "arti": "mengelap"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "はく",
+      "kanji": "掃く",
+      "arti": "menyapu"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "はく",
+      "kanji": "吐く",
+      "arti": "muntah"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "はく",
+      "kanji": "",
+      "arti": "memakai (sepatu, kaus kaki, rok, dll.)"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "すく",
+      "kanji": "空く",
+      "arti": "kosong / lowong"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "こむ",
+      "kanji": "混む／込む",
+      "arti": "padat / ramai"
+    },
+    {
+      "bab": "ことばが にている／Kosakata yang mirip",
+      "hiragana": "つく",
+      "kanji": "着く",
+      "arti": "tiba / sampai"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "きもち",
+      "kanji": "気持ち",
+      "arti": "perasaan"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "うれしい",
+      "kanji": "",
+      "arti": "senang"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "かなしい",
+      "kanji": "悲しい",
+      "arti": "sedih"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "さびしい",
+      "kanji": "寂しい",
+      "arti": "kesepian"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "つまらない",
+      "kanji": "",
+      "arti": "membosankan"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "おもしろい",
+      "kanji": "面白い",
+      "arti": "menarik"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "はずかしい",
+      "kanji": "恥ずかしい",
+      "arti": "malu"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "きもちわるい",
+      "kanji": "気持ち悪い",
+      "arti": "merasa tidak enak / jijik"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "しかたがない",
+      "kanji": "仕方がない",
+      "arti": "apa boleh buat"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "ざんねんな",
+      "kanji": "残念な",
+      "arti": "sangat disayangkan / mengecewakan"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "いやな",
+      "kanji": "嫌な",
+      "arti": "tidak mau / tidak suka"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "がっかりする",
+      "kanji": "",
+      "arti": "kecewa"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "しんぱいする",
+      "kanji": "心配する",
+      "arti": "khawatir"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "あんしんする",
+      "kanji": "安心する",
+      "arti": "tenang / merasa lega"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "びっくりする",
+      "kanji": "",
+      "arti": "kaget"
+    },
+    {
+      "bab": "気持ちを あらわす ことば／Ungkapan perasaan",
+      "hiragana": "おどろく",
+      "kanji": "驚く",
+      "arti": "kaget / terkejut"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "きぶん",
+      "kanji": "気分",
+      "arti": "perasaan / kondisi tubuh atau hati"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "びょうきになる／する",
+      "kanji": "病気になる／する",
+      "arti": "sakit"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "けがをする",
+      "kanji": "怪我をする",
+      "arti": "terluka"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "だいじょうぶな",
+      "kanji": "大丈夫な",
+      "arti": "tidak apa-apa"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "むりな",
+      "kanji": "無理な",
+      "arti": "tidak mungkin / tidak bisa"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "むりをする",
+      "kanji": "無理をする",
+      "arti": "memaksakan diri"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "やめる",
+      "kanji": "",
+      "arti": "berhenti"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "きがえる",
+      "kanji": "着替える",
+      "arti": "mengganti pakaian"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "はきかえる",
+      "kanji": "履き替える",
+      "arti": "mengganti celana / sepatu"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "いれかえる",
+      "kanji": "入れ替える",
+      "arti": "mengganti / menukar"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "つれていく",
+      "kanji": "連れて行く",
+      "arti": "mengajak / membawa pergi"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "もっていく",
+      "kanji": "持って行く",
+      "arti": "membawa pergi"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "むかえにいく",
+      "kanji": "迎えに行く",
+      "arti": "pergi menjemput"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "おくりにいく",
+      "kanji": "送りに行く",
+      "arti": "pergi mengantar"
+    },
+    {
+      "bab": "まとめて おぼえましょう 1",
+      "hiragana": "べんとう",
+      "kanji": "弁当",
+      "arti": "bento / bekal"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "めがさめる",
+      "kanji": "目が覚める",
+      "arti": "terbangun"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "しゃわーを あびる",
+      "kanji": "シャワーを浴びる",
+      "arti": "mandi"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "みがく",
+      "kanji": "磨く",
+      "arti": "menggosok"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "やる",
+      "kanji": "",
+      "arti": "melakukan"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "やる",
+      "kanji": "",
+      "arti": "memberi"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "おこす",
+      "kanji": "起こす",
+      "arti": "membangunkan"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "かたづける",
+      "kanji": "片付ける",
+      "arti": "merapikan"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "せんたくする",
+      "kanji": "洗濯する",
+      "arti": "mencuci"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "あいろんを かける",
+      "kanji": "アイロンをかける",
+      "arti": "menyetrika"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "でかける",
+      "kanji": "出かける",
+      "arti": "keluar / bepergian"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "かぎを かける",
+      "kanji": "鍵をかける",
+      "arti": "mengunci"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "したく",
+      "kanji": "支度",
+      "arti": "persiapan"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "すてる",
+      "kanji": "捨てる",
+      "arti": "membuang"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "ひろう",
+      "kanji": "拾う",
+      "arti": "memungut"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "そうじする",
+      "kanji": "掃除する",
+      "arti": "membersihkan"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "そうじき",
+      "kanji": "掃除機",
+      "arti": "vacuum cleaner"
+    },
+    {
+      "bab": "日課を あらわす ことば／Rutinitas sehari-hari",
+      "hiragana": "せんたくき",
+      "kanji": "洗濯機",
+      "arti": "mesin cuci"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "はじめは",
+      "kanji": "初めは",
+      "arti": "awalnya"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "はじめて",
+      "kanji": "初めて",
+      "arti": "pertama kali"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "はじめに",
+      "kanji": "始めに",
+      "arti": "pertama-tama"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "おもう",
+      "kanji": "思う",
+      "arti": "berpikir / merasa"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "かんがえる",
+      "kanji": "考える",
+      "arti": "berpikir / mempertimbangkan"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "おぼえる",
+      "kanji": "覚える",
+      "arti": "menghafal / ingat"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "おもいだす",
+      "kanji": "思い出す",
+      "arti": "teringat / mengingat"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "まわる",
+      "kanji": "回る",
+      "arti": "berputar"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "まわす",
+      "kanji": "回す",
+      "arti": "memutar"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "まがる",
+      "kanji": "曲がる",
+      "arti": "belok"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "まげる",
+      "kanji": "曲げる",
+      "arti": "membengkokkan / membelokkan"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "すわる",
+      "kanji": "座る",
+      "arti": "duduk"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "さわる",
+      "kanji": "触る",
+      "arti": "menyentuh"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "なる",
+      "kanji": "",
+      "arti": "menjadi"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "ならう",
+      "kanji": "習う",
+      "arti": "belajar"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "ならぶ",
+      "kanji": "並ぶ",
+      "arti": "berjajar / mengantre"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "ならべる",
+      "kanji": "並べる",
+      "arti": "menjajarkan"
+    },
+    {
+      "bab": "間違いやすい ことば／Kosakata yang mudah salah paham",
+      "hiragana": "なれる",
+      "kanji": "慣れる",
+      "arti": "terbiasa"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "こい",
+      "kanji": "濃い",
+      "arti": "kental / tajam / gelap"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "うすい",
+      "kanji": "薄い",
+      "arti": "hambar / tidak tajam / tipis"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "あつい",
+      "kanji": "厚い",
+      "arti": "tebal"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "あつい",
+      "kanji": "暑い",
+      "arti": "panas (cuaca)"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "あつい",
+      "kanji": "熱い",
+      "arti": "panas (benda)"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "あさい",
+      "kanji": "浅い",
+      "arti": "dangkal"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "ふかい",
+      "kanji": "深い",
+      "arti": "dalam"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "ほそい",
+      "kanji": "細い",
+      "arti": "tipis / kecil"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "ふとい",
+      "kanji": "太い",
+      "arti": "tebal / besar"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "よわい",
+      "kanji": "弱い",
+      "arti": "lemah"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "つよい",
+      "kanji": "強い",
+      "arti": "kuat"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "じょうぶな",
+      "kanji": "丈夫な",
+      "arti": "kuat / kokoh"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "かたい",
+      "kanji": "硬い",
+      "arti": "keras"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "やわらかい",
+      "kanji": "柔らかい",
+      "arti": "lembut"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "きびしい",
+      "kanji": "厳しい",
+      "arti": "ketat / tegas"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "やさしい",
+      "kanji": "優しい",
+      "arti": "baik / ramah"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "うるさい",
+      "kanji": "",
+      "arti": "berisik"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "にぎやかな",
+      "kanji": "賑やかな",
+      "arti": "ramai"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "しずかな",
+      "kanji": "静かな",
+      "arti": "tenang / sepi"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "まずい",
+      "kanji": "",
+      "arti": "tidak enak"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "おいしい",
+      "kanji": "",
+      "arti": "enak"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "たのしい",
+      "kanji": "楽しい",
+      "arti": "menyenangkan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "すずしい",
+      "kanji": "涼しい",
+      "arti": "sejuk"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "ただしい",
+      "kanji": "正しい",
+      "arti": "benar"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 1",
+      "hiragana": "めずらしい",
+      "kanji": "珍しい",
+      "arti": "langka"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "さがる",
+      "kanji": "下がる",
+      "arti": "turun"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "あがる",
+      "kanji": "上がる",
+      "arti": "naik"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "さげる",
+      "kanji": "下げる",
+      "arti": "menurunkan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "あげる",
+      "kanji": "上げる",
+      "arti": "menaikkan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "おりる",
+      "kanji": "下りる",
+      "arti": "turun / menuruni"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "のぼる",
+      "kanji": "上る／登る",
+      "arti": "naik / mendaki"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "おりる",
+      "kanji": "降りる",
+      "arti": "turun dari kendaraan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "のる",
+      "kanji": "乗る",
+      "arti": "naik kendaraan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "へる",
+      "kanji": "減る",
+      "arti": "berkurang"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "ふえる",
+      "kanji": "増える",
+      "arti": "bertambah"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "だす",
+      "kanji": "出す",
+      "arti": "mengeluarkan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "いれる",
+      "kanji": "入れる",
+      "arti": "memasukkan"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "おくれる",
+      "kanji": "遅れる",
+      "arti": "terlambat"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "まにあう",
+      "kanji": "間に合う",
+      "arti": "keburu / tepat waktu"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "だめな",
+      "kanji": "駄目な",
+      "arti": "tidak boleh / tidak baik"
+    },
+    {
+      "bab": "ペアで おぼえましょう／Kosakata berpasangan 2",
+      "hiragana": "だいじょうぶな",
+      "kanji": "大丈夫な",
+      "arti": "tidak apa-apa"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "わかい",
+      "kanji": "若い",
+      "arti": "muda"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "としとった",
+      "kanji": "年取った",
+      "arti": "tua"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "としより",
+      "kanji": "年寄り",
+      "arti": "lansia / orang tua"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "やせる",
+      "kanji": "痩せる",
+      "arti": "menjadi kurus"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "ながい",
+      "kanji": "長い",
+      "arti": "panjang"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "かける",
+      "kanji": "掛ける",
+      "arti": "memakai (kacamata)"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "かぶる",
+      "kanji": "被る",
+      "arti": "memakai (topi)"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "さす",
+      "kanji": "差す",
+      "arti": "memakai / membawa payung"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "まじめな",
+      "kanji": "真面目な",
+      "arti": "sungguh-sungguh / serius"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "にる",
+      "kanji": "似る",
+      "arti": "mirip"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "うたう",
+      "kanji": "歌う",
+      "arti": "bernyanyi"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "おどる",
+      "kanji": "踊る",
+      "arti": "menari"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "はしる",
+      "kanji": "走る",
+      "arti": "berlari"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "ちゅう",
+      "kanji": "中",
+      "arti": "sedang / dalam proses"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "しょくじちゅう",
+      "kanji": "食事中",
+      "arti": "sedang makan"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "べんきょうちゅう",
+      "kanji": "勉強中",
+      "arti": "sedang belajar"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "しごとちゅう",
+      "kanji": "仕事中",
+      "arti": "sedang bekerja"
+    },
+    {
+      "bab": "人の ようすを あらわす ことば／Kondisi manusia",
+      "hiragana": "しようちゅう",
+      "kanji": "使用中",
+      "arti": "sedang digunakan"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "どうやって",
+      "kanji": "",
+      "arti": "bagaimana caranya"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "せんざい",
+      "kanji": "洗剤",
+      "arti": "deterjen"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "うごく",
+      "kanji": "動く",
+      "arti": "bergerak / beroperasi"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "とまる",
+      "kanji": "止まる",
+      "arti": "berhenti"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "おす",
+      "kanji": "押す",
+      "arti": "mendorong / menekan"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "きえる",
+      "kanji": "消える",
+      "arti": "mati / padam / terhapus"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "けす",
+      "kanji": "消す",
+      "arti": "mematikan / memadamkan / menghapus"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "ひらく",
+      "kanji": "開く",
+      "arti": "membuka"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "どうろ",
+      "kanji": "道路",
+      "arti": "jalan"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "わたる",
+      "kanji": "渡る",
+      "arti": "menyeberang"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "あんぜんな",
+      "kanji": "安全な",
+      "arti": "aman"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "きけんな",
+      "kanji": "危険な",
+      "arti": "berbahaya"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "あぶない",
+      "kanji": "危ない",
+      "arti": "bahaya"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "しんごう",
+      "kanji": "信号",
+      "arti": "lampu lalu lintas"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "じどうしゃ",
+      "kanji": "自動車",
+      "arti": "mobil"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "くるま",
+      "kanji": "車",
+      "arti": "mobil"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "じどうはんばいき",
+      "kanji": "自動販売機",
+      "arti": "mesin penjual otomatis"
+    },
+    {
+      "bab": "文で おぼえましょう／Kosakata dalam kalimat",
+      "hiragana": "じどうどあ",
+      "kanji": "自動ドア",
+      "arti": "pintu otomatis"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "まちがえる",
+      "kanji": "間違える",
+      "arti": "salah"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "のこる",
+      "kanji": "残る",
+      "arti": "tersisa"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "のこす",
+      "kanji": "残す",
+      "arti": "menyisakan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "あまる",
+      "kanji": "余る",
+      "arti": "tersisa / berlebih"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "たりる",
+      "kanji": "足りる",
+      "arti": "cukup"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "たりない",
+      "kanji": "足りない",
+      "arti": "tidak cukup"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "ちぇっくする",
+      "kanji": "チェックする",
+      "arti": "mengecek"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "しらべる",
+      "kanji": "調べる",
+      "arti": "mencari tahu / memeriksa"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "しつもんする",
+      "kanji": "質問する",
+      "arti": "bertanya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "やくにたつ",
+      "kanji": "役に立つ",
+      "arti": "bermanfaat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "うつす",
+      "kanji": "写す",
+      "arti": "menyalin / meng-copy"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "はる",
+      "kanji": "貼る",
+      "arti": "menempelkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "ぬる",
+      "kanji": "塗る",
+      "arti": "mengolesi / mengecat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 2",
+      "hiragana": "できる",
+      "kanji": "",
+      "arti": "bisa / selesai / siap"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "きっと",
+      "kanji": "",
+      "arti": "pasti"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "やっと",
+      "kanji": "",
+      "arti": "akhirnya"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "ずっと",
+      "kanji": "",
+      "arti": "jauh lebih / terus-menerus"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "さっき",
+      "kanji": "",
+      "arti": "tadi"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "さいきん",
+      "kanji": "最近",
+      "arti": "akhir-akhir ini"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "もうすぐ",
+      "kanji": "",
+      "arti": "sebentar lagi"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "かならず",
+      "kanji": "必ず",
+      "arti": "pasti"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "たいてい",
+      "kanji": "",
+      "arti": "biasanya"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "ずいぶん",
+      "kanji": "",
+      "arti": "cukup / lumayan"
+    },
+    {
+      "bab": "副詞／Kata keterangan",
+      "hiragana": "やっぱり",
+      "kanji": "やはり",
+      "arti": "ternyata memang / sesuai dugaan"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "おとす",
+      "kanji": "落とす",
+      "arti": "menjatuhkan"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "おちる",
+      "kanji": "落ちる",
+      "arti": "jatuh / gagal"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "こわす",
+      "kanji": "壊す",
+      "arti": "merusak"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "こわれる",
+      "kanji": "壊れる",
+      "arti": "rusak"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "なくす",
+      "kanji": "無くす",
+      "arti": "menghilangkan"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "なくなる",
+      "kanji": "無くなる",
+      "arti": "hilang"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "みつける",
+      "kanji": "見つける",
+      "arti": "menemukan"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "みつかる",
+      "kanji": "見つかる",
+      "arti": "ketemu / ditemukan"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "ひろう",
+      "kanji": "拾う",
+      "arti": "memungut"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "さがす",
+      "kanji": "探す",
+      "arti": "mencari (pekerjaan / barang yang diinginkan)"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "さがす",
+      "kanji": "捜す",
+      "arti": "mencari (orang / barang hilang)"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "たいせつな",
+      "kanji": "大切な",
+      "arti": "penting"
+    },
+    {
+      "bab": "自動詞と他動詞／Intransitif & transitif",
+      "hiragana": "たいせつにする",
+      "kanji": "大切にする",
+      "arti": "menjaga / memperlakukan dengan baik"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "よてい",
+      "kanji": "予定",
+      "arti": "rencana / jadwal"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "つごう",
+      "kanji": "都合",
+      "arti": "keadaan / kenyamanan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "ばあい",
+      "kanji": "場合",
+      "arti": "apabila / dalam hal"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "よやくする",
+      "kanji": "予約する",
+      "arti": "memesan / booking"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "しらせる",
+      "kanji": "知らせる",
+      "arti": "memberitahu"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "たのしむ",
+      "kanji": "楽しむ",
+      "arti": "menikmati"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "たのしみにする",
+      "kanji": "楽しみにする",
+      "arti": "menantikan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "すぎる",
+      "kanji": "過ぎる",
+      "arti": "lewat / lebih"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "とまる",
+      "kanji": "止まる",
+      "arti": "berhenti"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "とまる",
+      "kanji": "泊まる",
+      "arti": "menginap"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "まちあわせる",
+      "kanji": "待ち合わせる",
+      "arti": "berjanji bertemu"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "まちあわせ",
+      "kanji": "待ち合わせ",
+      "arti": "janji bertemu"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "とぶ",
+      "kanji": "飛ぶ",
+      "arti": "terbang"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "とぶ",
+      "kanji": "跳ぶ",
+      "arti": "loncat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "つもる",
+      "kanji": "積もる",
+      "arti": "menumpuk"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "たてる",
+      "kanji": "建てる",
+      "arti": "mendirikan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "たつ",
+      "kanji": "建つ",
+      "arti": "berdiri / terbangun"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "わく",
+      "kanji": "沸く",
+      "arti": "mendidih"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "わかす",
+      "kanji": "沸かす",
+      "arti": "mendidihkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "はらう",
+      "kanji": "払う",
+      "arti": "membayar"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "めもする",
+      "kanji": "メモする",
+      "arti": "mencatat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "ねだん",
+      "kanji": "値段",
+      "arti": "harga"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "くりーにんぐや",
+      "kanji": "クリーニング屋",
+      "arti": "tempat laundry"
+    },
+    {
+      "bab": "まとめて おぼえましょう 3",
+      "hiragana": "さかや",
+      "kanji": "酒屋",
+      "arti": "toko sake"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "さけ",
+      "kanji": "酒",
+      "arti": "sake"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "ぐらむ",
+      "kanji": "グラム",
+      "arti": "gram"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "せんちめーとる",
+      "kanji": "センチメートル",
+      "arti": "sentimeter"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "めーとる",
+      "kanji": "メートル",
+      "arti": "meter"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "きろ",
+      "kanji": "キロ",
+      "arti": "kilogram / kilometer"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "おもさ",
+      "kanji": "重さ",
+      "arti": "beratnya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "ながさ",
+      "kanji": "長さ",
+      "arti": "panjangnya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "ひろさ",
+      "kanji": "広さ",
+      "arti": "luasnya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "たかさ",
+      "kanji": "高さ",
+      "arti": "ketinggiannya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "おおきさ",
+      "kanji": "大きさ",
+      "arti": "besarnya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 4／Ukuran & satuan",
+      "hiragana": "ふとさ",
+      "kanji": "太さ",
+      "arti": "ketebalannya"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "におい",
+      "kanji": "匂い",
+      "arti": "bau / aroma"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "あじ",
+      "kanji": "味",
+      "arti": "rasa"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "おと",
+      "kanji": "音",
+      "arti": "suara"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "おれる",
+      "kanji": "折れる",
+      "arti": "patah"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "われる",
+      "kanji": "割れる",
+      "arti": "pecah"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "にげる",
+      "kanji": "逃げる",
+      "arti": "kabur"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "つかまる",
+      "kanji": "捕まる",
+      "arti": "tertangkap"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "さわぐ",
+      "kanji": "騒ぐ",
+      "arti": "gaduh / ribut"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "こまる",
+      "kanji": "困る",
+      "arti": "bingung / kesulitan"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "ぬれる",
+      "kanji": "濡れる",
+      "arti": "basah"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "ぬすむ",
+      "kanji": "盗む",
+      "arti": "mencuri"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "いじめる",
+      "kanji": "",
+      "arti": "membully"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "ならす",
+      "kanji": "鳴らす",
+      "arti": "membunyikan"
+    },
+    {
+      "bab": "状態や 状況を あらわす ことば／Kondisi & keadaan",
+      "hiragana": "しんじる",
+      "kanji": "信じる",
+      "arti": "percaya"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "けいかく",
+      "kanji": "計画",
+      "arti": "rencana"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "じゅんび",
+      "kanji": "準備",
+      "arti": "persiapan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "かたち",
+      "kanji": "形",
+      "arti": "bentuk"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "むかし",
+      "kanji": "昔",
+      "arti": "dulu"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "いま",
+      "kanji": "今",
+      "arti": "sekarang"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "ならべる",
+      "kanji": "並べる",
+      "arti": "menjajarkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "くらべる",
+      "kanji": "比べる",
+      "arti": "membandingkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "そだてる",
+      "kanji": "育てる",
+      "arti": "merawat / menumbuhkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "そだつ",
+      "kanji": "育つ",
+      "arti": "tumbuh"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "うえる",
+      "kanji": "植える",
+      "arti": "menanam"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "かざる",
+      "kanji": "飾る",
+      "arti": "menghias"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "うつす",
+      "kanji": "移す",
+      "arti": "memindahkan"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "まる",
+      "kanji": "丸",
+      "arti": "bulat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "まるい",
+      "kanji": "丸い",
+      "arti": "bulat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "しかく",
+      "kanji": "四角",
+      "arti": "segi empat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "しかくい",
+      "kanji": "四角い",
+      "arti": "berbentuk segi empat"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "さんかく",
+      "kanji": "三角",
+      "arti": "segi tiga"
+    },
+    {
+      "bab": "まとめて おぼえましょう 5",
+      "hiragana": "さんかくい",
+      "kanji": "三角い",
+      "arti": "berbentuk segi tiga"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "あんないする",
+      "kanji": "案内する",
+      "arti": "memandu"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "おいわい",
+      "kanji": "お祝い",
+      "arti": "perayaan"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "おみまい",
+      "kanji": "お見舞い",
+      "arti": "menjenguk / kunjungan untuk orang sakit"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "うまれる",
+      "kanji": "生まれる",
+      "arti": "lahir"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "しぬ",
+      "kanji": "死ぬ",
+      "arti": "mati"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "なくなる",
+      "kanji": "亡くなる",
+      "arti": "meninggal"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "つとめる",
+      "kanji": "勤める",
+      "arti": "bekerja / bertugas"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "ひっこす",
+      "kanji": "引っ越す",
+      "arti": "pindah rumah"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "とどく",
+      "kanji": "届く",
+      "arti": "sampai / tiba"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "はたち",
+      "kanji": "二十歳",
+      "arti": "20 tahun"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "おれい",
+      "kanji": "お礼",
+      "arti": "ucapan terima kasih"
+    },
+    {
+      "bab": "おつきあいの ことば／Kosakata untuk bersosialisasi",
+      "hiragana": "かんけい",
+      "kanji": "関係",
+      "arti": "hubungan"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "ごめんください",
+      "kanji": "",
+      "arti": "salam ketika memanggil pemilik rumah / toko"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "けっこうです",
+      "kanji": "結構です",
+      "arti": "tidak usah / ungkapan menolak"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "おきのどくに",
+      "kanji": "お気の毒に",
+      "arti": "kasihan / belas kasihan"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "よろこんで",
+      "kanji": "喜んで",
+      "arti": "dengan senang hati"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "ひさしぶり",
+      "kanji": "久しぶり",
+      "arti": "lama tidak bertemu"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "おかげさまで",
+      "kanji": "お陰さまで",
+      "arti": "syukur / berkat bantuan"
+    },
+    {
+      "bab": "会話表現／Ungkapan percakapan",
+      "hiragana": "おだいじに",
+      "kanji": "お大事に",
+      "arti": "semoga lekas sembuh"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "ていねいな",
+      "kanji": "丁寧な",
+      "arti": "sopan"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "そんけいする",
+      "kanji": "尊敬する",
+      "arti": "menghormati"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "えんりょする",
+      "kanji": "遠慮する",
+      "arti": "sungkan / merasa tidak enak"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "そんけいご",
+      "kanji": "尊敬語",
+      "arti": "bahasa hormat"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "おいでになる／いらっしゃる",
+      "kanji": "おいでになる／いらっしゃる",
+      "arti": "pergi / berada / datang (hormat)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "ごらんになる",
+      "kanji": "ご覧になる",
+      "arti": "melihat (hormat)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "おっしゃる",
+      "kanji": "仰る",
+      "arti": "mengatakan (hormat)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "めしあがる",
+      "kanji": "召し上がる",
+      "arti": "makan / minum (hormat)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "けんじょうご",
+      "kanji": "謙譲語",
+      "arti": "bahasa merendahkan diri"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "おまちする",
+      "kanji": "お待ちする",
+      "arti": "menunggu (merendahkan diri)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "まいる",
+      "kanji": "参る",
+      "arti": "pergi / datang (merendahkan diri)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "もうす",
+      "kanji": "申す",
+      "arti": "mengatakan / bernama (merendahkan diri)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "うかがう",
+      "kanji": "伺う",
+      "arti": "bertanya / mengunjungi (merendahkan diri)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "はいけんする",
+      "kanji": "拝見する",
+      "arti": "melihat (merendahkan diri)"
+    },
+    {
+      "bab": "敬語／Bahasa halus",
+      "hiragana": "いただく",
+      "kanji": "頂く",
+      "arti": "menerima / makan (merendahkan diri)"
+    }
+  ]
+}

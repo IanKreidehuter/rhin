@@ -1,0 +1,4111 @@
+{
+  "judul": "ALL - KANJI N4",
+  "jumlah_kanji": 197,
+  "catatan": "Sampul PDF menyebut 200 kanji, tetapi isi halaman 2-41 memuat 197 entri kanji yang dapat diekstrak secara jelas. Data di bawah mengikuti istilah, bacaan, contoh kotoba, dan arti yang tercantum di PDF.",
+  "kanji": [
+    {
+      "kanji": "通",
+      "onyomi": "TSUU",
+      "kunyomi": [
+        "kayo(u)",
+        "too(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "交通",
+          "bacaan": "こうつう",
+          "arti": "lalu lintas"
+        },
+        {
+          "kata": "普通",
+          "bacaan": "ふつう",
+          "arti": "biasa"
+        },
+        {
+          "kata": "通る・通り",
+          "bacaan": "とおる・とおり",
+          "arti": "lewat / jalan raya"
+        },
+        {
+          "kata": "通う",
+          "bacaan": "かよう",
+          "arti": "pulang-pergi"
+        }
+      ],
+      "arti": "lewat",
+      "halaman": 2
+    },
+    {
+      "kanji": "降",
+      "onyomi": null,
+      "kunyomi": [
+        "o(riru)",
+        "fu(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "降る",
+          "bacaan": "ふる",
+          "arti": "turun (hujan, salju)"
+        },
+        {
+          "kata": "降りる",
+          "bacaan": "おりる",
+          "arti": "turun"
+        }
+      ],
+      "arti": "turun",
+      "halaman": 2
+    },
+    {
+      "kanji": "着",
+      "onyomi": null,
+      "kunyomi": [
+        "ki(ru)",
+        "tsu(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "着る",
+          "bacaan": "きる",
+          "arti": "memakai (baju)"
+        },
+        {
+          "kata": "着く",
+          "bacaan": "つく",
+          "arti": "tiba, sampai"
+        },
+        {
+          "kata": "着物",
+          "bacaan": "きもの",
+          "arti": "kimono"
+        }
+      ],
+      "arti": "memakai, tiba",
+      "halaman": 2
+    },
+    {
+      "kanji": "動",
+      "onyomi": "DOU",
+      "kunyomi": [
+        "ugo(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "動く",
+          "bacaan": "うごく",
+          "arti": "bergerak"
+        },
+        {
+          "kata": "動物",
+          "bacaan": "どうぶつ",
+          "arti": "hewan"
+        },
+        {
+          "kata": "運動",
+          "bacaan": "うんどう",
+          "arti": "olahraga"
+        }
+      ],
+      "arti": "bergerak",
+      "halaman": 2
+    },
+    {
+      "kanji": "物",
+      "onyomi": "BUTSU, MOTSU",
+      "kunyomi": [
+        "mono"
+      ],
+      "kotoba": [
+        {
+          "kata": "動物",
+          "bacaan": "どうぶつ",
+          "arti": "hewan"
+        },
+        {
+          "kata": "荷物",
+          "bacaan": "にもつ",
+          "arti": "barang"
+        },
+        {
+          "kata": "物",
+          "bacaan": "もの",
+          "arti": "barang"
+        },
+        {
+          "kata": "食べ物",
+          "bacaan": "たべもの",
+          "arti": "makanan"
+        }
+      ],
+      "arti": "barang",
+      "halaman": 2
+    },
+    {
+      "kanji": "品",
+      "onyomi": "HIN",
+      "kunyomi": [
+        "shina"
+      ],
+      "kotoba": [
+        {
+          "kata": "品物",
+          "bacaan": "しなもの",
+          "arti": "barang dagangan"
+        },
+        {
+          "kata": "食料品",
+          "bacaan": "しょくりょうひん",
+          "arti": "makanan (selain makanan pokok)"
+        }
+      ],
+      "arti": "barang",
+      "halaman": 2
+    },
+    {
+      "kanji": "建",
+      "onyomi": null,
+      "kunyomi": [
+        "ta(teru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "建てる",
+          "bacaan": "たてる",
+          "arti": "membangun"
+        },
+        {
+          "kata": "建物",
+          "bacaan": "たてもの",
+          "arti": "bangunan"
+        },
+        {
+          "kata": "２階建て",
+          "bacaan": "にかいだて",
+          "arti": "2 lantai (rumah)"
+        }
+      ],
+      "arti": "membangun",
+      "halaman": 3
+    },
+    {
+      "kanji": "夜",
+      "onyomi": "YA",
+      "kunyomi": [
+        "yoru"
+      ],
+      "kotoba": [
+        {
+          "kata": "夜",
+          "bacaan": "よる",
+          "arti": "malam"
+        },
+        {
+          "kata": "今夜",
+          "bacaan": "こんや",
+          "arti": "malam ini"
+        }
+      ],
+      "arti": "malam",
+      "halaman": 3
+    },
+    {
+      "kanji": "風",
+      "onyomi": "FUU",
+      "kunyomi": [
+        "kaze"
+      ],
+      "kotoba": [
+        {
+          "kata": "台風",
+          "bacaan": "たいふう",
+          "arti": "angin topan"
+        },
+        {
+          "kata": "風邪",
+          "bacaan": "かぜ",
+          "arti": "masuk angin"
+        }
+      ],
+      "arti": "angin",
+      "halaman": 3
+    },
+    {
+      "kanji": "台",
+      "onyomi": "DAI, TAI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "台所",
+          "bacaan": "だいどころ",
+          "arti": "dapur"
+        },
+        {
+          "kata": "台風",
+          "bacaan": "たいふう",
+          "arti": "angin topan"
+        },
+        {
+          "kata": "～台",
+          "bacaan": "～だい",
+          "arti": "menghitung kendaraan, barang elektronik"
+        }
+      ],
+      "arti": "alas",
+      "halaman": 3
+    },
+    {
+      "kanji": "同",
+      "onyomi": null,
+      "kunyomi": [
+        "ona(ji)"
+      ],
+      "kotoba": [
+        {
+          "kata": "同じ",
+          "bacaan": "おなじ",
+          "arti": "sama"
+        }
+      ],
+      "arti": "sama",
+      "halaman": 4
+    },
+    {
+      "kanji": "回",
+      "onyomi": "KAI",
+      "kunyomi": [
+        "mawa(ru)",
+        "mawa(su)"
+      ],
+      "kotoba": [
+        {
+          "kata": "回る",
+          "bacaan": "まわる",
+          "arti": "berputar"
+        },
+        {
+          "kata": "回す",
+          "bacaan": "まわす",
+          "arti": "memutar"
+        },
+        {
+          "kata": "～回",
+          "bacaan": "～かい",
+          "arti": "...kali"
+        }
+      ],
+      "arti": "memutar, kali",
+      "halaman": 4
+    },
+    {
+      "kanji": "晩",
+      "onyomi": "BAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "今晩",
+          "bacaan": "こんばん",
+          "arti": "malam ini"
+        }
+      ],
+      "arti": "malam",
+      "halaman": 4
+    },
+    {
+      "kanji": "勉",
+      "onyomi": "BEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "勉強",
+          "bacaan": "べんきょう",
+          "arti": "belajar"
+        },
+        {
+          "kata": "勉強する",
+          "bacaan": "べんきょうする",
+          "arti": "belajar"
+        }
+      ],
+      "arti": "giat, tekun",
+      "halaman": 4
+    },
+    {
+      "kanji": "進",
+      "onyomi": "SHIN",
+      "kunyomi": [
+        "susu(mu)",
+        "susu(meru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "進む",
+          "bacaan": "すすむ",
+          "arti": "maju"
+        },
+        {
+          "kata": "進める",
+          "bacaan": "すすめる",
+          "arti": "memajukan"
+        }
+      ],
+      "arti": "maju",
+      "halaman": 4
+    },
+    {
+      "kanji": "集",
+      "onyomi": "SHUU",
+      "kunyomi": [
+        "atsu(maru)",
+        "atsu(meru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "集まる",
+          "bacaan": "あつまる",
+          "arti": "berkumpul"
+        },
+        {
+          "kata": "集める",
+          "bacaan": "あつめる",
+          "arti": "mengumpulkan"
+        }
+      ],
+      "arti": "berkumpul",
+      "halaman": 4
+    },
+    {
+      "kanji": "作",
+      "onyomi": "SAKU",
+      "kunyomi": [
+        "tsuku(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "作る",
+          "bacaan": "つくる",
+          "arti": "membuat"
+        },
+        {
+          "kata": "作文",
+          "bacaan": "さくぶん",
+          "arti": "karangan"
+        }
+      ],
+      "arti": "membuat",
+      "halaman": 5
+    },
+    {
+      "kanji": "文",
+      "onyomi": "BUN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "文章",
+          "bacaan": "ぶんしょう",
+          "arti": "kalimat"
+        },
+        {
+          "kata": "作文",
+          "bacaan": "さくぶん",
+          "arti": "karangan"
+        },
+        {
+          "kata": "例文",
+          "bacaan": "れいぶん",
+          "arti": "contoh kalimat"
+        }
+      ],
+      "arti": "kalimat",
+      "halaman": 5
+    },
+    {
+      "kanji": "使",
+      "onyomi": "SHI",
+      "kunyomi": [
+        "tsuka(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "使う",
+          "bacaan": "つかう",
+          "arti": "menggunakan"
+        },
+        {
+          "kata": "大使館",
+          "bacaan": "たいしかん",
+          "arti": "kedutaan besar"
+        }
+      ],
+      "arti": "menggunakan",
+      "halaman": 5
+    },
+    {
+      "kanji": "便",
+      "onyomi": "BIN, BEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "便利",
+          "bacaan": "べんり",
+          "arti": "praktis"
+        },
+        {
+          "kata": "郵便局",
+          "bacaan": "ゆうびんきょく",
+          "arti": "kantor pos"
+        }
+      ],
+      "arti": "kabar, surat",
+      "halaman": 5
+    },
+    {
+      "kanji": "低",
+      "onyomi": null,
+      "kunyomi": [
+        "hiku(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "低い",
+          "bacaan": "ひくい",
+          "arti": "rendah"
+        }
+      ],
+      "arti": "rendah",
+      "halaman": 6
+    },
+    {
+      "kanji": "短",
+      "onyomi": null,
+      "kunyomi": [
+        "mijika(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "短い",
+          "bacaan": "みじかい",
+          "arti": "pendek"
+        }
+      ],
+      "arti": "pendek",
+      "halaman": 6
+    },
+    {
+      "kanji": "近",
+      "onyomi": "KIN",
+      "kunyomi": [
+        "chika(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "近い",
+          "bacaan": "ちかい",
+          "arti": "dekat"
+        },
+        {
+          "kata": "近所",
+          "bacaan": "きんじょ",
+          "arti": "tetangga"
+        },
+        {
+          "kata": "最近",
+          "bacaan": "さいきん",
+          "arti": "akhir-akhir ini"
+        }
+      ],
+      "arti": "dekat",
+      "halaman": 6
+    },
+    {
+      "kanji": "遠",
+      "onyomi": "EN",
+      "kunyomi": [
+        "too(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "遠い",
+          "bacaan": "とおい",
+          "arti": "jauh"
+        },
+        {
+          "kata": "遠足",
+          "bacaan": "えんそく",
+          "arti": "piknik"
+        },
+        {
+          "kata": "遠慮する",
+          "bacaan": "えんりょする",
+          "arti": "sungkan, merasa tidak enak"
+        }
+      ],
+      "arti": "jauh",
+      "halaman": 6
+    },
+    {
+      "kanji": "弱",
+      "onyomi": null,
+      "kunyomi": [
+        "yowa(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "弱い",
+          "bacaan": "よわい",
+          "arti": "lemah"
+        }
+      ],
+      "arti": "lemah",
+      "halaman": 6
+    },
+    {
+      "kanji": "強",
+      "onyomi": "KYOU",
+      "kunyomi": [
+        "tsuyo(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "強い",
+          "bacaan": "つよい",
+          "arti": "kuat"
+        },
+        {
+          "kata": "勉強する",
+          "bacaan": "べんきょうする",
+          "arti": "belajar"
+        }
+      ],
+      "arti": "kuat",
+      "halaman": 6
+    },
+    {
+      "kanji": "暗",
+      "onyomi": null,
+      "kunyomi": [
+        "kura(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "暗い",
+          "bacaan": "くらい",
+          "arti": "gelap"
+        }
+      ],
+      "arti": "gelap",
+      "halaman": 7
+    },
+    {
+      "kanji": "明",
+      "onyomi": "MEI",
+      "kunyomi": [
+        "akaru(i)",
+        "a(keru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "明るい",
+          "bacaan": "あかるい",
+          "arti": "terang"
+        },
+        {
+          "kata": "説明",
+          "bacaan": "せつめい",
+          "arti": "penjelasan"
+        },
+        {
+          "kata": "明けましておめでとう",
+          "bacaan": "あけましておめでとう",
+          "arti": "selamat tahun baru"
+        },
+        {
+          "kata": "明日",
+          "bacaan": "あした",
+          "arti": "besok"
+        }
+      ],
+      "arti": "terang",
+      "halaman": 7
+    },
+    {
+      "kanji": "悪",
+      "onyomi": null,
+      "kunyomi": [
+        "waru(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "悪い",
+          "bacaan": "わるい",
+          "arti": "buruk"
+        }
+      ],
+      "arti": "buruk",
+      "halaman": 7
+    },
+    {
+      "kanji": "利",
+      "onyomi": "RI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "便利",
+          "bacaan": "べんり",
+          "arti": "praktis"
+        },
+        {
+          "kata": "利用",
+          "bacaan": "りよう",
+          "arti": "penggunaan"
+        }
+      ],
+      "arti": "manjur, ampuh",
+      "halaman": 7
+    },
+    {
+      "kanji": "旅",
+      "onyomi": "RYO",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "旅行",
+          "bacaan": "りょこう",
+          "arti": "traveling"
+        },
+        {
+          "kata": "旅館",
+          "bacaan": "りょかん",
+          "arti": "hotel tradisional"
+        }
+      ],
+      "arti": "traveling",
+      "halaman": 8
+    },
+    {
+      "kanji": "館",
+      "onyomi": "KAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "美術館",
+          "bacaan": "びじゅつかん",
+          "arti": "museum seni"
+        },
+        {
+          "kata": "大使館",
+          "bacaan": "たいしかん",
+          "arti": "kedutaan besar"
+        }
+      ],
+      "arti": "gedung",
+      "halaman": 8
+    },
+    {
+      "kanji": "有",
+      "onyomi": "YUU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "有名な",
+          "bacaan": "ゆうめいな",
+          "arti": "terkenal"
+        }
+      ],
+      "arti": "ada",
+      "halaman": 8
+    },
+    {
+      "kanji": "去",
+      "onyomi": "KYO",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "去年",
+          "bacaan": "きょねん",
+          "arti": "tahun lalu"
+        }
+      ],
+      "arti": "lalu",
+      "halaman": 8
+    },
+    {
+      "kanji": "写",
+      "onyomi": "SHA",
+      "kunyomi": [
+        "utsu(su)"
+      ],
+      "kotoba": [
+        {
+          "kata": "写す",
+          "bacaan": "うつす",
+          "arti": "mencopy"
+        },
+        {
+          "kata": "写真",
+          "bacaan": "しゃしん",
+          "arti": "foto"
+        }
+      ],
+      "arti": "menyalin",
+      "halaman": 8
+    },
+    {
+      "kanji": "真",
+      "onyomi": "SHIN",
+      "kunyomi": [
+        "ma"
+      ],
+      "kotoba": [
+        {
+          "kata": "真ん中",
+          "bacaan": "まんなか",
+          "arti": "tengah-tengah"
+        },
+        {
+          "kata": "写真",
+          "bacaan": "しゃしん",
+          "arti": "foto"
+        }
+      ],
+      "arti": "benar",
+      "halaman": 8
+    },
+    {
+      "kanji": "夕",
+      "onyomi": "YUU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "夕方",
+          "bacaan": "ゆうがた",
+          "arti": "sore"
+        },
+        {
+          "kata": "夕飯",
+          "bacaan": "ゆうしょく",
+          "arti": "makan malam"
+        }
+      ],
+      "arti": "sore",
+      "halaman": 9
+    },
+    {
+      "kanji": "方",
+      "onyomi": "HOU",
+      "kunyomi": [
+        "kata"
+      ],
+      "kotoba": [
+        {
+          "kata": "あの方",
+          "bacaan": "あのかた",
+          "arti": "beliau"
+        },
+        {
+          "kata": "～方",
+          "bacaan": "～かた",
+          "arti": "cara..."
+        },
+        {
+          "kata": "両方",
+          "bacaan": "りょうほう",
+          "arti": "keduanya"
+        }
+      ],
+      "arti": "orang, cara",
+      "halaman": 9
+    },
+    {
+      "kanji": "飯",
+      "onyomi": "HAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "ご飯",
+          "bacaan": "ごはん",
+          "arti": "nasi"
+        },
+        {
+          "kata": "朝ご飯",
+          "bacaan": "あさごはん",
+          "arti": "sarapan"
+        },
+        {
+          "kata": "昼ご飯",
+          "bacaan": "ひるごはん",
+          "arti": "makan siang"
+        },
+        {
+          "kata": "晩ご飯",
+          "bacaan": "ばんごはん",
+          "arti": "makan malam"
+        }
+      ],
+      "arti": "nasi",
+      "halaman": 9
+    },
+    {
+      "kanji": "主",
+      "onyomi": "SHU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "主人",
+          "bacaan": "しゅじん",
+          "arti": "suami"
+        }
+      ],
+      "arti": "utama",
+      "halaman": 9
+    },
+    {
+      "kanji": "医",
+      "onyomi": "I",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "医者",
+          "bacaan": "いしゃ",
+          "arti": "dokter"
+        },
+        {
+          "kata": "医学",
+          "bacaan": "いがく",
+          "arti": "ilmu kedokteran"
+        }
+      ],
+      "arti": "dokter",
+      "halaman": 10
+    },
+    {
+      "kanji": "者",
+      "onyomi": "SHA",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "医者",
+          "bacaan": "いしゃ",
+          "arti": "dokter"
+        },
+        {
+          "kata": "学者",
+          "bacaan": "がくしゃ",
+          "arti": "ilmuwan"
+        },
+        {
+          "kata": "歯医者",
+          "bacaan": "はいしゃ",
+          "arti": "dokter gigi"
+        }
+      ],
+      "arti": "orang",
+      "halaman": 10
+    },
+    {
+      "kanji": "員",
+      "onyomi": "IN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "店員",
+          "bacaan": "てんいん",
+          "arti": "pegawai toko"
+        },
+        {
+          "kata": "駅員",
+          "bacaan": "えきいん",
+          "arti": "petugas stasiun"
+        },
+        {
+          "kata": "会社員",
+          "bacaan": "かいしゃいん",
+          "arti": "pegawai kantor"
+        },
+        {
+          "kata": "銀行員",
+          "bacaan": "ぎんこういん",
+          "arti": "pegawai bank"
+        }
+      ],
+      "arti": "pegawai",
+      "halaman": 10
+    },
+    {
+      "kanji": "民",
+      "onyomi": "MIN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "国民",
+          "bacaan": "こくみん",
+          "arti": "masyarakat"
+        },
+        {
+          "kata": "市民",
+          "bacaan": "しみん",
+          "arti": "warga kota"
+        }
+      ],
+      "arti": "rakyat",
+      "halaman": 10
+    },
+    {
+      "kanji": "運",
+      "onyomi": "UN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "運転する",
+          "bacaan": "うんてんする",
+          "arti": "menyetir"
+        },
+        {
+          "kata": "運転手",
+          "bacaan": "うんてんしゅ",
+          "arti": "supir"
+        },
+        {
+          "kata": "運動",
+          "bacaan": "うんどう",
+          "arti": "olahraga"
+        }
+      ],
+      "arti": "keberuntungan",
+      "halaman": 10
+    },
+    {
+      "kanji": "転",
+      "onyomi": "TEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "運転する",
+          "bacaan": "うんてんする",
+          "arti": "menyetir"
+        },
+        {
+          "kata": "自転車",
+          "bacaan": "じてんしゃ",
+          "arti": "sepeda"
+        }
+      ],
+      "arti": "terguling",
+      "halaman": 10
+    },
+    {
+      "kanji": "歌",
+      "onyomi": "KA",
+      "kunyomi": [
+        "uta",
+        "uta(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "歌",
+          "bacaan": "うた",
+          "arti": "lagu"
+        },
+        {
+          "kata": "歌う",
+          "bacaan": "うたう",
+          "arti": "bernyanyi"
+        },
+        {
+          "kata": "歌手",
+          "bacaan": "かしゅ",
+          "arti": "penyanyi"
+        }
+      ],
+      "arti": "lagu, bernyanyi",
+      "halaman": 11
+    },
+    {
+      "kanji": "説",
+      "onyomi": "SETSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "説明する",
+          "bacaan": "せつめいする",
+          "arti": "menjelaskan"
+        },
+        {
+          "kata": "小説",
+          "bacaan": "しょうせつ",
+          "arti": "novel"
+        },
+        {
+          "kata": "小説家",
+          "bacaan": "しょうせつか",
+          "arti": "penulis novel"
+        }
+      ],
+      "arti": "penjelasan",
+      "halaman": 11
+    },
+    {
+      "kanji": "家",
+      "onyomi": "KA",
+      "kunyomi": [
+        "ie"
+      ],
+      "kotoba": [
+        {
+          "kata": "家",
+          "bacaan": "いえ",
+          "arti": "rumah"
+        },
+        {
+          "kata": "家族",
+          "bacaan": "かぞく",
+          "arti": "keluarga"
+        },
+        {
+          "kata": "家庭",
+          "bacaan": "かてい",
+          "arti": "rumah tangga"
+        }
+      ],
+      "arti": "rumah",
+      "halaman": 11
+    },
+    {
+      "kanji": "朝",
+      "onyomi": "CHOU",
+      "kunyomi": [
+        "asa"
+      ],
+      "kotoba": [
+        {
+          "kata": "今朝",
+          "bacaan": "けさ",
+          "arti": "pagi tadi"
+        },
+        {
+          "kata": "朝食",
+          "bacaan": "ちょうしょく",
+          "arti": "sarapan"
+        },
+        {
+          "kata": "朝ご飯",
+          "bacaan": "あさごはん",
+          "arti": "sarapan"
+        }
+      ],
+      "arti": "pagi",
+      "halaman": 12
+    },
+    {
+      "kanji": "昼",
+      "onyomi": "CHUU",
+      "kunyomi": [
+        "hiru"
+      ],
+      "kotoba": [
+        {
+          "kata": "昼間",
+          "bacaan": "ひるま",
+          "arti": "siang hari"
+        },
+        {
+          "kata": "昼食",
+          "bacaan": "ちゅうしょく",
+          "arti": "makan siang"
+        },
+        {
+          "kata": "昼ご飯",
+          "bacaan": "ひるごはん",
+          "arti": "makan siang"
+        }
+      ],
+      "arti": "siang",
+      "halaman": 12
+    },
+    {
+      "kanji": "春",
+      "onyomi": null,
+      "kunyomi": [
+        "haru"
+      ],
+      "kotoba": [
+        {
+          "kata": "春",
+          "bacaan": "はる",
+          "arti": "musim semi"
+        },
+        {
+          "kata": "春休み",
+          "bacaan": "はるやすみ",
+          "arti": "libur musim semi"
+        }
+      ],
+      "arti": "semi",
+      "halaman": 12
+    },
+    {
+      "kanji": "夏",
+      "onyomi": null,
+      "kunyomi": [
+        "natsu"
+      ],
+      "kotoba": [
+        {
+          "kata": "夏",
+          "bacaan": "なつ",
+          "arti": "musim panas"
+        },
+        {
+          "kata": "夏休み",
+          "bacaan": "なつやすみ",
+          "arti": "libur musim panas"
+        }
+      ],
+      "arti": "panas",
+      "halaman": 12
+    },
+    {
+      "kanji": "秋",
+      "onyomi": null,
+      "kunyomi": [
+        "aki"
+      ],
+      "kotoba": [
+        {
+          "kata": "秋",
+          "bacaan": "あき",
+          "arti": "musim gugur"
+        }
+      ],
+      "arti": "gugur",
+      "halaman": 12
+    },
+    {
+      "kanji": "冬",
+      "onyomi": null,
+      "kunyomi": [
+        "fuyu"
+      ],
+      "kotoba": [
+        {
+          "kata": "冬",
+          "bacaan": "ふゆ",
+          "arti": "musim dingin"
+        },
+        {
+          "kata": "冬休み",
+          "bacaan": "ふゆやすみ",
+          "arti": "libur musim dingin"
+        }
+      ],
+      "arti": "dingin",
+      "halaman": 12
+    },
+    {
+      "kanji": "京",
+      "onyomi": "KYOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "京都",
+          "bacaan": "きょうと",
+          "arti": "kyoto"
+        },
+        {
+          "kata": "東京",
+          "bacaan": "とうきょう",
+          "arti": "tokyo"
+        }
+      ],
+      "arti": "ibu kota",
+      "halaman": 13
+    },
+    {
+      "kanji": "都",
+      "onyomi": "TO, TSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "東京都",
+          "bacaan": "とうきょうと",
+          "arti": "kota tokyo"
+        },
+        {
+          "kata": "都道府県",
+          "bacaan": "とどうふけん",
+          "arti": "47 prefektur di Jepang"
+        },
+        {
+          "kata": "都合がいい",
+          "bacaan": "つごうがいい",
+          "arti": "keadaan bagus (waktu)"
+        }
+      ],
+      "arti": "ibu kota",
+      "halaman": 13
+    },
+    {
+      "kanji": "府",
+      "onyomi": "FU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "都道府県",
+          "bacaan": "とどうふけん",
+          "arti": "47 prefektur di Jepang"
+        }
+      ],
+      "arti": "kantor pemerintah",
+      "halaman": 13
+    },
+    {
+      "kanji": "県",
+      "onyomi": "KEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "青森県",
+          "bacaan": "あおもりけん",
+          "arti": "prefektur Aomori"
+        },
+        {
+          "kata": "都道府県",
+          "bacaan": "とどうふけん",
+          "arti": "47 prefektur di Jepang"
+        }
+      ],
+      "arti": "prefektur",
+      "halaman": 13
+    },
+    {
+      "kanji": "市",
+      "onyomi": "SHI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "市民",
+          "bacaan": "しみん",
+          "arti": "warga kota"
+        }
+      ],
+      "arti": "kota, pasar",
+      "halaman": 13
+    },
+    {
+      "kanji": "町",
+      "onyomi": "CHOU",
+      "kunyomi": [
+        "machi"
+      ],
+      "kotoba": [
+        {
+          "kata": "町",
+          "bacaan": "まち",
+          "arti": "kota"
+        },
+        {
+          "kata": "～町",
+          "bacaan": "～ちょう",
+          "arti": "kota"
+        }
+      ],
+      "arti": "kota",
+      "halaman": 13
+    },
+    {
+      "kanji": "料",
+      "onyomi": "RYOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "料理",
+          "bacaan": "りょうり",
+          "arti": "masakan"
+        },
+        {
+          "kata": "食料品",
+          "bacaan": "しょくりょうひん",
+          "arti": "makanan"
+        }
+      ],
+      "arti": "bahan",
+      "halaman": 14
+    },
+    {
+      "kanji": "理",
+      "onyomi": "RI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "理由",
+          "bacaan": "りゆう",
+          "arti": "alasan"
+        },
+        {
+          "kata": "料理",
+          "bacaan": "りょうり",
+          "arti": "masakan"
+        },
+        {
+          "kata": "地理",
+          "bacaan": "ちり",
+          "arti": "geografi"
+        }
+      ],
+      "arti": "alasan",
+      "halaman": 14
+    },
+    {
+      "kanji": "米",
+      "onyomi": null,
+      "kunyomi": [
+        "kome"
+      ],
+      "kotoba": [
+        {
+          "kata": "米",
+          "bacaan": "こめ",
+          "arti": "beras"
+        }
+      ],
+      "arti": "beras",
+      "halaman": 14
+    },
+    {
+      "kanji": "洗",
+      "onyomi": "SEN",
+      "kunyomi": [
+        "ara(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "洗う",
+          "bacaan": "あらう",
+          "arti": "mencuci"
+        },
+        {
+          "kata": "お手洗い",
+          "bacaan": "おてあらい",
+          "arti": "toilet"
+        },
+        {
+          "kata": "洗濯する",
+          "bacaan": "せんたくする",
+          "arti": "mencuci (pakaian)"
+        }
+      ],
+      "arti": "mencuci",
+      "halaman": 14
+    },
+    {
+      "kanji": "野",
+      "onyomi": "YA",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "野球",
+          "bacaan": "やきゅう",
+          "arti": "baseball"
+        },
+        {
+          "kata": "野菜",
+          "bacaan": "やさい",
+          "arti": "sayuran"
+        }
+      ],
+      "arti": "tanah lapang",
+      "halaman": 14
+    },
+    {
+      "kanji": "菜",
+      "onyomi": "SAI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "野菜",
+          "bacaan": "やさい",
+          "arti": "sayuran"
+        }
+      ],
+      "arti": "sayur",
+      "halaman": 14
+    },
+    {
+      "kanji": "酒",
+      "onyomi": null,
+      "kunyomi": [
+        "sake"
+      ],
+      "kotoba": [
+        {
+          "kata": "お酒",
+          "bacaan": "おさけ",
+          "arti": "sake"
+        }
+      ],
+      "arti": "sake",
+      "halaman": 15
+    },
+    {
+      "kanji": "肉",
+      "onyomi": "NIKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "牛肉",
+          "bacaan": "ぎゅうにく",
+          "arti": "daging sapi"
+        },
+        {
+          "kata": "鳥肉",
+          "bacaan": "とりにく",
+          "arti": "daging ayam"
+        },
+        {
+          "kata": "豚肉",
+          "bacaan": "ぶたにく",
+          "arti": "daging babi"
+        }
+      ],
+      "arti": "daging",
+      "halaman": 15
+    },
+    {
+      "kanji": "味",
+      "onyomi": "MI",
+      "kunyomi": [
+        "aji"
+      ],
+      "kotoba": [
+        {
+          "kata": "味",
+          "bacaan": "あじ",
+          "arti": "rasa"
+        },
+        {
+          "kata": "趣味",
+          "bacaan": "しゅみ",
+          "arti": "hobi"
+        },
+        {
+          "kata": "興味",
+          "bacaan": "きょうみ",
+          "arti": "minat"
+        },
+        {
+          "kata": "意味",
+          "bacaan": "いみ",
+          "arti": "makna, arti"
+        }
+      ],
+      "arti": "rasa",
+      "halaman": 15
+    },
+    {
+      "kanji": "映",
+      "onyomi": "EI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "映画",
+          "bacaan": "えいが",
+          "arti": "film"
+        },
+        {
+          "kata": "映画館",
+          "bacaan": "えいがかん",
+          "arti": "bioskop"
+        }
+      ],
+      "arti": "film",
+      "halaman": 16
+    },
+    {
+      "kanji": "画",
+      "onyomi": "GA, KAKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "映画",
+          "bacaan": "えいが",
+          "arti": "film"
+        },
+        {
+          "kata": "漫画",
+          "bacaan": "まんが",
+          "arti": "komik"
+        },
+        {
+          "kata": "計画",
+          "bacaan": "けいかく",
+          "arti": "rencana"
+        }
+      ],
+      "arti": "gambar",
+      "halaman": 16
+    },
+    {
+      "kanji": "計",
+      "onyomi": "KEI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "時計",
+          "bacaan": "とけい",
+          "arti": "jam"
+        },
+        {
+          "kata": "計画",
+          "bacaan": "けいかく",
+          "arti": "rencana"
+        }
+      ],
+      "arti": "mengukur",
+      "halaman": 16
+    },
+    {
+      "kanji": "図",
+      "onyomi": "TO, ZU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "地図",
+          "bacaan": "ちず",
+          "arti": "peta"
+        },
+        {
+          "kata": "図書館",
+          "bacaan": "としょかん",
+          "arti": "perpustakaan"
+        }
+      ],
+      "arti": "mengukur",
+      "halaman": 16
+    },
+    {
+      "kanji": "仕",
+      "onyomi": "SHI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "仕事",
+          "bacaan": "しごと",
+          "arti": "pekerjaan"
+        },
+        {
+          "kata": "仕方",
+          "bacaan": "しかた",
+          "arti": "cara"
+        }
+      ],
+      "arti": "mengabdi",
+      "halaman": 16
+    },
+    {
+      "kanji": "事",
+      "onyomi": "JI",
+      "kunyomi": [
+        "koto"
+      ],
+      "kotoba": [
+        {
+          "kata": "仕事",
+          "bacaan": "しごと",
+          "arti": "pekerjaan"
+        },
+        {
+          "kata": "食事",
+          "bacaan": "しょくじ",
+          "arti": "makan"
+        },
+        {
+          "kata": "用事",
+          "bacaan": "ようじ",
+          "arti": "keperluan"
+        }
+      ],
+      "arti": "hal",
+      "halaman": 16
+    },
+    {
+      "kanji": "用",
+      "onyomi": "YOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "用意",
+          "bacaan": "ようい",
+          "arti": "persiapan"
+        },
+        {
+          "kata": "利用",
+          "bacaan": "りよう",
+          "arti": "penggunaan"
+        }
+      ],
+      "arti": "menggunakan",
+      "halaman": 17
+    },
+    {
+      "kanji": "地",
+      "onyomi": "CHI, JI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "地図",
+          "bacaan": "ちず",
+          "arti": "peta"
+        },
+        {
+          "kata": "地理",
+          "bacaan": "ちり",
+          "arti": "geografi"
+        },
+        {
+          "kata": "地下鉄",
+          "bacaan": "ちかてつ",
+          "arti": "subway"
+        },
+        {
+          "kata": "地震",
+          "bacaan": "じしん",
+          "arti": "gempa bumi"
+        }
+      ],
+      "arti": "tanah",
+      "halaman": 17
+    },
+    {
+      "kanji": "鉄",
+      "onyomi": "TETSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "地下鉄",
+          "bacaan": "ちかてつ",
+          "arti": "subway"
+        }
+      ],
+      "arti": "besi",
+      "halaman": 17
+    },
+    {
+      "kanji": "犬",
+      "onyomi": null,
+      "kunyomi": [
+        "inu"
+      ],
+      "kotoba": [
+        {
+          "kata": "犬",
+          "bacaan": "いぬ",
+          "arti": "anjing"
+        }
+      ],
+      "arti": "anjing",
+      "halaman": 18
+    },
+    {
+      "kanji": "太",
+      "onyomi": null,
+      "kunyomi": [
+        "futo(i)",
+        "futo(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "太い",
+          "bacaan": "ふとい",
+          "arti": "tebal"
+        },
+        {
+          "kata": "太る",
+          "bacaan": "ふとる",
+          "arti": "gemuk"
+        }
+      ],
+      "arti": "gemuk",
+      "halaman": 18
+    },
+    {
+      "kanji": "区",
+      "onyomi": "KU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "区",
+          "bacaan": "く",
+          "arti": "kecamatan"
+        }
+      ],
+      "arti": "kecamatan",
+      "halaman": 18
+    },
+    {
+      "kanji": "思",
+      "onyomi": null,
+      "kunyomi": [
+        "omo(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "思う",
+          "bacaan": "おもう",
+          "arti": "memikirkan"
+        },
+        {
+          "kata": "思い出す",
+          "bacaan": "おもいだす",
+          "arti": "mengingat"
+        }
+      ],
+      "arti": "pikiran",
+      "halaman": 18
+    },
+    {
+      "kanji": "和",
+      "onyomi": "WA",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "和室",
+          "bacaan": "わしつ",
+          "arti": "ruangan ala Jepang"
+        },
+        {
+          "kata": "和菓子",
+          "bacaan": "わがし",
+          "arti": "kue Jepang"
+        },
+        {
+          "kata": "平和",
+          "bacaan": "へいわ",
+          "arti": "perdamaian"
+        }
+      ],
+      "arti": "damai, Jepang",
+      "halaman": 18
+    },
+    {
+      "kanji": "知",
+      "onyomi": null,
+      "kunyomi": [
+        "shi(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "知る",
+          "bacaan": "しる",
+          "arti": "tahu, kenal"
+        },
+        {
+          "kata": "知らせる",
+          "bacaan": "しらせる",
+          "arti": "memberi tahu"
+        }
+      ],
+      "arti": "tahu, kenal",
+      "halaman": 18
+    },
+    {
+      "kanji": "族",
+      "onyomi": "ZOKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "家族",
+          "bacaan": "かぞく",
+          "arti": "keluarga"
+        },
+        {
+          "kata": "水族館",
+          "bacaan": "すいぞくかん",
+          "arti": "aquarium"
+        }
+      ],
+      "arti": "keturunan",
+      "halaman": 19
+    },
+    {
+      "kanji": "青",
+      "onyomi": null,
+      "kunyomi": [
+        "ao(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "青い",
+          "bacaan": "あおい",
+          "arti": "biru"
+        }
+      ],
+      "arti": "biru",
+      "halaman": 19
+    },
+    {
+      "kanji": "光",
+      "onyomi": null,
+      "kunyomi": [
+        "hika(ru)",
+        "hikari"
+      ],
+      "kotoba": [
+        {
+          "kata": "光る",
+          "bacaan": "ひかる",
+          "arti": "bersinar"
+        },
+        {
+          "kata": "光",
+          "bacaan": "ひかり",
+          "arti": "sinar, cahaya"
+        }
+      ],
+      "arti": "cahaya",
+      "halaman": 19
+    },
+    {
+      "kanji": "池",
+      "onyomi": "CHI",
+      "kunyomi": [
+        "ike"
+      ],
+      "kotoba": [
+        {
+          "kata": "池",
+          "bacaan": "いけ",
+          "arti": "kolam (ikan dll)"
+        },
+        {
+          "kata": "電池",
+          "bacaan": "でんち",
+          "arti": "baterai"
+        }
+      ],
+      "arti": "kolam",
+      "halaman": 19
+    },
+    {
+      "kanji": "別",
+      "onyomi": "BETSU",
+      "kunyomi": [
+        "waka(reru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "別の",
+          "bacaan": "べつの",
+          "arti": "lainnya"
+        },
+        {
+          "kata": "特別な",
+          "bacaan": "とくべつな",
+          "arti": "spesial, khusus"
+        },
+        {
+          "kata": "別れる",
+          "bacaan": "わかれる",
+          "arti": "berpisah"
+        }
+      ],
+      "arti": "terpisah",
+      "halaman": 19
+    },
+    {
+      "kanji": "寒",
+      "onyomi": null,
+      "kunyomi": [
+        "samu(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "寒い",
+          "bacaan": "さむい",
+          "arti": "dingin"
+        }
+      ],
+      "arti": "dingin",
+      "halaman": 20
+    },
+    {
+      "kanji": "暑",
+      "onyomi": null,
+      "kunyomi": [
+        "atsu(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "暑い",
+          "bacaan": "あつい",
+          "arti": "panas"
+        },
+        {
+          "kata": "蒸し暑い",
+          "bacaan": "むしあつい",
+          "arti": "panas & lembab"
+        }
+      ],
+      "arti": "panas",
+      "halaman": 20
+    },
+    {
+      "kanji": "重",
+      "onyomi": null,
+      "kunyomi": [
+        "omo(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "重い",
+          "bacaan": "おもい",
+          "arti": "berat"
+        }
+      ],
+      "arti": "berat",
+      "halaman": 20
+    },
+    {
+      "kanji": "軽",
+      "onyomi": null,
+      "kunyomi": [
+        "karu(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "軽い",
+          "bacaan": "かるい",
+          "arti": "ringan"
+        }
+      ],
+      "arti": "ringan",
+      "halaman": 20
+    },
+    {
+      "kanji": "広",
+      "onyomi": null,
+      "kunyomi": [
+        "hiro(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "広い",
+          "bacaan": "ひろい",
+          "arti": "luas"
+        }
+      ],
+      "arti": "luas",
+      "halaman": 20
+    },
+    {
+      "kanji": "元",
+      "onyomi": "GEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "元気",
+          "bacaan": "げんき",
+          "arti": "sehat"
+        }
+      ],
+      "arti": "asal",
+      "halaman": 20
+    },
+    {
+      "kanji": "病",
+      "onyomi": "BYOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "病院",
+          "bacaan": "びょういん",
+          "arti": "rumah sakit"
+        },
+        {
+          "kata": "病気",
+          "bacaan": "びょうき",
+          "arti": "sakit"
+        }
+      ],
+      "arti": "sakit",
+      "halaman": 21
+    },
+    {
+      "kanji": "起",
+      "onyomi": null,
+      "kunyomi": [
+        "o(kiru)",
+        "o(kosu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "起きる",
+          "bacaan": "おきる",
+          "arti": "bangun"
+        },
+        {
+          "kata": "起こす",
+          "bacaan": "おこす",
+          "arti": "membangunkan"
+        }
+      ],
+      "arti": "bangun",
+      "halaman": 21
+    },
+    {
+      "kanji": "寝",
+      "onyomi": null,
+      "kunyomi": [
+        "ne(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "寝る",
+          "bacaan": "ねる",
+          "arti": "tidur"
+        },
+        {
+          "kata": "寝坊",
+          "bacaan": "ねぼう",
+          "arti": "kesiangan"
+        }
+      ],
+      "arti": "tidur",
+      "halaman": 21
+    },
+    {
+      "kanji": "始",
+      "onyomi": null,
+      "kunyomi": [
+        "haji(maru)",
+        "haji(meru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "始まる",
+          "bacaan": "はじまる",
+          "arti": "mulai"
+        },
+        {
+          "kata": "始める",
+          "bacaan": "はじめる",
+          "arti": "memulai"
+        }
+      ],
+      "arti": "mulai",
+      "halaman": 21
+    },
+    {
+      "kanji": "終",
+      "onyomi": null,
+      "kunyomi": [
+        "o(waru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "終わる",
+          "bacaan": "おわる",
+          "arti": "selesai"
+        }
+      ],
+      "arti": "akhir",
+      "halaman": 21
+    },
+    {
+      "kanji": "研",
+      "onyomi": "KEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "研究",
+          "bacaan": "けんきゅう",
+          "arti": "penelitian"
+        },
+        {
+          "kata": "研究室",
+          "bacaan": "けんきゅうしつ",
+          "arti": "ruang penelitian"
+        }
+      ],
+      "arti": "mengasah",
+      "halaman": 22
+    },
+    {
+      "kanji": "究",
+      "onyomi": "KYUU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "研究",
+          "bacaan": "けんきゅう",
+          "arti": "penelitian"
+        },
+        {
+          "kata": "研究者",
+          "bacaan": "けんきゅうしゃ",
+          "arti": "peneliti"
+        },
+        {
+          "kata": "研究生",
+          "bacaan": "けんきゅうせい",
+          "arti": "mahasiswa peneliti"
+        }
+      ],
+      "arti": "mendalami",
+      "halaman": 22
+    },
+    {
+      "kanji": "住",
+      "onyomi": "JUU",
+      "kunyomi": [
+        "su(mu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "住む",
+          "bacaan": "すむ",
+          "arti": "tinggal"
+        },
+        {
+          "kata": "住所",
+          "bacaan": "じゅうしょ",
+          "arti": "alamat"
+        }
+      ],
+      "arti": "tinggal",
+      "halaman": 22
+    },
+    {
+      "kanji": "所",
+      "onyomi": "SHO",
+      "kunyomi": [
+        "tokoro"
+      ],
+      "kotoba": [
+        {
+          "kata": "所",
+          "bacaan": "ところ",
+          "arti": "tempat"
+        },
+        {
+          "kata": "台所",
+          "bacaan": "だいどころ",
+          "arti": "dapur"
+        },
+        {
+          "kata": "場所",
+          "bacaan": "ばしょ",
+          "arti": "tempat"
+        }
+      ],
+      "arti": "tempat",
+      "halaman": 22
+    },
+    {
+      "kanji": "注",
+      "onyomi": "CHUU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "注意する",
+          "bacaan": "ちゅういする",
+          "arti": "memperingatkan"
+        },
+        {
+          "kata": "注文する",
+          "bacaan": "ちゅうもんする",
+          "arti": "memesan"
+        }
+      ],
+      "arti": "mencurahkan",
+      "halaman": 22
+    },
+    {
+      "kanji": "意",
+      "onyomi": "I",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "意味",
+          "bacaan": "いみ",
+          "arti": "makna, arti"
+        },
+        {
+          "kata": "意見",
+          "bacaan": "いけん",
+          "arti": "pendapat"
+        }
+      ],
+      "arti": "arti, maksud",
+      "halaman": 22
+    },
+    {
+      "kanji": "教",
+      "onyomi": "KYOU",
+      "kunyomi": [
+        "oshi(eru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "教える",
+          "bacaan": "おしえる",
+          "arti": "mengajar"
+        },
+        {
+          "kata": "教育",
+          "bacaan": "きょういく",
+          "arti": "pendidikan"
+        },
+        {
+          "kata": "教室",
+          "bacaan": "きょうしつ",
+          "arti": "ruang kelas"
+        }
+      ],
+      "arti": "memberitahu",
+      "halaman": 23
+    },
+    {
+      "kanji": "発",
+      "onyomi": "HATSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "出発",
+          "bacaan": "しゅっぱつ",
+          "arti": "berangkat"
+        },
+        {
+          "kata": "発音",
+          "bacaan": "はつおん",
+          "arti": "pelafalan"
+        }
+      ],
+      "arti": "berangkat",
+      "halaman": 23
+    },
+    {
+      "kanji": "音",
+      "onyomi": "ON",
+      "kunyomi": [
+        "oto"
+      ],
+      "kotoba": [
+        {
+          "kata": "音",
+          "bacaan": "おと",
+          "arti": "bunyi"
+        },
+        {
+          "kata": "音楽",
+          "bacaan": "おんがく",
+          "arti": "musik"
+        },
+        {
+          "kata": "発音",
+          "bacaan": "はつおん",
+          "arti": "pelafalan"
+        }
+      ],
+      "arti": "bunyi",
+      "halaman": 23
+    },
+    {
+      "kanji": "工",
+      "onyomi": "KOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "工業",
+          "bacaan": "こうぎょう",
+          "arti": "industri"
+        },
+        {
+          "kata": "工事",
+          "bacaan": "こうじ",
+          "arti": "pengerjaan"
+        }
+      ],
+      "arti": "tukang",
+      "halaman": 23
+    },
+    {
+      "kanji": "業",
+      "onyomi": "GYOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "工業",
+          "bacaan": "こうぎょう",
+          "arti": "industri"
+        },
+        {
+          "kata": "授業",
+          "bacaan": "じゅぎょう",
+          "arti": "pelajaran, kelas"
+        },
+        {
+          "kata": "卒業",
+          "bacaan": "そつぎょう",
+          "arti": "lulus"
+        }
+      ],
+      "arti": "mata pencaharian",
+      "halaman": 23
+    },
+    {
+      "kanji": "以",
+      "onyomi": "I",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "以下",
+          "bacaan": "いか",
+          "arti": "kurang, dibawah"
+        },
+        {
+          "kata": "以上",
+          "bacaan": "いじょう",
+          "arti": "lebih, diatas"
+        },
+        {
+          "kata": "以外",
+          "bacaan": "いがい",
+          "arti": "selain"
+        }
+      ],
+      "arti": "sejak, dari",
+      "halaman": 24
+    },
+    {
+      "kanji": "内",
+      "onyomi": "NAI",
+      "kunyomi": [
+        "uchi"
+      ],
+      "kotoba": [
+        {
+          "kata": "以内",
+          "bacaan": "いない",
+          "arti": "dalam (waktu dll)"
+        },
+        {
+          "kata": "室内",
+          "bacaan": "しつない",
+          "arti": "dalam ruangan"
+        },
+        {
+          "kata": "内側",
+          "bacaan": "うちがわ",
+          "arti": "sisi dalam"
+        }
+      ],
+      "arti": "dalam",
+      "halaman": 24
+    },
+    {
+      "kanji": "代",
+      "onyomi": "DAI",
+      "kunyomi": [
+        "ka(waru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "時代",
+          "bacaan": "じだい",
+          "arti": "zaman"
+        },
+        {
+          "kata": "バス代",
+          "bacaan": "バスだい",
+          "arti": "biaya bus"
+        },
+        {
+          "kata": "代わりに",
+          "bacaan": "かわりに",
+          "arti": "sebagai pengganti"
+        }
+      ],
+      "arti": "biaya, zaman",
+      "halaman": 24
+    },
+    {
+      "kanji": "度",
+      "onyomi": "DO, TAKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "一度",
+          "bacaan": "いちど",
+          "arti": "satu kali"
+        },
+        {
+          "kata": "今度",
+          "bacaan": "こんど",
+          "arti": "lain kali"
+        },
+        {
+          "kata": "支度",
+          "bacaan": "したく",
+          "arti": "persiapan"
+        }
+      ],
+      "arti": "derajat",
+      "halaman": 24
+    },
+    {
+      "kanji": "番",
+      "onyomi": "BAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "交番",
+          "bacaan": "こうばん",
+          "arti": "pos polisi"
+        },
+        {
+          "kata": "一番",
+          "bacaan": "いちばん",
+          "arti": "nomor satu"
+        },
+        {
+          "kata": "３番線",
+          "bacaan": "さんばんせん",
+          "arti": "peron nomor 3"
+        }
+      ],
+      "arti": "nomor",
+      "halaman": 24
+    },
+    {
+      "kanji": "号",
+      "onyomi": "GOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "番号",
+          "bacaan": "ばんごう",
+          "arti": "nomor"
+        },
+        {
+          "kata": "102号室",
+          "bacaan": "ひゃくにごうしつ",
+          "arti": "kamar no 102"
+        }
+      ],
+      "arti": "nomor",
+      "halaman": 24
+    },
+    {
+      "kanji": "全",
+      "onyomi": "ZEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "全部",
+          "bacaan": "ぜんぶ",
+          "arti": "semua"
+        },
+        {
+          "kata": "安全",
+          "bacaan": "あんぜん",
+          "arti": "aman"
+        },
+        {
+          "kata": "全然",
+          "bacaan": "ぜんぜん",
+          "arti": "sama sekali"
+        }
+      ],
+      "arti": "semua",
+      "halaman": 25
+    },
+    {
+      "kanji": "洋",
+      "onyomi": "YOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "西洋",
+          "bacaan": "せいよう",
+          "arti": "barat (lagu, baju)"
+        },
+        {
+          "kata": "洋服",
+          "bacaan": "ようふく",
+          "arti": "pakaian barat"
+        }
+      ],
+      "arti": "barat",
+      "halaman": 25
+    },
+    {
+      "kanji": "服",
+      "onyomi": "FUKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "服",
+          "bacaan": "ふく",
+          "arti": "baju"
+        },
+        {
+          "kata": "洋服",
+          "bacaan": "ようふく",
+          "arti": "pakaian barat"
+        }
+      ],
+      "arti": "baju",
+      "halaman": 25
+    },
+    {
+      "kanji": "妹",
+      "onyomi": null,
+      "kunyomi": [
+        "imouto"
+      ],
+      "kotoba": [
+        {
+          "kata": "妹",
+          "bacaan": "いもうと",
+          "arti": "adik perempuan"
+        }
+      ],
+      "arti": "adik (pr)",
+      "halaman": 26
+    },
+    {
+      "kanji": "好",
+      "onyomi": null,
+      "kunyomi": [
+        "su(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "好きな",
+          "bacaan": "すきな",
+          "arti": "suka"
+        },
+        {
+          "kata": "大好きな",
+          "bacaan": "だいすきな",
+          "arti": "sangat suka"
+        }
+      ],
+      "arti": "suka",
+      "halaman": 26
+    },
+    {
+      "kanji": "弟",
+      "onyomi": "DAI",
+      "kunyomi": [
+        "otouto"
+      ],
+      "kotoba": [
+        {
+          "kata": "弟",
+          "bacaan": "おとうと",
+          "arti": "adik laki-laki"
+        },
+        {
+          "kata": "兄弟",
+          "bacaan": "きょうだい",
+          "arti": "saudara kandung"
+        }
+      ],
+      "arti": "adik (lk)",
+      "halaman": 26
+    },
+    {
+      "kanji": "赤",
+      "onyomi": null,
+      "kunyomi": [
+        "aka(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "赤い",
+          "bacaan": "あかい",
+          "arti": "merah"
+        },
+        {
+          "kata": "赤",
+          "bacaan": "あか",
+          "arti": "merah"
+        },
+        {
+          "kata": "赤ちゃん",
+          "bacaan": "あかちゃん",
+          "arti": "bayi"
+        }
+      ],
+      "arti": "merah",
+      "halaman": 26
+    },
+    {
+      "kanji": "黄",
+      "onyomi": null,
+      "kunyomi": [
+        "ki"
+      ],
+      "kotoba": [
+        {
+          "kata": "黄色い",
+          "bacaan": "きいろい",
+          "arti": "kuning"
+        },
+        {
+          "kata": "黄色",
+          "bacaan": "きいろ",
+          "arti": "kuning"
+        }
+      ],
+      "arti": "kuning",
+      "halaman": 26
+    },
+    {
+      "kanji": "色",
+      "onyomi": null,
+      "kunyomi": [
+        "iro"
+      ],
+      "kotoba": [
+        {
+          "kata": "色",
+          "bacaan": "いろ",
+          "arti": "warna"
+        },
+        {
+          "kata": "黄色",
+          "bacaan": "きいろ",
+          "arti": "kuning"
+        },
+        {
+          "kata": "茶色",
+          "bacaan": "ちゃいろ",
+          "arti": "cokelat"
+        }
+      ],
+      "arti": "warna",
+      "halaman": 26
+    },
+    {
+      "kanji": "黒",
+      "onyomi": null,
+      "kunyomi": [
+        "kuro(i)"
+      ],
+      "kotoba": [
+        {
+          "kata": "黒い",
+          "bacaan": "くろい",
+          "arti": "hitam"
+        },
+        {
+          "kata": "黒",
+          "bacaan": "くろ",
+          "arti": "hitam"
+        }
+      ],
+      "arti": "hitam",
+      "halaman": 27
+    },
+    {
+      "kanji": "首",
+      "onyomi": null,
+      "kunyomi": [
+        "kubi"
+      ],
+      "kotoba": [
+        {
+          "kata": "首",
+          "bacaan": "くび",
+          "arti": "leher"
+        }
+      ],
+      "arti": "leher",
+      "halaman": 27
+    },
+    {
+      "kanji": "顔",
+      "onyomi": null,
+      "kunyomi": [
+        "kao"
+      ],
+      "kotoba": [
+        {
+          "kata": "顔",
+          "bacaan": "かお",
+          "arti": "wajah"
+        }
+      ],
+      "arti": "wajah",
+      "halaman": 27
+    },
+    {
+      "kanji": "頭",
+      "onyomi": null,
+      "kunyomi": [
+        "atama"
+      ],
+      "kotoba": [
+        {
+          "kata": "頭",
+          "bacaan": "あたま",
+          "arti": "kepala"
+        }
+      ],
+      "arti": "kepala",
+      "halaman": 27
+    },
+    {
+      "kanji": "取",
+      "onyomi": null,
+      "kunyomi": [
+        "to(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "取る",
+          "bacaan": "とる",
+          "arti": "mengambil"
+        },
+        {
+          "kata": "取り替える",
+          "bacaan": "とりかえる",
+          "arti": "mengganti"
+        }
+      ],
+      "arti": "mengambil",
+      "halaman": 28
+    },
+    {
+      "kanji": "押",
+      "onyomi": null,
+      "kunyomi": [
+        "o(su)"
+      ],
+      "kotoba": [
+        {
+          "kata": "押す",
+          "bacaan": "おす",
+          "arti": "menekan"
+        },
+        {
+          "kata": "押し入れ",
+          "bacaan": "おしいれ",
+          "arti": "lemari oshiire"
+        }
+      ],
+      "arti": "mendorong",
+      "halaman": 28
+    },
+    {
+      "kanji": "引",
+      "onyomi": null,
+      "kunyomi": [
+        "hi(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "引く",
+          "bacaan": "ひく",
+          "arti": "menarik"
+        },
+        {
+          "kata": "引き出し",
+          "bacaan": "ひきだし",
+          "arti": "laci"
+        }
+      ],
+      "arti": "menarik",
+      "halaman": 28
+    },
+    {
+      "kanji": "止",
+      "onyomi": "SHI",
+      "kunyomi": [
+        "to(maru)",
+        "to(meru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "止まる",
+          "bacaan": "とまる",
+          "arti": "berhenti"
+        },
+        {
+          "kata": "止める",
+          "bacaan": "とめる",
+          "arti": "memberhentikan"
+        },
+        {
+          "kata": "中止する",
+          "bacaan": "ちゅうしする",
+          "arti": "membatalkan"
+        },
+        {
+          "kata": "使用禁止",
+          "bacaan": "しようきんし",
+          "arti": "tidak boleh digunakan"
+        }
+      ],
+      "arti": "berhenti",
+      "halaman": 28
+    },
+    {
+      "kanji": "開",
+      "onyomi": null,
+      "kunyomi": [
+        "a(ku)",
+        "a(keru)",
+        "hira(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "開く",
+          "bacaan": "あく",
+          "arti": "terbuka"
+        },
+        {
+          "kata": "開ける",
+          "bacaan": "あける",
+          "arti": "membuka"
+        },
+        {
+          "kata": "開く",
+          "bacaan": "ひらく",
+          "arti": "membuka, terbuka"
+        }
+      ],
+      "arti": "membuka",
+      "halaman": 28
+    },
+    {
+      "kanji": "閉",
+      "onyomi": null,
+      "kunyomi": [
+        "shi(meru)",
+        "shi(maru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "閉まる",
+          "bacaan": "しまる",
+          "arti": "tutup"
+        },
+        {
+          "kata": "閉める",
+          "bacaan": "しめる",
+          "arti": "menutup"
+        }
+      ],
+      "arti": "menutup",
+      "halaman": 28
+    },
+    {
+      "kanji": "部",
+      "onyomi": "BU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "部長",
+          "bacaan": "ぶちょう",
+          "arti": "general manager"
+        },
+        {
+          "kata": "全部",
+          "bacaan": "ぜんぶ",
+          "arti": "semua"
+        },
+        {
+          "kata": "学部",
+          "bacaan": "がくぶ",
+          "arti": "fakultas"
+        },
+        {
+          "kata": "部屋",
+          "bacaan": "へや",
+          "arti": "ruangan, kamar"
+        }
+      ],
+      "arti": "bagian",
+      "halaman": 29
+    },
+    {
+      "kanji": "屋",
+      "onyomi": "OKU",
+      "kunyomi": [
+        "ya"
+      ],
+      "kotoba": [
+        {
+          "kata": "本屋",
+          "bacaan": "ほんや",
+          "arti": "toko buku"
+        },
+        {
+          "kata": "花屋",
+          "bacaan": "はなや",
+          "arti": "toko bunga"
+        },
+        {
+          "kata": "屋上",
+          "bacaan": "おくじょう",
+          "arti": "atap, roof top"
+        }
+      ],
+      "arti": "toko, atap",
+      "halaman": 29
+    },
+    {
+      "kanji": "産",
+      "onyomi": "SAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "産業",
+          "bacaan": "さんぎょう",
+          "arti": "industri"
+        },
+        {
+          "kata": "お土産",
+          "bacaan": "おみやげ",
+          "arti": "oleh-oleh"
+        }
+      ],
+      "arti": "produksi",
+      "halaman": 29
+    },
+    {
+      "kanji": "姉",
+      "onyomi": null,
+      "kunyomi": [
+        "ane"
+      ],
+      "kotoba": [
+        {
+          "kata": "姉",
+          "bacaan": "あね",
+          "arti": "kakak perempuan"
+        },
+        {
+          "kata": "お姉さん",
+          "bacaan": "おねえさん",
+          "arti": "kakak perempuan"
+        }
+      ],
+      "arti": "kakak (pr)",
+      "halaman": 29
+    },
+    {
+      "kanji": "兄",
+      "onyomi": "KYOU",
+      "kunyomi": [
+        "ani"
+      ],
+      "kotoba": [
+        {
+          "kata": "兄",
+          "bacaan": "あに",
+          "arti": "kakak laki-laki"
+        },
+        {
+          "kata": "お兄さん",
+          "bacaan": "おにいさん",
+          "arti": "kakak laki-laki"
+        },
+        {
+          "kata": "兄弟",
+          "bacaan": "きょうだい",
+          "arti": "saudara kandung"
+        }
+      ],
+      "arti": "kakak (lk)",
+      "halaman": 29
+    },
+    {
+      "kanji": "世",
+      "onyomi": "SE",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "世界",
+          "bacaan": "せかい",
+          "arti": "dunia"
+        },
+        {
+          "kata": "世話をする",
+          "bacaan": "せわをする",
+          "arti": "menjaga, merawat"
+        }
+      ],
+      "arti": "kehidupan",
+      "halaman": 29
+    },
+    {
+      "kanji": "界",
+      "onyomi": "KAI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "世界",
+          "bacaan": "せかい",
+          "arti": "dunia"
+        },
+        {
+          "kata": "世界中",
+          "bacaan": "せかいじゅう",
+          "arti": "seluruh dunia"
+        }
+      ],
+      "arti": "dunia",
+      "halaman": 30
+    },
+    {
+      "kanji": "持",
+      "onyomi": null,
+      "kunyomi": [
+        "mo(tsu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "持つ",
+          "bacaan": "もつ",
+          "arti": "membawa"
+        },
+        {
+          "kata": "気持ち",
+          "bacaan": "きもち",
+          "arti": "perasaan"
+        },
+        {
+          "kata": "金持ち",
+          "bacaan": "かねもち",
+          "arti": "orang kaya"
+        }
+      ],
+      "arti": "membawa",
+      "halaman": 31
+    },
+    {
+      "kanji": "待",
+      "onyomi": "TAI",
+      "kunyomi": [
+        "ma(tsu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "待つ",
+          "bacaan": "まつ",
+          "arti": "menunggu"
+        },
+        {
+          "kata": "招待する",
+          "bacaan": "しょうたいする",
+          "arti": "mengundang"
+        }
+      ],
+      "arti": "menunggu",
+      "halaman": 31
+    },
+    {
+      "kanji": "特",
+      "onyomi": "TOKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "特に",
+          "bacaan": "とくに",
+          "arti": "terutama"
+        },
+        {
+          "kata": "特別な",
+          "bacaan": "とくべつな",
+          "arti": "khusus, spesial"
+        },
+        {
+          "kata": "特急",
+          "bacaan": "とっきゅう",
+          "arti": "limited ekspress"
+        }
+      ],
+      "arti": "khusus",
+      "halaman": 31
+    },
+    {
+      "kanji": "林",
+      "onyomi": null,
+      "kunyomi": [
+        "hayashi"
+      ],
+      "kotoba": [
+        {
+          "kata": "林",
+          "bacaan": "はやし",
+          "arti": "hutan"
+        }
+      ],
+      "arti": "hutan",
+      "halaman": 31
+    },
+    {
+      "kanji": "森",
+      "onyomi": null,
+      "kunyomi": [
+        "mori"
+      ],
+      "kotoba": [
+        {
+          "kata": "森",
+          "bacaan": "もり",
+          "arti": "hutan"
+        }
+      ],
+      "arti": "hutan",
+      "halaman": 31
+    },
+    {
+      "kanji": "村",
+      "onyomi": null,
+      "kunyomi": [
+        "mura"
+      ],
+      "kotoba": [
+        {
+          "kata": "村",
+          "bacaan": "むら",
+          "arti": "desa"
+        }
+      ],
+      "arti": "desa",
+      "halaman": 31
+    },
+    {
+      "kanji": "曜",
+      "onyomi": "YOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "曜日",
+          "bacaan": "ようび",
+          "arti": "hari"
+        },
+        {
+          "kata": "何曜日",
+          "bacaan": "なんようび",
+          "arti": "hari apa"
+        }
+      ],
+      "arti": "hari",
+      "halaman": 32
+    },
+    {
+      "kanji": "濯",
+      "onyomi": "TAKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "洗濯する",
+          "bacaan": "せんたくする",
+          "arti": "mencuci"
+        }
+      ],
+      "arti": "mencuci",
+      "halaman": 32
+    },
+    {
+      "kanji": "質",
+      "onyomi": "SHITSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "質問する",
+          "bacaan": "しつもんする",
+          "arti": "bertanya"
+        }
+      ],
+      "arti": "kualitas",
+      "halaman": 32
+    },
+    {
+      "kanji": "問",
+      "onyomi": "MON",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "質問する",
+          "bacaan": "しつもんする",
+          "arti": "bertanya"
+        },
+        {
+          "kata": "問題",
+          "bacaan": "もんだい",
+          "arti": "soal, masalah"
+        }
+      ],
+      "arti": "pertanyaan",
+      "halaman": 32
+    },
+    {
+      "kanji": "題",
+      "onyomi": "DAI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "問題",
+          "bacaan": "もんだい",
+          "arti": "soal, masalah"
+        },
+        {
+          "kata": "宿題",
+          "bacaan": "しゅくだい",
+          "arti": "pekerjaan rumah (PR)"
+        }
+      ],
+      "arti": "topik, subjek",
+      "halaman": 32
+    },
+    {
+      "kanji": "売",
+      "onyomi": null,
+      "kunyomi": [
+        "u(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "売る",
+          "bacaan": "うる",
+          "arti": "menjual"
+        },
+        {
+          "kata": "売り場",
+          "bacaan": "うりば",
+          "arti": "tempat penjualan"
+        }
+      ],
+      "arti": "menjual",
+      "halaman": 33
+    },
+    {
+      "kanji": "借",
+      "onyomi": null,
+      "kunyomi": [
+        "ka(riru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "借りる",
+          "bacaan": "かりる",
+          "arti": "meminjam"
+        }
+      ],
+      "arti": "meminjam",
+      "halaman": 33
+    },
+    {
+      "kanji": "貸",
+      "onyomi": null,
+      "kunyomi": [
+        "ka(su)"
+      ],
+      "kotoba": [
+        {
+          "kata": "貸す",
+          "bacaan": "かす",
+          "arti": "meminjamkan"
+        }
+      ],
+      "arti": "meminjamkan",
+      "halaman": 33
+    },
+    {
+      "kanji": "習",
+      "onyomi": "SHUU",
+      "kunyomi": [
+        "nara(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "練習",
+          "bacaan": "れんしゅう",
+          "arti": "latihan"
+        },
+        {
+          "kata": "予習",
+          "bacaan": "よしゅう",
+          "arti": "belajar persiapan"
+        },
+        {
+          "kata": "復習",
+          "bacaan": "ふくしゅう",
+          "arti": "belajar mengulang"
+        },
+        {
+          "kata": "習慣",
+          "bacaan": "しゅうかん",
+          "arti": "kebiasaan"
+        },
+        {
+          "kata": "習う",
+          "bacaan": "ならう",
+          "arti": "belajar"
+        }
+      ],
+      "arti": "belajar",
+      "halaman": 33
+    },
+    {
+      "kanji": "乗",
+      "onyomi": null,
+      "kunyomi": [
+        "no(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "乗る",
+          "bacaan": "のる",
+          "arti": "naik"
+        },
+        {
+          "kata": "乗り物",
+          "bacaan": "のりもの",
+          "arti": "kendaraan"
+        },
+        {
+          "kata": "乗り換える",
+          "bacaan": "のりかえる",
+          "arti": "transfer kendaraan"
+        }
+      ],
+      "arti": "naik",
+      "halaman": 33
+    },
+    {
+      "kanji": "座",
+      "onyomi": null,
+      "kunyomi": [
+        "suwa(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "座る",
+          "bacaan": "すわる",
+          "arti": "duduk"
+        }
+      ],
+      "arti": "duduk",
+      "halaman": 33
+    },
+    {
+      "kanji": "死",
+      "onyomi": null,
+      "kunyomi": [
+        "shi(nu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "死ぬ",
+          "bacaan": "しぬ",
+          "arti": "mati"
+        }
+      ],
+      "arti": "meninggal",
+      "halaman": 34
+    },
+    {
+      "kanji": "不",
+      "onyomi": "FU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "不便な",
+          "bacaan": "ふべんな",
+          "arti": "tidak praktis"
+        }
+      ],
+      "arti": "tidak",
+      "halaman": 34
+    },
+    {
+      "kanji": "体",
+      "onyomi": null,
+      "kunyomi": [
+        "karada"
+      ],
+      "kotoba": [
+        {
+          "kata": "体",
+          "bacaan": "からだ",
+          "arti": "badan"
+        }
+      ],
+      "arti": "badan",
+      "halaman": 35
+    },
+    {
+      "kanji": "働",
+      "onyomi": null,
+      "kunyomi": [
+        "hatara(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "働く",
+          "bacaan": "はたらく",
+          "arti": "bekerja"
+        }
+      ],
+      "arti": "bekerja",
+      "halaman": 35
+    },
+    {
+      "kanji": "薬",
+      "onyomi": null,
+      "kunyomi": [
+        "kusuri"
+      ],
+      "kotoba": [
+        {
+          "kata": "薬",
+          "bacaan": "くすり",
+          "arti": "obat"
+        }
+      ],
+      "arti": "obat",
+      "halaman": 35
+    },
+    {
+      "kanji": "奥",
+      "onyomi": "OKU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "奥さん",
+          "bacaan": "おくさん",
+          "arti": "istri"
+        }
+      ],
+      "arti": "dalam",
+      "halaman": 35
+    },
+    {
+      "kanji": "急",
+      "onyomi": "KYUU",
+      "kunyomi": [
+        "iso(gu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "急に",
+          "bacaan": "きゅうに",
+          "arti": "tiba-tiba"
+        },
+        {
+          "kata": "急ぐ",
+          "bacaan": "いそぐ",
+          "arti": "buru-buru"
+        },
+        {
+          "kata": "特急",
+          "bacaan": "とっきゅう",
+          "arti": "limited ekspress"
+        },
+        {
+          "kata": "急行",
+          "bacaan": "きゅうこう",
+          "arti": "ekspress"
+        }
+      ],
+      "arti": "tiba-tiba",
+      "halaman": 35
+    },
+    {
+      "kanji": "正",
+      "onyomi": "SHOU",
+      "kunyomi": [
+        "tada(shii)"
+      ],
+      "kotoba": [
+        {
+          "kata": "正しい",
+          "bacaan": "ただしい",
+          "arti": "benar"
+        },
+        {
+          "kata": "お正月",
+          "bacaan": "おしょうがつ",
+          "arti": "tahun baru"
+        }
+      ],
+      "arti": "benar",
+      "halaman": 35
+    },
+    {
+      "kanji": "試",
+      "onyomi": "SHI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "試合",
+          "bacaan": "しあい",
+          "arti": "pertandingan"
+        },
+        {
+          "kata": "試験",
+          "bacaan": "しけん",
+          "arti": "ujian"
+        }
+      ],
+      "arti": "mencoba",
+      "halaman": 36
+    },
+    {
+      "kanji": "験",
+      "onyomi": "KEN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "試験",
+          "bacaan": "しけん",
+          "arti": "ujian"
+        },
+        {
+          "kata": "経験",
+          "bacaan": "けいけん",
+          "arti": "pengalaman"
+        }
+      ],
+      "arti": "tes, ujian",
+      "halaman": 36
+    },
+    {
+      "kanji": "考",
+      "onyomi": null,
+      "kunyomi": [
+        "kanga(eru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "考える",
+          "bacaan": "かんがえる",
+          "arti": "berpikir"
+        }
+      ],
+      "arti": "berpikir",
+      "halaman": 36
+    },
+    {
+      "kanji": "心",
+      "onyomi": "SHIN",
+      "kunyomi": [
+        "kokoro"
+      ],
+      "kotoba": [
+        {
+          "kata": "心",
+          "bacaan": "こころ",
+          "arti": "hati"
+        },
+        {
+          "kata": "安心する",
+          "bacaan": "あんしんする",
+          "arti": "tenang"
+        }
+      ],
+      "arti": "hati",
+      "halaman": 36
+    },
+    {
+      "kanji": "声",
+      "onyomi": null,
+      "kunyomi": [
+        "koe"
+      ],
+      "kotoba": [
+        {
+          "kata": "声",
+          "bacaan": "こえ",
+          "arti": "suara"
+        }
+      ],
+      "arti": "suara",
+      "halaman": 36
+    },
+    {
+      "kanji": "合",
+      "onyomi": "GOU",
+      "kunyomi": [
+        "a(u)"
+      ],
+      "kotoba": [
+        {
+          "kata": "合う",
+          "bacaan": "あう",
+          "arti": "cocok"
+        },
+        {
+          "kata": "間に合う",
+          "bacaan": "まにあう",
+          "arti": "keburu"
+        },
+        {
+          "kata": "合格",
+          "bacaan": "ごうかく",
+          "arti": "lulus"
+        },
+        {
+          "kata": "都合がいい",
+          "bacaan": "つごうがいい",
+          "arti": "kondisi bagus (waktu)"
+        }
+      ],
+      "arti": "cocok, saling",
+      "halaman": 37
+    },
+    {
+      "kanji": "漢",
+      "onyomi": "KAN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "漢字",
+          "bacaan": "かんじ",
+          "arti": "kanji"
+        }
+      ],
+      "arti": "china",
+      "halaman": 37
+    },
+    {
+      "kanji": "字",
+      "onyomi": "JI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "漢字",
+          "bacaan": "かんじ",
+          "arti": "kanji"
+        },
+        {
+          "kata": "文字",
+          "bacaan": "もじ",
+          "arti": "huruf"
+        }
+      ],
+      "arti": "huruf",
+      "halaman": 37
+    },
+    {
+      "kanji": "切",
+      "onyomi": "SETSU",
+      "kunyomi": [
+        "ki(ru)",
+        "ki(reru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "切る",
+          "bacaan": "きる",
+          "arti": "memotong"
+        },
+        {
+          "kata": "切れる",
+          "bacaan": "きれる",
+          "arti": "putus, terpotong"
+        },
+        {
+          "kata": "切手",
+          "bacaan": "きって",
+          "arti": "perangko"
+        }
+      ],
+      "arti": "memotong",
+      "halaman": 37
+    },
+    {
+      "kanji": "楽",
+      "onyomi": "GAKU",
+      "kunyomi": [
+        "tano(shii)",
+        "tano(shimu)"
+      ],
+      "kotoba": [
+        {
+          "kata": "楽しい",
+          "bacaan": "たのしい",
+          "arti": "menyenangkan"
+        },
+        {
+          "kata": "楽しむ",
+          "bacaan": "たのしむ",
+          "arti": "menikmati"
+        },
+        {
+          "kata": "音楽",
+          "bacaan": "おんがく",
+          "arti": "musik"
+        }
+      ],
+      "arti": "menyenangkan",
+      "halaman": 37
+    },
+    {
+      "kanji": "親",
+      "onyomi": "SHIN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "親切な",
+          "bacaan": "しんせつな",
+          "arti": "ramah"
+        },
+        {
+          "kata": "両親",
+          "bacaan": "りょうしん",
+          "arti": "kedua orang tua"
+        }
+      ],
+      "arti": "orang tua",
+      "halaman": 37
+    },
+    {
+      "kanji": "自",
+      "onyomi": "JI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "自分",
+          "bacaan": "じぶん",
+          "arti": "diri sendiri"
+        },
+        {
+          "kata": "自動",
+          "bacaan": "じどう",
+          "arti": "otomatis"
+        },
+        {
+          "kata": "自由",
+          "bacaan": "じゆう",
+          "arti": "bebas"
+        }
+      ],
+      "arti": "diri sendiri",
+      "halaman": 38
+    },
+    {
+      "kanji": "場",
+      "onyomi": "JOU",
+      "kunyomi": [
+        "ba"
+      ],
+      "kotoba": [
+        {
+          "kata": "工場",
+          "bacaan": "こうじょう",
+          "arti": "pabrik"
+        },
+        {
+          "kata": "場所",
+          "bacaan": "ばしょ",
+          "arti": "tempat"
+        },
+        {
+          "kata": "駐車場",
+          "bacaan": "ちゅうしゃじょう",
+          "arti": "tempat parkir"
+        }
+      ],
+      "arti": "tempat",
+      "halaman": 38
+    },
+    {
+      "kanji": "室",
+      "onyomi": "SHITSU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "教室",
+          "bacaan": "きょうしつ",
+          "arti": "ruang kelas"
+        },
+        {
+          "kata": "会議室",
+          "bacaan": "かいぎしつ",
+          "arti": "ruang meeting"
+        }
+      ],
+      "arti": "ruangan",
+      "halaman": 38
+    },
+    {
+      "kanji": "鳥",
+      "onyomi": null,
+      "kunyomi": [
+        "tori"
+      ],
+      "kotoba": [
+        {
+          "kata": "鳥",
+          "bacaan": "とり",
+          "arti": "burung"
+        },
+        {
+          "kata": "小鳥",
+          "bacaan": "ことり",
+          "arti": "burung kecil"
+        }
+      ],
+      "arti": "burung",
+      "halaman": 39
+    },
+    {
+      "kanji": "銀",
+      "onyomi": "GIN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "銀行",
+          "bacaan": "ぎんこう",
+          "arti": "bank"
+        }
+      ],
+      "arti": "perak",
+      "halaman": 39
+    },
+    {
+      "kanji": "堂",
+      "onyomi": "DOU",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "食堂",
+          "bacaan": "しょくどう",
+          "arti": "kantin"
+        },
+        {
+          "kata": "講堂",
+          "bacaan": "こうどう",
+          "arti": "ruang auditorium"
+        }
+      ],
+      "arti": "gedung",
+      "halaman": 39
+    },
+    {
+      "kanji": "院",
+      "onyomi": "IN",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "病院",
+          "bacaan": "びょういん",
+          "arti": "rumah sakit"
+        },
+        {
+          "kata": "入院する",
+          "bacaan": "にゅういんする",
+          "arti": "masuk rumah sakit"
+        },
+        {
+          "kata": "大学院",
+          "bacaan": "だいがくいん",
+          "arti": "jenjang S2, S3"
+        }
+      ],
+      "arti": "bangunan",
+      "halaman": 39
+    },
+    {
+      "kanji": "歩",
+      "onyomi": "HO",
+      "kunyomi": [
+        "aru(ku)"
+      ],
+      "kotoba": [
+        {
+          "kata": "歩く",
+          "bacaan": "あるく",
+          "arti": "berjalan kaki"
+        },
+        {
+          "kata": "散歩する",
+          "bacaan": "さんぽする",
+          "arti": "jalan-jalan"
+        }
+      ],
+      "arti": "jalan kaki",
+      "halaman": 39
+    },
+    {
+      "kanji": "走",
+      "onyomi": null,
+      "kunyomi": [
+        "hashi(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "走る",
+          "bacaan": "はしる",
+          "arti": "berlari"
+        }
+      ],
+      "arti": "lari",
+      "halaman": 39
+    },
+    {
+      "kanji": "海",
+      "onyomi": "KAI",
+      "kunyomi": [
+        "umi"
+      ],
+      "kotoba": [
+        {
+          "kata": "海",
+          "bacaan": "うみ",
+          "arti": "laut"
+        },
+        {
+          "kata": "海岸",
+          "bacaan": "かいがん",
+          "arti": "pinggir laut"
+        }
+      ],
+      "arti": "laut",
+      "halaman": 40
+    },
+    {
+      "kanji": "帰",
+      "onyomi": null,
+      "kunyomi": [
+        "kae(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "帰る",
+          "bacaan": "かえる",
+          "arti": "pulang"
+        }
+      ],
+      "arti": "pulang",
+      "halaman": 40
+    },
+    {
+      "kanji": "英",
+      "onyomi": "EI",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "英語",
+          "bacaan": "えいご",
+          "arti": "bahasa Inggris"
+        }
+      ],
+      "arti": "inggris",
+      "halaman": 40
+    },
+    {
+      "kanji": "茶",
+      "onyomi": "CHA, SA",
+      "kunyomi": [],
+      "kotoba": [
+        {
+          "kata": "お茶",
+          "bacaan": "おちゃ",
+          "arti": "teh"
+        },
+        {
+          "kata": "紅茶",
+          "bacaan": "こうちゃ",
+          "arti": "teh hitam"
+        },
+        {
+          "kata": "喫茶店",
+          "bacaan": "きっさてん",
+          "arti": "kafe"
+        }
+      ],
+      "arti": "teh",
+      "halaman": 40
+    },
+    {
+      "kanji": "答",
+      "onyomi": null,
+      "kunyomi": [
+        "kota(eru/e)"
+      ],
+      "kotoba": [
+        {
+          "kata": "答え",
+          "bacaan": "こたえ",
+          "arti": "jawaban"
+        },
+        {
+          "kata": "答える",
+          "bacaan": "こたえる",
+          "arti": "menjawab"
+        }
+      ],
+      "arti": "menjawab",
+      "halaman": 40
+    },
+    {
+      "kanji": "紙",
+      "onyomi": null,
+      "kunyomi": [
+        "kami"
+      ],
+      "kotoba": [
+        {
+          "kata": "紙",
+          "bacaan": "かみ",
+          "arti": "kertas"
+        },
+        {
+          "kata": "手紙",
+          "bacaan": "てがみ",
+          "arti": "surat"
+        }
+      ],
+      "arti": "kertas",
+      "halaman": 40
+    },
+    {
+      "kanji": "私",
+      "onyomi": null,
+      "kunyomi": [
+        "watashi",
+        "watakushi"
+      ],
+      "kotoba": [
+        {
+          "kata": "私",
+          "bacaan": "わたし・わたくし",
+          "arti": "saya"
+        }
+      ],
+      "arti": "saya",
+      "halaman": 41
+    },
+    {
+      "kanji": "送",
+      "onyomi": "SOU",
+      "kunyomi": [
+        "oku(ru)"
+      ],
+      "kotoba": [
+        {
+          "kata": "送る",
+          "bacaan": "おくる",
+          "arti": "mengirim"
+        },
+        {
+          "kata": "放送する",
+          "bacaan": "ほうそうする",
+          "arti": "menyiarkan"
+        }
+      ],
+      "arti": "mengirim",
+      "halaman": 41
+    }
+  ]
+}
