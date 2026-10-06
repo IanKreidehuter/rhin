@@ -551,6 +551,197 @@
       ]
     },
     {
+      "nomor": 29,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja Bentuk て います",
+          "pola": [
+            "Kata Kerja Bentuk て + います"
+          ],
+          "catatan": [
+            "Kata Kerja Bentuk て います ini adalah cara penggunaan untuk menyatakan hal yang berlangsung atas akibat dari aksi itu.",
+            "Misalnya, ① menyatakan bahwa kaca jendela pecah pada suatu titik (窓が割れました), kemudian saat ini pun akibatnya tetap berlangsung (窓が割れています = keadaan kaca jendela pecah).",
+            "Kata Kerja yang digunakan dengan cara penggunaan ini adalah Kata Kerja yang mengalami perubahan sebelum dan sesudah terjadi aksi tersebut, seperti あきます, しまります, つきます, きえます, こわれます, われます.",
+            "Dengan catatan bahwa jika menggambarkan keadaan di depan mata secara langsung, seperti ① atau ②, subjek dinyatakan dengan が. Jika subjek dianggap sebagai topik, digunakan Kata Bantu は seperti ③."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "窓が割れています。",
+                  "id": "Kaca jendela pecah."
+                },
+                {
+                  "no": "②",
+                  "jp": "電気がついています。",
+                  "id": "Listrik menyala."
+                },
+                {
+                  "no": "③",
+                  "jp": "このいすは壊れています。",
+                  "id": "Kursi ini rusak."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja Bentuk て しまいました／しまいます",
+          "pola": [
+            "Kata Kerja Bentuk て + しまいました／しまいます"
+          ],
+          "catatan": [
+            "～てしまいました menyatakan bahwa aksi telah selesai. ～てしまいます menyatakan bahwa aksi akan selesai pada suatu titik pada masa depan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "④",
+                  "jp": "シュミットさんが持って来たワインはみんなで飲んでしまいました。",
+                  "id": "Anggur yang dibawa oleh sdr. Schmidt telah diminum oleh semuanya."
+                },
+                {
+                  "no": "⑤",
+                  "jp": "漢字の宿題はもうやってしまいました。",
+                  "id": "PR mengenai huruf Kanji telah saya selesaikan."
+                },
+                {
+                  "no": "⑥",
+                  "jp": "昼ごはんまでにレポートを書いてしまいます。",
+                  "id": "Sampai dengan makan siang, saya akan menyelesaikan menulis laporan."
+                }
+              ]
+            },
+            {
+              "keterangan": "Dalam ～てしまいました adakalanya untuk menyatakan perasaan penyesalan atau kekecewaan si pembicara seperti ⑦ atau ⑧.",
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "パスポートをなくしてしまいました。",
+                  "id": "(Saya) Kehilangan paspor."
+                },
+                {
+                  "no": "⑧",
+                  "jp": "パソコンが故障してしまいました。",
+                  "id": "PC rusak."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Benda（Tempat）に 行きます／来ます／帰ります",
+          "pola": [
+            "Kata Benda (Tempat) + に + 行きます／来ます／帰ります"
+          ],
+          "catatan": [
+            "Pada ⑨ (Lihat Latihan C3), untuk menggantikan Kata Bantu へ yang menunjuk arah, digunakan Kata Bantu に untuk menyatakan titik sampainya. Sebagaimana pada keterangan itu, Kata Kerja いきます, きます, かえります dan lain-lainnya keduanya dapat digunakan untuk tempat へ atau tempat に."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "どこかで財布を落としてしまったんです。\n……それは大変ですね。すぐ交番に行かないと。",
+                  "id": "Dompet (Saya) terjatuh di suatu tempat.\n…… Susah, ya. Harus pergi ke pos polisi dengan segera."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "それ／その／そう",
+          "pola": [
+            "それ／その／そう"
+          ],
+          "catatan": [
+            "Pada Pelajaran 2 telah dipelajari cara penggunaan mengenai Kata Petunjuk yang menunjukkan benda yang ada di tempat itu. Di sini diperkenalkan それ, その, そう yang menunjukkan benda yang muncul di dalam cerita si pembicara atau kalimat."
+          ],
+          "bagian": [
+            {
+              "judul": "1) Untuk percakapan",
+              "keterangan": "それ pada ⑩ dan ⑪, その pada ⑫, dan そう pada ⑬ menunjuk isi yang dijelaskan oleh lawan bicara tepat sebelumnya.",
+              "contoh": [
+                {
+                  "no": "⑩",
+                  "jp": "どこかで財布を落としてしまったんです。\n……それは大変ですね。すぐ交番に行かないと。",
+                  "id": "Dompet (Saya) terjatuh di suatu tempat.\n…… Susah, ya. Harus pergi ke pos polisi dengan segera."
+                },
+                {
+                  "no": "⑪",
+                  "jp": "来月から大阪の本社に転勤なんです。\n……それはおめでとうございます。",
+                  "id": "Mulai bulan depan, (saya) pindah ke kantor pusat di Osaka.\n…… Oh, saya mengucapkan selamat! (Pel.31)"
+                },
+                {
+                  "no": "⑫",
+                  "jp": "あのう、途中でやめたい場合は？\n……その場合は、近くの係員に名前を言って、帰ってください。",
+                  "id": "Anu..., kalau mau berhenti setengah jalan?\n…… Untuk masalah itu, beritahukan nama (Anda) kepada staf terdekat, lalu silakan pulang. (Pel.45)"
+                },
+                {
+                  "no": "⑬",
+                  "jp": "うちへ帰って、休んだほうがいいですよ。\n……ええ、そうします。",
+                  "id": "Lebih baik pulang ke rumah, dan beristirahat.\n…… Ya, benar. (Pel.32)"
+                }
+              ]
+            },
+            {
+              "judul": "2) Untuk kalimat",
+              "keterangan": "その pada ⑭ menunjuk isi dari kalimat yang terdapat pada kalimat sebelumnya.",
+              "contoh": [
+                {
+                  "no": "⑭",
+                  "jp": "一人でコンサートや展覧会に出かけると、いいでしょう。そのとき会った人が将来の恋人になるかもしれません。",
+                  "id": "Bagus juga kalau pergi ke konser atau pameran sendirian. Siapa tahu kalau orang yang Anda jumpai pada saat itu yang menjadi pacar untuk masa depan. (Pel.32)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "ありました",
+          "catatan": [
+            "ありました ini menyatakan bahwa lawan bicaranya menemukan keberadaan tas. Tidak bermaksud bahwa pernah ada tas di situ."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑮",
+                  "jp": "[かばんが]ありましたよ。",
+                  "id": "[Tasnya] Ada."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "どこかで／どこかに",
+          "catatan": [
+            "Kata Bantu へ dan を di belakang どこか dan なにか dapat dihilangkan, sedangkan Kata Bantu で dan に di belakang どこかで dan どこかに tidak dapat dihilangkan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑯",
+                  "jp": "どこかで財布をなくしてしまいました。",
+                  "id": "Entah di mana (saya) kehilangan dompet."
+                },
+                {
+                  "no": "⑰",
+                  "jp": "どこかに電話がありますか。",
+                  "id": "Apakah ada telepon dari suatu tempat?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "nomor": 30,
       "judul": "Keterangan Tata Bahasa",
       "poin": [
