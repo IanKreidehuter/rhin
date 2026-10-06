@@ -121,3 +121,5 @@ background:linear-gradient(180deg,rgba(10,63,156,0) 35%,rgba(10,63,156,.75) 62%,
 .tap{position:absolute;bottom:16px;font-size:.78rem;color:var(--mut)}
 .mcard.ok .face{outline:5px solid #22c55e}.mcard.no .face{outline:5px solid #ef4444}
 .btn.good{background:#16a34a}.btn.bad{background:#e5484d}
+
+.fh{font:600 1.4rem var(--jp);color:var(--blue)}
