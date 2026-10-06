@@ -241,13 +241,18 @@ function grammarLesson(i) {
 }
 
 /* Memorize mode: guess the card, flip to reveal, then mark "Got it" or "Again" (per lesson / bab) */
+const mState = { mode: 'jp' };   // 'jp' = Kotoba → Arti, 'id' = Arti → Kotoba
 function memoPick() {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const row = (b, label) => { const n = KOTOBA.filter(w => b === '__all' || val(w.bab) === b).length;
     return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${n} words</div></div><span class="play-s">▶</span></a>`; };
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo" aria-label="Back">←</a><h2>Guess cards</h2></div>
-    <p class="count">Choose a lesson / bab to memorize</p>
+    <div class="chips" id="md"></div><p class="count">Choose a lesson / bab to memorize</p>
     <div class="list">${row('__all', 'All lessons')}${babs.map(b => row(b, b)).join('')}</div></section>`;
+  const md = document.getElementById('md');
+  const paint = () => md.innerHTML = [['jp', 'Kotoba → Arti'], ['id', 'Arti → Kotoba']].map(([v, l]) => `<button class="chip ${mState.mode === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('');
+  md.onclick = e => { const b = e.target.closest('button'); if (b) { mState.mode = b.dataset.v; paint(); } };
+  paint();
 }
 
 function memoPlay(bp) {
@@ -258,7 +263,7 @@ function memoPlay(bp) {
   let queue = [], total = 0, known = 0, missed = [], flipped = false, busy = false;
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const start = list => { queue = shuffle(list); total = queue.length; known = 0; missed = []; draw(); };
-  const front = w => `<div class="fq">${rb(w)}</div>`;
+  const front = w => mState.mode === 'jp' ? `<div class="fq">${rb(w)}</div>` : `<div class="fq id">${dash(w.arti)}</div>`;
 
   function draw() {
     if (!queue.length) return finish();
@@ -267,7 +272,7 @@ function memoPlay(bp) {
     view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${esc(title)}</h2><span class="cnt">${n} / ${total}</span></div>
       <div class="bar"><i style="width:${n / total * 100}%"></i></div>
       <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
-        <div class="face">${front(w)}<span class="tap">Tap to reveal the meaning</span></div>
+        <div class="face">${front(w)}<span class="tap">${mState.mode === 'jp' ? 'Tap to reveal the meaning' : 'Tap to reveal the Japanese'}</span></div>
         <div class="face back"><div class="fq sm">${rb(w)}</div><div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
       <p class="count" style="text-align:center">Swipe right = got it · swipe left = again</p>
       <div class="ctrl"><button class="btn bad" id="no" disabled>✗ Again</button><button class="btn good" id="ok" disabled>✓ Got it</button></div>
