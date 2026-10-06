@@ -99,7 +99,7 @@ function homeView() {
       <strong>Lesson ${esc(l.lesson)} · ${esc(val(l.category))}</strong><div class="meta"><span>${(l.kanji || []).length} kanji</span><span class="play-s">▶</span></div></a>`;
   }).join('');
   view.innerHTML = `<section class="page">
-    <header class="top"><a class="av" href="#/home" aria-label="Home"><img src="./logo-icon.png" alt=""></a><span class="logo">Japanese N4</span><a class="rnd" href="#/cards" aria-label="Kanji cards">札</a></header>
+    <header class="top"><a class="brand" href="#/home" aria-label="Home"><img src="./logo-long.png" alt="Learning Archive Japanese Lesson N4"></a><a class="rnd" href="#/cards" aria-label="Kanji cards">札</a></header>
     <a class="banner" href="#/kotoba"><div><small>言葉と漢字を学ぼう</small><h1>Japanese N4</h1><p>${KOTOBA.length} kotoba · ${KANJI.length} kanji</p></div><span class="mini">▶</span></a>
     <div class="row"><h3>Lessons</h3><a href="#/kotoba/list">See all</a></div>
     <div class="hs">
@@ -398,14 +398,12 @@ function route() {
   scrollTo(0, 0);
 }
 addEventListener('hashchange', route);
-// Splash (bannerlogo.png): stays longer on the first visit, short on later visits, hides once data is ready
+// Splash (bannerlogo.png): shown for 5 seconds on every load (time spent loading data counts), then fades out
 const splashStart = Date.now();
 function hideSplash() {
   const el = document.getElementById('splash');
   if (!el) return;
-  let first = true;
-  try { first = !localStorage.getItem('n4seen'); localStorage.setItem('n4seen', '1'); } catch (e) { /* storage blocked */ }
-  const wait = Math.max(0, (first ? 2000 : 700) - (Date.now() - splashStart));
+  const wait = Math.max(0, 5000 - (Date.now() - splashStart));
   setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 500); }, wait);
 }
 load().then(hideSplash);
