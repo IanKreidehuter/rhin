@@ -1,3 +1,7 @@
+/* Protection layer: no text selection, no iOS long-press callout, no image/link dragging; inputs stay usable */
+html,body,*{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+a,img,svg{-webkit-user-drag:none;user-drag:none}
+input,textarea{-webkit-user-select:text;user-select:text}
 :root{--bg:#86d5ff;--app:#f5f7fa;--ink:#0b2a5c;--blue:#2f7df6;--navy:#0a3f9c;--mut:#6b7c99;
 --jp:"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI","Yu Gothic",Meiryo,system-ui,sans-serif;
 --ui:system-ui,-apple-system,"Segoe UI",Roboto,var(--jp);--sh:0 6px 20px rgba(20,60,120,.12)}
@@ -104,3 +108,16 @@ background:linear-gradient(180deg,rgba(10,63,156,0) 35%,rgba(10,63,156,.75) 62%,
 .pola{margin-top:10px;padding:10px 14px;border-radius:16px;background:#eef6ff;border-left:4px solid var(--blue);font:600 .92rem/1.4 var(--jp)}
 .gx{display:flex;gap:10px;margin-top:8px;padding:10px 12px;border-radius:16px;background:#f5f9ff;white-space:pre-line}
 .gx>b{flex:none;color:var(--blue);font-family:var(--jp)}.gj{font:600 1rem/1.5 var(--jp)}.gi{margin-top:2px;font-size:.82rem;color:var(--mut)}
+
+/* guess cards */
+.scene{perspective:1100px;touch-action:pan-y}
+.mcard{position:relative;height:400px;transition:transform .25s ease}
+.flip{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .5s ease;cursor:pointer}
+.flip.on{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:20px;overflow:auto;border-radius:30px;background:#fff;box-shadow:var(--sh);text-align:center;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow-wrap:anywhere}
+.face.back{transform:rotateY(180deg);background:linear-gradient(160deg,#fff,#e8f3ff)}
+.face .detail,.face .fc{box-shadow:none;padding:0;background:none}
+.fq{font:800 clamp(2.6rem,15vw,4.4rem)/1.2 var(--jp)}.fq.id{font:800 clamp(1.5rem,7vw,2.1rem)/1.3 var(--ui);color:var(--navy)}
+.tap{position:absolute;bottom:16px;font-size:.78rem;color:var(--mut)}
+.mcard.ok .face{outline:5px solid #22c55e}.mcard.no .face{outline:5px solid #ef4444}
+.btn.good{background:#16a34a}.btn.bad{background:#e5484d}
