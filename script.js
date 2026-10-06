@@ -276,7 +276,7 @@ function memoPlay(bp, mode) {
     const w = queue[0], n = total - queue.length;
     view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick/${mState.mode}" aria-label="Back">←</a><h2>${esc(title)}</h2><span class="cnt">${n} / ${total}</span></div>
       <div class="bar"><i style="width:${n / total * 100}%"></i></div>
-      <button class="btn ghost swap" id="sw" aria-label="Swap direction">⇄ ${mState.mode === 'jp' ? 'Kotoba → Arti' : 'Arti → Kotoba'} (tap to swap)</button>
+      <button class="btn ghost swap" id="sw" aria-label="Swap direction">⇄ ${mState.mode === 'jp' ? 'Kotoba → Arti' : 'Arti → Kotoba'}</button>
       <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
         <div class="face">${front(w)}<span class="tap">${mState.mode === 'jp' ? 'Tap to reveal the meaning' : 'Tap to reveal the Japanese'}</span></div>
         <div class="face back"><div class="fq sm">${rb(w)}</div><div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
