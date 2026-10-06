@@ -15,6 +15,7 @@ const val = v => {
 const dash = v => esc(val(v) || '—');
 const lineHtml = v => (Array.isArray(v) ? v : [v]).map(val).filter(Boolean).map(esc).join('<br>') || '—';
 const kj = w => (val(w.kanji) && val(w.kanji) !== val(w.hiragana)) ? val(w.kanji) : '';
+const rb = w => kj(w) ? `<ruby>${esc(kj(w))}<rt>${esc(val(w.hiragana))}</rt></ruby>` : esc(val(w.hiragana));
 const typeLabel = t => val(t).replace('/', ' / ');
 
 let KOTOBA = [], KANJI = [], GRAMMAR = [], loadError = false;
@@ -257,7 +258,7 @@ function memoPlay(bp) {
   let queue = [], total = 0, known = 0, missed = [], flipped = false, busy = false;
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const start = list => { queue = shuffle(list); total = queue.length; known = 0; missed = []; draw(); };
-  const front = w => kj(w) ? `<div class="fh">${esc(val(w.hiragana))}</div><div class="fq">${esc(kj(w))}</div>` : `<div class="fq">${esc(val(w.hiragana))}</div>`;
+  const front = w => `<div class="fq">${rb(w)}</div>`;
 
   function draw() {
     if (!queue.length) return finish();
@@ -267,7 +268,7 @@ function memoPlay(bp) {
       <div class="bar"><i style="width:${n / total * 100}%"></i></div>
       <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
         <div class="face">${front(w)}<span class="tap">Tap to reveal the meaning</span></div>
-        <div class="face back">${wordCard(w)}</div></div></div></div>
+        <div class="face back"><div class="fq sm">${rb(w)}</div><div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
       <p class="count" style="text-align:center">Swipe right = got it · swipe left = again</p>
       <div class="ctrl"><button class="btn bad" id="no" disabled>✗ Again</button><button class="btn good" id="ok" disabled>✓ Got it</button></div>
       <p class="count" style="text-align:center">✓ ${known} &nbsp; ✗ ${missed.length}</p></section>`;
