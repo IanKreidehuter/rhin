@@ -1,6 +1,9 @@
 'use strict';
 /* Japanese N4 app: static SPA, hash routing, data loaded with fetch() */
 const view = document.getElementById('view');
+// Content protection: block context menu / long-press menu, selection, copy and dragging (search inputs stay usable)
+['contextmenu', 'dragstart', 'selectstart', 'copy', 'cut'].forEach(t =>
+  document.addEventListener(t, e => { if (!(e.target.closest && e.target.closest('input,textarea'))) e.preventDefault(); }));
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // Clean a value: never show null/undefined/empty; arrays are joined
 const val = v => {
@@ -40,6 +43,7 @@ const POSTERS = {
   kotoba:  { t: 'Kotoba',  jp: 'ことば', d: 'Japanese Vocabulary', go: '#/kotoba/list', n: () => `${KOTOBA.length} words | N4` },
   kanji:   { t: 'Kanji',   jp: '漢字',   d: 'Readings and example words', go: '#/kanji/list', n: () => `${KANJI.length} kanji | ${LESSONS.length} lessons` },
   cards:   { t: 'Kanji Cards', jp: '漢字カード', d: 'Swipe through every Kanji', go: '#/cards/play', n: () => `${KANJI.length} cards | Swipe` },
+  memo:    { t: 'Guess Cards', jp: '暗記カード', d: 'Flip, guess and memorize by lesson', go: '#/memo/pick', n: () => `${KOTOBA.length} words | by lesson` },
   grammar: { t: 'Grammar', jp: '文法',   d: 'Grammar Lessons', go: '#/grammar/list', n: () => `${GRAMMAR.length} lessons | N4` },
   quiz:    { t: 'Quiz',    jp: 'クイズ', d: 'Test your Japanese', soon: 1, n: () => 'N4' }
 };
@@ -99,7 +103,7 @@ function homeView() {
     <div class="row"><h3>Lessons</h3><a href="#/kotoba/list">See all</a></div>
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
-      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
+      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/memo"><b>暗記</b>Memorize</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
     <div class="row"><h3>Kotoba by lesson / bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
     <div class="row"><h3>Kanji by lesson</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
 }
@@ -117,7 +121,7 @@ function kotobaList(babParam) {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const types = [...new Set(KOTOBA.map(w => val(w.type)).filter(Boolean))];
   view.innerHTML = `<section class="page">
-    <div class="head"><a class="circ" href="#/kotoba" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a></div>
+    <div class="head"><a class="circ" href="#/kotoba" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a><a class="circ" id="gl" href="#/memo/pick" aria-label="Guess cards">暗</a></div>
     <input class="search" id="q" type="search" placeholder="Search hiragana, kanji, meaning, bab" aria-label="Search vocabulary" value="${esc(kState.q)}">
     <div class="chips" id="babs"></div><div class="chips" id="types"></div>
     <p class="count" id="n"></p><div id="list"></div></section>`;
@@ -130,6 +134,7 @@ function kotobaList(babParam) {
     const q = kState.q.trim().toLowerCase();
     const out = KOTOBA.map((w, i) => [w, i]).filter(([w]) => (!kState.bab || val(w.bab) === kState.bab) && (!kState.type || val(w.type) === kState.type) && (!q || wordMatch(w, q)));
     document.getElementById('n').textContent = `${out.length} of ${KOTOBA.length} words`;
+    document.getElementById('gl').href = kState.bab ? '#/memo/play/' + encodeURIComponent(kState.bab) : '#/memo/pick';
     // Group the results by lesson (bab), keeping the JSON order
     document.getElementById('list').innerHTML = babs.map(b => {
       const g = out.filter(([w]) => val(w.bab) === b);
@@ -234,6 +239,89 @@ function grammarLesson(i) {
     <p class="count">${esc(val(l.judul))}</p>${(l.poin || []).map(part).join('')}</section>`;
 }
 
+/* Memorize mode: guess the card, flip to reveal, then mark "Got it" or "Again" (per lesson / bab) */
+const mState = { mode: 'jp' };
+function memoPick() {
+  const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
+  const row = (b, label) => { const n = KOTOBA.filter(w => b === '__all' || val(w.bab) === b).length;
+    return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${n} words</div></div><span class="play-s">▶</span></a>`; };
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo" aria-label="Back">←</a><h2>Guess cards</h2></div>
+    <div class="chips" id="md"></div><p class="count">Choose a lesson / bab to memorize</p>
+    <div class="list">${row('__all', 'All lessons')}${babs.map(b => row(b, b)).join('')}</div></section>`;
+  const md = document.getElementById('md');
+  const paint = () => md.innerHTML = [['jp', 'Kotoba → Arti'], ['id', 'Arti → Kotoba']].map(([v, l]) => `<button class="chip ${mState.mode === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('');
+  md.onclick = e => { const b = e.target.closest('button'); if (b) { mState.mode = b.dataset.v; paint(); } };
+  paint();
+}
+
+function memoPlay(bp) {
+  const bab = decodeURIComponent(bp || '__all');
+  const pool = KOTOBA.filter(w => bab === '__all' || val(w.bab) === bab);
+  if (!pool.length) return location.hash = '#/memo/pick';
+  const title = bab === '__all' ? 'All lessons' : bab;
+  let queue = [], total = 0, known = 0, missed = [], flipped = false, busy = false;
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const start = list => { queue = shuffle(list); total = queue.length; known = 0; missed = []; draw(); };
+  const front = w => mState.mode === 'jp' ? `<div class="fq">${esc(kj(w) || val(w.hiragana))}</div>` : `<div class="fq id">${dash(w.arti)}</div>`;
+
+  function draw() {
+    if (!queue.length) return finish();
+    flipped = false; busy = false;
+    const w = queue[0], n = total - queue.length;
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${esc(title)}</h2><span class="cnt">${n} / ${total}</span></div>
+      <div class="bar"><i style="width:${n / total * 100}%"></i></div>
+      <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
+        <div class="face">${front(w)}<span class="tap">Tap to reveal the answer</span></div>
+        <div class="face back">${wordCard(w)}</div></div></div></div>
+      <p class="count" style="text-align:center">Swipe right = got it · swipe left = again</p>
+      <div class="ctrl"><button class="btn bad" id="no" disabled>✗ Again</button><button class="btn good" id="ok" disabled>✓ Got it</button></div>
+      <p class="count" style="text-align:center">✓ ${known} &nbsp; ✗ ${missed.length}</p></section>`;
+    const scene = document.getElementById('scene'), card = document.getElementById('mc'), fl = document.getElementById('fl');
+    const ok = document.getElementById('ok'), no = document.getElementById('no');
+    let x0 = null, dx = 0, moved = false;
+    const toggle = () => { flipped = !flipped; fl.classList.toggle('on', flipped); ok.disabled = no.disabled = !flipped; };
+    const rate = good => {
+      if (!flipped || busy) return;
+      busy = true;
+      card.style.transition = 'transform .22s ease, opacity .22s ease';
+      card.style.transform = `translateX(${good ? 130 : -130}%) rotate(${good ? 14 : -14}deg)`; card.style.opacity = 0;
+      setTimeout(() => { if (good) known++; else missed.push(queue[0]); queue.shift(); draw(); }, 220);
+    };
+    fl.onclick = () => { if (moved) { moved = false; return; } toggle(); };
+    ok.onclick = () => rate(true); no.onclick = () => rate(false);
+    scene.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; dx = 0; moved = false; }, { passive: true });
+    scene.addEventListener('touchmove', e => {
+      if (x0 === null || !flipped) return;
+      dx = e.touches[0].clientX - x0;
+      if (Math.abs(dx) > 10) { moved = true; card.style.transition = 'none'; card.style.transform = `translateX(${dx}px) rotate(${dx / 20}deg)`; card.classList.toggle('ok', dx > 0); card.classList.toggle('no', dx < 0); }
+    }, { passive: true });
+    scene.addEventListener('touchend', () => {
+      if (x0 === null) return;
+      x0 = null;
+      if (flipped && Math.abs(dx) > 80) rate(dx > 0);
+      else { card.style.transition = ''; card.style.transform = ''; card.classList.remove('ok', 'no'); }
+    });
+    deckKey = e => {
+      if ((e.key === ' ' || e.key === 'Enter') && !/BUTTON|A/.test(e.target.tagName)) { e.preventDefault(); toggle(); }
+      if (e.key === 'ArrowRight') rate(true);
+      if (e.key === 'ArrowLeft') rate(false);
+    };
+  }
+
+  function finish() {
+    deckKey = null;
+    const rows = missed.map(w => `<div class="ex"><b>${esc(kj(w) || val(w.hiragana))}</b><span>${esc(val(w.hiragana))}</span><span>${dash(w.arti)}</span></div>`).join('');
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${esc(title)}</h2></div>
+      <article class="detail"><div class="k w">${known} / ${total}</div><div class="m">${missed.length ? 'Keep practicing!' : 'Perfect! すごい！'}</div>
+      ${missed.length ? `<span class="lbl">TO REVIEW (${missed.length})</span>${rows}` : ''}</article>
+      <div class="ctrl">${missed.length ? '<button class="btn" id="rv">Review missed</button>' : ''}<button class="btn ghost" id="rs">Restart</button></div></section>`;
+    const rv = document.getElementById('rv');
+    if (rv) rv.onclick = () => start(missed);
+    document.getElementById('rs').onclick = () => start(pool);
+  }
+  start(pool);
+}
+
 /* Flashcard deck: touch swipe, buttons, arrow keys, shuffle, reset */
 function deckView(items, cardFn, backHref, title) {
   let order = items.map((_, i) => i), pos = 0, busy = false;
@@ -295,6 +383,7 @@ function route() {
   } else if (sec === 'kanji') a === 'list' ? kanjiList(b) : kanjiDetail(+b);
   else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
   else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
+  else if (sec === 'memo') a === 'play' ? memoPlay(b) : memoPick();
   else if (sec === 'search') searchView();
   else homeView();
   scrollTo(0, 0);
