@@ -104,7 +104,7 @@ function homeView() {
     <div class="row"><h3>Lessons</h3><a href="#/kotoba/list">See all</a></div>
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
-      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/memo"><b>暗記</b>Memorize</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
+      <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/memo/pick/jp"><b>暗記</b>Kotoba→Arti</a><a class="chan" href="#/memo/pick/id"><b>逆</b>Arti→Kotoba</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
     <div class="row"><h3>Kotoba by lesson / bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
     <div class="row"><h3>Kanji by lesson</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
 }
@@ -135,7 +135,6 @@ function kotobaList(babParam) {
     const q = kState.q.trim().toLowerCase();
     const out = KOTOBA.map((w, i) => [w, i]).filter(([w]) => (!kState.bab || val(w.bab) === kState.bab) && (!kState.type || val(w.type) === kState.type) && (!q || wordMatch(w, q)));
     document.getElementById('n').textContent = `${out.length} of ${KOTOBA.length} words`;
-    document.getElementById('gl').href = kState.bab ? '#/memo/play/' + encodeURIComponent(kState.bab) : '#/memo/pick';
     // Group the results by lesson (bab), keeping the JSON order
     document.getElementById('list').innerHTML = babs.map(b => {
       const g = out.filter(([w]) => val(w.bab) === b);
@@ -242,20 +241,26 @@ function grammarLesson(i) {
 
 /* Memorize mode: guess the card, flip to reveal, then mark "Got it" or "Again" (per lesson / bab) */
 const mState = { mode: 'jp' };   // 'jp' = Kotoba → Arti, 'id' = Arti → Kotoba
-function memoPick() {
+const MODES = { jp: ['Kotoba → Arti', 'See the Japanese word, guess the Indonesian meaning'], id: ['Arti → Kotoba', 'See the Indonesian meaning, guess the Japanese word'] };
+// Step 1: choose the section (Kotoba → Arti or Arti → Kotoba). Step 2: choose a lesson / bab.
+function memoPick(mode) {
+  if (!MODES[mode]) {
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo" aria-label="Back">←</a><h2>Memorize</h2></div>
+      <p class="count">Choose a section</p><div class="list">${Object.entries(MODES).map(([k, [t, d]]) => `<a class="item" href="#/memo/pick/${k}"><div class="t">
+      <div class="k" style="font-size:1.25rem">${t}</div><div class="m">${d}</div></div><span class="play-s">▶</span></a>`).join('')}</div></section>`;
+    return;
+  }
+  mState.mode = mode;
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const row = (b, label) => { const n = KOTOBA.filter(w => b === '__all' || val(w.bab) === b).length;
-    return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${n} words</div></div><span class="play-s">▶</span></a>`; };
-  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo" aria-label="Back">←</a><h2>Guess cards</h2></div>
-    <div class="chips" id="md"></div><p class="count">Choose a lesson / bab to memorize</p>
+    return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}/${mode}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${n} words</div></div><span class="play-s">▶</span></a>`; };
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${MODES[mode][0]}</h2></div>
+    <p class="count">Choose a lesson / bab to memorize</p>
     <div class="list">${row('__all', 'All lessons')}${babs.map(b => row(b, b)).join('')}</div></section>`;
-  const md = document.getElementById('md');
-  const paint = () => md.innerHTML = [['jp', 'Kotoba → Arti'], ['id', 'Arti → Kotoba']].map(([v, l]) => `<button class="chip ${mState.mode === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('');
-  md.onclick = e => { const b = e.target.closest('button'); if (b) { mState.mode = b.dataset.v; paint(); } };
-  paint();
 }
 
-function memoPlay(bp) {
+function memoPlay(bp, mode) {
+  if (MODES[mode]) mState.mode = mode;
   const bab = decodeURIComponent(bp || '__all');
   const pool = KOTOBA.filter(w => bab === '__all' || val(w.bab) === bab);
   if (!pool.length) return location.hash = '#/memo/pick';
@@ -269,4 +274,128 @@ function memoPlay(bp) {
     if (!queue.length) return finish();
     flipped = false; busy = false;
     const w = queue[0], n = total - queue.length;
-    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${esc(title)}</h2><span class="cnt">${n} / ${total
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick/${mState.mode}" aria-label="Back">←</a><h2>${esc(title)}</h2><span class="cnt">${n} / ${total}</span></div>
+      <div class="bar"><i style="width:${n / total * 100}%"></i></div>
+      <button class="btn ghost swap" id="sw" aria-label="Swap direction">⇄ ${mState.mode === 'jp' ? 'Kotoba → Arti' : 'Arti → Kotoba'} (tap to swap)</button>
+      <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
+        <div class="face">${front(w)}<span class="tap">${mState.mode === 'jp' ? 'Tap to reveal the meaning' : 'Tap to reveal the Japanese'}</span></div>
+        <div class="face back"><div class="fq sm">${rb(w)}</div><div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
+      <p class="count" style="text-align:center">Swipe right = got it · swipe left = again</p>
+      <div class="ctrl"><button class="btn bad" id="no" disabled>✗ Again</button><button class="btn good" id="ok" disabled>✓ Got it</button></div>
+      <p class="count" style="text-align:center">✓ ${known} &nbsp; ✗ ${missed.length}</p></section>`;
+    const scene = document.getElementById('scene'), card = document.getElementById('mc'), fl = document.getElementById('fl');
+    const ok = document.getElementById('ok'), no = document.getElementById('no');
+    // Swap direction on the current card: Kotoba → Arti <-> Arti → Kotoba
+    document.getElementById('sw').onclick = () => { if (busy) return; mState.mode = mState.mode === 'jp' ? 'id' : 'jp'; draw(); };
+    let x0 = null, dx = 0, moved = false;
+    const toggle = () => { flipped = !flipped; fl.classList.toggle('on', flipped); ok.disabled = no.disabled = !flipped; };
+    const rate = good => {
+      if (!flipped || busy) return;
+      busy = true;
+      card.style.transition = 'transform .22s ease, opacity .22s ease';
+      card.style.transform = `translateX(${good ? 130 : -130}%) rotate(${good ? 14 : -14}deg)`; card.style.opacity = 0;
+      setTimeout(() => { if (good) known++; else missed.push(queue[0]); queue.shift(); draw(); }, 220);
+    };
+    fl.onclick = () => { if (moved) { moved = false; return; } toggle(); };
+    ok.onclick = () => rate(true); no.onclick = () => rate(false);
+    scene.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; dx = 0; moved = false; }, { passive: true });
+    scene.addEventListener('touchmove', e => {
+      if (x0 === null || !flipped) return;
+      dx = e.touches[0].clientX - x0;
+      if (Math.abs(dx) > 10) { moved = true; card.style.transition = 'none'; card.style.transform = `translateX(${dx}px) rotate(${dx / 20}deg)`; card.classList.toggle('ok', dx > 0); card.classList.toggle('no', dx < 0); }
+    }, { passive: true });
+    scene.addEventListener('touchend', () => {
+      if (x0 === null) return;
+      x0 = null;
+      if (flipped && Math.abs(dx) > 80) rate(dx > 0);
+      else { card.style.transition = ''; card.style.transform = ''; card.classList.remove('ok', 'no'); }
+    });
+    deckKey = e => {
+      if ((e.key === ' ' || e.key === 'Enter') && !/BUTTON|A/.test(e.target.tagName)) { e.preventDefault(); toggle(); }
+      if (e.key === 'ArrowRight') rate(true);
+      if (e.key === 'ArrowLeft') rate(false);
+    };
+  }
+
+  function finish() {
+    deckKey = null;
+    const rows = missed.map(w => `<div class="ex"><b>${esc(kj(w) || val(w.hiragana))}</b><span>${esc(val(w.hiragana))}</span><span>${dash(w.arti)}</span></div>`).join('');
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick/${mState.mode}" aria-label="Back">←</a><h2>${esc(title)}</h2></div>
+      <article class="detail"><div class="k w">${known} / ${total}</div><div class="m">${missed.length ? 'Keep practicing!' : 'Perfect! すごい！'}</div>
+      ${missed.length ? `<span class="lbl">TO REVIEW (${missed.length})</span>${rows}` : ''}</article>
+      <div class="ctrl">${missed.length ? '<button class="btn" id="rv">Review missed</button>' : ''}<button class="btn ghost" id="rs">Restart</button></div></section>`;
+    const rv = document.getElementById('rv');
+    if (rv) rv.onclick = () => start(missed);
+    document.getElementById('rs').onclick = () => start(pool);
+  }
+  start(pool);
+}
+
+/* Flashcard deck: touch swipe, buttons, arrow keys, shuffle, reset */
+function deckView(items, cardFn, backHref, title) {
+  let order = items.map((_, i) => i), pos = 0, busy = false;
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="${backHref}" aria-label="Back">←</a><h2>${title}</h2><span class="cnt" id="cnt"></span></div>
+    <div class="bar"><i id="bar"></i></div><div class="stage" id="stage"></div>
+    <div class="ctrl"><button class="btn" id="prev">← Previous</button><button class="btn" id="next">Next →</button>
+    <button class="btn ghost" id="shuf">Shuffle</button><button class="btn ghost" id="rst">Reset</button></div></section>`;
+  const stage = document.getElementById('stage');
+  const show = dir => {
+    stage.innerHTML = `<article class="fc ${dir < 0 ? 'l' : ''}">${cardFn(items[order[pos]])}</article>`;
+    document.getElementById('cnt').textContent = `${pos + 1} / ${items.length}`;
+    document.getElementById('bar').style.width = `${(pos + 1) / items.length * 100}%`;
+    document.getElementById('prev').disabled = pos === 0;
+    document.getElementById('next').disabled = pos === items.length - 1;
+  };
+  // busy lock prevents double-fires from skipping cards
+  const go = d => {
+    const n = pos + d;
+    if (busy || n < 0 || n >= items.length) return show(0);
+    busy = true; pos = n; show(d); setTimeout(() => busy = false, 280);
+  };
+  document.getElementById('prev').onclick = () => go(-1);
+  document.getElementById('next').onclick = () => go(1);
+  document.getElementById('shuf').onclick = () => { for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; } pos = 0; show(0); };
+  document.getElementById('rst').onclick = () => { order = items.map((_, i) => i); pos = 0; show(0); };
+  let x0 = null, y0 = 0, dx = 0;
+  stage.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; dx = 0; }, { passive: true });
+  stage.addEventListener('touchmove', e => {
+    if (x0 === null) return;
+    dx = e.touches[0].clientX - x0;
+    const c = stage.firstElementChild;
+    if (c && Math.abs(dx) > Math.abs(e.touches[0].clientY - y0)) { c.style.animation = 'none'; c.style.transform = `translateX(${dx * .6}px)`; }
+  }, { passive: true });
+  stage.addEventListener('touchend', () => {
+    if (x0 === null) return;
+    x0 = null;
+    if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1); else if (stage.firstElementChild) stage.firstElementChild.style.transform = '';
+  });
+  deckKey = e => { if (e.key === 'ArrowRight') go(1); if (e.key === 'ArrowLeft') go(-1); };
+  show(0);
+}
+let deckKey = null;
+addEventListener('keydown', e => { if (deckKey && !/INPUT|SELECT/.test(e.target.tagName)) deckKey(e); });
+
+/* ---------- Router ---------- */
+function route() {
+  deckKey = null;
+  const [, sec = 'home', a, b, c] = (location.hash || '#/home').split('/');
+  document.querySelectorAll('#nav a').forEach(l => l.classList.toggle('on', l.dataset.r === sec));
+  const poster = POSTERS[sec] && !a;           // poster only at the start of a lesson section
+  document.body.classList.toggle('poster-mode', !!poster);
+  if (loadError && !(POSTERS[sec] && POSTERS[sec].soon)) return errorView();
+  if (!KOTOBA.length && !(POSTERS[sec] && POSTERS[sec].soon)) { view.innerHTML = '<section class="page"><div class="msg">Loading…</div></section>'; return; }
+  if (poster) posterView(sec);
+  else if (sec === 'kotoba') {
+    if (a === 'list') kotobaList(b);
+    else if (a === 'word') kotobaDetail(+b);
+    else deckView(KOTOBA, wordCard, '#/kotoba/list', 'Kotoba cards');
+  } else if (sec === 'kanji') a === 'list' ? kanjiList(b) : kanjiDetail(+b);
+  else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
+  else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
+  else if (sec === 'memo') a === 'play' ? memoPlay(b, c) : memoPick(b);
+  else if (sec === 'search') searchView();
+  else homeView();
+  scrollTo(0, 0);
+}
+addEventListener('hashchange', route);
+load();
