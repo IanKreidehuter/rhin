@@ -123,3 +123,7 @@ background:linear-gradient(180deg,rgba(10,63,156,0) 35%,rgba(10,63,156,.75) 62%,
 .btn.good{background:#16a34a}.btn.bad{background:#e5484d}
 
 .fh{font:600 1.4rem var(--jp);color:var(--blue)}
+
+.fq ruby{ruby-position:over}.fq rt{font:600 .34em var(--jp);color:var(--blue);letter-spacing:.04em}
+.fq.sm{font-size:clamp(1.8rem,9vw,2.6rem);margin-bottom:6px}
+.face .m{font:700 clamp(1.3rem,6vw,1.8rem) var(--ui);color:var(--navy)}
