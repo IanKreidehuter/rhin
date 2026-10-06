@@ -549,6 +549,197 @@
           ]
         }
       ]
+    },
+    {
+      "nomor": 30,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja Bentuk て あります",
+          "pola": [
+            "Kata Kerja Bentuk て + あります"
+          ],
+          "catatan": [
+            "Kata Kerja Bentuk て あります adalah perbuatan dari seseorang untuk suatu tujuan, kemudian menyatakan bahwa akibat atau hasil dari perbuatan itu sedang berlangsung. Kata Kerja yang digunakan berupa Kata Kerja Transitif."
+          ],
+          "bagian": [
+            {
+              "judul": "1) Kata Benda1 に Kata Benda2 が Kata Kerja Bentuk て あります",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "机の上にメモが置いてあります。",
+                  "id": "Di atas meja diletakkan catatan."
+                },
+                {
+                  "no": "②",
+                  "jp": "カレンダーに今月の予定が書いてあります。",
+                  "id": "Pada kalender ditulis rencana bulan ini."
+                }
+              ]
+            },
+            {
+              "judul": "2) Kata Benda2 は Kata Benda1 に Kata Kerja Bentuk て あります",
+              "keterangan": "Jika Kata Benda2 diangkat sebagai topik, maka menggunakan Kata Bantu は.",
+              "contoh": [
+                {
+                  "no": "③",
+                  "jp": "メモはどこですか。\n……[メモは]机の上に置いてあります。",
+                  "id": "Di mana catatan?\n…… [Catatan] Diletakkan di atas meja."
+                },
+                {
+                  "no": "④",
+                  "jp": "今月の予定はカレンダーに書いてあります。",
+                  "id": "Rencana bulan ini ditulis pada kalender."
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Perbedaan antara Kata Kerja Bentuk て います dan Kata Kerja Bentuk て あります.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "窓が閉まっています。",
+                  "id": "Jendela tertutup."
+                },
+                {
+                  "no": "⑥",
+                  "jp": "窓が閉めてあります。",
+                  "id": "Jendela ditutup."
+                }
+              ]
+            },
+            {
+              "keterangan": "Seperti ⑤ dan ⑥, jika dipakai Kata Kerja Intransitif (しまります) dan Kata Kerja Transitif (しめます) yang berpasangan dengan Kata Kerja Bentuk て います dan Kata Kerja Bentuk て あります, ⑤ hanya menjelaskan untuk keadaan jendela tertutup, sedangkan pada ⑥ menyatakan bahwa terjadi keadaan disebabkan oleh perbuatan dari seseorang."
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja Bentuk て おきます",
+          "pola": [
+            "Kata Kerja Bentuk て + おきます"
+          ],
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Menyatakan bahwa menyelesaikan aksi atau perbuatan yang diperlukan sampai dengan waktu tertentu.",
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "旅行のまえに、切符を買っておきます。",
+                  "id": "Sebelum perjalanan, membeli karcis."
+                },
+                {
+                  "no": "⑧",
+                  "jp": "次の会議までに何をしておいたらいいですか。\n……この資料を読んでおいてください。",
+                  "id": "Apa yang harus saya lakukan sampai dengan rapat berikut?\n…… Diharapkan untuk membaca materi ini."
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Menyatakan bahwa menyelesaikan aksi yang diperlukan untuk persiapan pemakaian berikutnya, atau tindakan untuk sementara.",
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "はさみを使ったら、元の所に戻しておいてください。",
+                  "id": "Jika memakai gunting, tolong kembalikan ke tempat semula."
+                }
+              ]
+            },
+            {
+              "judul": "3)",
+              "keterangan": "Menyatakan akibat dari mempertahankan suatu keadaan.",
+              "contoh": [
+                {
+                  "no": "⑩",
+                  "jp": "あした会議がありますから、いすはこのままにしておいてください。",
+                  "id": "Karena besok ada rapat, kursinya dibiarkan begini saja."
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Dalam bahasa lisan, ～ておきます sering berubah menjadi ～ときます.",
+              "contoh": [
+                {
+                  "no": "⑪",
+                  "jp": "そこに置いといて（置いておいて）ください。",
+                  "id": "Tolong letakkan di situ saja. (Pel.38)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "まだ＋Bentuk positif",
+          "pola": [
+            "まだ + Bentuk positif (masih...)"
+          ],
+          "catatan": [
+            "まだ ini berarti masih, dan menyatakan bahwa aksi atau keadaannya sedang berlangsung."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑫",
+                  "jp": "まだ雨が降っています。",
+                  "id": "Masih turun hujan."
+                },
+                {
+                  "no": "⑬",
+                  "jp": "道具を片づけましょうか。\n……まだ使っていますから、そのままにしておいてください。",
+                  "id": "Apa saya yang membereskan alatnya?\n…… Karena masih dipakai, tolong dibiarkan begitu saja."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "とか",
+          "catatan": [
+            "とか digunakan jika memberikan contoh seperti sama halnya dengan や. とか jika dibandingkan dengan や dalam bahasa lisan, dapat digunakan di belakang Kata Benda terakhir di antara yang disebutkan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑭",
+                  "jp": "どんなスポーツをしていますか。\n……そうですね。テニスとか水泳とか……。",
+                  "id": "Berolahraga apa saja?\n…… Apa ya? Tenis, atau renang..."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Partikel＋も",
+          "pola": [
+            "Partikel + も"
+          ],
+          "catatan": [
+            "Jika も digabung dengan Kata Benda yang dibubuhkan が atau を, maka が atau を dihapuskan.",
+            "Jika selain Kata Bantu tersebut, (Contoh: に, で, から, まで, と) dibubuhkan di belakangnya.",
+            "へ boleh dihapuskan dan juga boleh untuk tidak dihapuskan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑮",
+                  "jp": "ほかにもいろいろあります。",
+                  "id": "Selain itu masih ada macam-macam."
+                },
+                {
+                  "no": "⑯",
+                  "jp": "どこ[へ]も行きません。",
+                  "id": "Tidak pergi ke mana-mana."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
