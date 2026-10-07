@@ -21,10 +21,59 @@ const debounce = (f, ms = 120) => { let t; return (...a) => { clearTimeout(t); t
 
 /* ---- settings + progress, saved in localStorage (guarded) ---- */
 const store = { get(k, d) { try { return JSON.parse(localStorage.getItem('n4_' + k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem('n4_' + k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } } };
-const cfg = Object.assign({ theme: 'light', glass: 'frosted' }, store.get('cfg', {}));
-const applyCfg = () => { document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); };
+const cfg = Object.assign({ lang: 'id', theme: 'light', glass: 'frosted' }, store.get('cfg', {}));
+const applyCfg = () => { document.documentElement.lang = cfg.lang; document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); };
 applyCfg();
 const wkey = w => val(w.hiragana) + '|' + val(w.kanji);
+/* ---- i18n: UI source text is English. Indonesian (default) is applied by translating the DOM; English is selectable in Settings ---- */
+const ID = {
+'Home':'Beranda','Search':'Cari','Settings':'Pengaturan','Back':'Kembali','Back to home':'Kembali ke beranda','Main navigation':'Navigasi utama','Kanji cards':'Kartu kanji','Saved':'Tersimpan','Flip card':'Balik kartu','Swap direction':'Tukar arah','Pronounce':'Ucapkan','Save':'Simpan','Again':'Ulangi','Flashcards':'Kartu','Guess cards':'Kartu tebak','Swipe cards':'Kartu geser','Loading':'Memuat','Search everything':'Cari semua',
+'Cards':'Kartu','Grammar':'Tata Bahasa','Quiz':'Kuis','Kanji Cards':'Kartu Kanji','Guess Cards':'Kartu Tebak','Memorize':'Hafalkan',
+'Japanese Vocabulary':'Kosakata Bahasa Jepang','Readings and example words':'Bacaan dan contoh kata','Swipe through every Kanji':'Geser semua kanji','Flip, guess and memorize by lesson':'Balik, tebak, dan hafalkan per pelajaran','Grammar Lessons':'Pelajaran Tata Bahasa','Test your Japanese':'Uji bahasa Jepangmu','COMING SOON':'SEGERA HADIR','Show More ⌄':'Lihat lebih ⌄',
+'nice to see you!':'senang bertemu denganmu!','Word of the day':'Kata hari ini','Kanji of the day':'Kanji hari ini','Details':'Detail','Practice ›››':'Latihan ›››','Lessons':'Pelajaran','Kotoba by lesson / bab':'Kotoba per pelajaran / bab','Kanji by lesson':'Kanji per pelajaran','See all':'Lihat semua',
+'Learning data could not be loaded.':'Data belajar tidak dapat dimuat.','Make sure ALL_KOSAKATA_N4_FORMS.json and kanji_lessonfileN4.json sit next to index.html, and open the site over http(s), for example GitHub Pages.':'Pastikan ALL_KOSAKATA_N4_FORMS.json dan kanji_lessonfileN4.json berada di samping index.html, dan buka situs lewat http(s), misalnya GitHub Pages.','Loading…':'Memuat…',
+'Search hiragana, kanji, meaning, bab':'Cari hiragana, kanji, arti, bab','All bab':'Semua bab','All types':'Semua jenis','No words match your search.':'Tidak ada kata yang cocok.','Dictionary form:':'Bentuk kamus:',
+'verb':'kata kerja','noun / expression':'kata benda / ungkapan','adjective':'kata sifat','i-adjective':'kata sifat-i','na-adjective':'kata sifat-na',
+'DICTIONARY FORM':'BENTUK KAMUS','MASU FORM':'BENTUK MASU','SOURCE FORM':'BENTUK ASLI','EXAMPLES':'CONTOH',
+'Search kanji, reading, meaning, example':'Cari kanji, bacaan, arti, contoh','All lessons':'Semua pelajaran','No kanji match your search.':'Tidak ada kanji yang cocok.',
+'Kotoba or Kanji':'Kotoba atau Kanji','No kotoba found.':'Kotoba tidak ditemukan.','No kanji found.':'Kanji tidak ditemukan.',
+'Practice saved words':'Latih kata tersimpan','Tap ☆ on a word to save it here.':'Ketuk ☆ pada kata untuk menyimpannya di sini.','Tap ☆ on a kanji to save it here.':'Ketuk ☆ pada kanji untuk menyimpannya di sini.',
+'LANGUAGE':'BAHASA','THEME':'TEMA','Light':'Terang','Dark':'Gelap','GLASS STYLE':'GAYA KACA','PROGRESS':'KEMAJUAN','Reset learned progress':'Atur ulang kemajuan','Reset all learned progress?':'Atur ulang semua kemajuan belajar?',
+'Grammar data could not be loaded.':'Data tata bahasa tidak dapat dimuat.',
+'Choose a section':'Pilih bagian','See the Japanese word, guess the Indonesian meaning':'Lihat kata Jepang, tebak artinya dalam bahasa Indonesia','See the Indonesian meaning, guess the Japanese word':'Lihat arti bahasa Indonesia, tebak kata Jepangnya','Choose a lesson / bab to memorize':'Pilih pelajaran / bab untuk dihafal','★ Saved words':'★ Kata tersimpan','Saved words':'Kata tersimpan',
+'Tap to reveal the meaning':'Ketuk untuk melihat arti','Tap to reveal the Japanese':'Ketuk untuk melihat bahasa Jepangnya','Reveal, then drag the slider (or swipe right) = known · ✗ or swipe left = again':'Balik kartu, lalu geser slider (atau geser kanan) = hafal · ✗ atau geser kiri = ulangi','Drag to mark as known':'Geser untuk tandai hafal',
+'Keep practicing!':'Terus berlatih!','Perfect! すごい！':'Sempurna! すごい！','Review missed':'Ulangi yang salah','Restart':'Mulai ulang',
+'Kotoba cards':'Kartu kotoba','Kanji cards ':'Kartu kanji','← Previous':'← Sebelumnya','Next →':'Berikutnya →','Shuffle':'Acak','Reset':'Atur ulang'
+};
+ID['Kanji cards'] = 'Kartu kanji';
+const RULES = [
+[/^Lesson (\d+)/, 'Pelajaran $1'], [/^🔥 (\d+) day streak$/, '🔥 $1 hari beruntun'], [/^✓ (\d+) learned$/, '✓ $1 dikuasai'], [/^★ (\d+) saved$/, '★ $1 tersimpan'],
+[/^(\d+) of (\d+) words$/, '$1 dari $2 kata'], [/^(\d+) of (\d+) kanji$/, '$1 dari $2 kanji'], [/^(\d+) words · (\d+)% learned$/, '$1 kata · $2% dikuasai'], [/^(\d+) words$/, '$1 kata'],
+[/^(\d+) words \| N4$/, '$1 kata | N4'], [/^(\d+) kanji \| (\d+) lessons$/, '$1 kanji | $2 pelajaran'], [/^(\d+) cards \| Swipe$/, '$1 kartu | Geser'], [/^(\d+) words \| by lesson$/, '$1 kata | per pelajaran'],
+[/^(\d+) lessons \| N4$/, '$1 pelajaran | N4'], [/^(\d+) lessons$/, '$1 pelajaran'], [/^TO REVIEW \((\d+)\)$/, 'UNTUK DIULANG ($1)'],
+[/^(\d+) learned · (\d+) saved · (\d+) day streak$/, '$1 dikuasai · $2 tersimpan · $3 hari beruntun']
+];
+// translate one string (keeps surrounding whitespace); unknown strings (Japanese, data) pass through unchanged
+const trs = s => {
+  const m = s.match(/^(\s*)([\s\S]*?)(\s*)$/), k = m[2];
+  if (!k) return s;
+  let r = ID[k];
+  if (r === undefined) for (const [re, to] of RULES) if (re.test(k)) { r = k.replace(re, to); break; }
+  return r === undefined ? s : m[1] + r + m[3];
+};
+const T = s => cfg.lang === 'id' ? trs(s) : s;
+const TR_ATTRS = ['placeholder', 'aria-label', 'title'];
+function tr(root) {          // originals are remembered (_o), so switching back to English is lossless
+  const one = n => {
+    if (n.nodeType === 3) { const o = n._o ?? (n._o = n.nodeValue), v = T(o); if (n.nodeValue !== v) n.nodeValue = v; }
+    else for (const a of TR_ATTRS) if (n.hasAttribute && n.hasAttribute(a)) { n._oa = n._oa || {}; const o = n._oa[a] ?? (n._oa[a] = n.getAttribute(a)), v = T(o); if (n.getAttribute(a) !== v) n.setAttribute(a, v); }
+  };
+  one(root);
+  if (root.nodeType === 1) { const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT); while (w.nextNode()) one(w.currentNode); }
+}
+new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(tr))).observe(document.body, { childList: true, subtree: true });
+tr(document.body);
+
 const KNOWN = new Set(store.get('known', [])), FAVS = new Set(store.get('favs', []));
 const saveSet = (n, set) => store.set(n, [...set]);
 const isFav = k => FAVS.has(k);
@@ -118,6 +167,45 @@ function posterView(key) {
 }
 
 const GRADS = [['#1ea7ff', '#0a3f9c'], ['#19d3c5', '#0a8fb5'], ['#f6b96b', '#e8825a'], ['#5aa8ff', '#6a5cff']];
+let homeTimer = null;
+function initHero() {
+  const hc = document.getElementById('hc'), cards = [...hc.children], dots = [...document.querySelectorAll('#hd i')], hp = document.getElementById('hp'), n = cards.length;
+  let idx = 0, busy = false, x0 = null, dx = 0, drag = false;
+  const layout = () => cards.forEach((c, i) => {     // p = depth in the stack (0 = top)
+    const p = (i - idx + n) % n, q = Math.min(p, 3);
+    c.style.zIndex = n - p; c.style.pointerEvents = p ? 'none' : 'auto'; c.style.opacity = p > 2 ? 0 : [1, .6, .3][p];
+    c.style.transform = `translateY(${-14 * q}px) scale(${1 - .05 * q})`; dots[i].classList.toggle('on', i === idx);
+  });
+  const restart = () => {                            // progress bar + 7 second auto swipe
+    clearInterval(homeTimer); hp.style.animation = 'none'; hp.offsetWidth; hp.style.animation = '';
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) homeTimer = setInterval(() => go(-1), 7000);
+  };
+  const go = dir => {                                // top card flies off (dir -1 left, 1 right), next card rises
+    if (busy) return; busy = true;
+    const top = cards[idx];
+    top.style.transform = `translateX(${dir * 120}%) rotate(${dir * 10}deg)`; top.style.opacity = 0;
+    setTimeout(() => { top.style.transition = 'none'; idx = (idx + 1) % n; layout(); top.offsetWidth; top.style.transition = ''; busy = false; }, 320);
+    restart();
+  };
+  dots.forEach((d, i) => d.onclick = () => { if (busy || i === idx) return; idx = i; layout(); restart(); });
+  hc.onpointerdown = e => { x0 = e.clientX; dx = 0; drag = false; };
+  hc.onpointermove = e => {
+    if (x0 === null || busy) return;
+    dx = e.clientX - x0;
+    if (!drag && Math.abs(dx) > 8) { drag = true; hc.setPointerCapture(e.pointerId); clearInterval(homeTimer); hp.style.animationPlayState = 'paused'; }
+    if (drag) { const t = cards[idx]; t.style.transition = 'none'; t.style.transform = `translateX(${dx}px) rotate(${dx / 25}deg)`; }
+  };
+  const end = () => {
+    if (x0 === null) return; x0 = null;
+    if (!drag) return; drag = false; hp.style.animationPlayState = '';
+    cards[idx].style.transition = '';
+    if (Math.abs(dx) > 70) go(dx < 0 ? -1 : 1); else { layout(); restart(); }
+  };
+  hc.onpointerup = end; hc.onpointercancel = end;
+  hc.onmouseenter = () => { clearInterval(homeTimer); hp.style.animationPlayState = 'paused'; };   // desktop: pause on hover
+  hc.onmouseleave = () => { hp.style.animationPlayState = ''; restart(); };
+  layout(); restart();
+}
 const hello = () => { const h = new Date().getHours(); return h < 11 ? 'おはよう' : h < 18 ? 'こんにちは' : 'こんばんは'; };
 function homeView() {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
@@ -133,21 +221,31 @@ function homeView() {
     return `<a class="thumb" href="#/kanji/list/${esc(l.lesson)}" style="--c1:${g[0]};--c2:${g[1]}"><div class="pic">${esc(f ? val(f.kanji) : '字')}</div>
       <strong>Lesson ${esc(l.lesson)} · ${esc(val(l.category))}</strong><div class="meta"><span>${(l.kanji || []).length} kanji</span><span class="play-s">▶</span></div></a>`;
   }).join('');
-  const wi = Math.floor(Date.now() / 864e5) % KOTOBA.length, wd = KOTOBA[wi];   // word of the day
+  // paper stack: today's word, today's kanji, then more of each (swipe, tap the dots, or wait 7 s)
+  const day = Math.floor(Date.now() / 864e5), deck = [];
+  for (let i = 0; i < 5; i++) { deck.push(['w', (day + i * 37) % KOTOBA.length]); deck.push(['k', (day + i * 13) % KANJI.length]); }
+  const hcard = ([t, ix], i) => {
+    const tag = i === 0 ? 'Word of the day' : i === 1 ? 'Kanji of the day' : t === 'w' ? 'Kotoba' : 'Kanji';
+    if (t === 'w') { const w = KOTOBA[ix]; return `<article class="hcard"><div class="r2"><span class="tag">${tag}</span>${sayBtn(val(w.hiragana), 'w')}</div>
+      <div class="wd">${rb(w)}</div><div class="wm">${dash(w.arti)}</div>
+      <div class="hb"><a class="btn white" href="#/kotoba/word/${ix}">Details</a><a class="btn line" href="#/memo/pick/jp">Practice ›››</a></div></article>`; }
+    const k = KANJI[ix]; return `<article class="hcard kc2"><div class="r2"><span class="tag">${tag}</span></div>
+      <div class="wd kk">${esc(k.kanji)}</div><div class="wm">${dash(k.arti)}</div><div class="kr"><b>ON</b> ${dash(k.on)} &nbsp; <b>KUN</b> ${dash(k.kun)}</div>
+      <div class="hb"><a class="btn white" href="#/kanji/item/${ix}">Details</a><a class="btn line" href="#/cards/play/${esc(k.lesson)}">Practice ›››</a></div></article>`;
+  };
   view.innerHTML = `<section class="page">
     <header class="top"><a class="brand" href="#/home" aria-label="Home"><img src="./logo-long.png" alt="Learning Archive Japanese Lesson N4"></a>
       <span class="tools"><a class="circ" href="#/fav" aria-label="Saved">★</a><a class="circ" href="#/settings" aria-label="Settings">⚙</a></span></header>
     <h1 class="hi">${hello()}, <span>nice to see you!</span></h1>
     <div class="pills"><span class="pill on">🔥 ${streak()} day streak</span><span class="pill">✓ ${KNOWN.size} learned</span><a class="pill" href="#/fav">★ ${FAVS.size} saved</a></div>
-    <div class="hero"><article class="card"><div class="r2"><span class="tag">Word of the day</span>${sayBtn(val(wd.hiragana), 'w')}</div>
-      <div class="wd">${rb(wd)}</div><div class="wm">${dash(wd.arti)}</div>
-      <div class="hb"><a class="btn white" href="#/kotoba/word/${wi}">Details</a><a class="btn line" href="#/memo/pick/jp">Practice ›››</a></div></article></div>
+    <div class="hero"><div class="hcards" id="hc">${deck.map(hcard).join('')}</div><div class="hdots" id="hd">${deck.map((_, i) => `<i data-j="${i}"></i>`).join('')}</div><div class="hprog"><i id="hp"></i></div></div>
     <div class="row"><h3>Lessons</h3></div>
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
       <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/memo/pick/jp"><b>暗記</b>Kotoba→Arti</a><a class="chan" href="#/memo/pick/id"><b>逆</b>Arti→Kotoba</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
     <div class="row"><h3>Kotoba by lesson / bab</h3><a href="#/kotoba/list">See all</a></div><div class="hs">${thumbs}</div>
     <div class="row"><h3>Kanji by lesson</h3><a href="#/kanji/list">See all</a></div><div class="hs">${kcs}</div></section>`;
+  initHero();
 }
 
 const errorView = () => view.innerHTML = `<section class="page"><div class="msg"><h2>Learning data could not be loaded.</h2><p style="margin-top:8px">Make sure ALL_KOSAKATA_N4_FORMS.json and kanji_lessonfileN4.json sit next to index.html, and open the site over http(s), for example GitHub Pages.</p></div></section>`;
@@ -282,15 +380,16 @@ function favView() {
 function settingsView() {
   const seg = (key, opts) => `<div class="seg" data-k="${key}">${opts.map(([v, l]) => `<button class="${cfg[key] === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('')}</div>`;
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Settings</h2></div>
-    <article class="detail set"><span class="lbl">THEME</span>${seg('theme', [['light', 'Light'], ['dark', 'Dark']])}
+    <article class="detail set"><span class="lbl">LANGUAGE</span>${seg('lang', [['id', 'Bahasa Indonesia'], ['en', 'English']])}
+    <span class="lbl">THEME</span>${seg('theme', [['light', 'Light'], ['dark', 'Dark']])}
     <span class="lbl">GLASS STYLE</span>${seg('glass', [['frosted', 'Frosted'], ['clear', 'Clear'], ['blur', 'Blur']])}
     <span class="lbl">PROGRESS</span><div class="rv">${KNOWN.size} learned · ${FAVS.size} saved · ${streak()} day streak</div>
     <button class="btn ghost" id="rp" style="margin-top:12px">Reset learned progress</button></article></section>`;
   view.querySelectorAll('.seg').forEach(g => g.onclick = e => {
     const b = e.target.closest('button'); if (!b) return;
-    cfg[g.dataset.k] = b.dataset.v; applyCfg(); g.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    cfg[g.dataset.k] = b.dataset.v; applyCfg(); tr(document.body); g.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
   });
-  document.getElementById('rp').onclick = () => { if (confirm('Reset all learned progress?')) { KNOWN.clear(); saveSet('known', KNOWN); store.set('streak', { last: '', n: 0 }); settingsView(); } };
+  document.getElementById('rp').onclick = () => { if (confirm(T('Reset all learned progress?'))) { KNOWN.clear(); saveSet('known', KNOWN); store.set('streak', { last: '', n: 0 }); settingsView(); } };
 }
 
 /* Grammar: each pelajaran in ALL_GRAMMAR_N4.json is one category */
@@ -459,7 +558,7 @@ addEventListener('keydown', e => { if (deckKey && !/INPUT|SELECT/.test(e.target.
 
 /* ---------- Router ---------- */
 function route() {
-  deckKey = null;
+  deckKey = null; clearInterval(homeTimer);
   const [, sec = 'home', a, b, c] = (location.hash || '#/home').split('/');
   document.querySelectorAll('#nav a').forEach(l => l.classList.toggle('on', l.dataset.r === sec));
   const poster = POSTERS[sec] && !a;           // poster only at the start of a lesson section
