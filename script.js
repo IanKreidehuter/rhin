@@ -17,6 +17,37 @@ const lineHtml = v => (Array.isArray(v) ? v : [v]).map(val).filter(Boolean).map(
 const kj = w => (val(w.kanji) && val(w.kanji) !== val(w.hiragana)) ? val(w.kanji) : '';
 const rb = w => kj(w) ? `<ruby>${esc(kj(w))}<rt>${esc(val(w.hiragana))}</rt></ruby>` : esc(val(w.hiragana));
 const typeLabel = t => val(t).replace('/', ' / ');
+const debounce = (f, ms = 120) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => f(...a), ms); }; };
+
+/* ---- settings + progress, saved in localStorage (guarded) ---- */
+const store = { get(k, d) { try { return JSON.parse(localStorage.getItem('n4_' + k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem('n4_' + k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } } };
+const cfg = Object.assign({ theme: 'light', glass: 'frosted' }, store.get('cfg', {}));
+const applyCfg = () => { document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); };
+applyCfg();
+const wkey = w => val(w.hiragana) + '|' + val(w.kanji);
+const KNOWN = new Set(store.get('known', [])), FAVS = new Set(store.get('favs', []));
+const saveSet = (n, set) => store.set(n, [...set]);
+const isFav = k => FAVS.has(k);
+function touchStreak() {                       // counts a study day each time a card is rated
+  const today = new Date().toDateString(), s = store.get('streak', { last: '', n: 0 });
+  if (s.last === today) return;
+  s.n = new Date(Date.now() - 864e5).toDateString() === s.last ? s.n + 1 : 1; s.last = today; store.set('streak', s);
+}
+const streak = () => { const s = store.get('streak', { last: '', n: 0 }); return [new Date().toDateString(), new Date(Date.now() - 864e5).toDateString()].includes(s.last) ? s.n : 0; };
+// Text-to-speech (browser voice, Japanese)
+function say(t) {
+  if (!('speechSynthesis' in window) || !t) return;
+  const u = new SpeechSynthesisUtterance(t); u.lang = 'ja-JP'; u.rate = .85;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+const sayBtn = (t, cls = '') => `<button class="say ${cls}" data-say="${esc(t)}" aria-label="Pronounce">🔊</button>`;
+const favBtn = key => `<button class="circ fav ${isFav(key) ? 'on' : ''}" data-fav="${esc(key)}" aria-label="Save">${isFav(key) ? '★' : '☆'}</button>`;
+// one delegated listener (capture phase so buttons inside flip cards don't flip them)
+document.addEventListener('click', e => {
+  const s = e.target.closest('[data-say]'), f = e.target.closest('[data-fav]');
+  if (s) { e.preventDefault(); e.stopPropagation(); say(s.dataset.say); }
+  if (f) { e.preventDefault(); e.stopPropagation(); const k = f.dataset.fav; isFav(k) ? FAVS.delete(k) : FAVS.add(k); saveSet('favs', FAVS); f.classList.toggle('on', isFav(k)); f.textContent = isFav(k) ? '★' : '☆'; }
+}, true);
 
 let KOTOBA = [], KANJI = [], GRAMMAR = [], loadError = false;
 const kState = { q: '', bab: '', type: '' }, jState = { q: '', lesson: '' };
@@ -38,7 +69,7 @@ function buildKanji(d) {
     arti: val(k.meaning), lesson: l.lesson, cat: val(l.category), ex: (k.examples || []).map(parseEx)
   })));
 }
-const kanjiMatch = (k, q) => [k.kanji, k.arti, k.cat, 'lesson ' + k.lesson, ...k.on, ...k.kun, ...k.ex.flatMap(e => [e.w, e.r, e.m])].join(' ').toLowerCase().includes(q);
+const kanjiMatch = (k, q) => k._s.includes(q);   // _s is built once at load
 
 const POSTERS = {
   kotoba:  { t: 'Kotoba',  jp: 'ことば', d: 'Japanese Vocabulary', go: '#/kotoba/list', n: () => `${KOTOBA.length} words | N4` },
@@ -67,6 +98,9 @@ async function load() {
     const les = (kl.lessons || []).flatMap(l => (l.kotoba || []).map(w => ({ hiragana: w.hiragana, kanji: w.kanji, arti: w.arti, bab: 'Lesson ' + l.lesson })));
     KOTOBA = les.concat(KOTOBA);
   } catch (e) { /* lesson file optional: thematic vocabulary still works */ }
+  const hay = (...a) => a.flat(Infinity).map(val).join(' ').toLowerCase();
+  KANJI.forEach(k => k._s = hay(k.kanji, k.arti, k.cat, 'lesson ' + k.lesson, k.on, k.kun, k.ex.map(e => [e.w, e.r, e.m])));
+  KOTOBA.forEach(w => w._s = hay(w.hiragana, w.kanji, w.arti, w.bab, w.type, w.dictionary_form, w.masu_form, w.masu_form_hiragana));
   try { const g = await (await fetch('./ALL_GRAMMAR_N4.json')).json(); GRAMMAR = g.pelajaran || []; } catch (e) { GRAMMAR = []; }
   route();
 }
@@ -84,6 +118,7 @@ function posterView(key) {
 }
 
 const GRADS = [['#1ea7ff', '#0a3f9c'], ['#19d3c5', '#0a8fb5'], ['#f6b96b', '#e8825a'], ['#5aa8ff', '#6a5cff']];
+const hello = () => { const h = new Date().getHours(); return h < 11 ? 'おはよう' : h < 18 ? 'こんにちは' : 'こんばんは'; };
 function homeView() {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const thumbs = babs.map((b, i) => {
@@ -98,10 +133,16 @@ function homeView() {
     return `<a class="thumb" href="#/kanji/list/${esc(l.lesson)}" style="--c1:${g[0]};--c2:${g[1]}"><div class="pic">${esc(f ? val(f.kanji) : '字')}</div>
       <strong>Lesson ${esc(l.lesson)} · ${esc(val(l.category))}</strong><div class="meta"><span>${(l.kanji || []).length} kanji</span><span class="play-s">▶</span></div></a>`;
   }).join('');
+  const wi = Math.floor(Date.now() / 864e5) % KOTOBA.length, wd = KOTOBA[wi];   // word of the day
   view.innerHTML = `<section class="page">
-    <header class="top"><a class="brand" href="#/home" aria-label="Home"><img src="./logo-long.png" alt="Learning Archive Japanese Lesson N4"></a><a class="rnd" href="#/cards" aria-label="Kanji cards">札</a></header>
-    <a class="banner" href="#/kotoba"><div><small>言葉と漢字を学ぼう</small><h1>Japanese N4</h1><p>${KOTOBA.length} kotoba · ${KANJI.length} kanji</p></div><span class="mini">▶</span></a>
-    <div class="row"><h3>Lessons</h3><a href="#/kotoba/list">See all</a></div>
+    <header class="top"><a class="brand" href="#/home" aria-label="Home"><img src="./logo-long.png" alt="Learning Archive Japanese Lesson N4"></a>
+      <span class="tools"><a class="circ" href="#/fav" aria-label="Saved">★</a><a class="circ" href="#/settings" aria-label="Settings">⚙</a></span></header>
+    <h1 class="hi">${hello()}, <span>nice to see you!</span></h1>
+    <div class="pills"><span class="pill on">🔥 ${streak()} day streak</span><span class="pill">✓ ${KNOWN.size} learned</span><a class="pill" href="#/fav">★ ${FAVS.size} saved</a></div>
+    <div class="hero"><article class="card"><div class="r2"><span class="tag">Word of the day</span>${sayBtn(val(wd.hiragana), 'w')}</div>
+      <div class="wd">${rb(wd)}</div><div class="wm">${dash(wd.arti)}</div>
+      <div class="hb"><a class="btn white" href="#/kotoba/word/${wi}">Details</a><a class="btn line" href="#/memo/pick/jp">Practice ›››</a></div></article></div>
+    <div class="row"><h3>Lessons</h3></div>
     <div class="hs">
       <a class="chan" href="#/kotoba"><b>言葉</b>Kotoba</a><a class="chan" href="#/kanji"><b>漢字</b>Kanji</a>
       <a class="chan" href="#/cards"><b>札</b>Cards</a><a class="chan" href="#/memo/pick/jp"><b>暗記</b>Kotoba→Arti</a><a class="chan" href="#/memo/pick/id"><b>逆</b>Arti→Kotoba</a><a class="chan" href="#/grammar"><b>文法</b>Grammar</a><a class="chan off" href="#/quiz"><b>問</b>Quiz</a></div>
@@ -111,10 +152,11 @@ function homeView() {
 
 const errorView = () => view.innerHTML = `<section class="page"><div class="msg"><h2>Learning data could not be loaded.</h2><p style="margin-top:8px">Make sure ALL_KOSAKATA_N4_FORMS.json and kanji_lessonfileN4.json sit next to index.html, and open the site over http(s), for example GitHub Pages.</p></div></section>`;
 
-const wordMatch = (w, q) => [w.hiragana, w.kanji, w.arti, w.bab, w.type, w.dictionary_form, w.masu_form, w.masu_form_hiragana].some(x => val(x).toLowerCase().includes(q));
-const wordRow = ([w, i]) => `<a class="item" href="#/kotoba/word/${i}"><div class="t">
+const wordMatch = (w, q) => w._s.includes(q);
+const wordRow = ([w, i]) => { const k = wkey(w), mk = (isFav('w:' + k) ? '★' : '') + (KNOWN.has(k) ? '✓' : '');
+  return `<a class="item" href="#/kotoba/word/${i}"><div class="t">
   <div class="h">${esc(val(w.hiragana))}</div>${kj(w) ? `<div class="k">${esc(kj(w))}</div>` : ''}
-  <div class="m">${dash(w.arti)}</div>${val(w.dictionary_form) ? `<div class="df">Dictionary form: <b>${esc(val(w.dictionary_form))}</b></div>` : ''}${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}</div><span class="play-s">▶</span></a>`;
+  <div class="m">${dash(w.arti)}</div>${val(w.dictionary_form) ? `<div class="df">Dictionary form: <b>${esc(val(w.dictionary_form))}</b></div>` : ''}${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}</div>${mk ? `<span class="mk">${mk}</span>` : ''}<span class="play-s">▶</span></a>`; };
 
 // Kotoba list: search + bab chips + type chips (all built from the JSON)
 function kotobaList(babParam) {
@@ -125,24 +167,33 @@ function kotobaList(babParam) {
     <div class="head"><a class="circ" href="#/kotoba" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a><a class="circ" id="gl" href="#/memo/pick" aria-label="Guess cards">暗</a></div>
     <input class="search" id="q" type="search" placeholder="Search hiragana, kanji, meaning, bab" aria-label="Search vocabulary" value="${esc(kState.q)}">
     <div class="chips" id="babs"></div><div class="chips" id="types"></div>
-    <p class="count" id="n"></p><div id="list"></div></section>`;
+    <p class="count" id="n"></p><div class="list" id="list"></div></section>`;
   const chips = (id, all, items, key) => {
     const el = document.getElementById(id);
     el.innerHTML = [''].concat(items).map(v => `<button class="chip ${kState[key] === v ? 'on' : ''}" data-v="${esc(v)}">${esc(v ? (key === 'type' ? typeLabel(v) : v) : all)}</button>`).join('');
     el.onclick = e => { const b = e.target.closest('button'); if (!b) return; kState[key] = b.dataset.v; chips(id, all, items, key); draw(); };
   };
+  let io = null;
+  // Renders 60 rows at a time; more are added as you scroll (keeps 800 words fast)
   const draw = () => {
+    io && io.disconnect();
     const q = kState.q.trim().toLowerCase();
     const out = KOTOBA.map((w, i) => [w, i]).filter(([w]) => (!kState.bab || val(w.bab) === kState.bab) && (!kState.type || val(w.type) === kState.type) && (!q || wordMatch(w, q)));
     document.getElementById('n').textContent = `${out.length} of ${KOTOBA.length} words`;
-    // Group the results by lesson (bab), keeping the JSON order
-    document.getElementById('list').innerHTML = babs.map(b => {
-      const g = out.filter(([w]) => val(w.bab) === b);
-      return g.length ? `<h3 class="grp">${esc(b)}<span>${g.length}</span></h3><div class="list">${g.map(wordRow).join('')}</div>` : '';
-    }).join('') || '<div class="msg">No words match your search.</div>';
+    const cnt = {}; out.forEach(([w]) => { const b = val(w.bab); cnt[b] = (cnt[b] || 0) + 1; });
+    const list = document.getElementById('list'); list.innerHTML = '';
+    let i = 0, last = null;
+    const more = () => {
+      const end = Math.min(i + 60, out.length); let h = '';
+      for (; i < end; i++) { const b = val(out[i][0].bab); if (b !== last) { last = b; h += `<h3 class="grp">${esc(b)}<span>${cnt[b]}</span></h3>`; } h += wordRow(out[i]); }
+      const s = list.querySelector('.sentinel'); if (s) s.remove();
+      list.insertAdjacentHTML('beforeend', h + (i < out.length ? '<div class="sentinel"></div>' : ''));
+      if (i < out.length) { io = new IntersectionObserver(e => { if (e[0].isIntersecting) { io.disconnect(); more(); } }, { rootMargin: '700px' }); io.observe(list.querySelector('.sentinel')); }
+    };
+    if (out.length) more(); else list.innerHTML = '<div class="msg">No words match your search.</div>';
   };
   chips('babs', 'All bab', babs, 'bab'); chips('types', 'All types', types, 'type');
-  document.getElementById('q').oninput = e => { kState.q = e.target.value; draw(); };
+  document.getElementById('q').oninput = debounce(e => { kState.q = e.target.value; draw(); });
   draw();
 }
 
@@ -161,7 +212,7 @@ function formsHtml(w) {
 function kotobaDetail(i) {
   const w = KOTOBA[i];
   if (!w) return location.hash = '#/kotoba/list';
-  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/kotoba/list" aria-label="Back">←</a><h2>Kotoba</h2></div>
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/kotoba/list" aria-label="Back">←</a><h2>Kotoba</h2>${sayBtn(val(w.hiragana), 'circ')}${favBtn('w:' + wkey(w))}</div>
     <article class="detail">${wordCard(w)}<span class="lbl">BAB</span><div class="rv">${dash(w.bab)}</div></article></section>`;
 }
 
@@ -190,7 +241,7 @@ function kanjiList(lp) {
         <div class="rd"><b>ON</b> ${dash(k.on)}<br><b>KUN</b> ${lineHtml(k.kun)}</div></a>`).join('')}</div>` : '';
     }).join('') || '<div class="msg">No kanji match your search.</div>';
   };
-  document.getElementById('q').oninput = e => { jState.q = e.target.value; draw(); };
+  document.getElementById('q').oninput = debounce(e => { jState.q = e.target.value; draw(); });
   chips(); draw();
 }
 
@@ -201,8 +252,8 @@ const kanjiCard = k => `<span class="badge">Lesson ${esc(k.lesson)} · ${esc(k.c
 function kanjiDetail(i) {
   const k = KANJI[i];
   if (!k) return location.hash = '#/kanji/list';
-  const ex = k.ex.map(o => `<div class="ex"><b>${dash(o.w)}</b>${o.r ? `<span>${esc(o.r)}</span>` : ''}<span>${dash(o.m)}</span></div>`).join('');
-  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/kanji/list" aria-label="Back">←</a><h2>Kanji</h2></div>
+  const ex = k.ex.map(o => `<div class="ex"><b>${dash(o.w)}</b>${o.r ? `<span>${esc(o.r)}</span>` : ''}<span>${dash(o.m)}</span>${sayBtn(o.r || o.w, 'sm')}</div>`).join('');
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/kanji/list" aria-label="Back">←</a><h2>Kanji</h2>${favBtn('k:' + k.kanji)}</div>
     <article class="detail">${kanjiCard(k)}<span class="lbl">EXAMPLES</span>${ex || '<div class="rv">—</div>'}</article></section>`;
 }
 
@@ -211,15 +262,36 @@ function searchView() {
   view.innerHTML = `<section class="page"><div class="head"><h2>Search</h2></div>
     <input class="search" id="q" type="search" placeholder="Kotoba or Kanji" aria-label="Search everything" autofocus><div id="res"></div></section>`;
   const q$ = document.getElementById('q'), res = document.getElementById('res');
-  q$.oninput = () => {
+  q$.oninput = debounce(() => {
     const q = q$.value.trim().toLowerCase();
     if (!q) return res.innerHTML = '';
     const w = KOTOBA.map((x, i) => [x, i]).filter(([x]) => wordMatch(x, q)), k = KANJI.map((x, i) => [x, i]).filter(([x]) => kanjiMatch(x, q));
     res.innerHTML = `<h3 class="sub">Kotoba (${w.length})</h3><div class="list">${w.slice(0, 30).map(wordRow).join('') || '<div class="msg">No kotoba found.</div>'}</div>
       <h3 class="sub">Kanji (${k.length})</h3><div class="kgrid">${k.slice(0, 30).map(([x, i]) => `<a class="kitem" href="#/kanji/item/${i}"><div class="big">${esc(x.kanji)}</div><div class="m">${dash(x.arti)}</div></a>`).join('') || '<div class="msg" style="grid-column:1/-1">No kanji found.</div>'}</div>`;
-  };
+  });
 }
 
+
+function favView() {
+  const w = KOTOBA.map((x, i) => [x, i]).filter(([x]) => isFav('w:' + wkey(x))), k = KANJI.map((x, i) => [x, i]).filter(([x]) => isFav('k:' + x.kanji));
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Saved</h2></div>
+    ${w.length ? '<a class="btn" style="display:flex;margin-bottom:6px" href="#/memo/play/__fav/jp">Practice saved words</a>' : ''}
+    <h3 class="sub">Kotoba (${w.length})</h3><div class="list">${w.map(wordRow).join('') || '<div class="msg">Tap ☆ on a word to save it here.</div>'}</div>
+    <h3 class="sub">Kanji (${k.length})</h3><div class="kgrid">${k.map(([x, i]) => `<a class="kitem" href="#/kanji/item/${i}"><div class="big">${esc(x.kanji)}</div><div class="m">${dash(x.arti)}</div></a>`).join('') || '<div class="msg" style="grid-column:1/-1">Tap ☆ on a kanji to save it here.</div>'}</div></section>`;
+}
+function settingsView() {
+  const seg = (key, opts) => `<div class="seg" data-k="${key}">${opts.map(([v, l]) => `<button class="${cfg[key] === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('')}</div>`;
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Settings</h2></div>
+    <article class="detail set"><span class="lbl">THEME</span>${seg('theme', [['light', 'Light'], ['dark', 'Dark']])}
+    <span class="lbl">GLASS STYLE</span>${seg('glass', [['frosted', 'Frosted'], ['clear', 'Clear'], ['blur', 'Blur']])}
+    <span class="lbl">PROGRESS</span><div class="rv">${KNOWN.size} learned · ${FAVS.size} saved · ${streak()} day streak</div>
+    <button class="btn ghost" id="rp" style="margin-top:12px">Reset learned progress</button></article></section>`;
+  view.querySelectorAll('.seg').forEach(g => g.onclick = e => {
+    const b = e.target.closest('button'); if (!b) return;
+    cfg[g.dataset.k] = b.dataset.v; applyCfg(); g.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+  });
+  document.getElementById('rp').onclick = () => { if (confirm('Reset all learned progress?')) { KNOWN.clear(); saveSet('known', KNOWN); store.set('streak', { last: '', n: 0 }); settingsView(); } };
+}
 
 /* Grammar: each pelajaran in ALL_GRAMMAR_N4.json is one category */
 function grammarList() {
@@ -252,19 +324,23 @@ function memoPick(mode) {
   }
   mState.mode = mode;
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
-  const row = (b, label) => { const n = KOTOBA.filter(w => b === '__all' || val(w.bab) === b).length;
-    return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}/${mode}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${n} words</div></div><span class="play-s">▶</span></a>`; };
+  const st = {};
+  KOTOBA.forEach(w => { const b = val(w.bab), x = st[b] = st[b] || { n: 0, k: 0 }; x.n++; if (KNOWN.has(wkey(w))) x.k++; });
+  const fv = KOTOBA.filter(w => isFav('w:' + wkey(w)));
+  st.__all = { n: KOTOBA.length, k: KOTOBA.filter(w => KNOWN.has(wkey(w))).length }; st.__fav = { n: fv.length, k: fv.filter(w => KNOWN.has(wkey(w))).length };
+  const row = (b, label) => { const s = st[b], p = Math.round(s.k / s.n * 100);
+    return `<a class="item" href="#/memo/play/${encodeURIComponent(b)}/${mode}"><div class="t"><div class="k" style="font-size:1.05rem">${esc(label)}</div><div class="m">${s.n} words · ${p}% learned</div><div class="mbar"><i style="width:${p}%"></i></div></div><span class="play-s">▶</span></a>`; };
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo/pick" aria-label="Back">←</a><h2>${MODES[mode][0]}</h2></div>
     <p class="count">Choose a lesson / bab to memorize</p>
-    <div class="list">${row('__all', 'All lessons')}${babs.map(b => row(b, b)).join('')}</div></section>`;
+    <div class="list">${row('__all', 'All lessons')}${fv.length ? row('__fav', '★ Saved words') : ''}${babs.map(b => row(b, b)).join('')}</div></section>`;
 }
 
 function memoPlay(bp, mode) {
   if (MODES[mode]) mState.mode = mode;
   const bab = decodeURIComponent(bp || '__all');
-  const pool = KOTOBA.filter(w => bab === '__all' || val(w.bab) === bab);
+  const pool = KOTOBA.filter(w => bab === '__all' || (bab === '__fav' ? isFav('w:' + wkey(w)) : val(w.bab) === bab));
   if (!pool.length) return location.hash = '#/memo/pick';
-  const title = bab === '__all' ? 'All lessons' : bab;
+  const title = bab === '__all' ? 'All lessons' : bab === '__fav' ? 'Saved words' : bab;
   let queue = [], total = 0, known = 0, missed = [], flipped = false, busy = false;
   const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
   const start = list => { queue = shuffle(list); total = queue.length; known = 0; missed = []; draw(); };
@@ -279,25 +355,31 @@ function memoPlay(bp, mode) {
       <button class="btn ghost swap" id="sw" aria-label="Swap direction">⇄ ${mState.mode === 'jp' ? 'Kotoba → Arti' : 'Arti → Kotoba'}</button>
       <div class="scene" id="scene"><div class="mcard" id="mc"><div class="flip" id="fl" role="button" tabindex="0" aria-label="Flip card">
         <div class="face">${front(w)}<span class="tap">${mState.mode === 'jp' ? 'Tap to reveal the meaning' : 'Tap to reveal the Japanese'}</span></div>
-        <div class="face back"><div class="fq sm">${rb(w)}</div><div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
-      <p class="count" style="text-align:center">Swipe right = got it · swipe left = again</p>
-      <div class="ctrl"><button class="btn bad" id="no" disabled>✗ Again</button><button class="btn good" id="ok" disabled>✓ Got it</button></div>
+        <div class="face back"><div class="fq sm">${rb(w)}</div>${sayBtn(val(w.hiragana))}<div class="m">${dash(w.arti)}</div>${val(w.type) ? `<span class="badge">${esc(typeLabel(w.type))}</span>` : ''}${formsHtml(w)}</div></div></div></div>
+      <p class="count" style="text-align:center">Reveal, then drag the slider (or swipe right) = known · ✗ or swipe left = again</p>
+      <div class="act"><div class="slide dis" id="sl"><span class="knob" id="kn">✓</span><span class="st">Drag to mark as known</span><span class="chev">›››</span></div><button class="btn bad" id="no" disabled aria-label="Again">✗</button></div>
       <p class="count" style="text-align:center">✓ ${known} &nbsp; ✗ ${missed.length}</p></section>`;
     const scene = document.getElementById('scene'), card = document.getElementById('mc'), fl = document.getElementById('fl');
-    const ok = document.getElementById('ok'), no = document.getElementById('no');
+    const no = document.getElementById('no'), sl = document.getElementById('sl'), kn = document.getElementById('kn');
     // Swap direction on the current card: Kotoba → Arti <-> Arti → Kotoba
     document.getElementById('sw').onclick = () => { if (busy) return; mState.mode = mState.mode === 'jp' ? 'id' : 'jp'; draw(); };
     let x0 = null, dx = 0, moved = false;
-    const toggle = () => { flipped = !flipped; fl.classList.toggle('on', flipped); ok.disabled = no.disabled = !flipped; };
+    const toggle = () => { flipped = !flipped; fl.classList.toggle('on', flipped); no.disabled = !flipped; sl.classList.toggle('dis', !flipped); };
     const rate = good => {
       if (!flipped || busy) return;
       busy = true;
       card.style.transition = 'transform .22s ease, opacity .22s ease';
       card.style.transform = `translateX(${good ? 130 : -130}%) rotate(${good ? 14 : -14}deg)`; card.style.opacity = 0;
-      setTimeout(() => { if (good) known++; else missed.push(queue[0]); queue.shift(); draw(); }, 220);
+      setTimeout(() => { const k = wkey(queue[0]); if (good) { known++; KNOWN.add(k); } else { missed.push(queue[0]); KNOWN.delete(k); } saveSet('known', KNOWN); touchStreak(); queue.shift(); draw(); }, 220);
     };
     fl.onclick = () => { if (moved) { moved = false; return; } toggle(); };
-    ok.onclick = () => rate(true); no.onclick = () => rate(false);
+    no.onclick = () => rate(false);
+    // "drag to mark done" slider
+    let sx = null;
+    const maxX = () => sl.clientWidth - kn.offsetWidth - 8;
+    kn.onpointerdown = e => { if (!flipped || busy) return; sx = e.clientX; kn.setPointerCapture(e.pointerId); kn.style.transition = 'none'; };
+    kn.onpointermove = e => { if (sx !== null) kn.style.transform = `translateX(${Math.max(0, Math.min(maxX(), e.clientX - sx))}px)`; };
+    kn.onpointerup = kn.onpointercancel = e => { if (sx === null) return; const d = e.clientX - sx; sx = null; kn.style.transition = ''; if (d > maxX() * .85) rate(true); else kn.style.transform = ''; };
     scene.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; dx = 0; moved = false; }, { passive: true });
     scene.addEventListener('touchmove', e => {
       if (x0 === null || !flipped) return;
@@ -393,6 +475,8 @@ function route() {
   else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
   else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
   else if (sec === 'memo') a === 'play' ? memoPlay(b, c) : memoPick(b);
+  else if (sec === 'fav') favView();
+  else if (sec === 'settings') settingsView();
   else if (sec === 'search') searchView();
   else homeView();
   scrollTo(0, 0);
@@ -407,3 +491,6 @@ function hideSplash() {
   setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 500); }, wait);
 }
 load().then(hideSplash);
+
+// Offline support (PWA): installable, works without network after the first visit
+if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
