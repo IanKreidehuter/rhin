@@ -42,10 +42,13 @@ body.poster-mode .nav{display:none}
 .hi{font:800 clamp(1.9rem,8vw,2.6rem)/1.1 var(--ui);letter-spacing:-.02em;margin:6px 2px 14px}.hi span{color:var(--mut)}
 .pills{display:flex;gap:8px;flex-wrap:wrap}
 .pill{padding:9px 14px;border-radius:99px;font-size:.82rem;font-weight:600}.pill.on{background:var(--blue);border-color:var(--blue);color:#fff}
-.hero{position:relative;margin:34px 4px 22px}
-.hero::before,.hero::after{content:"";position:absolute;left:16px;right:16px;top:-14px;height:70%;border-radius:var(--r);background:rgba(10,95,230,.45);filter:blur(1.5px)}
-.hero::after{left:32px;right:32px;top:-26px;background:rgba(10,95,230,.22)}
-.hero .card{position:relative;z-index:1;padding:20px;border-radius:30px;color:#fff;background:linear-gradient(150deg,#1a73ff,#0553d1);box-shadow:0 18px 42px rgba(10,95,230,.4)}
+.hero{margin:34px 4px 18px}
+.hcards{display:grid;touch-action:pan-y;padding-top:30px}
+.hcard{grid-area:1/1;min-height:250px;padding:20px;border-radius:30px;color:#fff;background:linear-gradient(150deg,#1a73ff,#0553d1);box-shadow:0 18px 42px rgba(10,95,230,.4);transform-origin:50% 100%;transition:transform .35s ease,opacity .35s ease;will-change:transform}
+.hcard.kc2{background:linear-gradient(150deg,#13b8a6,#0a7fb8);box-shadow:0 18px 42px rgba(10,150,170,.4)}
+.wd.kk{font-size:clamp(4rem,22vw,6rem);line-height:1.2;margin-top:6px}.kr{margin-top:6px;font-size:.85rem;opacity:.95}
+.hdots{display:flex;gap:6px;justify-content:center;margin:16px 0 8px}.hdots i{width:7px;height:7px;border-radius:9px;background:rgba(10,95,230,.25);transition:width .3s,background .3s;cursor:pointer}.hdots i.on{width:22px;background:var(--blue)}
+.hprog{height:3px;border-radius:9px;background:rgba(10,95,230,.15);margin:0 36px;overflow:hidden}.hprog i{display:block;height:100%;background:var(--blue);transform-origin:left;animation:fill 7s linear both}
 .r2{display:flex;justify-content:space-between;align-items:center}
 .tag{padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.22);font-size:.75rem;font-weight:700}
 .wd{margin-top:18px;font:800 clamp(2.4rem,12vw,3.6rem)/1.5 var(--jp)}.wd rt{font:600 .3em var(--jp);color:#cfe3ff}
