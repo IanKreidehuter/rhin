@@ -28,11 +28,10 @@ main{outline:0}
 
 /* floating pill nav: active item expands with its label */
 .nav{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;display:flex;gap:4px;padding:6px;border-radius:99px;max-width:96vw}
-.nav a{display:flex;align-items:center;gap:7px;height:50px;min-width:50px;justify-content:center;padding:0 12px;border-radius:99px;color:var(--mut);transition:background .25s,color .25s,padding .25s}
+.nav a{display:flex;align-items:center;gap:6px;height:48px;min-width:46px;justify-content:center;padding:0 12px;border-radius:99px;color:var(--mut);transition:background .25s,color .25s,padding .25s}
 .nav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .nav b{font:700 1.25rem var(--jp)}.nav span{display:none;font-weight:700;font-size:.88rem}
 .nav a.on{background:var(--blue);color:#fff;padding:0 18px}.nav a.on span{display:inline}
-body.poster-mode .nav{display:none}
 
 /* home */
 .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
@@ -64,16 +63,6 @@ body.poster-mode .nav{display:none}
 .thumb strong{display:block;margin:8px 4px 6px;font-size:.8rem;line-height:1.25;height:2.5em;overflow:hidden}
 .thumb .meta{display:flex;justify-content:space-between;align-items:center;margin:0 4px;font-size:.78rem;font-weight:700}
 .play-s{width:30px;height:30px;flex:none;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:.7rem}
-
-/* poster (lesson start only): the one place poster.jpg is used */
-.poster{position:relative;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:24px 24px 40px;color:#fff;max-width:760px;margin:0 auto;
-background:linear-gradient(180deg,rgba(10,63,156,0) 35%,rgba(10,63,156,.75) 62%,#0a3f9c 100%),url("./poster.jpg") center top/cover no-repeat,linear-gradient(#1ea7ff,#0a3f9c);animation:fade .45s ease both}
-.poster .back{position:absolute;left:16px;top:16px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.28);backdrop-filter:blur(6px);font-size:1.2rem}
-.poster h1{font:800 clamp(2.6rem,14vw,3.8rem)/1 var(--ui);text-shadow:0 4px 24px rgba(7,42,102,.5)}
-.poster .jp{font:700 1.4rem var(--jp);margin-top:6px}.poster .meta{margin-top:8px;font-size:.9rem;opacity:.9}.poster .desc{margin-top:2px;opacity:.85;font-size:.9rem}
-.play{width:84px;height:84px;margin:22px 0 14px;border-radius:50%;display:grid;place-items:center;font-size:2rem;background:rgba(255,255,255,.3);border:2px solid rgba(255,255,255,.6);backdrop-filter:blur(6px);transition:transform .2s}
-.play:active{transform:scale(.92)}.play[aria-disabled=true]{opacity:.45}
-.more{font-size:.85rem;opacity:.9}.soon{padding:6px 18px;border-radius:99px;background:#fff;color:#0a3f9c;font-weight:800;font-size:.85rem}
 
 /* lists */
 .head{display:flex;align-items:center;gap:10px;margin-bottom:12px}.head h2{flex:1;font-size:1.35rem}
@@ -154,3 +143,8 @@ background:linear-gradient(180deg,rgba(10,63,156,0) 35%,rgba(10,63,156,.75) 62%,
 .load::after{content:"";position:absolute;inset:0;width:100%;border-radius:9px;background:#0a5fe6;transform-origin:left;animation:fill 5s linear both}
 @keyframes pop{from{opacity:0;transform:scale(.92)}}@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* nav: Home is icon-only; six items fit small phones */
+.nav a[data-r=home].on{padding:0;width:48px}
+.gp p{white-space:pre-line}
+@media(max-width:400px){.nav{gap:2px;padding:5px}.nav a{padding:0 9px;min-width:42px}.nav a.on{padding:0 12px}.nav span{font-size:.78rem}.nav a[data-r=home].on{padding:0;width:42px}}
