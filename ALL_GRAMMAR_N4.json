@@ -931,6 +931,708 @@
           ]
         }
       ]
+    },
+    {
+      "nomor": 32,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja Bentuk た／Kata Kerja（Bentuk ない）ない ＋ ほうが いいです",
+          "pola": [
+            "Kata Kerja Bentuk た ＋ ほうが いいです",
+            "Kata Kerja (Bentuk ない) ない ＋ ほうが いいです"
+          ],
+          "catatan": [
+            "Pola kalimat ini digunakan jika memberi masukan atau nasihat kepada lawan bicara. Kata Kerja Bentuk た ほうが いいです mengandung makna untuk memperbandingkan dua hal kemudian memilih salah satunya, maka mempunyai maksud tidak baik jika tidak melakukan perbuatan tersebut. Karena itu, kalimat ini memberi kesan bahwa si pembicara sedikit memaksa. Ketika hanya merekomendasikan tindakan tertentu digunakan 〜たら いい (Pel.26)."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "毎日運動したほうがいいです。",
+                  "id": "Lebih baik berolahraga setiap hari."
+                },
+                {
+                  "no": "②",
+                  "jp": "熱があるんです。\n……じゃ、おふろに入らないほうがいいですよ。",
+                  "id": "Berdemam.\n…… Kalau begitu, lebih baik jangan mandi."
+                },
+                {
+                  "no": "③",
+                  "jp": "日本のお寺が見たいんですが……。\n……じゃ、京都へ行ったらいいですよ。",
+                  "id": "(Saya) Ingin melihat kuil Jepang ...\n…… Kalau begitu, sebaiknya pergi ke Kyoto."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～でしょう",
+          "pola": [
+            "Kata Kerja／Kata Sifat い ＋ Bentuk Biasa ＋ でしょう",
+            "Kata Sifat な／Kata Benda ＋ Bentuk Biasa（～だ）＋ でしょう"
+          ],
+          "catatan": [
+            "～でしょう digunakan jika menjelaskan pikiran si pembicara secara tidak pasti terhadap hal untuk masa depan atau hal yang tidak tentu."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "④",
+                  "jp": "あしたは雨が降るでしょう。",
+                  "id": "Besok akan turun hujan."
+                },
+                {
+                  "no": "⑤",
+                  "jp": "タワポンさんは合格するでしょうか。\n……きっと合格するでしょう。",
+                  "id": "Apakah sdr. Thawapon akan lulus?\n…… Pasti akan lulus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～かもしれません",
+          "pola": [
+            "Kata Kerja／Kata Sifat い ＋ Bentuk Biasa ＋ かもしれません",
+            "Kata Sifat な／Kata Benda ＋ Bentuk Biasa（～だ）＋ かもしれません"
+          ],
+          "catatan": [
+            "～かもしれません dapat menggunakan ketika ingin berkata bahwa ada kemungkinan walaupun sedikit."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑥",
+                  "jp": "約束の時間に間に合わないかもしれません。",
+                  "id": "Ada kemungkinan terlambat untuk jam yang telah saya janjikan."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja（Bentuk ます）ましょう",
+          "pola": [
+            "Kata Kerja (Bentuk ます) ましょう"
+          ],
+          "catatan": [
+            "Kata Kerja (Bentuk ます) ましょう pada ⑦ adalah ekspresi untuk menyampaikan maksud si pembicara kepada lawan bicara. Digunakan jika mengusulkan suatu perbuatan. Bernuansa lebih tegas daripada Kata Kerja (Bentuk ます) ましょうか (Pel.14)."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "エンジンの音がおかしいんですが。\n……そうですね。故障かもしれません。ちょっと調べましょう。",
+                  "id": "Bunyi mesinnya aneh ...\n…… Ya, benar. Mungkin kerusakan. Mari periksanya sebentar."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Keterangan Bilangan で",
+          "pola": [
+            "Kata Keterangan Bilangan ＋ で"
+          ],
+          "catatan": [
+            "Menyatakan batas waktu atau batasan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑧",
+                  "jp": "駅まで30分で行けますか。",
+                  "id": "Dapat pergi sampai stasiun dalam waktu tiga puluh menit?"
+                },
+                {
+                  "no": "⑨",
+                  "jp": "3万円でパソコンが買えますか。",
+                  "id": "Dapat membeli PC dengan tiga puluh ribu yen?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "何か 心配な こと",
+          "pola": [
+            "何か ＋ 心配な ＋ こと"
+          ],
+          "catatan": [
+            "Untuk contoh seperti ⑩, yang digunakan bukan しんぱいな なにか (khawatir akan suatu hal) melainkan なにか しんぱいな こと (suatu hal yang mengkhawatirkan). Untuk ekspresi serupa, selain ini ada なにか～もの, どこか～ところ, だれか～ひと, いつか～とき dan sebagainya."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑩",
+                  "jp": "何か心配なことがあるんですか。",
+                  "id": "Ada suatu hal yang mengkhawatirkan?"
+                },
+                {
+                  "no": "⑪",
+                  "jp": "スキーに行きたいんですが、どこかいい所、ありますか。",
+                  "id": "(Saya) Ingin pergi bermain ski, apakah ada suatu tempat yang bagus?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 33,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Bentuk Imperatif・Bentuk Larangan",
+          "pola": [
+            "Kelompok I: bunyi kolom い pada akhir Bentuk ます → bunyi kolom え",
+            "Kelompok II: Bentuk ます ＋ ろ",
+            "Kelompok III: します → しろ／きます → こい",
+            "Bentuk Larangan: Bentuk Kamus ＋ な"
+          ],
+          "catatan": [
+            "Kata Kerja Keadaan seperti ある, できる, わかる dan sebagainya tidak memiliki Bentuk Imperatif."
+          ],
+          "bagian": [
+            {
+              "judul": "1) Cara membuat Bentuk Imperatif (Lihat Buku Induk Pel.33 Latihan A1)",
+              "keterangan": "Kelompok I: Bunyi dari kolom い sebagai bunyi terakhir dari Bentuk ます diubah menjadi bunyi kolom え.\nかき-ます → かけ　　いそぎ-ます → いそげ\nよみ-ます → よめ　　あそび-ます → あそべ\nKelompok II: Dibubuhi ろ pada Bentuk ます.\nたべ-ます → たべ-ろ　　み-ます → み-ろ\nPengecualian: くれ-ます → くれろ\nKelompok III: し-ます → しろ　　き-ます → こい"
+            },
+            {
+              "judul": "2) Cara membuat Bentuk Larangan (Lihat Buku Induk Pel.33 Latihan A1)",
+              "keterangan": "Membubuhkan な pada Bentuk Kamus."
+            }
+          ]
+        },
+        {
+          "judul": "Cara pemakaian Bentuk Imperatif dan Bentuk Larangan",
+          "catatan": [
+            "Bentuk Imperatif dipakai jika memaksa suatu aksi, dan Bentuk Larangan dipakai jika memerintah untuk tidak melakukan suatu aksi kepada lawan bicara. Ini mempunyai nada paksaan serta kedengaran sangat keras sehingga adegan pemakaiannya sangat terbatas jika memakainya pada akhir kalimat. Kemudian yang menggunakannya secara lisan, kebanyakan kasus hanya terbatas bagi kaum pria. Bentuk Imperatif atau Bentuk Larangan yang dipakai pada akhir kalimat adalah kasus di bawah berikut ini;"
+          ],
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Pria yang posisi atau usianya dari atas ke bawah, atau ayah memakainya kepada anak.",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "早く寝ろ。",
+                  "id": "Cepat tidur!"
+                },
+                {
+                  "no": "②",
+                  "jp": "遅れるな。",
+                  "id": "Jangan terlambat!"
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Dipakai antara sesama pria. Untuk memperlembut suasana perkataan, biasanya sering dibubuhkan Kata Bantu よ pada akhir kalimat.",
+              "contoh": [
+                {
+                  "no": "③",
+                  "jp": "あした うちへ 来い[よ]。",
+                  "id": "Besok datanglah ke rumahku!"
+                },
+                {
+                  "no": "④",
+                  "jp": "あまり 飲むな[よ]。",
+                  "id": "Jangan minum terlalu banyak!"
+                }
+              ]
+            },
+            {
+              "judul": "3)",
+              "keterangan": "Ketika memberi petunjuk saat bekerja sama di pabrik, atau jika tidak ada peluang untuk cara ungkap terhadap lawan bicara karena saat darurat seperti kebakaran, gempa bumi. Untuk kasus itu pun, kebanyakan dipakai oleh pria yang posisi atau usianya atas saja.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "逃げろ。",
+                  "id": "Berlarilah!"
+                },
+                {
+                  "no": "⑥",
+                  "jp": "エレベーターを使うな。",
+                  "id": "Jangan gunakan tangga berjalan!"
+                }
+              ]
+            },
+            {
+              "judul": "4)",
+              "keterangan": "Ketika memberi perintah pada saat latihan berkelompok, atau mata pelajaran olah raga, kurikulum ekstra di bidang kegiatan olah raga di sekolah.",
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "休め。",
+                  "id": "Beristirahat!"
+                },
+                {
+                  "no": "⑧",
+                  "jp": "休むな。",
+                  "id": "Jangan beristirahat!"
+                }
+              ]
+            },
+            {
+              "judul": "5)",
+              "keterangan": "Pengobaran semangat pada saat menonton pertandingan olah raga. Untuk kasus ini adakalanya wanita juga memakainya.",
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "頑張れ。",
+                  "id": "Semangat!"
+                },
+                {
+                  "no": "⑩",
+                  "jp": "負けるな。",
+                  "id": "Jangan kalah!/Jangan menyerah!"
+                }
+              ]
+            },
+            {
+              "judul": "6)",
+              "keterangan": "Jika mementingkan kesederhanaan seperti tanda lalu-lintas, slogan, atau mengharapkan efek yang tinggi.",
+              "contoh": [
+                {
+                  "no": "⑪",
+                  "jp": "止まれ。",
+                  "id": "Berhenti!"
+                },
+                {
+                  "no": "⑫",
+                  "jp": "入るな。",
+                  "id": "Dilarang masuk!"
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Dalam bentuk imperatif terdapat pula Kata Kerja (Bentuk ます) なさい. Bentuk ini dipakai oleh orang tua kepada anak, atau guru kepada murid, dan terasa bunyi yang lebih halus daripada Kata Kerja Bentuk Imperatif. Namun, tidak bisa digunakan untuk orang yang lebih tua.",
+              "contoh": [
+                {
+                  "no": "⑬",
+                  "jp": "勉強しなさい。",
+                  "id": "Belajarlah!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～と 書いて あります／～と 読みます",
+          "pola": [
+            "～と 書いて あります／～と 読みます"
+          ],
+          "catatan": [
+            "と pada ⑭ dan ⑮ berfungsi sama dengan と dari ～と いいます (Pel.21)."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑭",
+                  "jp": "あの漢字は何と読むんですか。",
+                  "id": "Huruf Kanji itu cara membacanya bagaimana?"
+                },
+                {
+                  "no": "⑮",
+                  "jp": "あそこに「止まれ」と書いてあります。",
+                  "id": "Di sana bertuliskan \"Berhenti\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "X は Y と いう 意味です",
+          "pola": [
+            "X は Y と いう 意味です"
+          ],
+          "catatan": [
+            "Bentuk ini digunakan untuk mendefinisikan makna X. という berasal dari と いいます. Jika bertanya artinya, menggunakan Kata Tanya どういう."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑯",
+                  "jp": "「立入禁止」は入るなという意味です。",
+                  "id": "\"Tachiiri Kinshi\" berarti dilarang masuk."
+                },
+                {
+                  "no": "⑰",
+                  "jp": "このマークはどういう意味ですか。\n……洗濯機で洗えるという意味です。",
+                  "id": "Apa maksud tanda ini?\n…… Maksudnya dapat dicuci dengan mesin cuci."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "「Kalimat」／Bentuk Biasa ＋ と 言って いました",
+          "pola": [
+            "「Kalimat」／Bentuk Biasa ＋ と 言って いました"
+          ],
+          "catatan": [
+            "Jika mengutip perkataan orang ketiga menggunakan ～と いいました (Pel.21), sedangkan jika menyampaikan perkataan orang ketiga menggunakan ～と いって いました."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑱",
+                  "jp": "田中さんは「あした休みます」と言っていました。",
+                  "id": "Sdr. Tanaka berkata bahwa \"Besok tidak masuk\"."
+                },
+                {
+                  "no": "⑲",
+                  "jp": "田中さんはあした休むと言っていました。",
+                  "id": "Katanya sdr. Tanaka besok tidak masuk."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "「Kalimat」／Bentuk Biasa ＋ と 伝えて いただけませんか",
+          "pola": [
+            "「Kalimat」／Bentuk Biasa ＋ と 伝えて いただけませんか"
+          ],
+          "catatan": [
+            "Memakai jika meminta pesan secara halus."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑳",
+                  "jp": "ワンさんに「あとで電話をください」と伝えていただけませんか。",
+                  "id": "Tolong sampaikan kepada sdr. Wang bahwa \"Minta ditelepon nanti\"."
+                },
+                {
+                  "no": "㉑",
+                  "jp": "すみませんが、渡辺さんにあしたのパーティーは6時からだと伝えていただけませんか。",
+                  "id": "Maaf; tolong sampaikan kepada sdri. Watanabe bahwa pesta besok dari pukul enam."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 34,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Kata Kerja1 Bentuk た／Kata Benda の ＋ とおりに、Kata Kerja2",
+          "pola": [
+            "Kata Kerja1 Bentuk た ＋ とおりに、Kata Kerja2",
+            "Kata Benda の ＋ とおりに、Kata Kerja"
+          ],
+          "bagian": [
+            {
+              "judul": "1) Kata Kerja1 Bentuk た とおりに、Kata Kerja2",
+              "keterangan": "Menyatakan bahwa melakukan Kata Kerja2 dengan keadaan atau cara yang sama dengan Kata Kerja1.",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "わたしがやったとおりに、やってください。",
+                  "id": "Silakan lakukan sama seperti yang saya buat!"
+                },
+                {
+                  "no": "②",
+                  "jp": "見たとおりに、話してください。",
+                  "id": "Silakan berbicara sama seperti yang Anda lihat!"
+                }
+              ]
+            },
+            {
+              "judul": "2) Kata Benda の とおりに、Kata Kerja",
+              "keterangan": "Menyatakan hal yang melakukan aksi tanpa terlepas dari standar yang ditunjuk oleh Kata Benda.",
+              "contoh": [
+                {
+                  "no": "③",
+                  "jp": "線のとおりに、紙を切ってください。",
+                  "id": "Silakan menggunting kertas sesuai dengan garis!"
+                },
+                {
+                  "no": "④",
+                  "jp": "説明書のとおりに、組み立てました。",
+                  "id": "(Saya) Memasang sesuai dengan petunjuk."
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] とおり adalah Kata Benda, maka langsung menyertai Kata Tunjuk seperti この, その, あの kemudian dapat menyatakan bahwa bermaksud keadaan atau cara yang sama seperti ditunjuk oleh Kata Tunjuk tersebut.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "このとおりに、書いてください。",
+                  "id": "Silakan tulis sama seperti ini!"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja1 Bentuk た／Kata Benda の ＋ あとで、Kata Kerja2",
+          "pola": [
+            "Kata Kerja1 Bentuk た／Kata Benda の ＋ あとで、Kata Kerja2"
+          ],
+          "catatan": [
+            "Menyatakan bahwa Kata Kerja2 terjadi setelah Kata Kerja1 atau Kata Benda.",
+            "Jika dibandingkan dengan Kata Kerja Bentuk て から yang menyatakan arti yang sama (Lihat Pel.16), menggunakannya jika mengfokuskan hubungan waktu yang pra dan pasca. Kemudian berbeda dengan Kata Kerja Bentuk て から, Kata Kerja1 atau Kata Benda tidak bernuansa sebagai dasar pikiran atau aksi persiapan untuk Kata Kerja2."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑥",
+                  "jp": "新しいのを買ったあとで、なくした時計が見つかりました。",
+                  "id": "Setelah membeli yang baru, ditemukan arloji yang hilang."
+                },
+                {
+                  "no": "⑦",
+                  "jp": "仕事のあとで、飲みに行きませんか。",
+                  "id": "Setelah selesai bekerja, bagaimana kalau pergi minum?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja1 Bentuk て／Kata Kerja1（Bentuk ない）ないで ＋ Kata Kerja2",
+          "pola": [
+            "Kata Kerja1 Bentuk て ＋ Kata Kerja2",
+            "Kata Kerja1 (Bentuk ない) ないで ＋ Kata Kerja2"
+          ],
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Kata Kerja1 menyatakan aksi dan keadaan yang disertai Kata Kerja2. Misalnya dalam contoh kalimat ⑧ dan ⑨, ketika aksi たべます dilakukan, dijelaskan untuk memakai atau tidaknya kecap asin. Aksi dari unsur pokok kalimat Kata Kerja1 dan Kata Kerja2 adalah sama.",
+              "contoh": [
+                {
+                  "no": "⑧",
+                  "jp": "しょうゆをつけて食べます。",
+                  "id": "Makan dibubuhkan kecap asin."
+                },
+                {
+                  "no": "⑨",
+                  "jp": "しょうゆをつけないで食べます。",
+                  "id": "Makan tanpa kecap asin."
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Dalam Kata Kerja1 (Bentuk ない) ないで Kata Kerja2, terdapat pula cara penggunaan untuk menyatakan memilih salah satunya (Kata Kerja2) di antara aksi yang tidak dapat dilakukan secara bersamaan (Kata Kerja1, Kata Kerja2).",
+              "contoh": [
+                {
+                  "no": "⑩",
+                  "jp": "日曜日はどこも行かないで、うちでゆっくり休みます。",
+                  "id": "Hari Minggu tidak pergi ke mana-mana, tetapi beristirahat santai-santai di rumah."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nomor": 35,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Cara membuat Bentuk Syarat",
+          "pola": [
+            "Kelompok I: bunyi kolom い pada akhir Bentuk ます → bunyi kolom え ＋ ば",
+            "Kelompok II: Bentuk ます ＋ れば",
+            "Kelompok III: します → すれば／きます → くれば",
+            "Kata Sifat い: い → ければ",
+            "Kata Sifat な: (tanpa な) ＋ なら",
+            "Kata Benda: ＋ なら"
+          ],
+          "catatan": [
+            "(Lihat Buku Induk Pel.35 Latihan A1)",
+            "[Perhatian] Jika Bentuk Negatif dari Kata Kerja (Contoh: いかない) diubah menjadi Bentuk Syarat, dengan membubuhkan なければ pada Bentuk ない (Contoh: いか)."
+          ]
+        },
+        {
+          "judul": "Bentuk Syarat、～",
+          "pola": [
+            "Bentuk Syarat、～"
+          ],
+          "catatan": [
+            "Pada dasarnya, dalam hal bagian belakang (klausa pokok) tidak akan diletakkan ekspresi mengenai keinginan, harapan, perintah, permintaan dan lain-lainnya, tetapi jika subjek antara hal awal dan belakangnya berbeda (②), atau predikat dari hal awal secara keadaan (③ dan ⑤) dapat digunakan ekspresi tersebut."
+          ],
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Pada hal awal yang menyatakan syarat yang diperlukan untuk mencapai hal-hal pada bagian belakang (klausa pokok).",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "ボタンを押せば、窓が開きます。",
+                  "id": "Kalau menekan tombol, jendelanya terbuka."
+                },
+                {
+                  "no": "②",
+                  "jp": "彼が行けば、わたしも行きます。",
+                  "id": "Kalau dia pergi, saya juga pergi."
+                },
+                {
+                  "no": "③",
+                  "jp": "あした都合がよければ、来てください。",
+                  "id": "Jika besok ada waktu, silakan datang."
+                },
+                {
+                  "no": "④",
+                  "jp": "いい天気なら、向こうに島が見えます。",
+                  "id": "Kalau cuaca baik, terlihat pulau di seberang sana."
+                }
+              ]
+            },
+            {
+              "judul": "2)",
+              "keterangan": "Untuk merespon perkataan lawan bicara atau suatu keadaan, menyatakan keputusan si pembicara.",
+              "contoh": [
+                {
+                  "no": "⑤",
+                  "jp": "ボールペンがないんですが。\n……ボールペンがなければ、鉛筆で書いてください。",
+                  "id": "Tidak ada bolpoin...\n…… Kalau tidak ada bolpoin, silakan tulis dengan pensil."
+                },
+                {
+                  "no": "⑥",
+                  "jp": "あしたまでにレポートを出さなければなりませんか。\n……無理なら、金曜日までに出してください。",
+                  "id": "Apakah (saya) harus menyerahkan laporan sampai dengan besok?\n…… Kalau tidak bisa, serahkan sampai dengan hari Jumat."
+                }
+              ]
+            },
+            {
+              "judul": "[Referensi] Perbandingan dengan ekspresi mirip yang telah dipelajari sampai dengan pelajaran ini"
+            },
+            {
+              "judul": "1) ～と (Pel.23)",
+              "keterangan": "～と menyatakan bahwa jika terjadi aksi atau situasi di depan と, secara pasti mencapai keadaan, aksi yang dinyatakan klausa pokok yang disusulkannya di belakang, fenomena atau situasi. Pada bagian belakang (kalimat pokok) tidak digunakan ekspresi keinginan, harapan, perintah, permintaan dan lain-lain.",
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "ここを押すと、ドアが開きます。",
+                  "id": "Kalau menekan di sini, pintunya terbuka."
+                },
+                {
+                  "no": "⑧",
+                  "jp": "ここを押せば、ドアが開きます。",
+                  "id": "Jika menekan di sini, pintunya terbuka. (⑦ dapat menyatakan dengan menggunakan ～ば.)"
+                }
+              ]
+            },
+            {
+              "judul": "2) ～たら (Pel.25)",
+              "keterangan": "～たら mempunyai dua cara penggunaan yaitu, (1) cara penggunaan untuk menyatakan syarat pengandaian, dan (2) cara penggunaan untuk jika sebelumnya jelas bahwa akan mencapai Kata Kerja Bentuk たら, setelah tercapai yang tersebut, akan mencapai aksi atau keadaan pada kalimat pokok yang menyusulnya. Untuk hal di belakang (kalimat pokok) dapat menggunakan ekspresi keinginan, harapan, perintah dan permintaan.",
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "東京へ来たら、ぜひ連絡してください。",
+                  "id": "Kalau datang ke Tokyo, silakan hubungi (saya)."
+                },
+                {
+                  "no": "×",
+                  "jp": "東京へ来ると、ぜひ連絡してください。",
+                  "id": "(Salah)"
+                },
+                {
+                  "no": "×",
+                  "jp": "東京へ来れば、ぜひ連絡してください。",
+                  "id": "(Salah)"
+                },
+                {
+                  "no": "⑩",
+                  "jp": "田中さんが東京へ来れば、[わたしは]会いに行きます。",
+                  "id": "Kalau sdr. Tanaka datang ke Tokyo, saya pergi bertemu."
+                }
+              ]
+            },
+            {
+              "keterangan": "Jika terdapat keinginan si pembicara pada kalimat pokok seperti ⑨, dapat memakai ～たら, tetapi tidak dapat memakai ～と, ～ば. Dengan catatan bahwa seperti ⑩ subjek dari hal di depan dan belakang (kalimat pokok) berbeda, walaupun keinginan si pembicara terdapat pada hal di belakang (kalimat pokok), ～ば dapat dipakai. Dengan demikian, ～たら dapat dikatakan bahwa batas pemakaiannya paling luas, tetapi karena bahasa lisan maka jarang digunakan pada bahasa tertulis."
+            }
+          ]
+        },
+        {
+          "judul": "Kata Tanya Kata Kerja Bentuk Syarat いいですか",
+          "pola": [
+            "Kata Tanya ＋ Kata Kerja Bentuk Syarat ＋ いいですか"
+          ],
+          "catatan": [
+            "Ekspresi untuk meminta masukan atau petunjuk dari lawan bicara. Dapat memakainya sama seperti ～たら いいですか yang telah dipelajari pada Pel.26."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑪",
+                  "jp": "本を借りたいんですが、どうすればいいですか。",
+                  "id": "Ingin meminjam buku, bagaimana caranya?"
+                },
+                {
+                  "no": "⑫",
+                  "jp": "本を借りたいんですが、どうしたらいいですか。",
+                  "id": "Ingin meminjam buku, bagaimana caranya? (Pel.26)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Benda なら、～",
+          "pola": [
+            "Kata Benda ＋ なら、～"
+          ],
+          "catatan": [
+            "Kata Benda なら、～ digunakan pula jika merespon perkataan lawan bicara, kemudian memberikan informasi mengenai sesuatu hal tersebut."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑬",
+                  "jp": "温泉に行きたいんですが、どこがいいですか。\n……温泉なら、白馬がいいですよ。",
+                  "id": "Ingin pergi ke permandian air panas, yang bagus di mana?\n…… Kalau permandian air panas, Hakuba yang bagus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "～は ありませんか（Kalimat Tanya Negatif）",
+          "pola": [
+            "～は ありませんか"
+          ],
+          "catatan": [
+            "いい ところは ありませんか pada ⑭ artinya sama dengan いい ところは ありますか, tetapi bertanya dengan ありませんか, lawan bicara dengan mudah menjawab \"tidak ada\" maka dianggap cara bertanya yang menjaga perasaan lawan bicara. Dengan demikian, pada umumnya bentuk Tanya Negatif yang dijadikan cara untuk menanyakan secara halus. Ketika menjawab, menggunakan はい、あります atau いいえ、ありません."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑭",
+                  "jp": "2、3日旅行をしようと思っているんですが、どこかいい所はありませんか。",
+                  "id": "Saya pikir mau berjalan-jalan selama dua, tiga hari, apakah ada tempat yang Anda rekomendasikan?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
