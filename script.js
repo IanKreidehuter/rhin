@@ -120,15 +120,6 @@ function buildKanji(d) {
 }
 const kanjiMatch = (k, q) => k._s.includes(q);   // _s is built once at load
 
-const POSTERS = {
-  kotoba:  { t: 'Kotoba',  jp: 'ことば', d: 'Japanese Vocabulary', go: '#/kotoba/list', n: () => `${KOTOBA.length} words | N4` },
-  kanji:   { t: 'Kanji',   jp: '漢字',   d: 'Readings and example words', go: '#/kanji/list', n: () => `${KANJI.length} kanji | ${LESSONS.length} lessons` },
-  cards:   { t: 'Kanji Cards', jp: '漢字カード', d: 'Swipe through every Kanji', go: '#/cards/play', n: () => `${KANJI.length} cards | Swipe` },
-  memo:    { t: 'Guess Cards', jp: '暗記カード', d: 'Flip, guess and memorize by lesson', go: '#/memo/pick', n: () => `${KOTOBA.length} words | by lesson` },
-  grammar: { t: 'Grammar', jp: '文法',   d: 'Grammar Lessons', go: '#/grammar/list', n: () => `${GRAMMAR.length} lessons | N4` },
-  quiz:    { t: 'Quiz',    jp: 'クイズ', d: 'Test your Japanese', soon: 1, n: () => 'N4' }
-};
-
 async function load() {
   try {
     const [a, b] = await Promise.all(['./ALL_KOSAKATA_N4_FORMS.json', './kanji_lessonfileN4.json'].map(async u => {
@@ -155,15 +146,10 @@ async function load() {
 }
 
 /* ---------- Views ---------- */
-// Poster screen: shown only when a lesson section starts
-function posterView(key) {
-  const p = POSTERS[key], meta = loadError ? '' : p.n();
-  view.innerHTML = `<section class="poster"><a class="back" href="#/home" aria-label="Back to home">←</a>
-    <h1>${p.t}</h1><div class="jp">${p.jp}</div><div class="meta">${esc(meta)}</div><div class="desc">${p.d}</div>
-    ${p.soon
-      ? `<span class="play" aria-disabled="true" aria-label="Coming soon">▶</span><span class="soon">COMING SOON</span>`
-      : `<a class="play" href="${p.go}" aria-label="Play ${esc(p.t)}">▶</a><a class="more" href="${p.go}">Show More ⌄</a>`}
-  </section>`;
+// Quiz is not built yet: plain page, no poster
+function soonView(t) {
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>${t}</h2></div>
+    <div class="msg"><h2>COMING SOON</h2><p class="count">${t}</p></div></section>`;
 }
 
 const GRADS = [['#1ea7ff', '#0a3f9c'], ['#19d3c5', '#0a8fb5'], ['#f6b96b', '#e8825a'], ['#5aa8ff', '#6a5cff']];
@@ -262,7 +248,7 @@ function kotobaList(babParam) {
   const babs = [...new Set(KOTOBA.map(w => val(w.bab)).filter(Boolean))];
   const types = [...new Set(KOTOBA.map(w => val(w.type)).filter(Boolean))];
   view.innerHTML = `<section class="page">
-    <div class="head"><a class="circ" href="#/kotoba" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a><a class="circ" id="gl" href="#/memo/pick" aria-label="Guess cards">暗</a></div>
+    <div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Kotoba</h2><a class="circ" href="#/kotoba/cards" aria-label="Flashcards">札</a><a class="circ" id="gl" href="#/memo/pick" aria-label="Guess cards">暗</a></div>
     <input class="search" id="q" type="search" placeholder="Search hiragana, kanji, meaning, bab" aria-label="Search vocabulary" value="${esc(kState.q)}">
     <div class="chips" id="babs"></div><div class="chips" id="types"></div>
     <p class="count" id="n"></p><div class="list" id="list"></div></section>`;
@@ -317,7 +303,7 @@ function kotobaDetail(i) {
 function kanjiList(lp) {
   if (lp !== undefined) jState.lesson = lp;
   view.innerHTML = `<section class="page">
-    <div class="head"><a class="circ" href="#/kanji" aria-label="Back">←</a><h2>Kanji</h2><a class="circ" id="cl" href="#/cards/play" aria-label="Swipe cards">札</a></div>
+    <div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Kanji</h2><a class="circ" id="cl" href="#/cards/play" aria-label="Swipe cards">札</a></div>
     <input class="search" id="q" type="search" placeholder="Search kanji, reading, meaning, example" aria-label="Search kanji" value="${esc(jState.q)}">
     <div class="chips" id="les"></div><p class="count" id="n"></p><div id="list"></div></section>`;
   const chips = () => {
@@ -394,7 +380,7 @@ function settingsView() {
 
 /* Grammar: each pelajaran in ALL_GRAMMAR_N4.json is one category */
 function grammarList() {
-  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/grammar" aria-label="Back">←</a><h2>Grammar</h2></div>
+  view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Grammar</h2></div>
     <p class="count">${GRAMMAR.length} lessons</p><div class="list">${GRAMMAR.map((l, i) => `<a class="item" href="#/grammar/lesson/${i}"><div class="t">
     <div class="h">Pelajaran ${esc(val(l.nomor))}</div><div class="k" style="font-size:1.15rem">${esc(val(l.judul))}</div>
     <div class="m">${(l.poin || []).length} pola tata bahasa</div></div><span class="play-s">▶</span></a>`).join('') || '<div class="msg">Grammar data could not be loaded.</div>'}</div></section>`;
@@ -416,7 +402,7 @@ const MODES = { jp: ['Kotoba → Arti', 'See the Japanese word, guess the Indone
 // Step 1: choose the section (Kotoba → Arti or Arti → Kotoba). Step 2: choose a lesson / bab.
 function memoPick(mode) {
   if (!MODES[mode]) {
-    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/memo" aria-label="Back">←</a><h2>Memorize</h2></div>
+    view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Memorize</h2></div>
       <p class="count">Choose a section</p><div class="list">${Object.entries(MODES).map(([k, [t, d]]) => `<a class="item" href="#/memo/pick/${k}"><div class="t">
       <div class="k" style="font-size:1.25rem">${t}</div><div class="m">${d}</div></div><span class="play-s">▶</span></a>`).join('')}</div></section>`;
     return;
@@ -561,22 +547,21 @@ function route() {
   deckKey = null; clearInterval(homeTimer);
   const [, sec = 'home', a, b, c] = (location.hash || '#/home').split('/');
   document.querySelectorAll('#nav a').forEach(l => l.classList.toggle('on', l.dataset.r === sec));
-  const poster = POSTERS[sec] && !a;           // poster only at the start of a lesson section
-  document.body.classList.toggle('poster-mode', !!poster);
-  if (loadError && !(POSTERS[sec] && POSTERS[sec].soon)) return errorView();
-  if (!KOTOBA.length && !(POSTERS[sec] && POSTERS[sec].soon)) { view.innerHTML = '<section class="page"><div class="msg">Loading…</div></section>'; return; }
-  if (poster) posterView(sec);
-  else if (sec === 'kotoba') {
-    if (a === 'list') kotobaList(b);
-    else if (a === 'word') kotobaDetail(+b);
-    else deckView(KOTOBA, wordCard, '#/kotoba/list', 'Kotoba cards');
-  } else if (sec === 'kanji') a === 'list' ? kanjiList(b) : kanjiDetail(+b);
+  const soon = sec === 'quiz';
+  if (loadError && !soon) return errorView();
+  if (!KOTOBA.length && !soon) { view.innerHTML = '<section class="page"><div class="msg">Loading…</div></section>'; return; }
+  if (sec === 'kotoba') {
+    if (a === 'word') kotobaDetail(+b);
+    else if (a === 'cards') deckView(KOTOBA, wordCard, '#/kotoba/list', 'Kotoba cards');
+    else kotobaList(a === 'list' ? b : undefined);
+  } else if (sec === 'kanji') a === 'item' ? kanjiDetail(+b) : kanjiList(a === 'list' ? b : undefined);
   else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
   else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
   else if (sec === 'memo') a === 'play' ? memoPlay(b, c) : memoPick(b);
   else if (sec === 'fav') favView();
   else if (sec === 'settings') settingsView();
   else if (sec === 'search') searchView();
+  else if (soon) soonView('Quiz');
   else homeView();
   scrollTo(0, 0);
 }
