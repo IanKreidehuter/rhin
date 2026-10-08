@@ -46,6 +46,8 @@ const ID = {
 'Kotoba cards':'Kartu kotoba','Kanji cards ':'Kartu kanji','← Previous':'← Sebelumnya','Next →':'Berikutnya →','Shuffle':'Acak','Reset':'Atur ulang'
 };
 ID['Kanji cards'] = 'Kartu kanji';
+Object.assign(ID, { 'Post': 'Postingan', 'Refresh': 'Muat ulang', 'No posts yet.': 'Belum ada postingan.', 'Load more': 'Muat lebih banyak', 'Could not load posts.': 'Postingan tidak dapat dimuat.', 'Retry': 'Coba lagi',
+  'Post feed is not connected yet. Paste your Apps Script URL in config.js.': 'Feed postingan belum terhubung. Tempel URL Apps Script di config.js.', 'Showing saved posts (offline).': 'Menampilkan postingan tersimpan (offline).' });
 const RULES = [
 [/^Lesson (\d+)/, 'Pelajaran $1'], [/^🔥 (\d+) day streak$/, '🔥 $1 hari beruntun'], [/^✓ (\d+) learned$/, '✓ $1 dikuasai'], [/^★ (\d+) saved$/, '★ $1 tersimpan'],
 [/^(\d+) of (\d+) words$/, '$1 dari $2 kata'], [/^(\d+) of (\d+) kanji$/, '$1 dari $2 kanji'], [/^(\d+) words · (\d+)% learned$/, '$1 kata · $2% dikuasai'], [/^(\d+) words$/, '$1 kata'],
@@ -356,6 +358,63 @@ function searchView() {
 }
 
 
+
+/* ---- Post: a feed read from Google Sheets + Drive through the Apps Script web app (URL in config.js) ---- */
+const API = (window.N4_API || '').trim();
+const fmtDate = iso => { try { return new Intl.DateTimeFormat(cfg.lang === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(iso)); } catch (e) { return ''; } };
+const driveImg = (id, w) => `https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w${w}`;
+const linkify = t => esc(t).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+const postCard = p => `<article class="post"><header class="ph">
+  ${p.avatarId ? `<img class="av2" src="${driveImg(p.avatarId, 160)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span class="av2 ph0">言</span>'}
+  <div><b>${esc(p.username || 'Admin')}</b><time>${esc(fmtDate(p.timestamp))}</time></div></header>
+  ${p.caption ? `<p class="cap">${linkify(p.caption)}</p>` : ''}
+  ${p.mediaId ? (p.mediaType === 'video'
+    ? `<div class="vid"><iframe src="https://drive.google.com/file/d/${encodeURIComponent(p.mediaId)}/preview" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe></div>`
+    : `<a href="https://drive.google.com/file/d/${encodeURIComponent(p.mediaId)}/view" target="_blank" rel="noopener noreferrer"><img class="pm" src="${driveImg(p.mediaId, 1200)}" alt="" loading="lazy" referrerpolicy="no-referrer"></a>`) : ''}</article>`;
+async function fetchPosts(offset) {
+  const r = await fetch(`${API}?action=list&limit=15&offset=${offset}`), j = await r.json();
+  if (!j.ok) throw new Error(j.error || 'Error');
+  return j;
+}
+function postView() {
+  view.innerHTML = `<section class="page"><div class="head"><h2>Post</h2><button class="circ" id="rf" aria-label="Refresh">↻</button></div>
+    <div id="feed"></div><div id="fm"></div></section>`;
+  const feed = document.getElementById('feed'), fm = document.getElementById('fm');
+  if (!API) { feed.innerHTML = '<div class="msg">Post feed is not connected yet. Paste your Apps Script URL in config.js.</div>'; return; }
+  let items = store.get('feed', []), more = false, busy = false;
+  const alive = () => document.body.contains(feed);                    // user may have left the page while loading
+  const paint = note => {
+    feed.innerHTML = (note ? `<p class="count">${note}</p>` : '') + (items.map(postCard).join('') || '<div class="msg">No posts yet.</div>');
+    fm.innerHTML = more ? '<button class="btn ghost" id="lm" style="display:flex;margin:14px auto">Load more</button>' : '';
+    const lm = document.getElementById('lm'); if (lm) lm.onclick = () => load(true);
+  };
+  const load = async append => {
+    if (busy) return; busy = true;
+    if (!items.length) feed.innerHTML = '<article class="post sk"></article><article class="post sk"></article>';
+    try {
+      const j = await fetchPosts(append ? items.length : 0);
+      if (!alive()) return;
+      items = append ? items.concat(j.posts) : j.posts; more = j.hasMore;
+      if (!append) store.set('feed', items.slice(0, 15));              // cached copy shows instantly next time / offline
+      paint();
+    } catch (e) {
+      if (!alive()) return;
+      if (items.length) paint('Showing saved posts (offline).');
+      else { feed.innerHTML = '<div class="msg">Could not load posts.<br><button class="btn" id="rt" style="margin-top:12px">Retry</button></div>'; document.getElementById('rt').onclick = () => load(false); }
+    }
+    busy = false;
+  };
+  if (items.length) paint();
+  document.getElementById('rf').onclick = () => load(false);
+  load(false);
+}
+
+/* Settings button lives in the top panel of every page */
+new MutationObserver(() => {
+  const h = view.querySelector('.head');
+  if (h && !h.querySelector('.gear') && !/settings/.test(location.hash)) h.insertAdjacentHTML('beforeend', '<a class="circ gear" href="#/settings" aria-label="Settings">⚙</a>');
+}).observe(view, { childList: true });
+
 function favView() {
   const w = KOTOBA.map((x, i) => [x, i]).filter(([x]) => isFav('w:' + wkey(x))), k = KANJI.map((x, i) => [x, i]).filter(([x]) => isFav('k:' + x.kanji));
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Saved</h2></div>
@@ -558,6 +617,7 @@ function route() {
   else if (sec === 'cards') { const les = b ? KANJI.filter(k => String(k.lesson) === b) : KANJI; deckView(les.length ? les : KANJI, kanjiCard, '#/kanji/list', b ? `Lesson ${esc(b)}` : 'Kanji cards'); }
   else if (sec === 'grammar') a === 'lesson' ? grammarLesson(+b) : grammarList();
   else if (sec === 'memo') a === 'play' ? memoPlay(b, c) : memoPick(b);
+  else if (sec === 'post') postView();
   else if (sec === 'fav') favView();
   else if (sec === 'settings') settingsView();
   else if (sec === 'search') searchView();
