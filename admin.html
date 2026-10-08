@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Learning Archive</title>
+<link rel="icon" type="image/png" href="./logo-icon.png">
+<link rel="stylesheet" href="./style.css?v=20261008b">
+<style>
+.adm{max-width:640px;margin:0 auto;padding:18px 16px 60px}
+.adm h1{font:800 1.6rem var(--ui);margin:6px 0 14px}.adm h3{margin:18px 4px 8px;font-size:1rem}
+.adm .detail{text-align:left;max-width:none;margin-bottom:14px}
+.adm label{display:block;margin:12px 0 4px;font-size:.75rem;font-weight:700;color:var(--blue)}
+.adm input[type=text],.adm input[type=password],.adm textarea{width:100%;padding:12px 16px;border-radius:18px;border:1px solid var(--bd);background:var(--glass2);color:var(--ink);font:inherit}
+.adm textarea{min-height:120px;resize:vertical}
+.adm input[type=file]{width:100%;font-size:.85rem}
+.row2{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.adm .btn{min-height:46px}.adm .btn.del{background:#e5484d;min-height:36px;padding:0 14px;font-size:.8rem}
+.prev{margin-top:10px;max-width:100%;max-height:260px;border-radius:18px;display:block}
+.prog{height:8px;border-radius:9px;background:rgba(10,95,230,.16);margin-top:12px;overflow:hidden;display:none}.prog i{display:block;height:100%;width:0;background:var(--blue);transition:width .2s}
+.st{margin-top:10px;font-size:.88rem;min-height:1.2em}.st.err{color:#e5484d}.st.ok{color:#16a34a}
+.pi{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--bd)}
+.pi:first-child{border-top:0}.pi div{flex:1;min-width:0;font-size:.85rem;overflow-wrap:anywhere}.pi small{color:var(--mut)}
+.av3{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--glass)}
+.hide{display:none}
+</style>
+</head>
+<body>
+<main class="adm">
+  <h1>Admin · Post</h1>
+
+  <section class="detail" id="login">
+    <label for="key">ADMIN PASSWORD</label>
+    <input type="password" id="key" autocomplete="current-password" placeholder="The ADMIN_KEY from your Apps Script">
+    <div class="row2"><button class="btn" id="unlock">Unlock</button></div>
+    <div class="st" id="lst"></div>
+  </section>
+
+  <div id="panel" class="hide">
+    <section class="detail">
+      <h3 style="margin-top:0">Profile (shown on every post)</h3>
+      <label for="un">USERNAME</label><input type="text" id="un" maxlength="40" placeholder="Your display name">
+      <label for="avf">PROFILE PICTURE</label><input type="file" id="avf" accept="image/*">
+      <img class="prev av3" id="avp" alt="" style="display:none;margin-top:10px">
+      <div class="row2"><button class="btn" id="saveprof">Save profile</button></div>
+      <div class="st" id="pst"></div>
+    </section>
+
+    <section class="detail">
+      <h3 style="margin-top:0">New post</h3>
+      <label for="cap">CAPTION</label><textarea id="cap" maxlength="5000" placeholder="Write something…"></textarea>
+      <label for="mf">IMAGE OR VIDEO (optional)</label><input type="file" id="mf" accept="image/*,video/*">
+      <div id="mprev"></div>
+      <div class="prog" id="prog"><i></i></div>
+      <div class="row2"><button class="btn" id="pub">Publish</button></div>
+      <div class="st" id="st"></div>
+    </section>
+
+    <section class="detail">
+      <h3 style="margin-top:0">Recent posts</h3>
+      <div id="recent">Loading…</div>
+    </section>
+  </div>
+</main>
+<script src="./config.js"></script>
+<script>
+(() => {
+  'use strict';
+  const API = (window.N4_API || '').trim(), $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // match the app's saved theme
+  try { const c = JSON.parse(localStorage.getItem('n4_cfg') || '{}'); document.documentElement.dataset.theme = c.theme || 'light'; document.documentElement.dataset.glass = c.glass || 'frosted'; } catch (e) {}
+  let key = sessionStorage.getItem('n4_admin_key') || '';
+  let prof = {}; try { prof = JSON.parse(localStorage.getItem('n4_admin_prof') || '{}'); } catch (e) {}
+  const say = (id, msg, cls = '') => { const el = $(id); el.textContent = msg; el.className = 'st ' + cls; };
+  const thumb = (id, w) => `https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w${w}`;
+
+  // text/plain keeps the request "simple", so the browser sends no CORS preflight to Apps Script
+  async function api(action, data = {}) {
+    if (!API) throw new Error('config.js has no Apps Script URL yet');
+    const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ action, key, ...data }) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || 'Request failed');
+    return j;
+  }
+  // images are shrunk to max 1600 px JPEG before upload (fast + saves Drive space); GIFs and videos are sent as they are
+  async function prep(f) {
+    if (!f.type.startsWith('image/') || f.type === 'image/gif') return f;
+    const bmp = await createImageBitmap(f), s = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+    const c = Object.assign(document.createElement('canvas'), { width: Math.round(bmp.width * s), height: Math.round(bmp.height * s) });
+    c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+    const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', .85));
+    return new File([blob], f.name.replace(/\.[^.]+$/, '') + '.jpg', { type: 'image/jpeg' });
+  }
+  const b64 = f => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1]); r.onerror = rej; r.readAsDataURL(f); });
+  async function upload(file, onProg) {
+    const data = await b64(file), SZ = 1500000, total = Math.max(1, Math.ceil(data.length / SZ));
+    const uid = (crypto.randomUUID ? crypto.randomUUID() : Date.now() + '' + Math.random()).replace(/[^\w-]/g, '');
+    for (let i = 0; i < total; i++) { await api('chunk', { uploadId: uid, index: i, total, data: data.slice(i * SZ, (i + 1) * SZ) }); onProg((i + 1) / (total + 1)); }
+    const j = await api('finish', { uploadId: uid, total, name: file.name, mime: file.type });
+    onProg(1); return j;
+  }
+  const bar = p => { const b = $('prog'); b.style.display = p == null ? 'none' : 'block'; b.firstElementChild.style.width = Math.round((p || 0) * 100) + '%'; };
+
+  async function enter() {
+    $('login').classList.add('hide'); $('panel').classList.remove('hide');
+    $('un').value = prof.username || '';
+    if (prof.avatarId) { $('avp').src = thumb(prof.avatarId, 160); $('avp').style.display = 'block'; }
+    loadRecent();
+  }
+  $('unlock').onclick = async () => {
+    key = $('key').value; say('lst', 'Checking…');
+    try { await api('ping'); sessionStorage.setItem('n4_admin_key', key); enter(); } catch (e) { say('lst', e.message, 'err'); }
+  };
+  $('key').onkeydown = e => { if (e.key === 'Enter') $('unlock').click(); };
+
+  $('saveprof').onclick = async () => {
+    const name = $('un').value.trim(), f = $('avf').files[0];
+    if (!name) return say('pst', 'Enter a username', 'err');
+    try {
+      prof.username = name;
+      if (f) { say('pst', 'Uploading picture…'); prof.avatarId = (await upload(await prep(f), () => {})).fileId; $('avp').src = thumb(prof.avatarId, 160); $('avp').style.display = 'block'; }
+      localStorage.setItem('n4_admin_prof', JSON.stringify(prof)); say('pst', 'Profile saved', 'ok');
+    } catch (e) { say('pst', e.message, 'err'); }
+  };
+
+  $('mf').onchange = () => {
+    const f = $('mf').files[0], box = $('mprev'); box.innerHTML = '';
+    if (!f) return;
+    const url = URL.createObjectURL(f);
+    box.innerHTML = f.type.startsWith('video/') ? `<video class="prev" src="${url}" controls></video>` : `<img class="prev" src="${url}" alt="">`;
+  };
+
+  $('pub').onclick = async () => {
+    const caption = $('cap').value.trim(), f = $('mf').files[0], username = (prof.username || $('un').value).trim();
+    if (!username) return say('st', 'Save your profile (username) first', 'err');
+    if (!caption && !f) return say('st', 'Write a caption or choose a file', 'err');
+    if (f && f.type.startsWith('video/') && f.size > 25 * 1024 * 1024) return say('st', 'Video is larger than 25 MB. Compress it first.', 'err');
+    $('pub').disabled = true;
+    try {
+      let mediaId = '', mediaType = '';
+      if (f) { say('st', 'Uploading…'); mediaId = (await upload(await prep(f), bar)).fileId; mediaType = f.type.startsWith('video/') ? 'video' : 'image'; }
+      say('st', 'Saving post…');
+      await api('create', { username, avatarId: prof.avatarId || '', caption, mediaId, mediaType });
+      $('cap').value = ''; $('mf').value = ''; $('mprev').innerHTML = ''; bar(null);
+      say('st', 'Published! It shows in the app within a minute.', 'ok'); loadRecent();
+    } catch (e) { bar(null); say('st', e.message, 'err'); }
+    $('pub').disabled = false;
+  };
+
+  async function loadRecent() {
+    try {
+      const { posts } = await api('list');
+      $('recent').innerHTML = posts.length ? posts.map(p => `<div class="pi">
+        ${p.mediaId && p.mediaType === 'image' ? `<img class="av3" style="border-radius:12px" src="${thumb(p.mediaId, 160)}" alt="">` : ''}
+        <div><b>${esc(p.username)}</b> <small>${esc(new Date(p.timestamp).toLocaleString())}</small><br>${esc((p.caption || '').slice(0, 140))}${p.mediaType === 'video' ? ' <small>🎬 video</small>' : ''}</div>
+        <button class="btn del" data-id="${esc(p.id)}">Delete</button></div>`).join('') : 'No posts yet.';
+    } catch (e) { $('recent').textContent = e.message; }
+  }
+  $('recent').onclick = async e => {
+    const b = e.target.closest('[data-id]');
+    if (!b || !confirm('Delete this post?')) return;
+    b.disabled = true;
+    try { await api('delete', { id: b.dataset.id }); loadRecent(); } catch (err) { alert(err.message); b.disabled = false; }
+  };
+
+  if (key) api('ping').then(enter).catch(() => { sessionStorage.removeItem('n4_admin_key'); });   // reuse the password for this browser session
+})();
+</script>
+</body>
+</html>
