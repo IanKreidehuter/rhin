@@ -148,3 +148,13 @@ main{outline:0}
 .nav a[data-r=home].on{padding:0;width:48px}
 .gp p{white-space:pre-line}
 @media(max-width:400px){.nav{gap:2px;padding:5px}.nav a{padding:0 9px;min-width:42px}.nav a.on{padding:0 12px}.nav span{font-size:.78rem}.nav a[data-r=home].on{padding:0;width:42px}}
+
+/* post feed */
+.post{max-width:560px;margin:0 auto 14px;padding:14px;border-radius:26px;background:var(--glass2);border:1px solid var(--bd);box-shadow:var(--sh);overflow-wrap:anywhere}
+.ph{display:flex;align-items:center;gap:10px;margin-bottom:10px}.ph b{display:block;font-size:.95rem}.ph time{display:block;font-size:.75rem;color:var(--mut)}
+.av2{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;background:var(--glass)}.av2.ph0{display:grid;place-items:center;font:800 1.2rem var(--jp);color:#fff;background:var(--blue)}
+.cap{font-size:.95rem;line-height:1.55;white-space:pre-line;margin:2px 2px 10px}.cap a{color:var(--blue);text-decoration:underline}
+.pm{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;border-radius:18px;background:var(--glass)}
+.vid{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.post.sk{height:180px;background:linear-gradient(100deg,var(--glass) 30%,var(--glass2) 50%,var(--glass) 70%) 0 0/200% 100%;animation:sk 1.2s linear infinite}
+@keyframes sk{to{background-position:-200% 0}}
