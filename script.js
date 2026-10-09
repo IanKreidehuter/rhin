@@ -22,7 +22,7 @@ const debounce = (f, ms = 120) => { let t; return (...a) => { clearTimeout(t); t
 /* ---- settings + progress, saved in localStorage (guarded) ---- */
 const store = { get(k, d) { try { return JSON.parse(localStorage.getItem('n4_' + k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem('n4_' + k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } } };
 const cfg = Object.assign({ lang: 'id', theme: 'light', glass: 'frosted' }, store.get('cfg', {}));
-const applyCfg = () => { document.documentElement.lang = cfg.lang; document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); };
+const applyCfg = () => { document.documentElement.lang = cfg.lang; document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); try { window.Android && Android.setDark(cfg.theme === 'dark'); } catch (e) { /* not in the app */ } };
 applyCfg();
 const wkey = w => val(w.hiragana) + '|' + val(w.kanji);
 /* ---- i18n: UI source text is English. Indonesian (default) is applied by translating the DOM; English is selectable in Settings ---- */
@@ -87,6 +87,7 @@ function touchStreak() {                       // counts a study day each time a
 const streak = () => { const s = store.get('streak', { last: '', n: 0 }); return [new Date().toDateString(), new Date(Date.now() - 864e5).toDateString()].includes(s.last) ? s.n : 0; };
 // Text-to-speech (browser voice, Japanese)
 function say(t) {
+  if (window.Android && t) { try { Android.speak(String(t)); return; } catch (e) { /* fall back to the browser voice */ } }
   if (!('speechSynthesis' in window) || !t) return;
   const u = new SpeechSynthesisUtterance(t); u.lang = 'ja-JP'; u.rate = .85;
   speechSynthesis.cancel(); speechSynthesis.speak(u);
@@ -364,6 +365,8 @@ const API = (window.N4_API || '').trim();
 const fmtDate = iso => { try { return new Intl.DateTimeFormat(cfg.lang === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' }).format(new Date(iso)); } catch (e) { return ''; } };
 const driveImg = (id, w) => `https://drive.google.com/thumbnail?id=${encodeURIComponent(id)}&sz=w${w}`;
 const linkify = t => esc(t).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+// older posts without a picture borrow the newest picture used by the same username
+const withAvatars = list => { const m = {}; list.forEach(p => { if (p.avatarId && !m[p.username]) m[p.username] = p.avatarId; }); return list.map(p => p.avatarId ? p : Object.assign({}, p, { avatarId: m[p.username] || '' })); };
 const postCard = p => `<article class="post"><header class="ph">
   ${p.avatarId ? `<img class="av2" src="${driveImg(p.avatarId, 160)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '<span class="av2 ph0">言</span>'}
   <div><b>${esc(p.username || 'Admin')}</b><time>${esc(fmtDate(p.timestamp))}</time></div></header>
@@ -384,7 +387,7 @@ function postView() {
   let items = store.get('feed', []), more = false, busy = false;
   const alive = () => document.body.contains(feed);                    // user may have left the page while loading
   const paint = note => {
-    feed.innerHTML = (note ? `<p class="count">${note}</p>` : '') + (items.map(postCard).join('') || '<div class="msg">No posts yet.</div>');
+    feed.innerHTML = (note ? `<p class="count">${note}</p>` : '') + (withAvatars(items).map(postCard).join('') || '<div class="msg">No posts yet.</div>');
     fm.innerHTML = more ? '<button class="btn ghost" id="lm" style="display:flex;margin:14px auto">Load more</button>' : '';
     const lm = document.getElementById('lm'); if (lm) lm.onclick = () => load(true);
   };
@@ -395,7 +398,7 @@ function postView() {
       const j = await fetchPosts(append ? items.length : 0);
       if (!alive()) return;
       items = append ? items.concat(j.posts) : j.posts; more = j.hasMore;
-      if (!append) store.set('feed', items.slice(0, 15));              // cached copy shows instantly next time / offline
+      if (!append) { store.set('feed', items.slice(0, 15)); try { if (window.Android && items[0]) Android.seenPost(String(items[0].id)); } catch (e) { /* not in the app */ } }              // cached copy shows instantly next time / offline
       paint();
     } catch (e) {
       if (!alive()) return;
@@ -637,4 +640,4 @@ function hideSplash() {
 load().then(hideSplash);
 
 // Offline support (PWA): installable, works without network after the first visit
-if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+if ('serviceWorker' in navigator && !/N4App/.test(navigator.userAgent)) addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
