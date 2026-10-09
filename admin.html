@@ -41,7 +41,7 @@
     <section class="detail">
       <h3 style="margin-top:0">Profile (shown on every post)</h3>
       <label for="un">USERNAME</label><input type="text" id="un" maxlength="40" placeholder="Your display name">
-      <label for="avf">PROFILE PICTURE</label><input type="file" id="avf" accept="image/*">
+      <label for="avf">PROFILE PICTURE (uploaded when you save or publish)</label><input type="file" id="avf" accept="image/*">
       <img class="prev av3" id="avp" alt="" style="display:none;margin-top:10px">
       <div class="row2"><button class="btn" id="saveprof">Save profile</button></div>
       <div class="st" id="pst"></div>
@@ -133,13 +133,16 @@
   };
 
   $('pub').onclick = async () => {
-    const caption = $('cap').value.trim(), f = $('mf').files[0], username = (prof.username || $('un').value).trim();
+    const caption = $('cap').value.trim(), f = $('mf').files[0], username = ($('un').value || prof.username || '').trim(), af = $('avf').files[0];
     if (!username) return say('st', 'Save your profile (username) first', 'err');
     if (!caption && !f) return say('st', 'Write a caption or choose a file', 'err');
     if (f && f.type.startsWith('video/') && f.size > 25 * 1024 * 1024) return say('st', 'Video is larger than 25 MB. Compress it first.', 'err');
     $('pub').disabled = true;
     try {
       let mediaId = '', mediaType = '';
+      // a profile picture chosen above is uploaded now, even if "Save profile" was never pressed
+      if (af) { say('st', 'Uploading profile picture…'); prof.avatarId = (await upload(await prep(af), () => {})).fileId; $('avf').value = ''; $('avp').src = thumb(prof.avatarId, 160); $('avp').style.display = 'block'; }
+      prof.username = username; localStorage.setItem('n4_admin_prof', JSON.stringify(prof));
       if (f) { say('st', 'Uploading…'); mediaId = (await upload(await prep(f), bar)).fileId; mediaType = f.type.startsWith('video/') ? 'video' : 'image'; }
       say('st', 'Saving post…');
       await api('create', { username, avatarId: prof.avatarId || '', caption, mediaId, mediaType });
