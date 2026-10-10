@@ -145,9 +145,9 @@
       prof.username = username; localStorage.setItem('n4_admin_prof', JSON.stringify(prof));
       if (f) { say('st', 'Uploading…'); mediaId = (await upload(await prep(f), bar)).fileId; mediaType = f.type.startsWith('video/') ? 'video' : 'image'; }
       say('st', 'Saving post…');
-      await api('create', { username, avatarId: prof.avatarId || '', caption, mediaId, mediaType });
+      const made = await api('create', { username, avatarId: prof.avatarId || '', caption, mediaId, mediaType });
       $('cap').value = ''; $('mf').value = ''; $('mprev').innerHTML = ''; bar(null);
-      say('st', 'Published! It shows in the app within a minute.', 'ok'); loadRecent();
+      say('st', 'Published! Notification: ' + (made.push || 'n/a') + '. The post shows in the app within a minute.', made.push === 'sent' || !made.push ? 'ok' : 'err'); loadRecent();
     } catch (e) { bar(null); say('st', e.message, 'err'); }
     $('pub').disabled = false;
   };
