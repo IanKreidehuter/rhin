@@ -638,6 +638,7 @@ function hideSplash() {
   setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 500); }, wait);
 }
 load().then(hideSplash);
+window.N4_refresh = () => load();   // the Android app calls this after it downloads newer JSON data
 
 // Offline support (PWA): installable, works without network after the first visit
 if ('serviceWorker' in navigator && !/N4App/.test(navigator.userAgent)) addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
