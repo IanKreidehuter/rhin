@@ -933,6 +933,184 @@
       ]
     },
     {
+      "nomor": 31,
+      "judul": "Keterangan Tata Bahasa",
+      "poin": [
+        {
+          "judul": "Bentuk Maksud",
+          "pola": [
+            "Kelompok I: bunyi kolom い pada akhir Bentuk ます → bunyi kolom お ＋ う",
+            "Kelompok II: Bentuk ます ＋ よう",
+            "Kelompok III: します → しよう／きます → こよう"
+          ],
+          "bagian": [
+            {
+              "judul": "Cara membuat Bentuk Maksud dari Bentuk ます (Lihat Buku Induk Pel.31 Latihan A1)",
+              "keterangan": "Kelompok I: Bunyi dari kolom い sebagai bunyi terakhir dari Bentuk ます diubah menjadi bunyi kolom お kemudian dibubuhkan う.\nかき-ます → かこ-う　　いそぎ-ます → いそご-う\nよみ-ます → よも-う　　あそび-ます → あそぼ-う\nKelompok II: Dibubuhkan よう pada Bentuk ます.\nたべ-ます → たべ-よう　　み-ます → み-よう\nKelompok III:\nし-ます → し-よう　　き-ます → こ-よう"
+            }
+          ]
+        },
+        {
+          "judul": "Cara pemakaian Bentuk Maksud",
+          "bagian": [
+            {
+              "judul": "1)",
+              "keterangan": "Merupakan Bentuk Biasa dari ～ましょう, digunakan dalam kalimat Bentuk Biasa.",
+              "contoh": [
+                {
+                  "no": "①",
+                  "jp": "ちょっと休まない？\n……うん、休もう。",
+                  "id": "Bagaimana kalau beristirahat sebentar?\n…… Ya, mari beristirahat."
+                },
+                {
+                  "no": "②",
+                  "jp": "手伝おうか。",
+                  "id": "Mari saya bantu!"
+                },
+                {
+                  "no": "③",
+                  "jp": "傘を持って行こうか。",
+                  "id": "Apa sebaiknya bawa payung?"
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Pada kalimat tanya Bentuk Biasa, pada umumnya tidak membubuhkan Kata Bantu か pada akhir kalimat, tetapi untuk kalimat tanya Bentuk Biasa ～ましょうか seperti ② atau ③ diperlukan Kata Bantu か pada akhir kalimat."
+            },
+            {
+              "judul": "2) Kata Kerja Bentuk Maksud と 思っています",
+              "keterangan": "Pola kalimat ini digunakan untuk menyatakan kehendak si pembicara kepada lawan bicaranya. Kata Kerja Bentuk Maksud と おもいます juga dapat digunakan dengan makna yang sama, tetapi Kata Kerja Bentuk Maksud と おもっています menyatakan jangka waktu tertentu sampai dan saat ini kehendak itu masih dipertahankan.",
+              "contoh": [
+                {
+                  "no": "④",
+                  "jp": "週末は海へ行こうと思っています。",
+                  "id": "Pada akhir minggu ingin pergi ke laut."
+                },
+                {
+                  "no": "⑤",
+                  "jp": "今から銀行へ行こうと思います。",
+                  "id": "Sekarang mau pergi ke bank."
+                }
+              ]
+            },
+            {
+              "keterangan": "[Perhatian] Kata Kerja Bentuk Maksud と おもいます hanya dapat menyatakan maksud dari si pembicara, sedangkan Kata Kerja Bentuk Maksud と おもっています dapat menyatakan maksud dari orang ketiga.",
+              "contoh": [
+                {
+                  "no": "⑥",
+                  "jp": "彼は学校を作ろうと思っています。",
+                  "id": "Rencananya dia ingin membangun sekolah."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja Bentuk Kamus／Kata Kerja（Bentuk ない）ない ＋ つもりです",
+          "pola": [
+            "Kata Kerja Bentuk Kamus ＋ つもりです",
+            "Kata Kerja (Bentuk ない) ない ＋ つもりです"
+          ],
+          "catatan": [
+            "Kata Kerja Bentuk Kamus つもりです menyatakan kehendak. Bentuk negatif biasanya menggunakan dengan bentuk Kata Kerja (Bentuk ない) ない つもりです.",
+            "[Perhatian] Antara Kata Kerja Bentuk Maksud と おもっています dan Kata Kerja Bentuk Kamus つもり tidak terdapat perbedaan yang besar, namun untuk menyatakan kehendak yang pasti, atau ketepatan hati yang kukuh, kebanyakan Kata Kerja Bentuk Kamus つもりです yang digunakan."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑦",
+                  "jp": "国へ帰っても、日本語の勉強を続けるつもりです。",
+                  "id": "Kalau pulang ke tanah air, (saya) ingin meneruskan belajar bahasa Jepang."
+                },
+                {
+                  "no": "⑧",
+                  "jp": "あしたからはたばこを吸わないつもりです。",
+                  "id": "Mulai besok, (saya) bermaksud tidak merokok."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "Kata Kerja Bentuk Kamus／Kata Benda の ＋ 予定です",
+          "pola": [
+            "Kata Kerja Bentuk Kamus ＋ 予定です",
+            "Kata Benda の ＋ 予定です"
+          ],
+          "catatan": [
+            "Cara untuk menjelaskan pernyataan rencana."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑨",
+                  "jp": "7月の終わりにドイツへ出張する予定です。",
+                  "id": "Rencananya pada akhir bulan Juli (saya) dinas ke Jerman."
+                },
+                {
+                  "no": "⑩",
+                  "jp": "旅行は1週間ぐらいの予定です。",
+                  "id": "Rencananya perjalanan kurang lebih seminggu."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "まだ ＋ Kata Kerja Bentuk て いません",
+          "pola": [
+            "まだ ＋ Kata Kerja Bentuk て いません"
+          ],
+          "catatan": [
+            "Ekspresi ini menyatakan bahwa pada saat ungkapan/pembicaraan, belum terjadi kejadian atau perbuatan belum selesai."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑪",
+                  "jp": "銀行はまだ開いていません。",
+                  "id": "Bank belum buka."
+                },
+                {
+                  "no": "⑫",
+                  "jp": "レポートはもう書きましたか。\n……いいえ、まだ書いていません。",
+                  "id": "Apakah (Anda) telah menulis laporan?\n…… Belum, belum menulisnya."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "judul": "帰ります － 帰り",
+          "catatan": [
+            "Seperti ⑬ atau ⑭, adakalanya bentuk yang sama dengan Bentuk ます digunakan sebagai Kata Benda."
+          ],
+          "bagian": [
+            {
+              "contoh": [
+                {
+                  "no": "⑬",
+                  "jp": "帰りの新幹線はどこから乗りますか。",
+                  "id": "Naik dari mana Shinkansen untuk pulangnya?"
+                },
+                {
+                  "no": "⑭",
+                  "jp": "休みは何曜日ですか。",
+                  "id": "Hari apa hari libur? (Pel.4)"
+                }
+              ]
+            },
+            {
+              "keterangan": "Selain itu, terdapat contoh seperti di bawah ini;\n遊びます － 遊び　　替えます － 替え\n申し込みます － 申し込み　　楽しみます (menikmati) － 楽しみ"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "nomor": 32,
       "judul": "Keterangan Tata Bahasa",
       "poin": [
