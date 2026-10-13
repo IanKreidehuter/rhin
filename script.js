@@ -6,6 +6,8 @@ const view = document.getElementById('view');
   document.addEventListener(t, e => { if (!(e.target.closest && e.target.closest('input,textarea'))) e.preventDefault(); }));
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // Clean a value: never show null/undefined/empty; arrays are joined
+// grammar text marks furigana as {漢字|かんじ}; this turns it into <ruby> (readings sit above the kanji only)
+const fr = t => esc(t).replace(/\{([^|{}]+)\|([^{}]+)\}/g, '<ruby>$1<rt>$2</rt></ruby>');
 const val = v => {
   if (v == null) return '';
   if (Array.isArray(v)) return v.map(val).filter(Boolean).join(' / ');
@@ -21,8 +23,8 @@ const debounce = (f, ms = 120) => { let t; return (...a) => { clearTimeout(t); t
 
 /* ---- settings + progress, saved in localStorage (guarded) ---- */
 const store = { get(k, d) { try { return JSON.parse(localStorage.getItem('n4_' + k)) ?? d; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem('n4_' + k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } } };
-const cfg = Object.assign({ lang: 'id', theme: 'light', glass: 'frosted' }, store.get('cfg', {}));
-const applyCfg = () => { document.documentElement.lang = cfg.lang; document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; store.set('cfg', cfg); try { window.Android && Android.setDark(cfg.theme === 'dark'); } catch (e) { /* not in the app */ } };
+const cfg = Object.assign({ lang: 'id', theme: 'light', glass: 'frosted', furi: 'on' }, store.get('cfg', {}));
+const applyCfg = () => { document.documentElement.lang = cfg.lang; document.documentElement.dataset.theme = cfg.theme; document.documentElement.dataset.glass = cfg.glass; document.documentElement.dataset.furi = cfg.furi; store.set('cfg', cfg); try { window.Android && Android.setDark(cfg.theme === 'dark'); } catch (e) { /* not in the app */ } };
 applyCfg();
 const wkey = w => val(w.hiragana) + '|' + val(w.kanji);
 /* ---- i18n: UI source text is English. Indonesian (default) is applied by translating the DOM; English is selectable in Settings ---- */
@@ -48,6 +50,7 @@ const ID = {
 ID['Kanji cards'] = 'Kartu kanji';
 Object.assign(ID, { 'Post': 'Postingan', 'Refresh': 'Muat ulang', 'No posts yet.': 'Belum ada postingan.', 'Load more': 'Muat lebih banyak', 'Could not load posts.': 'Postingan tidak dapat dimuat.', 'Retry': 'Coba lagi',
   'Post feed is not connected yet. Paste your Apps Script URL in config.js.': 'Feed postingan belum terhubung. Tempel URL Apps Script di config.js.', 'Showing saved posts (offline).': 'Menampilkan postingan tersimpan (offline).' });
+Object.assign(ID, { 'FURIGANA': 'FURIGANA', 'On': 'Aktif', 'Off': 'Mati' });
 const RULES = [
 [/^Lesson (\d+)/, 'Pelajaran $1'], [/^🔥 (\d+) day streak$/, '🔥 $1 hari beruntun'], [/^✓ (\d+) learned$/, '✓ $1 dikuasai'], [/^★ (\d+) saved$/, '★ $1 tersimpan'],
 [/^(\d+) of (\d+) words$/, '$1 dari $2 kata'], [/^(\d+) of (\d+) kanji$/, '$1 dari $2 kanji'], [/^(\d+) words · (\d+)% learned$/, '$1 kata · $2% dikuasai'], [/^(\d+) words$/, '$1 kata'],
@@ -429,6 +432,7 @@ function settingsView() {
   const seg = (key, opts) => `<div class="seg" data-k="${key}">${opts.map(([v, l]) => `<button class="${cfg[key] === v ? 'on' : ''}" data-v="${v}">${l}</button>`).join('')}</div>`;
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/home" aria-label="Back">←</a><h2>Settings</h2></div>
     <article class="detail set"><span class="lbl">LANGUAGE</span>${seg('lang', [['id', 'Bahasa Indonesia'], ['en', 'English']])}
+    <span class="lbl">FURIGANA</span>${seg('furi', [['on', 'On'], ['off', 'Off']])}
     <span class="lbl">THEME</span>${seg('theme', [['light', 'Light'], ['dark', 'Dark']])}
     <span class="lbl">GLASS STYLE</span>${seg('glass', [['frosted', 'Frosted'], ['clear', 'Clear'], ['blur', 'Blur']])}
     <span class="lbl">PROGRESS</span><div class="rv">${KNOWN.size} learned · ${FAVS.size} saved · ${streak()} day streak</div>
@@ -450,10 +454,10 @@ function grammarList() {
 function grammarLesson(i) {
   const l = GRAMMAR[i];
   if (!l) return location.hash = '#/grammar/list';
-  const ex = c => `<div class="gx"><b>${esc(val(c.no))}</b><div><div class="gj">${esc(val(c.jp))}</div><div class="gi">${esc(val(c.id))}</div></div></div>`;
-  const part = p => `<article class="detail gp"><h3>${esc(val(p.judul))}</h3>
-    ${(p.pola || []).map(x => `<div class="pola">${esc(x)}</div>`).join('')}${(p.catatan || []).map(x => `<p>${esc(x)}</p>`).join('')}
-    ${(p.bagian || []).map(b => `${val(b.judul) ? `<h4>${esc(b.judul)}</h4>` : ''}${val(b.keterangan) ? `<p>${esc(b.keterangan)}</p>` : ''}${(b.contoh || []).map(ex).join('')}`).join('')}</article>`;
+  const ex = c => `<div class="gx"><b>${esc(val(c.no))}</b><div><div class="gj">${fr(val(c.jp))}</div><div class="gi">${esc(val(c.id))}</div></div></div>`;
+  const part = p => `<article class="detail gp"><h3>${fr(val(p.judul))}</h3>
+    ${(p.pola || []).map(x => `<div class="pola">${fr(x)}</div>`).join('')}${(p.catatan || []).map(x => `<p>${fr(x)}</p>`).join('')}
+    ${(p.bagian || []).map(b => `${val(b.judul) ? `<h4>${fr(b.judul)}</h4>` : ''}${val(b.keterangan) ? `<p>${fr(b.keterangan)}</p>` : ''}${(b.contoh || []).map(ex).join('')}`).join('')}</article>`;
   view.innerHTML = `<section class="page"><div class="head"><a class="circ" href="#/grammar/list" aria-label="Back">←</a><h2>Pelajaran ${esc(val(l.nomor))}</h2></div>
     <p class="count">${esc(val(l.judul))}</p>${(l.poin || []).map(part).join('')}</section>`;
 }
