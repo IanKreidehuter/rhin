@@ -2510,6 +2510,1391 @@
      "arti": "perlu"
     }
    ]
+  },
+  {
+   "lesson": 36,
+   "kotoba": [
+    {
+     "hiragana": "あいます",
+     "kanji": "あいます",
+     "arti": "tertimpa [kecelakaan]"
+    },
+    {
+     "hiragana": "ちょきんします",
+     "kanji": "貯金します",
+     "arti": "menabung"
+    },
+    {
+     "hiragana": "すぎます",
+     "kanji": "過ぎます",
+     "arti": "lewat [pukul tujuh]"
+    },
+    {
+     "hiragana": "なれます",
+     "kanji": "慣れます",
+     "arti": "terbiasa [dengan tugas]"
+    },
+    {
+     "hiragana": "くさります",
+     "kanji": "腐ります",
+     "arti": "[makanan] busuk"
+    },
+    {
+     "hiragana": "けんどう",
+     "kanji": "剣道",
+     "arti": "kendo (anggar gaya Jepang)"
+    },
+    {
+     "hiragana": "じゅうどう",
+     "kanji": "柔道",
+     "arti": "judo"
+    },
+    {
+     "hiragana": "ラッシュ",
+     "kanji": "ラッシュ",
+     "arti": "keramaian, kesibukan"
+    },
+    {
+     "hiragana": "うちゅう",
+     "kanji": "宇宙",
+     "arti": "angkasa"
+    },
+    {
+     "hiragana": "きょく",
+     "kanji": "曲",
+     "arti": "musik"
+    },
+    {
+     "hiragana": "まいしゅう",
+     "kanji": "毎週",
+     "arti": "setiap minggu"
+    },
+    {
+     "hiragana": "まいつき",
+     "kanji": "毎月",
+     "arti": "setiap bulan"
+    },
+    {
+     "hiragana": "まいとし",
+     "kanji": "毎年",
+     "arti": "setiap tahun"
+    },
+    {
+     "hiragana": "このごろ",
+     "kanji": "このごろ",
+     "arti": "akhir-akhir ini"
+    },
+    {
+     "hiragana": "やっと",
+     "kanji": "やっと",
+     "arti": "akhirnya"
+    },
+    {
+     "hiragana": "かなり",
+     "kanji": "かなり",
+     "arti": "cukup"
+    },
+    {
+     "hiragana": "かならず",
+     "kanji": "必ず",
+     "arti": "pasti"
+    },
+    {
+     "hiragana": "ぜったいに",
+     "kanji": "絶対に",
+     "arti": "mutlak"
+    },
+    {
+     "hiragana": "じょうずに",
+     "kanji": "上手に",
+     "arti": "dengan pandai"
+    },
+    {
+     "hiragana": "できるだけ",
+     "kanji": "できるだけ",
+     "arti": "sedapat mungkin"
+    },
+    {
+     "hiragana": "ほとんど",
+     "kanji": "ほとんど",
+     "arti": "sebagian besar"
+    },
+    {
+     "hiragana": "ショパン",
+     "kanji": "ショパン",
+     "arti": "Chopin, musisi Polandia (1810-1849)"
+    },
+    {
+     "hiragana": "おきゃくさま",
+     "kanji": "お客様",
+     "arti": "tamu (Kata Hormat dari おきゃくさん)"
+    },
+    {
+     "hiragana": "とくべつな",
+     "kanji": "特別な",
+     "arti": "khusus, spesial"
+    },
+    {
+     "hiragana": "していらっしゃいます",
+     "kanji": "していらっしゃいます",
+     "arti": "melakukan (Kata Hormat dari して います)"
+    },
+    {
+     "hiragana": "すいえい",
+     "kanji": "水泳",
+     "arti": "renang"
+    },
+    {
+     "hiragana": "ちがいます",
+     "kanji": "違います",
+     "arti": "salah, tidak benar"
+    },
+    {
+     "hiragana": "つかっていらっしゃるんですね",
+     "kanji": "つかっていらっしゃるんですね",
+     "arti": "Menggunakan 〜, ya./Memakai 〜, ya. (Kata Hormat dari つかって いるんですね)"
+    },
+    {
+     "hiragana": "チャレンジします",
+     "kanji": "チャレンジします",
+     "arti": "menantang"
+    },
+    {
+     "hiragana": "きもち",
+     "kanji": "気持ち",
+     "arti": "sikap"
+    },
+    {
+     "hiragana": "のりもの",
+     "kanji": "乗り物",
+     "arti": "kendaraan"
+    },
+    {
+     "hiragana": "〜せいき",
+     "kanji": "〜世紀",
+     "arti": "abad ke 〜"
+    },
+    {
+     "hiragana": "とおく",
+     "kanji": "遠く",
+     "arti": "jauh"
+    },
+    {
+     "hiragana": "めずらしい",
+     "kanji": "珍しい",
+     "arti": "langka"
+    },
+    {
+     "hiragana": "きしゃ",
+     "kanji": "汽車",
+     "arti": "kereta api"
+    },
+    {
+     "hiragana": "きせん",
+     "kanji": "汽船",
+     "arti": "kapal api"
+    },
+    {
+     "hiragana": "おおぜいの〜",
+     "kanji": "大勢の〜",
+     "arti": "banyak 〜"
+    },
+    {
+     "hiragana": "はこびます",
+     "kanji": "運びます",
+     "arti": "mengangkut"
+    },
+    {
+     "hiragana": "りようします",
+     "kanji": "利用します",
+     "arti": "menggunakan"
+    },
+    {
+     "hiragana": "じゆうに",
+     "kanji": "自由に",
+     "arti": "dengan bebas"
+    }
+   ]
+  },
+  {
+   "lesson": 37,
+   "kotoba": [
+    {
+     "hiragana": "ほめます",
+     "kanji": "褒めます",
+     "arti": "memuji"
+    },
+    {
+     "hiragana": "しかります",
+     "kanji": "しかります",
+     "arti": "memarahi"
+    },
+    {
+     "hiragana": "さそいます",
+     "kanji": "誘います",
+     "arti": "mengajak"
+    },
+    {
+     "hiragana": "しょうたいします",
+     "kanji": "招待します",
+     "arti": "mengundang"
+    },
+    {
+     "hiragana": "たのみます",
+     "kanji": "頼みます",
+     "arti": "meminta"
+    },
+    {
+     "hiragana": "ちゅういします",
+     "kanji": "注意します",
+     "arti": "menasihati"
+    },
+    {
+     "hiragana": "とります",
+     "kanji": "とります",
+     "arti": "mencuri"
+    },
+    {
+     "hiragana": "ふみます",
+     "kanji": "踏みます",
+     "arti": "menginjak"
+    },
+    {
+     "hiragana": "こわします",
+     "kanji": "壊します",
+     "arti": "merusak"
+    },
+    {
+     "hiragana": "よごします",
+     "kanji": "汚します",
+     "arti": "mengotori"
+    },
+    {
+     "hiragana": "おこないます",
+     "kanji": "行います",
+     "arti": "mengadakan"
+    },
+    {
+     "hiragana": "ゆしゅつします",
+     "kanji": "輸出します",
+     "arti": "mengekspor"
+    },
+    {
+     "hiragana": "ゆにゅうします",
+     "kanji": "輸入します",
+     "arti": "mengimpor"
+    },
+    {
+     "hiragana": "ほんやくします",
+     "kanji": "翻訳します",
+     "arti": "menerjemahkan"
+    },
+    {
+     "hiragana": "はつめいします",
+     "kanji": "発明します",
+     "arti": "menciptakan"
+    },
+    {
+     "hiragana": "はっけんします",
+     "kanji": "発見します",
+     "arti": "menemukan"
+    },
+    {
+     "hiragana": "こめ",
+     "kanji": "米",
+     "arti": "beras"
+    },
+    {
+     "hiragana": "むぎ",
+     "kanji": "麦",
+     "arti": "gandum"
+    },
+    {
+     "hiragana": "せきゆ",
+     "kanji": "石油",
+     "arti": "minyak tanah"
+    },
+    {
+     "hiragana": "げんりょう",
+     "kanji": "原料",
+     "arti": "bahan baku"
+    },
+    {
+     "hiragana": "インスタントラーメン",
+     "kanji": "インスタントラーメン",
+     "arti": "mie instan"
+    },
+    {
+     "hiragana": "デート",
+     "kanji": "デート",
+     "arti": "kencan"
+    },
+    {
+     "hiragana": "どろぼう",
+     "kanji": "泥棒",
+     "arti": "pencuri"
+    },
+    {
+     "hiragana": "けいかん",
+     "kanji": "警官",
+     "arti": "polisi"
+    },
+    {
+     "hiragana": "せかいじゅう",
+     "kanji": "世界中",
+     "arti": "seluruh dunia"
+    },
+    {
+     "hiragana": "〜じゅう",
+     "kanji": "〜中",
+     "arti": "seluruh 〜"
+    },
+    {
+     "hiragana": "〜せいき",
+     "kanji": "〜世紀",
+     "arti": "abad ke 〜"
+    },
+    {
+     "hiragana": "なにご",
+     "kanji": "何語",
+     "arti": "bahasa apa"
+    },
+    {
+     "hiragana": "だれか",
+     "kanji": "だれか",
+     "arti": "siapa"
+    },
+    {
+     "hiragana": "よかったですね",
+     "kanji": "よかったですね",
+     "arti": "Bagus, ya."
+    },
+    {
+     "hiragana": "オリンピック",
+     "kanji": "オリンピック",
+     "arti": "Olimpiade"
+    },
+    {
+     "hiragana": "ワールドカップ",
+     "kanji": "ワールドカップ",
+     "arti": "piala dunia"
+    },
+    {
+     "hiragana": "とうだいじ",
+     "kanji": "東大寺",
+     "arti": "Todaiji (nama kuil)"
+    },
+    {
+     "hiragana": "だいぶつ",
+     "kanji": "大仏",
+     "arti": "Daibutsu (patung Budha yang besar)"
+    },
+    {
+     "hiragana": "えどじだい",
+     "kanji": "江戸時代",
+     "arti": "Zaman Edo (1603-1868)"
+    },
+    {
+     "hiragana": "ポルトガル",
+     "kanji": "ポルトガル",
+     "arti": "Portugis"
+    },
+    {
+     "hiragana": "サウジアラビア",
+     "kanji": "サウジアラビア",
+     "arti": "Arab Saudi"
+    },
+    {
+     "hiragana": "ロシア",
+     "kanji": "ロシア",
+     "arti": "Rusia"
+    },
+    {
+     "hiragana": "みなさま",
+     "kanji": "皆様",
+     "arti": "semuanya (Kata Hormat dari みなさん)"
+    },
+    {
+     "hiragana": "やけます",
+     "kanji": "焼けます",
+     "arti": "[rumah] terbakar"
+    },
+    {
+     "hiragana": "そのご",
+     "kanji": "その後",
+     "arti": "setelah, sesudah"
+    },
+    {
+     "hiragana": "せかいいさん",
+     "kanji": "世界遺産",
+     "arti": "Situs Warisan Dunia UNESCO"
+    },
+    {
+     "hiragana": "〜の ひとつ",
+     "kanji": "〜の 一つ",
+     "arti": "salah satu 〜"
+    },
+    {
+     "hiragana": "きんいろ",
+     "kanji": "金色",
+     "arti": "warna emas"
+    },
+    {
+     "hiragana": "ほんもの",
+     "kanji": "本物",
+     "arti": "asli"
+    },
+    {
+     "hiragana": "きん",
+     "kanji": "金",
+     "arti": "emas"
+    },
+    {
+     "hiragana": "〜キロ",
+     "kanji": "〜キロ",
+     "arti": "〜 kilogram, 〜 kilometer"
+    },
+    {
+     "hiragana": "うつくしい",
+     "kanji": "美しい",
+     "arti": "indah, elok"
+    },
+    {
+     "hiragana": "ごうかな",
+     "kanji": "豪華な",
+     "arti": "mewah"
+    },
+    {
+     "hiragana": "ちょうこく",
+     "kanji": "彫刻",
+     "arti": "ukiran, pahatan"
+    },
+    {
+     "hiragana": "いいつたえ",
+     "kanji": "言い伝え",
+     "arti": "tradisi"
+    },
+    {
+     "hiragana": "ねむります",
+     "kanji": "眠ります",
+     "arti": "tidur"
+    },
+    {
+     "hiragana": "ほります",
+     "kanji": "彫ります",
+     "arti": "mengukir, memahat"
+    },
+    {
+     "hiragana": "なかま",
+     "kanji": "仲間",
+     "arti": "teman"
+    },
+    {
+     "hiragana": "しかし",
+     "kanji": "しかし",
+     "arti": "tetapi"
+    },
+    {
+     "hiragana": "そのあと",
+     "kanji": "その あと",
+     "arti": "setelah itu, sesudah itu"
+    },
+    {
+     "hiragana": "いっしょうけんめい",
+     "kanji": "一生懸命",
+     "arti": "sungguh-sungguh"
+    },
+    {
+     "hiragana": "ねずみ",
+     "kanji": "ねずみ",
+     "arti": "tikus"
+    },
+    {
+     "hiragana": "いっぴきも いません",
+     "kanji": "一匹も いません",
+     "arti": "Tidak ada seekor pun."
+    },
+    {
+     "hiragana": "とうしょうぐう",
+     "kanji": "東照宮",
+     "arti": "kuil yang ada di Nikko, prefektur Tochigi yang mengabadikan Tokugawa Ieyasu"
+    },
+    {
+     "hiragana": "ねむりねこ",
+     "kanji": "眠り猫",
+     "arti": "kucing yang sedang tidur, nama ukiran"
+    },
+    {
+     "hiragana": "ひだりじんごろう",
+     "kanji": "左甚五郎",
+     "arti": "pemahat terkenal pada zaman Edo (1594-1651)"
+    }
+   ]
+  },
+  {
+   "lesson": 38,
+   "kotoba": [
+    {
+     "hiragana": "さんかします",
+     "kanji": "参加します",
+     "arti": "mengikuti [perjalanan]"
+    },
+    {
+     "hiragana": "そだてます",
+     "kanji": "育てます",
+     "arti": "memelihara"
+    },
+    {
+     "hiragana": "はこびます",
+     "kanji": "運びます",
+     "arti": "mengangkut"
+    },
+    {
+     "hiragana": "にゅういんします",
+     "kanji": "入院します",
+     "arti": "opname"
+    },
+    {
+     "hiragana": "たいいんします",
+     "kanji": "退院します",
+     "arti": "keluar dari rumah sakit"
+    },
+    {
+     "hiragana": "いれます",
+     "kanji": "入れます",
+     "arti": "menghidupkan [power suply]"
+    },
+    {
+     "hiragana": "きります",
+     "kanji": "切ります",
+     "arti": "mematikan [power suply]"
+    },
+    {
+     "hiragana": "かけます",
+     "kanji": "掛けます",
+     "arti": "mengunci"
+    },
+    {
+     "hiragana": "つきます",
+     "kanji": "つきます",
+     "arti": "berbohong"
+    },
+    {
+     "hiragana": "きもちが いい",
+     "kanji": "気持ちが いい",
+     "arti": "rasa enak"
+    },
+    {
+     "hiragana": "きもちが わるい",
+     "kanji": "気持ちが 悪い",
+     "arti": "rasa tidak enak, jijik"
+    },
+    {
+     "hiragana": "おおきな〜",
+     "kanji": "大きな〜",
+     "arti": "besar 〜"
+    },
+    {
+     "hiragana": "ちいさな〜",
+     "kanji": "小さな〜",
+     "arti": "kecil 〜"
+    },
+    {
+     "hiragana": "あかちゃん",
+     "kanji": "赤ちゃん",
+     "arti": "bayi"
+    },
+    {
+     "hiragana": "しょうがっこう",
+     "kanji": "小学校",
+     "arti": "SD"
+    },
+    {
+     "hiragana": "ちゅうがっこう",
+     "kanji": "中学校",
+     "arti": "SMP"
+    },
+    {
+     "hiragana": "えきまえ",
+     "kanji": "駅前",
+     "arti": "depan stasiun"
+    },
+    {
+     "hiragana": "かいがん",
+     "kanji": "海岸",
+     "arti": "pantai laut"
+    },
+    {
+     "hiragana": "こうじょう",
+     "kanji": "工場",
+     "arti": "pabrik"
+    },
+    {
+     "hiragana": "むら",
+     "kanji": "村",
+     "arti": "desa, kampung"
+    },
+    {
+     "hiragana": "かな",
+     "kanji": "かな",
+     "arti": "huruf Hiragana, huruf Katakana"
+    },
+    {
+     "hiragana": "ゆびわ",
+     "kanji": "指輪",
+     "arti": "cincin"
+    },
+    {
+     "hiragana": "でんげん",
+     "kanji": "電源",
+     "arti": "power suply"
+    },
+    {
+     "hiragana": "しゅうかん",
+     "kanji": "習慣",
+     "arti": "kebiasaan"
+    },
+    {
+     "hiragana": "けんこう",
+     "kanji": "健康",
+     "arti": "kesehatan"
+    },
+    {
+     "hiragana": "〜せい",
+     "kanji": "〜製",
+     "arti": "buatan 〜"
+    },
+    {
+     "hiragana": "おととし",
+     "kanji": "おととし",
+     "arti": "dua tahun yang lalu"
+    },
+    {
+     "hiragana": "[あ、]いけない",
+     "kanji": "[あ、]いけない",
+     "arti": "[Ah,] Salah! (memakai ketika bersalah atau gagal)"
+    },
+    {
+     "hiragana": "おさきに",
+     "kanji": "お先に",
+     "arti": "[Permisi] duluan."
+    },
+    {
+     "hiragana": "げんぱくドーム",
+     "kanji": "原爆ドーム",
+     "arti": "dome untuk memperingati kejatuhan bom atom di Hiroshima"
+    },
+    {
+     "hiragana": "いずもたいしゃ",
+     "kanji": "出雲大社",
+     "arti": "kuil yang ada di Kota Izumo, prefektur Shimane"
+    },
+    {
+     "hiragana": "チェンマイ",
+     "kanji": "チェンマイ",
+     "arti": "Chiang mai (Thailan)"
+    },
+    {
+     "hiragana": "かいらん",
+     "kanji": "回覧",
+     "arti": "edaran"
+    },
+    {
+     "hiragana": "けんきゅうしつ",
+     "kanji": "研究室",
+     "arti": "labolatorium/ruang dosen"
+    },
+    {
+     "hiragana": "きちんと",
+     "kanji": "きちんと",
+     "arti": "dengan rapi"
+    },
+    {
+     "hiragana": "せいりします",
+     "kanji": "整理します",
+     "arti": "mengatur"
+    },
+    {
+     "hiragana": "ほうほう",
+     "kanji": "方法",
+     "arti": "cara"
+    },
+    {
+     "hiragana": "〜と いう",
+     "kanji": "〜と いう",
+     "arti": "dengan judul 〜"
+    },
+    {
+     "hiragana": "〜さつ",
+     "kanji": "〜冊",
+     "arti": "〜 buah (kata bantu bilangan untuk menghitung buku dan lain-lain)"
+    },
+    {
+     "hiragana": "はんこ",
+     "kanji": "はんこ",
+     "arti": "cap"
+    },
+    {
+     "hiragana": "おします",
+     "kanji": "押します",
+     "arti": "mengecap"
+    },
+    {
+     "hiragana": "ふたご",
+     "kanji": "双子",
+     "arti": "anak kembar"
+    },
+    {
+     "hiragana": "しまい",
+     "kanji": "姉妹",
+     "arti": "saudara perempuan"
+    },
+    {
+     "hiragana": "ごねんせい",
+     "kanji": "5年生",
+     "arti": "kelas lima"
+    },
+    {
+     "hiragana": "にています",
+     "kanji": "似て います",
+     "arti": "mirip"
+    },
+    {
+     "hiragana": "せいかく",
+     "kanji": "性格",
+     "arti": "sifat"
+    },
+    {
+     "hiragana": "おとなしい",
+     "kanji": "おとなしい",
+     "arti": "pendiam"
+    },
+    {
+     "hiragana": "やさしい",
+     "kanji": "優しい",
+     "arti": "baik hati"
+    },
+    {
+     "hiragana": "せわを します",
+     "kanji": "世話を します",
+     "arti": "merawat"
+    },
+    {
+     "hiragana": "じかんが たちます",
+     "kanji": "時間が たちます",
+     "arti": "waktu berlalu"
+    },
+    {
+     "hiragana": "だいすきな",
+     "kanji": "大好きな",
+     "arti": "suka sekali"
+    },
+    {
+     "hiragana": "〜てん",
+     "kanji": "〜点",
+     "arti": "〜 point"
+    },
+    {
+     "hiragana": "きが つよい",
+     "kanji": "気が 強い",
+     "arti": "bersifat keras, galak"
+    },
+    {
+     "hiragana": "けんかします",
+     "kanji": "けんかします",
+     "arti": "bertengkar"
+    },
+    {
+     "hiragana": "ふしぎな",
+     "kanji": "不思議な",
+     "arti": "aneh"
+    },
+    {
+     "hiragana": "ねんれい",
+     "kanji": "年齢",
+     "arti": "usia, umur"
+    },
+    {
+     "hiragana": "しかた",
+     "kanji": "しかた",
+     "arti": "cara"
+    }
+   ]
+  },
+  {
+   "lesson": 39,
+   "kotoba": [
+    {
+     "hiragana": "こたえます",
+     "kanji": "答えます",
+     "arti": "menjawab [pada pertanyaan]"
+    },
+    {
+     "hiragana": "たおれます",
+     "kanji": "倒れます",
+     "arti": "[bangunan] roboh"
+    },
+    {
+     "hiragana": "とおります",
+     "kanji": "通ります",
+     "arti": "lewat, melalui [jalan]"
+    },
+    {
+     "hiragana": "しにます",
+     "kanji": "死にます",
+     "arti": "meninggal dunia"
+    },
+    {
+     "hiragana": "びっくりします",
+     "kanji": "びっくりします",
+     "arti": "kaget"
+    },
+    {
+     "hiragana": "がっかりします",
+     "kanji": "がっかりします",
+     "arti": "putus asa"
+    },
+    {
+     "hiragana": "あんしんします",
+     "kanji": "安心します",
+     "arti": "lega"
+    },
+    {
+     "hiragana": "けんかします",
+     "kanji": "けんかします",
+     "arti": "bertengkar"
+    },
+    {
+     "hiragana": "りこんします",
+     "kanji": "離婚します",
+     "arti": "bercerai"
+    },
+    {
+     "hiragana": "ふとります",
+     "kanji": "太ります",
+     "arti": "menjadi gemuk"
+    },
+    {
+     "hiragana": "やせます",
+     "kanji": "やせます",
+     "arti": "menjadi kurus"
+    },
+    {
+     "hiragana": "ふくざつな",
+     "kanji": "複雑な",
+     "arti": "rumit"
+    },
+    {
+     "hiragana": "じゃまな",
+     "kanji": "邪魔な",
+     "arti": "gangguan"
+    },
+    {
+     "hiragana": "かたい",
+     "kanji": "硬い",
+     "arti": "keras"
+    },
+    {
+     "hiragana": "やわらかい",
+     "kanji": "軟らかい",
+     "arti": "lembut"
+    },
+    {
+     "hiragana": "きたない",
+     "kanji": "汚い",
+     "arti": "kotor"
+    },
+    {
+     "hiragana": "うれしい",
+     "kanji": "うれしい",
+     "arti": "senang"
+    },
+    {
+     "hiragana": "かなしい",
+     "kanji": "悲しい",
+     "arti": "sedih"
+    },
+    {
+     "hiragana": "はずかしい",
+     "kanji": "恥ずかしい",
+     "arti": "malu"
+    },
+    {
+     "hiragana": "しゅしょう",
+     "kanji": "首相",
+     "arti": "perdana menteri"
+    },
+    {
+     "hiragana": "じしん",
+     "kanji": "地震",
+     "arti": "gempa bumi"
+    },
+    {
+     "hiragana": "つなみ",
+     "kanji": "津波",
+     "arti": "tsunami"
+    },
+    {
+     "hiragana": "たいふう",
+     "kanji": "台風",
+     "arti": "angin topan"
+    },
+    {
+     "hiragana": "かみなり",
+     "kanji": "雷",
+     "arti": "petir"
+    },
+    {
+     "hiragana": "かじ",
+     "kanji": "火事",
+     "arti": "kebakaran"
+    },
+    {
+     "hiragana": "じこ",
+     "kanji": "事故",
+     "arti": "kecelakaan"
+    },
+    {
+     "hiragana": "ハイキング",
+     "kanji": "ハイキング",
+     "arti": "hiking"
+    },
+    {
+     "hiragana": "おみあい",
+     "kanji": "お見合い",
+     "arti": "perjodohan"
+    },
+    {
+     "hiragana": "そうさ",
+     "kanji": "操作",
+     "arti": "operasi (〜します：mengoperasi)"
+    },
+    {
+     "hiragana": "かいじょう",
+     "kanji": "会場",
+     "arti": "tempat"
+    },
+    {
+     "hiragana": "〜だい",
+     "kanji": "〜代",
+     "arti": "biaya untuk 〜"
+    },
+    {
+     "hiragana": "〜や",
+     "kanji": "〜屋",
+     "arti": "penjual 〜"
+    },
+    {
+     "hiragana": "フロント",
+     "kanji": "フロント",
+     "arti": "resepsionis"
+    },
+    {
+     "hiragana": "〜ごうしつ",
+     "kanji": "〜号室",
+     "arti": "kamar nomor 〜"
+    },
+    {
+     "hiragana": "タオル",
+     "kanji": "タオル",
+     "arti": "handuk"
+    },
+    {
+     "hiragana": "せっけん",
+     "kanji": "せっけん",
+     "arti": "sabun"
+    },
+    {
+     "hiragana": "おおぜい",
+     "kanji": "大勢",
+     "arti": "banyak"
+    },
+    {
+     "hiragana": "おつかれさまでした",
+     "kanji": "お疲れさまでした",
+     "arti": "Terima kasih atas kerja samanya. (perkataan terhadap rekan atau bawahan untuk menghargai tenaga kerja mereka)"
+    },
+    {
+     "hiragana": "うかがいます",
+     "kanji": "伺います",
+     "arti": "pergi (Kata Merendahkan Diri dari いきます)"
+    },
+    {
+     "hiragana": "とちゅうで",
+     "kanji": "途中で",
+     "arti": "di tengah"
+    },
+    {
+     "hiragana": "トラック",
+     "kanji": "トラック",
+     "arti": "truk"
+    },
+    {
+     "hiragana": "ぶつかります",
+     "kanji": "ぶつかります",
+     "arti": "menabrak"
+    },
+    {
+     "hiragana": "おとな",
+     "kanji": "大人",
+     "arti": "orang dewasa"
+    },
+    {
+     "hiragana": "しかし",
+     "kanji": "しかし",
+     "arti": "tetapi"
+    },
+    {
+     "hiragana": "また",
+     "kanji": "また",
+     "arti": "dan"
+    },
+    {
+     "hiragana": "ようふく",
+     "kanji": "洋服",
+     "arti": "baju"
+    },
+    {
+     "hiragana": "せいようかします",
+     "kanji": "西洋化します",
+     "arti": "kebarat-baratan"
+    },
+    {
+     "hiragana": "あいます",
+     "kanji": "合います",
+     "arti": "cocok"
+    },
+    {
+     "hiragana": "いまでは",
+     "kanji": "今では",
+     "arti": "sekarang"
+    },
+    {
+     "hiragana": "せいじんしき",
+     "kanji": "成人式",
+     "arti": "upacara pendewasaan"
+    },
+    {
+     "hiragana": "でんとうてきな",
+     "kanji": "伝統的な",
+     "arti": "secara tradisional"
+    }
+   ]
+  },
+  {
+   "lesson": 40,
+   "kotoba": [
+    {
+     "hiragana": "かぞえます",
+     "kanji": "数えます",
+     "arti": "menghitung"
+    },
+    {
+     "hiragana": "はかります",
+     "kanji": "測ります、量ります",
+     "arti": "mengukur, menimbang"
+    },
+    {
+     "hiragana": "たしかめます",
+     "kanji": "確かめます",
+     "arti": "mengecek"
+    },
+    {
+     "hiragana": "あいます",
+     "kanji": "合います",
+     "arti": "cocok [ukurannya]"
+    },
+    {
+     "hiragana": "しゅっぱつします",
+     "kanji": "出発します",
+     "arti": "berangkat"
+    },
+    {
+     "hiragana": "とうちゃくします",
+     "kanji": "到着します",
+     "arti": "tiba"
+    },
+    {
+     "hiragana": "よいます",
+     "kanji": "酔います",
+     "arti": "mabuk"
+    },
+    {
+     "hiragana": "うまく いきます",
+     "kanji": "うまく いきます",
+     "arti": "berhasil dengan baik"
+    },
+    {
+     "hiragana": "でます",
+     "kanji": "出ます",
+     "arti": "diberikan [soal di ujian]"
+    },
+    {
+     "hiragana": "そうだんします",
+     "kanji": "相談します",
+     "arti": "berkonsultasi"
+    },
+    {
+     "hiragana": "ひつような",
+     "kanji": "必要な",
+     "arti": "perlu"
+    },
+    {
+     "hiragana": "てんきよほう",
+     "kanji": "天気予報",
+     "arti": "prakiraan cuaca"
+    },
+    {
+     "hiragana": "ぼうねんかい",
+     "kanji": "忘年会",
+     "arti": "pesta akhir tahun"
+    },
+    {
+     "hiragana": "しんねんかい",
+     "kanji": "新年会",
+     "arti": "pesta tahun baru"
+    },
+    {
+     "hiragana": "にじかい",
+     "kanji": "二次会",
+     "arti": "pesta untuk kedua kalinya"
+    },
+    {
+     "hiragana": "はっぴょうかい",
+     "kanji": "発表会",
+     "arti": "mempresentasi"
+    },
+    {
+     "hiragana": "たいかい",
+     "kanji": "大会",
+     "arti": "lomba"
+    },
+    {
+     "hiragana": "マラソン",
+     "kanji": "マラソン",
+     "arti": "maraton"
+    },
+    {
+     "hiragana": "コンテスト",
+     "kanji": "コンテスト",
+     "arti": "pertandingan"
+    },
+    {
+     "hiragana": "おもて",
+     "kanji": "表",
+     "arti": "muka"
+    },
+    {
+     "hiragana": "うら",
+     "kanji": "裏",
+     "arti": "belakang"
+    },
+    {
+     "hiragana": "まちがい",
+     "kanji": "まちがい",
+     "arti": "kesalahan"
+    },
+    {
+     "hiragana": "きず",
+     "kanji": "傷",
+     "arti": "cacat, luka"
+    },
+    {
+     "hiragana": "ズボン",
+     "kanji": "ズボン",
+     "arti": "celana"
+    },
+    {
+     "hiragana": "おとしより",
+     "kanji": "お年寄り",
+     "arti": "orang lanjut usia"
+    },
+    {
+     "hiragana": "ながさ",
+     "kanji": "長さ",
+     "arti": "panjangnya"
+    },
+    {
+     "hiragana": "おもさ",
+     "kanji": "重さ",
+     "arti": "beratnya"
+    },
+    {
+     "hiragana": "たかさ",
+     "kanji": "高さ",
+     "arti": "tingginya"
+    },
+    {
+     "hiragana": "おおきさ",
+     "kanji": "大きさ",
+     "arti": "besarnya"
+    },
+    {
+     "hiragana": "〜びん",
+     "kanji": "〜便",
+     "arti": "〜 botol"
+    },
+    {
+     "hiragana": "〜こ",
+     "kanji": "〜個",
+     "arti": "〜 buah (kata bantu bilangan untuk menghitung benda kecil)"
+    },
+    {
+     "hiragana": "〜ほん",
+     "kanji": "〜本",
+     "arti": "〜 batang (kata bantu bilangan untuk menghitung benda yang kurus panjang)"
+    },
+    {
+     "hiragana": "〜はい",
+     "kanji": "〜杯",
+     "arti": "〜 cangkir, 〜 gelas (kata bantu bilangan untuk menghitung isi cangkir atau gelas dan lain-lain)"
+    },
+    {
+     "hiragana": "〜センチ",
+     "kanji": "〜センチ",
+     "arti": "〜 senti"
+    },
+    {
+     "hiragana": "〜ミリ",
+     "kanji": "〜ミリ",
+     "arti": "〜 mili"
+    },
+    {
+     "hiragana": "〜グラム",
+     "kanji": "〜グラム",
+     "arti": "〜 gram"
+    },
+    {
+     "hiragana": "〜いじょう",
+     "kanji": "〜以上",
+     "arti": "ke atas 〜"
+    },
+    {
+     "hiragana": "〜いか",
+     "kanji": "〜以下",
+     "arti": "ke bawah 〜"
+    },
+    {
+     "hiragana": "ながさき",
+     "kanji": "長崎",
+     "arti": "tempat pemerintah daerah prefektur Nagasaki"
+    },
+    {
+     "hiragana": "せんだい",
+     "kanji": "仙台",
+     "arti": "tempat pemerintah daerah prefektur Miyagi"
+    },
+    {
+     "hiragana": "JL",
+     "kanji": "JL",
+     "arti": "Japan Airlines"
+    },
+    {
+     "hiragana": "たなばたまつり",
+     "kanji": "七夕祭り",
+     "arti": "Tanabata Matsuri, Perayaan Bintang"
+    },
+    {
+     "hiragana": "とうしょうぐう",
+     "kanji": "東照宮",
+     "arti": "kuil di prefektur Tochigi yang mengabadikan Tokugawa Ieyasu"
+    },
+    {
+     "hiragana": "どうでしょうか",
+     "kanji": "どうでしょうか",
+     "arti": "Bagaimana? (Kata Sopan dari どうですか)"
+    },
+    {
+     "hiragana": "テスト",
+     "kanji": "テスト",
+     "arti": "ujian"
+    },
+    {
+     "hiragana": "せいせき",
+     "kanji": "成績",
+     "arti": "nilai"
+    },
+    {
+     "hiragana": "ところで",
+     "kanji": "ところで",
+     "arti": "ngomong-ngomong"
+    },
+    {
+     "hiragana": "いらっしゃいます",
+     "kanji": "いらっしゃいます",
+     "arti": "datang (Kata Hormat dari きます)"
+    },
+    {
+     "hiragana": "ようす",
+     "kanji": "様子",
+     "arti": "kondisi, suasana"
+    },
+    {
+     "hiragana": "じけん",
+     "kanji": "事件",
+     "arti": "kejadian"
+    },
+    {
+     "hiragana": "オートバイ",
+     "kanji": "オートバイ",
+     "arti": "sepeda motor"
+    },
+    {
+     "hiragana": "ばくだん",
+     "kanji": "爆弾",
+     "arti": "bom"
+    },
+    {
+     "hiragana": "つみます",
+     "kanji": "積みます",
+     "arti": "memuatkan"
+    },
+    {
+     "hiragana": "うんてんしゅ",
+     "kanji": "運転手",
+     "arti": "sopir"
+    },
+    {
+     "hiragana": "はなれた",
+     "kanji": "離れた",
+     "arti": "terpisah"
+    },
+    {
+     "hiragana": "きゅうに",
+     "kanji": "急に",
+     "arti": "mendadak, tiba-tiba"
+    },
+    {
+     "hiragana": "うごかします",
+     "kanji": "動かします",
+     "arti": "menggerakkan"
+    },
+    {
+     "hiragana": "いっしょうけんめい",
+     "kanji": "一生懸命",
+     "arti": "sungguh-sungguh"
+    },
+    {
+     "hiragana": "はんにん",
+     "kanji": "犯人",
+     "arti": "pelaku"
+    },
+    {
+     "hiragana": "おとこ",
+     "kanji": "男",
+     "arti": "laki-laki"
+    },
+    {
+     "hiragana": "てに いれます",
+     "kanji": "手に 入れます",
+     "arti": "mendapatkan"
+    },
+    {
+     "hiragana": "いまでも",
+     "kanji": "今でも",
+     "arti": "sampai sekarang"
+    }
+   ]
   }
  ]
 }
