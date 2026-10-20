@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a5fe6">
+<title>Download · Learning Archive N4</title>
+<meta name="description" content="Download the Learning Archive N4 Android app: Japanese N4 kotoba, kanji and grammar, works offline.">
+<link rel="icon" type="image/png" href="./logo-icon.png">
+<link rel="apple-touch-icon" href="./logo-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Learning Archive N4 · Download the Android app">
+<meta property="og:description" content="Japanese N4 kotoba, kanji and grammar. Works offline. Free APK.">
+<meta property="og:image" content="https://jp4.iankreidehuter.space/bannerlogo1.png">
+<meta property="og:url" content="https://jp4.iankreidehuter.space/download.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jp4.iankreidehuter.space/bannerlogo1.png">
+<link rel="stylesheet" href="./style.css?v=20261018">
+<style>
+.dl{max-width:560px;margin:0 auto;padding:18px 16px 60px;text-align:center}
+.top{display:flex;justify-content:flex-end;margin-bottom:6px}
+.lang{display:inline-flex;gap:4px;padding:4px;border-radius:99px;background:var(--glass2);border:1px solid var(--bd)}
+.lang button{padding:7px 14px;border-radius:99px;font-weight:700;font-size:.8rem}.lang button.on{background:var(--blue);color:#fff}
+.logo{display:block;width:min(86%,380px);height:auto;margin:6px auto 10px}
+.dl h1{font:800 clamp(1.7rem,7vw,2.3rem)/1.15 var(--ui);letter-spacing:-.02em}
+.lead{margin:10px auto 18px;max-width:440px;color:var(--mut);line-height:1.55}
+.btn.big{display:flex;width:100%;max-width:380px;margin:0 auto;min-height:62px;font-size:1.15rem}
+.sub{margin-top:10px;font-size:.82rem;color:var(--mut)}
+.card{margin:16px 0 0;padding:18px;border-radius:26px;text-align:left;background:var(--glass2);border:1px solid var(--bd);box-shadow:var(--sh)}
+.card h2{font-size:1rem;margin-bottom:10px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--bd);font-size:.9rem}
+.row:first-of-type{border-top:0}.row span{color:var(--mut)}.row b{text-align:right;overflow-wrap:anywhere}
+.feat{display:grid;gap:8px;margin:0;padding:0;list-style:none;font-size:.92rem}.feat li::before{content:"✓ ";color:var(--blue);font-weight:800}
+.steps{margin:0;padding-left:20px;display:grid;gap:8px;font-size:.92rem;line-height:1.5}
+.note{margin-top:10px;padding:10px 12px;border-radius:14px;background:rgba(10,95,230,.1);font-size:.85rem;line-height:1.5}
+.warn{display:none;margin:14px auto 0;max-width:380px;padding:10px 14px;border-radius:14px;background:rgba(245,166,35,.18);font-size:.85rem}
+#notes{white-space:pre-line;font-size:.92rem;line-height:1.5}
+.foot{margin-top:22px;font-size:.85rem;color:var(--mut)}.foot a{color:var(--blue);font-weight:700}
+</style>
+</head>
+<body>
+<main class="dl">
+  <div class="top"><div class="lang" role="group" aria-label="Language"><button id="l-id" data-l="id">ID</button><button id="l-en" data-l="en">EN</button></div></div>
+  <img class="logo" src="./bannerlogo.png" alt="Learning Archive Japanese Lesson N4">
+  <h1 data-t="title"></h1>
+  <p class="lead" data-t="lead"></p>
+
+  <a class="btn big" id="dl" href="./apkupdate/N4App.apk" download><span data-t="btn"></span></a>
+  <div class="sub" id="sub"></div>
+  <div class="warn" id="warn" data-t="warn"></div>
+
+  <section class="card">
+    <h2 data-t="detTitle"></h2>
+    <div class="row"><span data-t="rVer"></span><b id="v">…</b></div>
+    <div class="row"><span data-t="rSize"></span><b id="sz">…</b></div>
+    <div class="row"><span data-t="rUpd"></span><b id="up">…</b></div>
+    <div class="row"><span data-t="rAnd"></span><b>Android 8.0+</b></div>
+    <div class="row"><span data-t="rPkg"></span><b>space.iankreidehuter.n4</b></div>
+    <div class="row"><span data-t="rOff"></span><b data-t="rOffV"></b></div>
+  </section>
+
+  <section class="card">
+    <h2 data-t="featTitle"></h2>
+    <ul class="feat">
+      <li data-t="f1"></li><li data-t="f2"></li><li data-t="f3"></li><li data-t="f4"></li><li data-t="f5"></li><li data-t="f6"></li>
+    </ul>
+  </section>
+
+  <section class="card" id="newbox" style="display:none">
+    <h2 data-t="newTitle"></h2>
+    <div id="notes"></div>
+  </section>
+
+  <section class="card">
+    <h2 data-t="insTitle"></h2>
+    <ol class="steps"><li data-t="s1"></li><li data-t="s2"></li><li data-t="s3"></li><li data-t="s4"></li></ol>
+    <div class="note" data-t="pp"></div>
+  </section>
+
+  <p class="foot"><a href="./index.html" data-t="web"></a> · Powered by GitHub · Created by Adrian</p>
+</main>
+<script>
+(() => {
+  'use strict';
+  const TXT = {
+    id: {
+      title: 'Learning Archive N4', lead: 'Belajar kosakata, kanji, dan tata bahasa Jepang N4. Semua materi bisa dipakai offline; hanya bagian Postingan yang butuh internet.',
+      btn: '⬇ Unduh APK', detTitle: 'Detail', rVer: 'Versi', rSize: 'Ukuran', rUpd: 'Diperbarui', rAnd: 'Butuh', rPkg: 'Paket', rOff: 'Offline', rOffV: 'Ya (kecuali Postingan)',
+      featTitle: 'Isi aplikasi', f1: 'Kotoba per pelajaran, dengan bentuk kamus dan bentuk masu', f2: 'Kanji per pelajaran dengan bacaan dan contoh kata',
+      f3: 'Tata bahasa lengkap dengan furigana dan terjemahan', f4: 'Kartu tebak: Kotoba → Arti dan Arti → Kotoba', f5: 'Pengucapan suara Jepang dan pencarian cepat', f6: 'Notifikasi postingan baru dan konten yang diperbarui otomatis',
+      newTitle: 'Yang baru', insTitle: 'Cara memasang', s1: 'Ketuk tombol Unduh APK dan tunggu unduhan selesai.', s2: 'Buka file N4App.apk dari notifikasi atau folder Unduhan.',
+      s3: 'Jika diminta, izinkan pemasangan dari sumber ini (Install unknown apps).', s4: 'Ketuk Pasang, lalu buka aplikasinya.',
+      pp: 'Jika Google Play Protect menampilkan peringatan karena aplikasi ini tidak dari Play Store, ketuk "Detail lainnya" lalu "Tetap instal". Jangan mematikan Play Protect.',
+      web: 'Buka versi web', warn: 'Aplikasi ini untuk Android. Buka halaman ini di ponsel Android untuk memasangnya.', size: 'Ukuran file', ver: 'Versi'
+    },
+    en: {
+      title: 'Learning Archive N4', lead: 'Study Japanese N4 kotoba, kanji and grammar. Everything works offline; only the Post section needs the internet.',
+      btn: '⬇ Download APK', detTitle: 'Details', rVer: 'Version', rSize: 'Size', rUpd: 'Updated', rAnd: 'Requires', rPkg: 'Package', rOff: 'Offline', rOffV: 'Yes (except Posts)',
+      featTitle: "What's inside", f1: 'Kotoba by lesson, with dictionary and masu forms', f2: 'Kanji by lesson with readings and example words',
+      f3: 'Full grammar with furigana and translations', f4: 'Guess cards: Kotoba → Meaning and Meaning → Kotoba', f5: 'Japanese pronunciation and fast search', f6: 'New-post notifications and automatic content updates',
+      newTitle: "What's new", insTitle: 'How to install', s1: 'Tap Download APK and wait for the download to finish.', s2: 'Open N4App.apk from the notification or your Downloads folder.',
+      s3: 'If asked, allow installing from this source (Install unknown apps).', s4: 'Tap Install, then open the app.',
+      pp: 'If Google Play Protect shows a warning because the app is not from the Play Store, tap "More details" then "Install anyway". Do not turn Play Protect off.',
+      web: 'Open the web version', warn: 'This app is for Android. Open this page on an Android phone to install it.', size: 'File size', ver: 'Version'
+    }
+  };
+  let lang = 'id';
+  try { const c = JSON.parse(localStorage.getItem('n4_cfg') || '{}'); lang = c.lang || (/^en/i.test(navigator.language) ? 'en' : 'id'); } catch (e) {}
+  let info = null;
+
+  const apply = () => {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-t]').forEach(el => { el.textContent = TXT[lang][el.dataset.t]; });
+    document.getElementById('l-id').classList.toggle('on', lang === 'id');
+    document.getElementById('l-en').classList.toggle('on', lang === 'en');
+    if (info) {
+      const notes = info[lang === 'id' ? 'notes_id' : 'notes_en'] || info.notes || '';
+      document.getElementById('notes').textContent = notes;
+      document.getElementById('newbox').style.display = notes ? 'block' : 'none';
+    }
+  };
+  document.querySelectorAll('.lang button').forEach(b => b.onclick = () => { lang = b.dataset.l; try { const c = JSON.parse(localStorage.getItem('n4_cfg') || '{}'); c.lang = lang; localStorage.setItem('n4_cfg', JSON.stringify(c)); } catch (e) {} apply(); });
+  apply();
+
+  if (!/Android/i.test(navigator.userAgent)) document.getElementById('warn').style.display = 'block';
+
+  // read apkupdate/version.json so the page always shows the current version and file name
+  const t = '?t=' + Date.now();
+  fetch('./apkupdate/version.json' + t, { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject()).then(j => {
+    info = j;
+    const file = j.apk || 'N4App.apk', url = './apkupdate/' + encodeURIComponent(file);
+    document.getElementById('dl').href = url;
+    document.getElementById('v').textContent = (j.versionName || '') + (j.versionCode ? ' (' + j.versionCode + ')' : '');
+    apply();
+    return fetch(url, { method: 'HEAD', cache: 'no-store' });
+  }).then(r => {
+    if (!r || !r.ok) throw 0;
+    const len = +r.headers.get('content-length'), lm = r.headers.get('last-modified');
+    if (len) { const mb = (len / 1048576).toFixed(1) + ' MB'; document.getElementById('sz').textContent = mb; document.getElementById('sub').textContent = mb + ' · APK'; }
+    if (lm) document.getElementById('up').textContent = new Date(lm).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium' });
+  }).catch(() => {
+    ['v', 'sz', 'up'].forEach(id => { const el = document.getElementById(id); if (el.textContent === '…') el.textContent = '—'; });
+  });
+})();
+</script>
+</body>
+</html>
